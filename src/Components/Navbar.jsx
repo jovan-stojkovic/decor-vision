@@ -14,8 +14,8 @@ const Navbar = () => {
           <NavLink to="/o-nama">O NAMA</NavLink>
           <NavLink to="/b2b">B2B</NavLink>
           <NavLink to="/kontakt">KONTAKT</NavLink>
-          <Link to={instaPage} target="_blank">
-            instagram
+          <Link to={instaPage} target="_blank" id="insta-link">
+            
           </Link>
         </div>
       </div>
