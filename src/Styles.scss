@@ -376,27 +376,39 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     h3 {
       font-weight: 400;
       font-size: 3rem;
       letter-spacing: 5px;
+      margin-top: 160px;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
     }
 
     .separator {
       width: 100px;
-      height: 1px;
+      height: 2px;
       margin: 50px;
     }
 
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
       letter-spacing: 2px;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
     }
 
     &.proizvodi-head {
-      background-image: url('src/Assets/backgrounds/1.jpg');
+      background-image: url("src/Assets/backgrounds/1.jpg");
 
       h3 {
         color: rgb(223, 223, 223);
@@ -409,10 +421,7 @@ footer {
       p {
         color: rgb(223, 223, 223);
       }
-
-
     }
-
   }
 
   .proizvodi-container {
@@ -438,6 +447,7 @@ footer {
           &:hover {
             filter: opacity(1);
             transition: 0.2s;
+            scale: 1.01;
           }
         }
 
@@ -447,6 +457,144 @@ footer {
           margin: 10px 0;
           font-weight: 500;
         }
+      }
+    }
+  }
+}
+
+//O NAMA
+
+.o-nama-page {
+  width: 100%;
+
+  .head {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("src/Assets/backgrounds/2.jpg");
+
+    h3 {
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: 5px;
+      margin-top: 160px;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .separator {
+      width: 100px;
+      height: 2px;
+      margin: 50px;
+      background-color: white;
+    }
+
+    p {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-align: center;
+      max-width: 1400px;
+      line-height: 2.5rem;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+
+  .o-nama-container {
+    margin: 0 auto;
+    max-width: 1400px;
+
+    .o-nama-main {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+
+      .left-side-img {
+        width: 100%;
+        background-color: beige;
+        aspect-ratio: 1;
+        background-image: url("src/Assets/backgrounds/2.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+
+      .right-side {
+        width: 100%;
+        aspect-ratio: 1;
+
+        h3 {
+          font-weight: 400;
+          font-size: 2rem;
+          letter-spacing: 5px;
+          vertical-align: top;
+        }
+
+        .separator {
+          width: 100px;
+          height: 2px;
+          margin: 50px 0;
+          background-color: rgb(174, 174, 174);
+        }
+
+        p.text {
+          font-size: 1.2rem;
+          letter-spacing: 2px;
+          text-align: justify;
+          margin-bottom: 50px;
+          line-height: 1.8rem;
+        }
+
+        a {
+          all: unset;
+          color: rgb(30, 130, 81);
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+          text-align: center;
+          width: 200px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .o-nama-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      margin-top: 200px;
+
+      .o-nama-grid-img {
+       aspect-ratio: 1;
+       background-position: center;
+       background-size: cover;
+
+       &.one {
+        background-image: url("src/Assets/backgrounds/3.jpg");
+       }
+       &.two {
+        background-image: url("src/Assets/backgrounds/4.jpg");
+       }
+       &.three {
+        background-image: url("src/Assets/backgrounds/5.jpg");
+       }
+       &.four {
+        background-image: url("src/Assets/backgrounds/6.jpg");
+       }
+       &.five {
+        background-image: url("src/Assets/backgrounds/7.jpg");
+       }
       }
     }
   }

@@ -72,16 +72,18 @@ const App = () => {
     },
   ];
 
-
   return (
     <Router>
       <main>
         <Navbar />
-        <BackToTopButton/>
+        <BackToTopButton />
         <div className="app">
           <Routes>
             <Route path="/" element={<Pocetna slides={slides} />} />
-            <Route path="/proizvodi" element={<Proizvodi proizvodi = {proizvodi} />} />
+            <Route
+              path="/proizvodi"
+              element={<Proizvodi proizvodi={proizvodi} />}
+            />
             <Route path="/o-nama" element={<ONama />} />
             <Route path="/b2b" element={<BtoB />} />
             <Route path="/kontakt" element={<Kontakt />} />
