@@ -364,3 +364,90 @@ footer {
     height: 50px;
   }
 }
+
+//PROIZVODI PAGE
+.proizvodi-page {
+  width: 100%;
+
+  .head {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: 5px;
+    }
+
+    .separator {
+      width: 100px;
+      height: 1px;
+      margin: 50px;
+    }
+
+    p {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    &.proizvodi-head {
+      background-image: url('src/Assets/backgrounds/1.jpg');
+
+      h3 {
+        color: rgb(223, 223, 223);
+      }
+
+      .separator {
+        background-color: rgb(223, 223, 223);
+      }
+
+      p {
+        color: rgb(223, 223, 223);
+      }
+
+
+    }
+
+  }
+
+  .proizvodi-container {
+    margin: 100px auto;
+    max-width: 1400px;
+
+    .proizvodi-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 70px;
+
+      .jedan-proizvod {
+        aspect-ratio: 1;
+
+        .proizvod-img-cont {
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          filter: opacity(0.8);
+
+          &:hover {
+            filter: opacity(1);
+            transition: 0.2s;
+          }
+        }
+
+        .proizvod-naziv {
+          text-align: center;
+          font-size: 1.3rem;
+          margin: 10px 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

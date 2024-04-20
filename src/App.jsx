@@ -29,6 +29,49 @@ const App = () => {
     },
   ];
 
+  const proizvodi = [
+    {
+      url: "https://www.lapitec.com/ContentsFiles/00_kitchen_559x561.jpg",
+      text: "Lapitec",
+    },
+    {
+      url: "https://www.anastasijevic.rs/login/images/Kuhinja---82dcc51d858d0707b27d045a7c5ef70ce35476ed.jpg",
+      text: "Kvarc",
+    },
+    {
+      url: "https://mermeta.rs/wp-content/uploads/2021/04/granitne-kuhinjske-ploce.jpg",
+      text: "Porcelanske ploče",
+    },
+    {
+      url: "https://www.podovi.org/wp-content/uploads/2016/11/Inovative-world-beogard-U-enterijeru-se-za-izradu-kuhinjskih-frontova-oblaganje-vrata-zidova-i-podova-koristi-furnir-jpg.webp",
+      text: "Kameni furnir",
+    },
+    {
+      url: "https://marsaceramica.rs/wp-content/uploads/2019/07/Zidne-Plocice-A-Mano-Decoro-Mix-Bianco-Antico-R6MS-20X20.jpg",
+      text: "Pločice",
+    },
+    {
+      url: "https://www.alpod.rs/wp-content/uploads/2023/05/dvoslojni-parket-orah-950x670-1-3.jpg",
+      text: "Parket",
+    },
+    {
+      url: "https://www.drvolex.com/wp-content/uploads/Drveni-zidni-paneli-u-enterijeru-1024x717.webp",
+      text: "Drveni paneli",
+    },
+    {
+      url: "https://www.gradnja.me/storage/posts/furnir.jpg",
+      text: "Drveni furniri",
+    },
+    {
+      url: "src/Assets/backgrounds/tapete.jpg",
+      text: "Tapete",
+    },
+    {
+      url: "https://woodsteel.rs/wp-content/uploads/2022/12/jednostavan-oblik-trpezarijskog-stola-izradjen-po-meri-woodsteel.jpg",
+      text: "Stolovi",
+    },
+  ];
+
 
   return (
     <Router>
@@ -38,7 +81,7 @@ const App = () => {
         <div className="app">
           <Routes>
             <Route path="/" element={<Pocetna slides={slides} />} />
-            <Route path="/proizvodi" element={<Proizvodi />} />
+            <Route path="/proizvodi" element={<Proizvodi proizvodi = {proizvodi} />} />
             <Route path="/o-nama" element={<ONama />} />
             <Route path="/b2b" element={<BtoB />} />
             <Route path="/kontakt" element={<Kontakt />} />
