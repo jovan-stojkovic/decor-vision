@@ -63,7 +63,7 @@ const App = () => {
       text: "Drveni furniri",
     },
     {
-      url: "src/Assets/backgrounds/tapete.jpg",
+      url: "src/Assets/backgrounds/10.jpg",
       text: "Tapete",
     },
     {

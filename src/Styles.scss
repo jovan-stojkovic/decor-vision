@@ -557,44 +557,249 @@ footer {
           margin-bottom: 50px;
           line-height: 1.8rem;
         }
+      }
+    }
 
-        a {
-          all: unset;
-          color: rgb(30, 130, 81);
-          font-size: 1.5rem;
-          letter-spacing: 2px;
-          text-align: center;
-          width: 200px;
-          cursor: pointer;
-        }
+    .o-nama-ispod {
+      margin: 100px auto;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        vertical-align: top;
+      }
+
+      .separator {
+        width: 100px;
+        height: 2px;
+        margin: 50px 0;
+        background-color: rgb(174, 174, 174);
+      }
+
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        margin-bottom: 50px;
+        line-height: 1.8rem;
+      }
+
+      a {
+        all: unset;
+        color: rgb(30, 130, 81);
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 200px;
+        cursor: pointer;
       }
     }
 
     .o-nama-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      margin-top: 200px;
 
       .o-nama-grid-img {
-       aspect-ratio: 1;
-       background-position: center;
-       background-size: cover;
+        aspect-ratio: 1;
+        background-position: center;
+        background-size: cover;
 
-       &.one {
-        background-image: url("src/Assets/backgrounds/3.jpg");
-       }
-       &.two {
-        background-image: url("src/Assets/backgrounds/4.jpg");
-       }
-       &.three {
-        background-image: url("src/Assets/backgrounds/5.jpg");
-       }
-       &.four {
-        background-image: url("src/Assets/backgrounds/6.jpg");
-       }
-       &.five {
-        background-image: url("src/Assets/backgrounds/7.jpg");
-       }
+        &.one {
+          background-image: url("src/Assets/backgrounds/3.jpg");
+        }
+        &.two {
+          background-image: url("src/Assets/backgrounds/4.jpg");
+        }
+        &.three {
+          background-image: url("src/Assets/backgrounds/5.jpg");
+        }
+        &.four {
+          background-image: url("src/Assets/backgrounds/6.jpg");
+        }
+        &.five {
+          background-image: url("src/Assets/backgrounds/7.jpg");
+        }
+      }
+    }
+  }
+}
+
+
+//B2B
+.btob-page {
+  width: 100%;
+
+  .head {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("src/Assets/backgrounds/11.jpg");
+
+    h3 {
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: 5px;
+      margin-top: 160px;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .separator {
+      width: 100px;
+      height: 2px;
+      margin: 50px;
+      background-color: white;
+    }
+
+    p {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-align: center;
+      max-width: 1400px;
+      line-height: 2.5rem;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+
+  .btob-container {
+    margin: 0 auto;
+    max-width: 1400px;
+
+    .btob-main {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+
+      .left-side-img {
+        width: 100%;
+        background-color: beige;
+        aspect-ratio: 1;
+        background-image: url("src/Assets/backgrounds/12.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+
+      .right-side {
+        width: 100%;
+        aspect-ratio: 1;
+
+        h3 {
+          font-weight: 400;
+          font-size: 2rem;
+          letter-spacing: 5px;
+          vertical-align: top;
+        }
+
+        .separator {
+          width: 100px;
+          height: 2px;
+          margin: 50px 0;
+          background-color: rgb(174, 174, 174);
+        }
+
+        p.text {
+          font-size: 1.2rem;
+          letter-spacing: 2px;
+          text-align: justify;
+          margin-bottom: 50px;
+          line-height: 1.8rem;
+        }
+      }
+    }
+
+    .btob-ispod {
+      margin: 100px auto;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        vertical-align: top;
+      }
+
+      .separator {
+        width: 100px;
+        height: 2px;
+        margin: 50px 0;
+        background-color: rgb(174, 174, 174);
+      }
+
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        margin-bottom: 50px;
+        line-height: 1.8rem;
+      }
+
+      a {
+        all: unset;
+        color: rgb(30, 130, 81);
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 200px;
+        cursor: pointer;
+      }
+    }
+
+    .btob-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 50px;
+
+      .btob-grid-img {
+        aspect-ratio: 1;
+        background-position: center;
+        background-size: contain;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        filter: saturate(0);
+        transition: 0.2s;
+
+        &:hover {
+          transition: 0.2s;
+          filter: saturate(1);
+          scale: 1.02;
+          cursor: pointer;
+        }
+
+        &.one {
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUJFyBl20JajeMj-Cwu0sIEYcn0zuN0sKWwSbcQUVSQ&s");
+        }
+        &.two {
+          background-image: url("https://identitymarks.it/wp-content/uploads/2020/01/Lapitec-logo-b1.jpg");
+        }
+        &.three {
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnr1IT8da_1QjFAzW34hpjAqVuSi4NBMlcaiQzSMqKA&s");
+        }
+        &.four {
+          background-image: url("https://domdecor74.ru/upload/iblock/f91/f9106395bcdfece082ab4e8c28b18efd.jpg");
+        }
       }
     }
   }

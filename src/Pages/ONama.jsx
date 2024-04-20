@@ -34,9 +34,19 @@ const ONama = () => {
               To je ono što nas izdvaja - sposobnost da stvorimo priču u svakom
               detalju.
             </p>
-            <Link to="/kontakt">Kontaktirajte nas!</Link>
           </div>
         </div>
+
+        <div className="o-nama-ispod">
+          <h3>U SVAKOM TRENUTKU PRUŽAMO VAM PUNO PODRŠKU</h3>
+          <div className="separator"></div>
+          <p>
+            Kontaktirajte nas i zajedno ćemo pretvoriti vaše projekte u
+            umetnička dela.
+          </p>
+          <Link to="/kontakt">Kontaktirajte nas!</Link>
+        </div>
+
         <div className="o-nama-grid">
           <div className="o-nama-grid-img one"></div>
           <div className="o-nama-grid-img two"></div>

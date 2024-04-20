@@ -23,3 +23,8 @@ theme
 
 
 footer boja, generalno sve boje
+
+logo u futeru te vodi na vrh polako
+
+
+naslov ispod u O_NAMA
