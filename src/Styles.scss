@@ -629,7 +629,6 @@ footer {
   }
 }
 
-
 //B2B
 .btob-page {
   width: 100%;
@@ -799,6 +798,201 @@ footer {
         }
         &.four {
           background-image: url("https://domdecor74.ru/upload/iblock/f91/f9106395bcdfece082ab4e8c28b18efd.jpg");
+        }
+      }
+    }
+  }
+}
+
+//KONTAKT
+.kontakt-page {
+  width: 100%;
+
+  .head {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("src/Assets/backgrounds/13.jpg");
+
+    h3 {
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: 5px;
+      margin-top: 160px;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .separator {
+      width: 100px;
+      height: 2px;
+      margin: 50px;
+      background-color: white;
+    }
+
+    p {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-align: center;
+      max-width: 1400px;
+      line-height: 2.5rem;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+
+  .kontakt-container {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .kontakt-info {
+      width: 100%;
+      background-color: rgb(201, 212, 236);
+      aspect-ratio: 4;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      margin: 50px 0;
+
+      .segment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        .kontakt-logo {
+          height: 60px;
+          width: 60px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          &.one {
+            background-image: url("https://www.iconbolt.com/iconsets/carbon-design-system/phone.svg");
+          }
+
+          &.two {
+            background-image: url("https://www.iconbolt.com/iconsets/eleken-essential/mail.svg");
+          }
+
+          &.three {
+            background-image: url("https://www.iconbolt.com/iconsets/akar-icons/location.svg");
+          }
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .forma {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65%;
+      margin-bottom: 100px;
+
+      h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        text-align: center;
+      }
+
+      .separator {
+        width: 100px;
+        height: 2px;
+        margin: 50px;
+        background-color: gray;
+      }
+
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 1.8rem;
+      }
+
+      form {
+        width: 100%;
+
+        .inputi {
+          width: 100%;
+          height: 50px;
+          background-color: rgb(201, 212, 236);
+          padding: 0 20px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          font-size: 1.4rem;
+          border: 2px solid white;
+
+          &#message {
+            height: 300px;
+            padding-top: 10px;
+            word-wrap: break-word;
+          }
+
+          &::placeholder {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+          }
+
+          &:focus {
+            border: 2px solid black;
+          }
+        }
+        .desc {
+          text-align: justify;
+          font-size: 1rem;
+          color: gray;
+          font-weight: 400;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        #checkbox {
+          accent-color: rgb(30, 130, 81);
+          margin-right: 20px;
+        }
+
+        .checkbox-label {
+          font-weight: 500;
+        }
+
+        button {
+          all: unset;
+          height: 50px;
+          width: 100%;
+          background-color: rgb(30, 130, 81);
+          text-align: center;
+          margin-top: 25px;
+          border-radius: 5px;
+          color: white;
+          font-size: 1.2rem;
+          letter-spacing: 10px;
+
         }
       }
     }
