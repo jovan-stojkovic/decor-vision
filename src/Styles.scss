@@ -998,3 +998,69 @@ footer {
     }
   }
 }
+
+
+//USLOVI KORIŠĆENJA
+
+.uslovi-koriscenja-page {
+  width: 100%;
+
+  .head {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("src/Assets/backgrounds/14.jpg");
+
+    h3 {
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: 5px;
+      margin-top: 160px;
+      padding: 5px 25px;
+      background-color: rgba(0, 0, 0, 0.314);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+
+  .uslovi-koriscenja-container {
+      margin: 0 auto;
+      max-width: 1400px;
+      margin-top: 100px;
+
+      h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        vertical-align: top;
+      }
+
+      .separator {
+        width: 100px;
+        height: 2px;
+        margin: 50px 0;
+        background-color: rgb(174, 174, 174);
+      }
+
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        margin-bottom: 50px;
+        line-height: 1.8rem;
+      }
+      
+      h4 {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+    
+  }
+}

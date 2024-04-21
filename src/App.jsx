@@ -8,6 +8,7 @@ import BtoB from "./Pages/BtoB";
 import Kontakt from "./Pages/Kontakt";
 import Footer from "./Components/Footer";
 import BackToTopButton from "./Components/BackToTopButton";
+import UsloviKoriscenja from "./Pages/UsloviKoriscenja";
 
 const App = () => {
   const slides = [
@@ -87,6 +88,7 @@ const App = () => {
             <Route path="/o-nama" element={<ONama />} />
             <Route path="/b2b" element={<BtoB />} />
             <Route path="/kontakt" element={<Kontakt />} />
+            <Route path="/uslovi-koriscenja" element={<UsloviKoriscenja />} />
           </Routes>
         </div>
         <Footer />

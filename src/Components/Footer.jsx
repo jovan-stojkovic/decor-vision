@@ -8,9 +8,7 @@ const Footer = () => {
           <h1>D</h1>
         </div>
         <div className="footer-links">
-          <Link>USLOVI KORIŠĆENJA</Link>
-          <span>|</span>
-          <Link>PRAVILA PRIVATNOSTI</Link>
+          <Link to="/uslovi-koriscenja">USLOVI KORIŠĆENJA | PRAVILA PRIVATNOSTI</Link>
         </div>
         <p className="copyright">© Copyright 2023 DECOR VISION</p>
       </div>
