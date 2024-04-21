@@ -5,22 +5,24 @@ import { Link } from "react-router-dom";
 
 const Pocetna = ({ slides }) => {
   return (
-    <div className="home-page">
+    <div className="home-page page">
       <Slider slides={slides} />
-      <div className="home-page-container">
+      <div className="container">
         <Carousel />
 
-        <Link
-          to="https://www.instagram.com/decorvision.rs/?hl=en"
-          target="blank"
-        >
+        <div className="insta-link-cont">
           <div className="insta-img-container"></div>
-          @decorvision.rs
-        </Link>
+          <Link
+            to="https://www.instagram.com/decorvision.rs/?hl=en"
+            target="blank"
+          >
+            @decorvision.rs
+          </Link>
+        </div>
 
         <Grid />
 
-        <div className="home-page-text">
+        <div className="dole">
           <h3>
             UZ PRIRODNU ELEGANCIJU NAŠIH PROIZVODE DEKORIŠITE INSPIRATIVNO VAŠ
             PROSTOR

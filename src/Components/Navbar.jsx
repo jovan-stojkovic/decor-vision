@@ -37,7 +37,7 @@ const Navbar = () => {
         </Link>
         <div className="nav-links">
           <div
-            className="proizvodi"
+            className="proizvodi-div"
             onMouseEnter={() => handleHover(true)}
             onMouseLeave={() => handleHover(false)}
           >

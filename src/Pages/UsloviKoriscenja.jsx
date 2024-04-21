@@ -1,13 +1,13 @@
 const UsloviKoriscenja = () => {
   return (
     <>
-      <div className="uslovi-koriscenja-page">
-        <div className="uslovi-koriscenja-head head">
+      <div className="uslovi-koriscenja-page page">
+        <div className="head">
           <h3>USLOVI KORIŠĆENJA</h3>
           <div className="arrows"></div>
         </div>
 
-        <div className="uslovi-koriscenja-container">
+        <div className="container">
           <h3>USLOVI KORIŠĆENJA I POLITIKA PRIVATNOSTI</h3>
           <div className="separator"></div>
           <p>

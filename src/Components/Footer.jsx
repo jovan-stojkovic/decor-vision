@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-container">
-        <div className="footer-logo">
-          <h1>D</h1>
-        </div>
-        <div className="footer-links">
-          <Link to="/uslovi-koriscenja">USLOVI KORIŠĆENJA | PRAVILA PRIVATNOSTI</Link>
-        </div>
+      <a href="/" className="footer-logo"></a>
+
+          <Link to="/uslovi-koriscenja" className="uslovi-link">
+            USLOVI KORIŠĆENJA | PRAVILA PRIVATNOSTI
+          </Link>
+
         <p className="copyright">© Copyright 2023 DECOR VISION</p>
-      </div>
+    
     </footer>
   );
 };

@@ -41,7 +41,7 @@ const Forma = () => {
           placeholder="Message*"
         />
 
-        <p className="desc">
+        <p className="saglasnost">
           Saglasan sam sa svim pojedinostima navedenim o korišćenju i upotrebi
           ovog sajta, politikom privatnosti i ostalim poslovnim pravilima, kao
           potrebnim uslovima za našu dalju komunikaciju i saradnju. Ovim putem

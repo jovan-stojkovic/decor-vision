@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const ONama = () => {
   return (
-    <div className="o-nama-page">
-      <div className="o-nama-head head">
+    <div className="o-nama-page page">
+      <div className="head">
         <h3>O NAMA</h3>
         <div className="separator"></div>
         <p className="opis">
@@ -14,9 +14,9 @@ const ONama = () => {
         <div className="arrows"></div>
       </div>
 
-      <div className="o-nama-container">
-        <div className="o-nama-main">
-          <div className="left-side-img"></div>
+      <div className="container">
+        <div className="gore">
+          <div className="left-side"></div>
           <div className="right-side">
             <h3>MI BUDIMO VAŠE ŽELJE I POKLANJAMO VAM SVOJU KREATIVNOST</h3>
             <div className="separator"></div>
@@ -37,14 +37,16 @@ const ONama = () => {
           </div>
         </div>
 
-        <div className="o-nama-ispod">
+        <div className="dole">
           <h3>U SVAKOM TRENUTKU PRUŽAMO VAM PUNO PODRŠKU</h3>
           <div className="separator"></div>
           <p>
             Kontaktirajte nas i zajedno ćemo pretvoriti vaše projekte u
             umetnička dela.
           </p>
-          <Link to="/kontakt">Kontaktirajte nas!</Link>
+          <Link to="/kontakt" className="link-kontakt">
+            Kontaktirajte nas!
+          </Link>
         </div>
 
         <div className="o-nama-grid">
