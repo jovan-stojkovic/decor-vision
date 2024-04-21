@@ -9,12 +9,14 @@ const Pocetna = ({ slides }) => {
       <Slider slides={slides} />
       <div className="home-page-container">
         <Carousel />
-        <div className="insta-container">
+
+        <Link
+          to="https://www.instagram.com/decorvision.rs/?hl=en"
+          target="blank"
+        >
           <div className="insta-img-container"></div>
-          <Link to="https://www.instagram.com/decorvision.rs/?hl=en">
-            @decorvision.rs
-          </Link>
-        </div>
+          @decorvision.rs
+        </Link>
 
         <Grid />
 

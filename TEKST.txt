@@ -1,37 +1,24 @@
-proizvodi u navbaru hover ili klik za dropdown?
-logo
+//////////    TO DO LIST    //////////
+IMPORTI SREDI IH U SVAKOJ STRANICI
+SCSS MIXIN
+SKRATI SCSS
+logo u futeru te vodi na vrh polako
+napravi sto vise komponenti
+
+
+//////////    dizajneru pitanja    //////////
 font
+logo za sajt
+logo za firme
+boje
+boje u futeru, drugacije na razlicitim stranicama
 
-insta logo icon
-
+//////////    pitanja za Acu    //////////
+slike sa instragrama
+naslov ispod u O_NAMA
+podnaslov za KONTAKTI ?
+da li hoce THEME
+da li hoce da menja jezik
+da li da kontakti nesto rade (da otvori link sa mapom...)
 jel su slajderi i karuseli linkovi?
 
-
-
-todo
-
-back to the top
-imports sredi
-
-
-slike sa instagrama?
-
-
-uslovi koriscenja pravila privatnosti na sredini
-
-theme
-
-
-footer boja, generalno sve boje
-
-logo u futeru te vodi na vrh polako
-
-
-naslov ispod u O_NAMA
-
-kontakt podnaslov __________
-
-
-jezik?
-
-da li da kontakti nesto rade
