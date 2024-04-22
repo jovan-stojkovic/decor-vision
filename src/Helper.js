@@ -60,8 +60,9 @@ export const proizvodi = [
   },
 ];
 
-export const musa = [
+export const lapitec = [
   {
+    firma: "Musa",
     ime: "Bianco Alba",
     opis: "Topla osnova, koja vuče na nijansu slonovače, obogaćena širokim i blistavim zlatnim venama koje se graciozno provlače duž površine. Prelepa nijansa koja kao da prikazuje lepotu zore u sebi. Bianco Alba je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "20 mm, 30 mm",
@@ -74,6 +75,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Diana",
     opis: "Čista i blistava bela osnova sa elegantnim preplitanjem vena u nijansama sive. Harmoničan ples između širokih i delikatnih pruga koje se stapaju sa suptilnim i odlučnim zrnima, stvarajući smelu igru kontrasta. Bianco Diana je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "20 mm, 30 mm",
@@ -86,6 +88,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Pandora",
     opis: "Harmoničan susret suprotnosti: isprepletena zrna različitih boja ističu se na pozadini koja spaja dve nijanse bele. Sive i zlatne pruge se sukobljavaju, dajući pikantnu hromatsku notu. Bianco Pandora je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "20 mm, 30 mm",
@@ -98,6 +101,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Atena",
     opis: "Čista, bela Bianco Assoluto osnova i geometrijske vene u svetlo sivoj boji presecaju XXL format ploča na dva dela. Bianco Atena je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "20 mm, 30 mm",
@@ -110,6 +114,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Olimpia",
     opis: "Snažan, autoritativni karakter nijanse sa jedinstvenom osnovom, dobijen izborom različitih dragocenih minerala koji osvetljavaju istaknute vene, okupane rekama svetlo sive. Bianco Olimpia je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "20 mm, 30 mm",
@@ -122,6 +127,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Andromeda",
     opis: "Vene pršte od originalnog, moćnog šarma u različitim nijansama sive, od najsvetlijih i nežnijih tonova do tamnije i grandiozne sive. Bianco Andromeda je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
@@ -134,6 +140,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Angelica",
     opis: "Sa sličnim šarama kao Bianco Serena, ima svetlu bazu i zlatne i ružičaste nijanse u venama, pomešane sa različitim tonovima sive. Bianco Angelica je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
@@ -146,6 +153,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Serena",
     opis: "Muza par ekcellence. Predstavlja bogate, zlatne vene, sa osnovom boje koja teži slonovači. Vijugavost koja pleni, sa bezvremenskim šarmom. Bianco Serena je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
@@ -158,6 +166,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Vittoria",
     opis: "Bianco Vittoria je originalna interpretacija mermernih žilica, laganih i ujednačenih po celoj površini i u srcu ploče. Bianco Vittoria je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12mm, 20 mm, 30 mm",
@@ -170,6 +179,7 @@ export const musa = [
     },
   },
   {
+    firma: "Musa",
     ime: "Bianco Giulia",
     opis: "Ton vena sa tamom i intenzitetom koji daje veoma prirodan efekat, dodajući jedinstvenu ličnost sobama koje obavija. Bianco Giulia je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12mm, 20 mm, 30 mm",
@@ -181,77 +191,95 @@ export const musa = [
         "/src/Assets/proizvodi/Lapitec/Musa/10 bianco giulia/bianco-giulia-zoom-2.jpg",
     },
   },
-];
-
-export const essenza = [
   {
+    firma: "Essenza",
     ime: "Bianco Assoluto",
     opis: "Najbelji od svih materijala. Čistoća i sjaj sijaju u ovoj nijansi, sa svojom belinom i sjajem bez premca. Bianco Assoluto je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
     slike: {
-      patern: "/src/Assets/proizvodi/Lapitec/Essenza/1 bianco assoluto/Bianco Assoluto_Satin(0).jpg",
+      patern:
+        "/src/Assets/proizvodi/Lapitec/Essenza/1 bianco assoluto/Bianco Assoluto_Satin(0).jpg",
       wide: "/src/Assets/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-1(0).jpg",
-      narrow: "/src/Assets/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-2(0).jpg",
+      narrow:
+        "/src/Assets/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-2(0).jpg",
     },
   },
   {
+    firma: "Essenza",
     ime: "Bianco Polare",
     opis: "Jedinstvena nijansa koja dočarava kristalnu lepotu sunčanih glečera, blago zagrevajući najčistiju belu sa ružičastim tonovima. Bianco Polare je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
     slike: {
-      patern: "/src/Assets/proizvodi/Lapitec/Essenza/2 bianco polare/Bianco Polare_Satin.jpg",
+      patern:
+        "/src/Assets/proizvodi/Lapitec/Essenza/2 bianco polare/Bianco Polare_Satin.jpg",
       wide: "/src/Assets/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-1.jpg",
-      narrow: "/src/Assets/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-2.jpg",
+      narrow:
+        "/src/Assets/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-2.jpg",
     },
   },
   {
+    firma: "Essenza",
     ime: "Bianco Crema",
     opis: "Boja koja obavija, fascinira i greje pogled i dodir, Bianco Crema reinterpretira jednu od najklasičnijih nijansi sa karakterističnom mekoćom i toplinom, za obloge ili kuhinje. Bianco Crema je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
     slike: {
-      patern: "/src/Assets/proizvodi/Lapitec/Essenza/3 bianco crema/Bianco Crema_Satin.jpg",
+      patern:
+        "/src/Assets/proizvodi/Lapitec/Essenza/3 bianco crema/Bianco Crema_Satin.jpg",
       wide: "/src/Assets/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-1.jpg",
-      narrow: "/src/Assets/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-2.jpg",
+      narrow:
+        "/src/Assets/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-2.jpg",
     },
   },
   {
+    firma: "Essenza",
     ime: "Terra Avana",
     opis: "Toplina, vitalnost i energija se ogledaju u Terra Avani, boji sa snažnom stilskom ličnošću koja daje suptilne tonove unutrašnjim i spoljašnjim prostorima. Terra Avana je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
     slike: {
-      patern: "/src/Assets/proizvodi/Lapitec/Essenza/4 terra avana/Terra Avana_Satin.jpg",
+      patern:
+        "/src/Assets/proizvodi/Lapitec/Essenza/4 terra avana/Terra Avana_Satin.jpg",
       wide: "/src/Assets/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-1.jpg",
-      narrow: "/src/Assets/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-2.jpg",
+      narrow:
+        "/src/Assets/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-2.jpg",
     },
   },
   {
+    firma: "Essenza",
     ime: "Grigio Cemento",
     opis: "Čvrsta nijansa sa jakom stabilnošću boje. Kao i beton, on je izdržljiv, svestran i otporan. Grigio Cemento je moderna, urbana boja. Grigio Cemento je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
     slike: {
-      patern: "/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/Grigio Cemento_Satin.jpg",
+      patern:
+        "/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/Grigio Cemento_Satin.jpg",
       wide: "/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg",
-      narrow: "/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-2.jpg",
+      narrow:
+        "/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-2.jpg",
     },
   },
   {
+    firma: "Essenza",
     ime: "Nero Antracite",
     opis: "Stil, šarm i privlačnost su suština Nero Antracita. Tamna, ne-ekstremna boja koja nudi svu uobičajenu svestranost Lapitec-a, od sjajnih završnih obrada do hrapavih. Nero Antracite je dostupan u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala. ",
     debljine: "12 mm, 20 mm, 30 mm",
     slike: {
-      patern: "/src/Assets/proizvodi/Lapitec/Essenza/6 nero antacite/Nero Antracite_Satin.jpg",
+      patern:
+        "/src/Assets/proizvodi/Lapitec/Essenza/6 nero antacite/Nero Antracite_Satin.jpg",
       wide: "/src/Assets/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-1.jpg",
-      narrow: "/src/Assets/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-2(0).jpg",
+      narrow:
+        "/src/Assets/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-2(0).jpg",
     },
   },
   {
+    firma: "Essenza",
     ime: "Nero Assoluto",
     opis: "Izuzetan intenzitet i dubina boje za najcrnju crnu koja postoji. Elegancija, modernost i klasa. Rešenje da se svaki prostor izdvoji. Nero Assoluto je dostupan u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "12 mm, 20 mm, 30 mm",
     slike: {
-      patern: "/src/Assets/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg",
+      patern:
+        "/src/Assets/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg",
       wide: "/src/Assets/proizvodi/Lapitec/Essenza/7 nero assoluto/nero-assoluto-zoom-01.jpg",
-      narrow: "/src/Assets/proizvodi/Lapitec/Essenza/7 nero assoluto/nero-assoluto-zoom-02.jpg",
+      narrow:
+        "/src/Assets/proizvodi/Lapitec/Essenza/7 nero assoluto/nero-assoluto-zoom-02.jpg",
     },
   },
 ];

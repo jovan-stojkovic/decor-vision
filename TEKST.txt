@@ -13,6 +13,8 @@ responsivnes
 custom checkbox?
 prevedi fajlove na srpski
 
+da se pojavljuje posle sekund
+
 //////////    dizajneru pitanja    //////////
 font
 logo za sajt

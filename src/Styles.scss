@@ -74,6 +74,13 @@ p {
   cursor: pointer;
 }
 
+.kategorija-info {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: $dark;
+}
+
 //STRANICA
 .page {
   width: 100%;
@@ -709,5 +716,62 @@ footer {
 
   img {
     height: 50px;
+  }
+}
+
+//LAPITEC STRANICA
+.lapitec-page {
+  .head {
+    height: 400px;
+    background-image: url("/src/Assets/backgrounds/14.jpg");
+  }
+
+  .container {
+    .potkategorije {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+
+      .side {
+        width: 100%;
+        aspect-ratio: 1;
+        padding: 10px;
+        @include flex-space;
+        flex-direction: column;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        h3 {
+          margin-bottom: 20px;
+        }
+        
+        .desc {
+          font-size: 1.4rem;
+        }
+
+        .img-container {
+          @include background;
+          width: 100%;
+          height: 50%;
+
+          &.left {
+            background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+          }
+
+          &.right {
+            background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+          }
+        }
+
+        &.right {
+          h3 {
+            text-align: end;
+          }
+
+          .desc {
+            text-align: end;
+          }
+        }
+      }
+    }
   }
 }
