@@ -1,8 +1,5 @@
 //////////    TO DO LIST    //////////
 IMPORTI SREDI IH U SVAKOJ STRANICI
-SCSS MIXIN
-SKRATI SCSS
-logo u futeru te vodi na vrh polako
 napravi sto vise komponenti
 kolacici, raspitaj se
 proizvodi
@@ -12,7 +9,6 @@ spelcheck
 responsivnes
 custom checkbox?
 prevedi fajlove na srpski
-
 da se pojavljuje posle sekund
 
 //////////    dizajneru pitanja    //////////
@@ -34,6 +30,5 @@ da li hoce THEME
 da li hoce da menja jezik
 da li da kontakti nesto rade (da otvori link sa mapom...)
 jel su slajderi i karuseli linkovi?
-
 broj telefona na KONTAKTIRAJTE NAS
 

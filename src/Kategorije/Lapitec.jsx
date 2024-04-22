@@ -51,7 +51,18 @@ const Lapitec = ({ lapitec }) => {
           </div>
         </div>
 
-        <div className="svi-proizvodi-kategorije lapitec"></div>
+        <div className="grid-proizvoda lapitec">
+          {lapitec.map(({ ime, slike, index, firma }) => (
+            <div className="proizvod" key={index}>
+              <div className="img-container">
+                <img src={slike.narrow} alt={ime} />
+                </div>
+                <p className="ime-proizvoda">{ime}</p>
+                <p className="proizvodjac">{firma}</p>
+              
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

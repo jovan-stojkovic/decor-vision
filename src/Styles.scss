@@ -144,6 +144,102 @@ p {
       flex-direction: column;
       align-items: center;
     }
+
+    .potkategorije {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+
+      .side {
+        width: 100%;
+        aspect-ratio: 1;
+        padding: 10px;
+        @include flex-space;
+        flex-direction: column;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5px;
+
+        h3 {
+          margin-bottom: 20px;
+        }
+
+        .desc {
+          font-size: 1.4rem;
+        }
+
+        .img-container {
+          @include background;
+          width: 100%;
+          height: 50%;
+
+          &.left {
+            background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+          }
+
+          &.right {
+            background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+          }
+        }
+
+        &.right {
+          h3 {
+            text-align: end;
+          }
+
+          .desc {
+            text-align: end;
+          }
+        }
+      }
+    }
+
+    .grid-proizvoda {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 100px 0;
+
+      .proizvod {
+        width: 23%;
+        margin-bottom: 50px;
+
+        .img-container {
+          width: 100%;
+          aspect-ratio: 1;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            filter: opacity(0.9);
+            transition: 0.2s;
+            border-radius: 5px;
+
+            &:hover {
+              filter: opacity(1);
+              transition: 0.2s;
+              scale: 1.005;
+              cursor: pointer;
+            }
+          }
+        }
+
+        p.ime-proizvoda {
+          text-align: center;
+          margin: 15px 0;
+          font-size: 1.3rem;
+        }
+
+        p.proizvodjac {
+          margin: 0;
+          text-align: center;
+          font-size: 1rem;
+          margin-top: -15px;
+          color: gray;
+        }
+      }
+    }
   }
 }
 
@@ -280,6 +376,15 @@ p {
 
   .head {
     background-image: url("src/Assets/backgrounds/1.jpg");
+
+    h3 {
+      opacity: 0;
+      transition: opacity 2s ease;
+
+      &.visible {
+        opacity: 1;
+      }
+    }
   }
 
   .container {
@@ -373,11 +478,12 @@ p {
 
       .btob-grid-img {
         aspect-ratio: 1;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         filter: saturate(0);
         transition: 0.2s;
         background-position: center;
         background-size: contain;
+        border-radius: 5px;
 
         &:hover {
           transition: 0.2s;
@@ -726,52 +832,11 @@ footer {
     background-image: url("/src/Assets/backgrounds/14.jpg");
   }
 
-  .container {
-    .potkategorije {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
+  .img-container.left {
+    background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+  }
 
-      .side {
-        width: 100%;
-        aspect-ratio: 1;
-        padding: 10px;
-        @include flex-space;
-        flex-direction: column;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-        h3 {
-          margin-bottom: 20px;
-        }
-        
-        .desc {
-          font-size: 1.4rem;
-        }
-
-        .img-container {
-          @include background;
-          width: 100%;
-          height: 50%;
-
-          &.left {
-            background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
-          }
-
-          &.right {
-            background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
-          }
-        }
-
-        &.right {
-          h3 {
-            text-align: end;
-          }
-
-          .desc {
-            text-align: end;
-          }
-        }
-      }
-    }
+  .img-container.right {
+    background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
   }
 }
