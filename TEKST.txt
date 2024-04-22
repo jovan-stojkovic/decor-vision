@@ -11,6 +11,7 @@ funkcionalna forma
 spelcheck
 responsivnes
 custom checkbox?
+prevedi fajlove na srpski
 
 //////////    dizajneru pitanja    //////////
 font
