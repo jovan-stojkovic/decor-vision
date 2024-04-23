@@ -83,7 +83,6 @@ p {
 
 //STRANICA
 .page {
-  width: 100%;
 
   .head {
     @include background;
@@ -91,6 +90,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("/src/Assets/backgrounds/14.jpg");
 
     h3 {
       font-weight: 400;
@@ -126,7 +126,6 @@ p {
 
       .left-side {
         width: 100%;
-        background-color: beige;
         aspect-ratio: 1;
         @include background;
       }
@@ -171,14 +170,6 @@ p {
           @include background;
           width: 100%;
           height: 50%;
-
-          &.left {
-            background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
-          }
-
-          &.right {
-            background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
-          }
         }
 
         &.right {
@@ -198,10 +189,15 @@ p {
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 100px 0;
+      gap: 37.3px;
+
+      &:after {
+        content: "";
+        flex: auto;
+      }
 
       .proizvod {
         width: 23%;
-        margin-bottom: 50px;
 
         .img-container {
           width: 100%;
@@ -391,17 +387,16 @@ p {
     .proizvodi-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 70px;
+      gap: 40px;
 
       .jedan-proizvod {
-        aspect-ratio: 1;
 
         .proizvod-img-cont {
-          height: 100%;
           border-radius: 5px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           filter: opacity(0.7);
           @include background;
+          aspect-ratio: 1;
 
           &:hover {
             filter: opacity(1);
@@ -829,14 +824,34 @@ footer {
 .lapitec-page {
   .head {
     height: 400px;
-    background-image: url("/src/Assets/backgrounds/14.jpg");
   }
 
-  .img-container.left {
-    background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+  .img-container {
+
+    &.left {
+      background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+    }
+
+    &.right {
+      background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+    }
+  }
+}
+
+//LATHO STRANICA
+.latho-page {
+  .head {
+    height: 400px;
   }
 
-  .img-container.right {
-    background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+  #move-img-container-l {
+    background-image: url("/src/Assets/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+    height: 70%;
+    background-size: fill;
+  }
+
+  #move-img-container-r {
+    background-image: url("/src/Assets/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+    height: 70%;
   }
 }

@@ -55,7 +55,7 @@ export const proizvodi = [
     text: "Tapete",
   },
   {
-    url: "https://woodsteel.rs/wp-content/uploads/2022/12/jednostavan-oblik-trpezarijskog-stola-izradjen-po-meri-woodsteel.jpg",
+    url: "https://infiniture.rs/wp-content/uploads/2021/08/sto-lora.jpg",
     text: "Stolovi",
   },
 ];
@@ -283,3 +283,362 @@ export const lapitec = [
     },
   },
 ];
+
+export const lathoMilled = [
+  {
+    ime: "Asolo",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/asolo/fresati-latho-asolo-dark-900x900-1.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/asolo/fresati-latho-asolo-medio-MDF-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/asolo/fresati-latho-B-asolo-medio-850x520-1.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/asolo/technical_asolo.jpg",
+    },
+  },
+
+  {
+    ime: "Capri",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Capri/fresati-latho-capri-nero-900x900-1.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Capri/fresati-latho-capri-nero-TRUCIOLARE-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Capri/fresati-latho-B-capri-medio-850x520-1.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Capri/technical_capri.jpg",
+    },
+  },
+  {
+    ime: "Everest",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-fronte.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-fronte-sch-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-iso-1024x640.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Everest/technical_Everest.jpg",
+    },
+  },
+  {
+    ime: "Firenze",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-900x900-1.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-MDF-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-1280x800-1-1024x640.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Firenze/technical_Firenze.jpg",
+    },
+  },
+  {
+    ime: "Grappa",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-900x900.jpg.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-MULTISTRATO1-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-1280x800-1-1024x640.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Grappa/technical_Grappa.jpg",
+    },
+  },
+  {
+    ime: "K2",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-fronte.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-fronte-sch.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-iso-1024x640.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/K2/technical_K2.jpg",
+    },
+  },
+  {
+    ime: "Milano",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Milano/fresati-latho-milano-900x900.jpg.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Milano/fresati-latho-milano-iso-MULTISTRATO2-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Milano/fresati-latho-milano-chiaro-1280x800-1-1024x640.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Milano/technical_Milano.jpg",
+    },
+  },
+  {
+    ime: "Portofino",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-grigio-900x900.jpg.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-chiaro-iso-MDF-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-grigio-1280x800-1-1024x640.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Portofino/technical_Portofino.jpg",
+    },
+  },
+  {
+    ime: "Roma",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Roma/fresati-latho-roma-scuro-900x900.jpg.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Roma/fresati-latho-roma-chiaro-iso-MULTISTRATO2-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Roma/fresati-latho-B-roma-scura-850x520-1.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Roma/technical_Roma.jpg",
+    },
+  },
+  {
+    ime: "Venezia",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Venezia/fresati-latho-venezia-900x900-3.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Venezia/fresati-latho-venezia-iso-MDF-1024x678-1.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Venezia/fresati-latho-B-venezia-850x520-1.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Venezia/technical_Venezia.jpg",
+    },
+  },
+  {
+    ime: "Verona",
+    slike: {
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-fronte.jpg",
+      strana:
+        "/src/Assets/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-fronte-sch.jpg",
+      patern:
+        "/src/Assets/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-iso-1024x640.jpg",
+      tech: "/src/Assets/proizvodi/Latho/Milled/Verona/technical_Verona.jpg",
+    },
+  },
+];
+
+export const lathoMilledInfo = {
+  firma: "Milled",
+  varijante:
+    "Hrast, američki orah, breza, tikovina, ALPI drvo, ostale opcije na zahtev",
+  podrška: "Nazad",
+  materijali: "Šperploča, mdf ili iverica",
+  obrada: "Trodimenzionalna obrada za moderniji dizajn.",
+  ivice: "Dostupne ivice.",
+};
+
+export const lathoMove = [
+  {
+    ime: "XX",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move XX/pann-move-XX-testa.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move XX/pann-move-XX-iso.jpg",
+    },
+  },
+  {
+    ime: "LOFT",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Loft/pann-move-loft-testa.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg",
+    },
+  },
+  {
+    ime: "CHAIN",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Chain/pann-move-chain-testa.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move Chain/pann-move-chain-iso.jpg",
+    },
+  },
+  {
+    ime: "J",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move J/pann-move-J-iso.jpg",
+      wide: "/",
+    },
+  },
+  {
+    ime: "X",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move X/move-X-index-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move X/move-X-head-bnr.jpg",
+    },
+  },
+  {
+    ime: "A",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move A/A-move-rid-1200x1200px-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move A/A-tavolino.jpg",
+    },
+  },
+  {
+    ime: "A+A",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move A+A/A-A-move-1200x1200-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move A+A/A-A-porta-uff.jpg",
+    },
+  },
+  {
+    ime: "B",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move B/B-move-virato-1200x1200-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move B/B-ambient.jpg",
+    },
+  },
+  {
+    ime: "B+B",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move B+B/camp-B-B-banner.jpg",
+      wide: "/",
+    },
+  },
+  {
+    ime: "N",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move N/move-N-index-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move N/move-N-head-bnr.jpg",
+    },
+  },
+  {
+    ime: "C",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move C/move-C-14-1200pxx1200-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move C/C-ambient.jpg",
+    },
+  },
+  {
+    ime: "D",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move D/move-D-tecnica-brown-1200px-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move D/D-ambient.jpg",
+    },
+  },
+  {
+    ime: "D+D",
+    slike: {
+      wide: "/src/Assets/proizvodi/Latho/Move/Move D+D/ambient-D-D.jpg",
+    },
+  },
+  {
+    ime: "E",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move E/move-E-12-1200px-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move E/E-ambient.jpg",
+    },
+  },
+  {
+    ime: "F",
+    slike: {
+      kvadrat: "",
+      wide: "",
+    },
+  },
+  {
+    ime: "M",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move M/move-M-36-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move M/M-move.jpg",
+    },
+  },
+  {
+    ime: "G",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move G/move-G-tecnica-1200px-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move G/G-move-bagno.jpg",
+    },
+  },
+  {
+    ime: "W",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move W/stilo-Pagina-9-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move W/Y-move-amb.jpg",
+    },
+  },
+  {
+    ime: "H",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move H/camp-H-banner.jpg",
+      wide: "/",
+    },
+  },
+  {
+    ime: "L",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move L/move-L-tecnica-big-1200px-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move L/L-move-L-amb.jpg",
+    },
+  },
+  {
+    ime: "P",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move P/P-move1200-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move P/P-ambient.jpg",
+    },
+  },
+  {
+    ime: "MOVE CARBON PLUS(U+)",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Carbon Plus (U+)/carbon-plus-112300.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move Carbon Plus (U+)/move-CARBON-head-bnr.jpg",
+    },
+  },
+  {
+    ime: "Q",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Q/Q-move-rid-1200px-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg",
+    },
+  },
+  {
+    ime: "R",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move R/R-move1200px-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move R/R-ambient-R.jpg",
+    },
+  },
+  {
+    ime: "S",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move S/S-move-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move S/S-ambient-S.jpg",
+    },
+  },
+  {
+    ime: "K",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move K/move-K-3-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move K/K-move-k.jpg",
+    },
+  },
+  {
+    ime: "T",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move T/move-T-index-900x900.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move T/T-move-amb.jpg",
+    },
+  },
+  {
+    ime: "Y",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Y/move-Y-head-bnr.jpg",
+      wide: "/src/Assets/proizvodi/Latho/Move/Move Y/move-Y-900x900.jpg",
+    },
+  },
+  {
+    ime: "Z",
+    slike: {
+      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Z/camp-Z-banner.jpg",
+      wide: "/",
+    },
+  },
+];
+
+export const lathoMoveInfo = {
+  firma: "Move",
+  info: "Korišćenjem posebnih tehnologija, površine se oblikuju i dobijaju se različite teksture. Paneli su izrađeni od laminiranog teksturisanog furnira, sa ledjima od MDF-a. Ledja mogu da budu i od iverice ili šperploče, u verzijama standardne, vodootporne ili vatrootporne.",
+  debljina: "od 1,2 mm do 80 mm, najčešće se koristi 18mm.",
+  dimenzija:
+    "2570×1300 mm, a idealan format 2440×1220 mm. Na upit odredjeni modeli mogu da budu 3000mm.",
+};

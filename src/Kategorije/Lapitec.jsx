@@ -1,13 +1,6 @@
 const Lapitec = ({ lapitec }) => {
   return (
     <div className="lapitec-page page">
-      {/* {lapitec.map((item, index) => (
-            <div className="eto">
-              <h1>{item.firma}</h1>
-              <p key={index}>{item.ime}</p>
-              <img src={item.slike.narrow} alt={item.ime} />
-            </div>
-          ))} */}
 
       <div className="head">
         <h3>Lapitec</h3>

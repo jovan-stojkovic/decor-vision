@@ -19,7 +19,15 @@ import DrveniPaneli from "./Kategorije/DrveniPaneli";
 import Tapete from "./Kategorije/Tapete";
 import Stolovi from "./Kategorije/Stolovi";
 import DrveniFurniri from "./Kategorije/DrveniFurniri";
-import { lapitec, slides, proizvodi } from "./Helper";
+import {
+  lapitec,
+  slides,
+  proizvodi,
+  lathoMilled,
+  lathoMilledInfo,
+  lathoMove,
+  lathoMoveInfo,
+} from "./Helper";
 
 const App = () => {
   return (
@@ -43,7 +51,17 @@ const App = () => {
               path="/proizvodi/Lapitec"
               element={<Lapitec lapitec={lapitec} />}
             />
-            <Route path="/proizvodi/Kvarc" element={<Kvarc />} />
+            <Route
+              path="/proizvodi/Kvarc"
+              element={
+                <Kvarc
+                  lathoMilled={lathoMilled}
+                  lathoMilledInfo={lathoMilledInfo}
+                  lathoMove={lathoMove}
+                  lathoMoveInfo={lathoMoveInfo}
+                />
+              }
+            />
             <Route
               path="/proizvodi/Porcelanske ploče"
               element={<PorcelanskePloce />}
