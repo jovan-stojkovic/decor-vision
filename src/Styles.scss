@@ -855,3 +855,43 @@ footer {
     height: 70%;
   }
 }
+
+//KAMENI FURNIRI PAGE
+
+.kameni-furniri-page {
+  .head {
+    height: 400px;
+  }
+
+  a {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  ul {
+    margin-left: 75px;
+    li::marker{
+      color: $main-green;
+    }
+  }
+}
+
+//TAPETE
+.tapete-page {
+  .head {
+    height: 400px;
+  }
+
+  a {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #tapeta {
+    width: 48%;
+  }
+}

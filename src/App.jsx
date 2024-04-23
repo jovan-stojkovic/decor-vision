@@ -12,7 +12,7 @@ import UsloviKoriscenja from "./Pages/UsloviKoriscenja";
 import Lapitec from "./Kategorije/Lapitec";
 import Kvarc from "./Kategorije/Kvarc";
 import PorcelanskePloce from "./Kategorije/PorcelanskePloce";
-import KameniFurnir from "./Kategorije/KameniFurnir";
+import KameniFurniri from "./Kategorije/KameniFurniri";
 import Plocice from "./Kategorije/Plocice";
 import Parket from "./Kategorije/Parket";
 import DrveniPaneli from "./Kategorije/DrveniPaneli";
@@ -20,6 +20,7 @@ import Tapete from "./Kategorije/Tapete";
 import Stolovi from "./Kategorije/Stolovi";
 import DrveniFurniri from "./Kategorije/DrveniFurniri";
 import {
+  noIMG,
   lapitec,
   slides,
   proizvodi,
@@ -27,6 +28,7 @@ import {
   lathoMilledInfo,
   lathoMove,
   lathoMoveInfo,
+  tapete,
 } from "./Helper";
 
 const App = () => {
@@ -49,7 +51,7 @@ const App = () => {
 
             <Route
               path="/proizvodi/Lapitec"
-              element={<Lapitec lapitec={lapitec} />}
+              element={<Lapitec lapitec={lapitec} noIMG={noIMG} />}
             />
             <Route
               path="/proizvodi/Kvarc"
@@ -59,6 +61,7 @@ const App = () => {
                   lathoMilledInfo={lathoMilledInfo}
                   lathoMove={lathoMove}
                   lathoMoveInfo={lathoMoveInfo}
+                  noIMG={noIMG}
                 />
               }
             />
@@ -66,7 +69,10 @@ const App = () => {
               path="/proizvodi/Porcelanske ploče"
               element={<PorcelanskePloce />}
             />
-            <Route path="/proizvodi/Kameni furnir" element={<KameniFurnir />} />
+            <Route
+              path="/proizvodi/Kameni furniri"
+              element={<KameniFurniri />}
+            />
             <Route path="/proizvodi/Pločice" element={<Plocice />} />
             <Route path="/proizvodi/Parket" element={<Parket />} />
             <Route path="/proizvodi/Drveni paneli" element={<DrveniPaneli />} />
@@ -74,7 +80,7 @@ const App = () => {
               path="/proizvodi/Drveni furniri"
               element={<DrveniFurniri />}
             />
-            <Route path="/proizvodi/Tapete" element={<Tapete />} />
+            <Route path="/proizvodi/Tapete" element={<Tapete tapete={ tapete } />} />
             <Route path="/proizvodi/Stolovi" element={<Stolovi />} />
           </Routes>
         </div>

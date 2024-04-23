@@ -1,3 +1,6 @@
+export const noIMG =
+  "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg";
+
 export const slides = [
   {
     url: "src/Assets/slajder/1.jpg",
@@ -434,21 +437,24 @@ export const lathoMove = [
   {
     ime: "XX",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move XX/pann-move-XX-testa.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move XX/pann-move-XX-testa.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move XX/pann-move-XX-iso.jpg",
     },
   },
   {
     ime: "LOFT",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Loft/pann-move-loft-testa.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move Loft/pann-move-loft-testa.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg",
     },
   },
   {
     ime: "CHAIN",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Chain/pann-move-chain-testa.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move Chain/pann-move-chain-testa.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move Chain/pann-move-chain-iso.jpg",
     },
   },
@@ -462,28 +468,32 @@ export const lathoMove = [
   {
     ime: "X",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move X/move-X-index-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move X/move-X-index-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move X/move-X-head-bnr.jpg",
     },
   },
   {
     ime: "A",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move A/A-move-rid-1200x1200px-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move A/A-move-rid-1200x1200px-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move A/A-tavolino.jpg",
     },
   },
   {
     ime: "A+A",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move A+A/A-A-move-1200x1200-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move A+A/A-A-move-1200x1200-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move A+A/A-A-porta-uff.jpg",
     },
   },
   {
     ime: "B",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move B/B-move-virato-1200x1200-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move B/B-move-virato-1200x1200-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move B/B-ambient.jpg",
     },
   },
@@ -497,21 +507,24 @@ export const lathoMove = [
   {
     ime: "N",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move N/move-N-index-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move N/move-N-index-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move N/move-N-head-bnr.jpg",
     },
   },
   {
     ime: "C",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move C/move-C-14-1200pxx1200-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move C/move-C-14-1200pxx1200-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move C/C-ambient.jpg",
     },
   },
   {
     ime: "D",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move D/move-D-tecnica-brown-1200px-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move D/move-D-tecnica-brown-1200px-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move D/D-ambient.jpg",
     },
   },
@@ -524,7 +537,8 @@ export const lathoMove = [
   {
     ime: "E",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move E/move-E-12-1200px-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move E/move-E-12-1200px-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move E/E-ambient.jpg",
     },
   },
@@ -545,14 +559,16 @@ export const lathoMove = [
   {
     ime: "G",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move G/move-G-tecnica-1200px-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move G/move-G-tecnica-1200px-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move G/G-move-bagno.jpg",
     },
   },
   {
     ime: "W",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move W/stilo-Pagina-9-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move W/stilo-Pagina-9-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move W/Y-move-amb.jpg",
     },
   },
@@ -566,7 +582,8 @@ export const lathoMove = [
   {
     ime: "L",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move L/move-L-tecnica-big-1200px-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move L/move-L-tecnica-big-1200px-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move L/L-move-L-amb.jpg",
     },
   },
@@ -580,21 +597,24 @@ export const lathoMove = [
   {
     ime: "MOVE CARBON PLUS(U+)",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Carbon Plus (U+)/carbon-plus-112300.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move Carbon Plus (U+)/carbon-plus-112300.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move Carbon Plus (U+)/move-CARBON-head-bnr.jpg",
     },
   },
   {
     ime: "Q",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move Q/Q-move-rid-1200px-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move Q/Q-move-rid-1200px-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg",
     },
   },
   {
     ime: "R",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move R/R-move1200px-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move R/R-move1200px-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move R/R-ambient-R.jpg",
     },
   },
@@ -615,7 +635,8 @@ export const lathoMove = [
   {
     ime: "T",
     slike: {
-      kvadrat: "/src/Assets/proizvodi/Latho/Move/Move T/move-T-index-900x900.jpg",
+      kvadrat:
+        "/src/Assets/proizvodi/Latho/Move/Move T/move-T-index-900x900.jpg",
       wide: "/src/Assets/proizvodi/Latho/Move/Move T/T-move-amb.jpg",
     },
   },
@@ -642,3 +663,41 @@ export const lathoMoveInfo = {
   dimenzija:
     "2570×1300 mm, a idealan format 2440×1220 mm. Na upit odredjeni modeli mogu da budu 3000mm.",
 };
+
+export const tapete = [
+  {
+    ime: "Shades of colour",
+    slika: "/src/Assets/proizvodi/Tapete/Decoprint/Shades of colour.jpg",
+    url: "https://www.decoprintwallcoverings.com/en/products/shades-of-colour",
+  },
+  {
+    ime: "Soleado",
+    slika: "/src/Assets/proizvodi/Tapete/Decoprint/Soleado.jpg",
+    url: "https://www.decoprintwallcoverings.com/en/products/soleado",
+  },
+  {
+    ime: "Allure",
+    slika: "/src/Assets/proizvodi/Tapete/Decoprint/Allure.jpg",
+    url: "https://www.decoprintwallcoverings.com/en/products/allure",
+  },
+  {
+    ime: "Brazil",
+    slika: "/src/Assets/proizvodi/Tapete/Decoprint/Brazil.jpg",
+    url: "https://www.decoprintwallcoverings.com/en/products/brazil",
+  },
+  {
+    ime: "Reflect",
+    slika: "/src/Assets/proizvodi/Tapete/Decoprint/Reflect.jpg",
+    url: "https://www.decoprintwallcoverings.com/en/products/reflect",
+  },
+  {
+    ime: "Tahiti",
+    slika: "/src/Assets/proizvodi/Tapete/Decoprint/Tahiti.jpg",
+    url: "https://www.decoprintwallcoverings.com/en/products/tahiti",
+  },
+  {
+    ime: "Essentials",
+    slika: "/src/Assets/proizvodi/Tapete/Decoprint/Essentials.jpg",
+    url: "https://www.decoprintwallcoverings.com/en/products/essentials",
+  },
+];

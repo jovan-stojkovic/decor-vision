@@ -20,7 +20,7 @@ const Navbar = () => {
     "Lapitec",
     "Kvarc",
     "Porcelanske ploče",
-    "Kameni furnir",
+    "Kameni furniri",
     "Pločice",
     "Parket",
     "Drveni paneli",
