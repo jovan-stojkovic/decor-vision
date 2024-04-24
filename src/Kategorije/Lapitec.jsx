@@ -1,7 +1,8 @@
-const Lapitec = ({ lapitec }) => {
+import { Link } from "react-router-dom";
+
+const Lapitec = ({ lapitec, noIMG }) => {
   return (
     <div className="lapitec-page page">
-
       <div className="head">
         <h3>Lapitec</h3>
       </div>
@@ -45,16 +46,36 @@ const Lapitec = ({ lapitec }) => {
         </div>
 
         <div className="grid-proizvoda lapitec">
-          {lapitec.map(({ ime, slike, index, firma }) => (
-            <div className="proizvod" key={index}>
-              <div className="img-container">
-                <img src={slike.narrow} alt={ime} />
-                </div>
+          {lapitec.map(
+            ({ ime, index, firma, patern, wide, narrow, opis, debljine }) => (
+              <div className="proizvod" key={index}>
+                <Link
+                  to={`/proizvodi/lapitec/${firma}/${ime}`}
+                  state={{
+                    proizvod: {
+                      ime,
+                      index,
+                      firma,
+                      opis,
+                      debljine,
+                      narrow,
+                      patern,
+                      wide,
+                    },
+                  }}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  <div className="img-container">
+                    <img src={narrow || noIMG} alt={ime} />
+                  </div>
+                </Link>
                 <p className="ime-proizvoda">{ime}</p>
                 <p className="proizvodjac">{firma}</p>
-              
-            </div>
-          ))}
+              </div>
+            )
+          )}
         </div>
       </div>
     </div>

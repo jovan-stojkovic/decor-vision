@@ -4,7 +4,7 @@ napravi sto vise komponenti
 kolacici, raspitaj se
 proizvodi
 carousel na prvoj stranici
-funkcionalna forma
+da se posalje mejl na submit
 spelcheck
 responsivnes
 custom checkbox?
@@ -30,6 +30,8 @@ jel su slajderi i karuseli linkovi?
 broj telefona na KONTAKTIRAJTE NAS
 jel se tako zove AA XX L M
 broj telefona
+
+o-nama stranica da li su instagram linkovi ili samo slike?
 
 FALI F- slike
 

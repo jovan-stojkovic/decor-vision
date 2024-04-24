@@ -74,7 +74,7 @@ const Navbar = () => {
           <NavLink className="nav-link" to="/kontakt">
             KONTAKT
           </NavLink>
-          <a href={instaPage} target="_blank" id="insta-link"></a>
+          <Link to={instaPage} target="_blank" id="insta-link"/>
         </div>
       </div>
     </nav>

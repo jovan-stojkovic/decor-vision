@@ -11,7 +11,6 @@ const BtoB = () => {
       </div>
 
       <div className="btob-container container">
-
         <div className="btob-gore gore">
           <div className="left-side"></div>
           <div className="right-side">
@@ -39,7 +38,15 @@ const BtoB = () => {
             Kontaktirajte nas i zajedno ćemo pretvoriti vaše projekte u
             umetnička dela.
           </p>
-          <Link to="/kontakt" className="link-kontakt">Kontaktirajte nas!</Link>
+          <Link
+            to="/kontakt"
+            className="link-kontakt"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            Kontaktirajte nas!
+          </Link>
         </div>
 
         <div className="btob-grid">

@@ -30,6 +30,7 @@ import {
   lathoMoveInfo,
   tapete,
 } from "./Helper";
+import Proizvod from "./Pages/Proizvod";
 
 const App = () => {
   return (
@@ -39,7 +40,7 @@ const App = () => {
         <BackToTopButton />
         <div className="app">
           <Routes>
-            <Route path="/" element={<Pocetna slides={slides} />} />
+            <Route exact path="/" element={<Pocetna slides={slides} />} />
             <Route
               path="/proizvodi"
               element={<Proizvodi proizvodi={proizvodi} />}
@@ -53,6 +54,12 @@ const App = () => {
               path="/proizvodi/Lapitec"
               element={<Lapitec lapitec={lapitec} noIMG={noIMG} />}
             />
+
+            <Route
+              path="/proizvodi/Lapitec/:firma/:ime"
+              element={<Proizvod lapitec={lapitec} noIMG={noIMG} />}
+            />
+
             <Route
               path="/proizvodi/Kvarc"
               element={
@@ -80,7 +87,10 @@ const App = () => {
               path="/proizvodi/Drveni furniri"
               element={<DrveniFurniri />}
             />
-            <Route path="/proizvodi/Tapete" element={<Tapete tapete={ tapete } />} />
+            <Route
+              path="/proizvodi/Tapete"
+              element={<Tapete tapete={tapete} />}
+            />
             <Route path="/proizvodi/Stolovi" element={<Stolovi />} />
           </Routes>
         </div>

@@ -6,7 +6,11 @@ const ProizvodiGrid = ({ proizvodi }) => {
       <div className="proizvodi-grid">
         {proizvodi.map((item, index) => (
           <div className="jedan-proizvod">
-            <Link key={index} to={`/proizvodi/${item.text}`}>
+            <Link key={index} to={`/proizvodi/${item.text}`} 
+            onClick={() => {
+              window.scrollTo(0,0)
+            }}
+            >
               <div
                 className="proizvod-img-cont"
                 style={{ backgroundImage: `url(${item.url})` }}

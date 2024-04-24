@@ -5,7 +5,11 @@ const Footer = () => {
     <footer>
       <a href="/" className="footer-logo"></a>
 
-          <Link to="/uslovi-koriscenja" className="uslovi-link">
+          <Link to="/uslovi-koriscenja" className="uslovi-link"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          >
             USLOVI KORIŠĆENJA | PRAVILA PRIVATNOSTI
           </Link>
 

@@ -397,7 +397,7 @@ p {
       .jedan-proizvod {
         .proizvod-img-cont {
           border-radius: 5px;
-          box-shadow: $shadow-strong;
+          box-shadow: $shadow-light;
           filter: opacity(0.7);
           @include background;
           aspect-ratio: 1;
@@ -405,7 +405,11 @@ p {
           &:hover {
             filter: opacity(1);
             transition: 0.2s;
-            scale: 1.005;
+            box-shadow: $shadow-strong;
+          }
+
+          &:active {
+            box-shadow: $shadow-light;
           }
         }
 
@@ -433,26 +437,23 @@ p {
 
   .o-nama-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     .o-nama-grid-img {
       aspect-ratio: 1;
       @include background;
 
       &.one {
-        background-image: url("src/Assets/backgrounds/3.jpg");
+        background-image: url("/src/Assets/instagram/6.jpg");
       }
       &.two {
-        background-image: url("src/Assets/backgrounds/4.jpg");
+        background-image: url("/src/Assets/instagram/7.jpg");
       }
       &.three {
-        background-image: url("src/Assets/backgrounds/5.jpg");
+        background-image: url("/src/Assets/instagram/8.jpg");
       }
       &.four {
-        background-image: url("src/Assets/backgrounds/6.jpg");
-      }
-      &.five {
-        background-image: url("src/Assets/backgrounds/7.jpg");
+        background-image: url("/src/Assets/instagram/9.jpg");
       }
     }
   }
@@ -487,8 +488,12 @@ p {
         &:hover {
           transition: 0.2s;
           filter: saturate(1);
-          scale: 1.02;
           cursor: pointer;
+          box-shadow: $shadow-strong;
+        }
+
+        &:active {
+          box-shadow: $shadow-light;
         }
 
         &.one {
@@ -953,5 +958,218 @@ footer {
 
   #tapeta {
     width: 48%;
+  }
+}
+
+.proizvod-page {
+  .proizvod-head {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .proizvod-naslov {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 400px;
+      height: 100px;
+      text-align: center;
+      background-color: $text-background;
+      padding: 10px;
+      border-radius: 10px;
+
+      h3 {
+        color: $almost-white;
+      }
+
+      p {
+        margin: 0;
+        color: $almost-white;
+        text-align: center;
+      }
+    }
+  }
+
+  .proizvod-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .grid-img-container {
+      width: 100%;
+      height: auto;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #grid-one {
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      height: 100%;
+        width: 100%;
+    }
+
+    #grid-two {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column: 3;
+      
+    }
+
+    #grid-three {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      aspect-ratio: 1;
+    }
+
+    #grid-four {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+
+  h3 {
+    color: $main-green;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 100%;
+
+    .inputi {
+      width: 100%;
+      height: 50px;
+      background-color: $light-blue;
+      padding: 0 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      border: 2px solid $light-blue;
+
+      &:hover {
+        box-shadow: $shadow-light;
+      }
+
+      &#message {
+        height: 400px;
+        padding-top: 10px;
+        word-wrap: break-word;
+      }
+
+      &::placeholder {
+        font-family: $font;
+      }
+    }
+
+    p.error {
+      text-align: right;
+      font-size: 0.7rem;
+      margin: 0;
+      color: red;
+      height: 25px;
+
+      &.check {
+        text-align: left;
+      }
+    }
+
+    .saglasnost {
+      text-align: justify;
+      font-size: 1rem;
+      color: gray;
+      margin-bottom: 15px;
+    }
+
+    #checkbox {
+      accent-color: $main-green;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .checkbox-label {
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 100%;
+      background-color: $main-green;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .proizvod-success {
+    padding: 50px;
+    @include flex-center;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    background-color: $light-blue;
+
+    .success-img-cont {
+      @include background;
+      background-image: url("/src/Assets/logos/success.svg");
+      height: 300px;
+      aspect-ratio: 1;
+    }
+
+    .p-success {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 80%;
+      background-color: $main-green;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
   }
 }

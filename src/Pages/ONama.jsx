@@ -44,7 +44,13 @@ const ONama = () => {
             Kontaktirajte nas i zajedno ćemo pretvoriti vaše projekte u
             umetnička dela.
           </p>
-          <Link to="/kontakt" className="link-kontakt">
+          <Link
+            to="/kontakt"
+            className="link-kontakt"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
             Kontaktirajte nas!
           </Link>
         </div>
@@ -54,7 +60,6 @@ const ONama = () => {
           <div className="o-nama-grid-img two"></div>
           <div className="o-nama-grid-img three"></div>
           <div className="o-nama-grid-img four"></div>
-          <div className="o-nama-grid-img five"></div>
         </div>
       </div>
     </div>

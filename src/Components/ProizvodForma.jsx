@@ -3,16 +3,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
 
-const Forma = () => {
+const ProizvodForma = () => {
   const [success, setSuccess] = useState(false);
-
   const schema = yup.object().shape({
-    fullName: yup.string().required("Polje ne sme ostati prazno"),
-    email: yup
-      .string()
-      .email("Molimo Vas unesite ispravnu email adresu")
-      .required("Polje ne sme ostati prazno"),
-    subject: yup.string().required("Polje ne sme ostati prazno"),
+    ime: yup.string().required("Polje ne sme ostati prazno"),
+    email: yup.string().email("Molimo Vas unesite ispravnu email adresu"),
     text: yup.string().required("Polje ne sme ostati prazno"),
     agreement: yup.bool().oneOf([true], "Morate prihvatiti"),
   });
@@ -31,9 +26,9 @@ const Forma = () => {
   };
 
   return (
-    <div className="forma">
+    <div className="forma" id="grid-two">
       {success ? (
-        <div className="success">
+        <div className="proizvod-success">
           <div className="success-img-cont"></div>
           <p className="p-success">
             Uspešno ste poslali poruku. Naš tim će Vam odgovoriti u najkraćem
@@ -48,54 +43,37 @@ const Forma = () => {
         </div>
       ) : (
         <>
-          <h3>VAŠA DEKORATIVNA AVANTURA POČINJE OVDE</h3>
-          <div className="separator"></div>
-          <p>
-            Radujemo se razmeni ideja o vašem prostoru! Ako želite da oživite
-            svoj dom ili poslovni prostor uz naše dekorativne materijale, ili
-            imate pitanja u vezi sa našim proizvodima, slobodno nas
-            kontaktirajte.
-          </p>
-
-          <p>Naš tim je tu da vam pruži personalizovane savete.</p>
-
+          <h3>POŠALJI UPIT ZA OVAJ PROIZVOD</h3>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <p className="error">{errors.fullName?.message}</p>
+            <p className="error">{errors.ime?.message}</p>
             <input
               type="text"
               className="inputi"
-              name="fullName"
-              id="name"
-              placeholder="Full Name*"
-              {...register("fullName")}
+              name="ime"
+              id="ime"
+              placeholder="Ime i Prezime*"
+              {...register("ime")}
             />
+
             <p className="error">{errors.email?.message}</p>
             <input
               type="text"
               className="inputi"
               name="email"
               id="email"
-              placeholder="Email*"
+              placeholder="Email adresa*"
               {...register("email")}
             />
-            <p className="error">{errors.subject?.message}</p>
-            <input
-              type="text"
-              className="inputi"
-              name="subject"
-              id="subject"
-              placeholder="Subject*"
-              {...register("subject")}
-            />
+
             <p className="error">{errors.text?.message}</p>
             <textarea
               type="text"
               className="inputi"
               name="text"
               id="message"
-              placeholder="Message*"
+              placeholder="Tekst upita*"
               {...register("text")}
-            />
+            ></textarea>
 
             <p className="saglasnost">
               Saglasan sam sa svim pojedinostima navedenim o korišćenju i
@@ -117,4 +95,4 @@ const Forma = () => {
   );
 };
 
-export default Forma;
+export default ProizvodForma;
