@@ -11,6 +11,8 @@ custom checkbox?
 prevedi fajlove na srpski
 da se pojavljuje posle sekund
 zoomin samo slike na hover
+smanji FOTOS da ne ucitava predugo
+1400widht?
 
 //////////    dizajneru pitanja    //////////
 font

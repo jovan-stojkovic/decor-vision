@@ -7,7 +7,7 @@ const ProizvodLapitec = ({ noIMG }) => {
     location.state.proizvod;
 
   return (
-    <div className="lapitec-proizvod-page page">
+    <div className="lapitec-proizvod-page proizvod-page page">
       <div className="proizvod-head">
         <img src={patern} />
         <div className="proizvod-naslov">

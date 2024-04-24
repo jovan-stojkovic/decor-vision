@@ -976,7 +976,7 @@ footer {
 //LAPITEC PROIZVOD STRANICA
 .proizvod-page {
   .proizvod-head {
-    height: 300px;
+    height: 400px;
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -1040,6 +1040,7 @@ footer {
       grid-column-end: 3;
       height: 100%;
       width: 100%;
+      aspect-ratio: 1.8;
     }
 
     #grid-two {
@@ -1070,4 +1071,32 @@ footer {
       font-weight: 700;
     }
   }
+}
+
+//MOVE PROIZVOD STRANICA
+.proizvod-page.move {
+  .p-milled-opis {
+    line-height: 2.5rem;
+
+    .proizvod-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+  
+      .grid-img-container {
+        width: 100%;
+        height: auto;
+  
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#grid-three-move {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  aspect-ratio: 2;
 }

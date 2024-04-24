@@ -50,12 +50,14 @@ const Latho = ({
         <div className="grid-proizvoda latho">
           {lathoMilled.map(({ ime, kvadrat, strana, patern, tech, index }) => (
             <div className="proizvod" key={ime}>
-              <Link 
-              to={`/proizvodi/Latho/Milled/${ime}`}
-              state={{proizvod: { ime, kvadrat, strana, patern, tech, index }}}
-              onClick={() => {
-                window.scrollTo(0, 0);
-              }}
+              <Link
+                to={`/proizvodi/Latho/Milled/${ime}`}
+                state={{
+                  proizvod: { ime, kvadrat, strana, patern, tech, index },
+                }}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
               >
                 <div className="img-container">
                   <img src={kvadrat || noIMG} alt={ime} />
@@ -67,9 +69,17 @@ const Latho = ({
           ))}
           {lathoMove.map(({ ime, kvadrat, wide }) => (
             <div className="proizvod" key={ime}>
-              <div className="img-container">
-                <img src={kvadrat || wide || noIMG} alt={ime} />
-              </div>
+              <Link
+              to={`/proizvodi/Latho/Move/${ime}`}
+              state={{
+                proizvod: {ime, kvadrat, wide}
+              }}
+              onClick={() => {window.scrollTo(0,0)}}
+              >
+                <div className="img-container">
+                  <img src={kvadrat || wide || noIMG} alt={ime} />
+                </div>
+              </Link>
               <p className="ime-proizvoda">{ime}</p>
               <p className="proizvodjac">{lathoMoveInfo.firma}</p>
             </div>

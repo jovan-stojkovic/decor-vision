@@ -32,6 +32,7 @@ import {
 } from "./Helper";
 import ProizvodLapitec from "./Pages/ProizvodLapitec";
 import ProizvodMilled from "./Pages/ProizvodMilled";
+import ProizvodMove from "./Pages/ProizvodMove";
 
 const App = () => {
   return (
@@ -81,6 +82,13 @@ const App = () => {
                   lathoMilledInfo={lathoMilledInfo}
                   noIMG={noIMG}
                 />
+              }
+            />
+
+            <Route
+              path="/proizvodi/Latho/Move/:ime"
+              element={
+                <ProizvodMove lathoMoveInfo={lathoMoveInfo} noIMG={noIMG} />
               }
             />
 
