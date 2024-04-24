@@ -13,6 +13,8 @@ da se pojavljuje posle sekund
 zoomin samo slike na hover
 smanji FOTOS da ne ucitava predugo
 1400widht?
+da se otvore slike
+
 
 //////////    dizajneru pitanja    //////////
 font
@@ -23,7 +25,6 @@ boje
 strelice
 
 //////////    pitanja za Acu    //////////
-slike sa instragrama
 naslov ispod u O_NAMA
 podnaslov za KONTAKTI ?
 da li hoce THEME
@@ -31,7 +32,6 @@ da li hoce da menja jezik
 jel su slajderi i karuseli linkovi?
 broj telefona na KONTAKTIRAJTE NAS
 o-nama stranica da li su instagram linkovi ili samo slike?
-
 FALI F- slike
 
 

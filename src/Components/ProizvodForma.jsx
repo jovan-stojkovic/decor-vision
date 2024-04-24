@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProizvodForma = () => {
   const [success, setSuccess] = useState(false);
@@ -78,7 +79,17 @@ const ProizvodForma = () => {
             <p className="saglasnost">
               Saglasan sam sa svim pojedinostima navedenim o korišćenju i
               upotrebi ovog sajta, politikom privatnosti i ostalim poslovnim
-              pravilima, kao potrebnim uslovima za našu dalju komunikaciju i
+              <Link
+                id="pravila-url"
+                to="/uslovi-koriscenja"
+                target="_blank"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                {" "}
+                pravilima
+              </Link>, kao potrebnim uslovima za našu dalju komunikaciju i
               saradnju. Ovim putem to i potvrđujem.
             </p>
 
