@@ -7,7 +7,7 @@ const ProizvodForma = () => {
   const [success, setSuccess] = useState(false);
   const schema = yup.object().shape({
     ime: yup.string().required("Polje ne sme ostati prazno"),
-    email: yup.string().email("Molimo Vas unesite ispravnu email adresu"),
+    email: yup.string().email("Molimo Vas unesite ispravnu email adresu").required("Polje ne sme ostati prazno"),
     text: yup.string().required("Polje ne sme ostati prazno"),
     agreement: yup.bool().oneOf([true], "Morate prihvatiti"),
   });

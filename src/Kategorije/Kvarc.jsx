@@ -1,5 +1,12 @@
-const Latho = ({ lathoMilled, lathoMilledInfo, lathoMove, lathoMoveInfo, noIMG }) => {
+import { Link } from "react-router-dom";
 
+const Latho = ({
+  lathoMilled,
+  lathoMilledInfo,
+  lathoMove,
+  lathoMoveInfo,
+  noIMG,
+}) => {
   return (
     <div className="latho-page page">
       <div className="head">
@@ -41,20 +48,27 @@ const Latho = ({ lathoMilled, lathoMilledInfo, lathoMove, lathoMoveInfo, noIMG }
           </div>
         </div>
         <div className="grid-proizvoda latho">
-          {lathoMilled.map(({ ime, slike }) => (
+          {lathoMilled.map(({ ime, kvadrat, strana, patern, tech, index }) => (
             <div className="proizvod" key={ime}>
-              <div className="img-container">
-                <img src={slike.kvadrat || noIMG } alt={ime} />
-              </div>
+              <Link 
+              to={`/proizvodi/Latho/Milled/${ime}`}
+              state={{proizvod: { ime, kvadrat, strana, patern, tech, index }}}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              >
+                <div className="img-container">
+                  <img src={kvadrat || noIMG} alt={ime} />
+                </div>
+              </Link>
               <p className="ime-proizvoda">{ime}</p>
               <p className="proizvodjac">{lathoMilledInfo.firma}</p>
             </div>
           ))}
-                    {lathoMove.map(({ ime, slike }) => (
+          {lathoMove.map(({ ime, kvadrat, wide }) => (
             <div className="proizvod" key={ime}>
               <div className="img-container">
-                <img src={slike.kvadrat || slike.wide || noIMG} alt={ime} />
-
+                <img src={kvadrat || wide || noIMG} alt={ime} />
               </div>
               <p className="ime-proizvoda">{ime}</p>
               <p className="proizvodjac">{lathoMoveInfo.firma}</p>

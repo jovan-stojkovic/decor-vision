@@ -10,6 +10,7 @@ responsivnes
 custom checkbox?
 prevedi fajlove na srpski
 da se pojavljuje posle sekund
+zoomin samo slike na hover
 
 //////////    dizajneru pitanja    //////////
 font
@@ -25,12 +26,8 @@ naslov ispod u O_NAMA
 podnaslov za KONTAKTI ?
 da li hoce THEME
 da li hoce da menja jezik
-da li da kontakti nesto rade (da otvori link sa mapom...)
 jel su slajderi i karuseli linkovi?
 broj telefona na KONTAKTIRAJTE NAS
-jel se tako zove AA XX L M
-broj telefona
-
 o-nama stranica da li su instagram linkovi ili samo slike?
 
 FALI F- slike
@@ -38,3 +35,5 @@ FALI F- slike
 
 //////////    pitanja za Savketa    //////////
 slanje mejla na submit
+kolacici
+kljucne reci

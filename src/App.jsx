@@ -30,7 +30,8 @@ import {
   lathoMoveInfo,
   tapete,
 } from "./Helper";
-import Proizvod from "./Pages/Proizvod";
+import ProizvodLapitec from "./Pages/ProizvodLapitec";
+import ProizvodMilled from "./Pages/ProizvodMilled";
 
 const App = () => {
   return (
@@ -57,7 +58,7 @@ const App = () => {
 
             <Route
               path="/proizvodi/Lapitec/:firma/:ime"
-              element={<Proizvod lapitec={lapitec} noIMG={noIMG} />}
+              element={<ProizvodLapitec noIMG={noIMG} />}
             />
 
             <Route
@@ -72,6 +73,17 @@ const App = () => {
                 />
               }
             />
+
+            <Route
+              path="/proizvodi/Latho/Milled/:ime"
+              element={
+                <ProizvodMilled
+                  lathoMilledInfo={lathoMilledInfo}
+                  noIMG={noIMG}
+                />
+              }
+            />
+
             <Route
               path="/proizvodi/Porcelanske ploče"
               element={<PorcelanskePloce />}

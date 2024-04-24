@@ -973,6 +973,7 @@ footer {
   }
 }
 
+//LAPITEC PROIZVOD STRANICA
 .proizvod-page {
   .proizvod-head {
     height: 300px;
@@ -1057,6 +1058,16 @@ footer {
       grid-column-start: 2;
       grid-column-end: 3;
       aspect-ratio: 1;
+    }
+  }
+}
+
+//MILLED PROIZVOD STRANICA
+.proizvod-page.milled {
+  .p-milled-opis {
+    font-size: 1.4rem;
+    span {
+      font-weight: 700;
     }
   }
 }
