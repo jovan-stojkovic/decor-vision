@@ -6,6 +6,8 @@ $almost-white: rgb(232, 232, 232);
 $light-blue: rgb(225, 233, 249);
 $font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$shadow-strong: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$shadow-light: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 //MIXINS
 @mixin background {
@@ -83,7 +85,6 @@ p {
 
 //STRANICA
 .page {
-
   .head {
     @include background;
     height: 600px;
@@ -155,7 +156,7 @@ p {
         padding: 10px;
         @include flex-space;
         flex-direction: column;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: $shadow-light;
         border-radius: 5px;
 
         h3 {
@@ -207,7 +208,7 @@ p {
             height: 100%;
             width: 100%;
             object-fit: cover;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: $shadow-light;
             filter: opacity(0.9);
             transition: 0.2s;
             border-radius: 5px;
@@ -215,8 +216,12 @@ p {
             &:hover {
               filter: opacity(1);
               transition: 0.2s;
-              scale: 1.005;
               cursor: pointer;
+              box-shadow: $shadow-strong;
+            }
+
+            &:active {
+              box-shadow: $shadow-light;
             }
           }
         }
@@ -338,23 +343,23 @@ p {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-image: url("https://en.idei.club/uploads/posts/2023-12/1701972384_en-idei-club-p-wall-interior-texture-dizain-interera-vkon-25.jpg");
+        background-image: url("src/Assets/instagram/1.jpg");
       }
 
       .two {
-        background-image: url("https://en.idei.club/uploads/posts/2023-12/thumbs/1701972445_en-idei-club-p-wall-interior-texture-dizain-interera-vkon-24.jpg");
+        background-image: url("src/Assets/instagram/2.jpg");
       }
 
       .three {
-        background-image: url("https://en.idei.club/uploads/posts/2023-12/thumbs/1701972379_en-idei-club-p-wall-interior-texture-dizain-interera-vkon-21.jpg");
+        background-image: url("src/Assets/instagram/3.jpg");
       }
 
       .four {
-        background-image: url("https://en.idei.club/uploads/posts/2023-12/thumbs/1701972407_en-idei-club-p-wall-interior-texture-dizain-interera-vkon-19.jpg");
+        background-image: url("src/Assets/instagram/4.jpg");
       }
 
       .five {
-        background-image: url("https://en.idei.club/uploads/posts/2023-12/thumbs/1701972445_en-idei-club-p-wall-interior-texture-dizain-interera-vkon-17.jpg");
+        background-image: url("src/Assets/instagram/5.jpg");
       }
     }
 
@@ -390,10 +395,9 @@ p {
       gap: 40px;
 
       .jedan-proizvod {
-
         .proizvod-img-cont {
           border-radius: 5px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: $shadow-strong;
           filter: opacity(0.7);
           @include background;
           aspect-ratio: 1;
@@ -473,7 +477,7 @@ p {
 
       .btob-grid-img {
         aspect-ratio: 1;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: $shadow-light;
         filter: saturate(0);
         transition: 0.2s;
         background-position: center;
@@ -585,6 +589,10 @@ p {
           font-size: 1.4rem;
           border: 2px solid $light-blue;
 
+          &:hover {
+            box-shadow: $shadow-light;
+          }
+
           &#message {
             height: 300px;
             padding-top: 10px;
@@ -593,6 +601,18 @@ p {
 
           &::placeholder {
             font-family: $font;
+          }
+        }
+
+        p.error {
+          text-align: right;
+          font-size: 0.7rem;
+          margin: 0;
+          color: red;
+          height: 25px;
+
+          &.check {
+            text-align: left;
           }
         }
 
@@ -611,6 +631,7 @@ p {
 
         .checkbox-label {
           font-weight: 500;
+          cursor: pointer;
         }
 
         button {
@@ -620,6 +641,46 @@ p {
           background-color: $main-green;
           text-align: center;
           margin-top: 25px;
+          border-radius: 5px;
+          color: white;
+          font-size: 1.2rem;
+          letter-spacing: 10px;
+
+          &:hover {
+            filter: brightness(120%);
+            cursor: pointer;
+          }
+        }
+      }
+
+      .success {
+        padding: 50px;
+        @include flex-center;
+        flex-direction: column;
+        gap: 50px;
+        height: 600px;
+        background-color: $light-blue;
+        border-radius: 10px;
+        box-shadow: $shadow-light;
+
+        .success-img-cont {
+          @include background;
+          background-image: url("/src/Assets/logos/success.svg");
+          height: 300px;
+          aspect-ratio: 1;
+        }
+
+        .p-success {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+
+        button {
+          all: unset;
+          height: 50px;
+          width: 50%;
+          background-color: $main-green;
+          text-align: center;
           border-radius: 5px;
           color: white;
           font-size: 1.2rem;
@@ -827,7 +888,6 @@ footer {
   }
 
   .img-container {
-
     &.left {
       background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
     }
@@ -872,7 +932,7 @@ footer {
 
   ul {
     margin-left: 75px;
-    li::marker{
+    li::marker {
       color: $main-green;
     }
   }

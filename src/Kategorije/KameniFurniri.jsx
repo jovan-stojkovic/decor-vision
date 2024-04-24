@@ -31,7 +31,7 @@ const KameniFurniri = () => {
           ukupna debljina od samo nekoliko milimetara i mala težina, ovi kameni
           furniri se mogu veoma lako i praktično{" "}
           <Link
-            target="blank"
+            target="_blank"
             to={
               "https://www.slate-lite.com/eng/c/processing.html-14f557779635419cbe6411980d5d2216"
             }
@@ -56,7 +56,7 @@ const KameniFurniri = () => {
           omiljeni dizajn od pravog prirodnog kamena, nadamo se da ćete uživati
           u svom putovanju kroz svet{" "}
           <Link
-            target="blank"
+            target="_blank"
             to="https://www.slate-lite.com/eng/c/products.html"
           >
             Slate-Lite
@@ -106,7 +106,7 @@ const KameniFurniri = () => {
           I najlepše za kraj – kod nas ovaj proizvod možete nabaviti po potpuno
           istim cenama kao na sajtu proizvođača –{" "}
           <Link
-            target="blank"
+            target="_blank"
             to="https://www.slate-lite.com/eng/c/products.html"
           >
             CENE POGLEDAJTE OVDE

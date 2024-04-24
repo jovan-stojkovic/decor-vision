@@ -19,20 +19,20 @@ const Tapete = ({tapete}) => {
           odgovorno gazduje, a korišćena mastila su na vodenoj bazi. Prodaja u
           preko 50 zemalja širom sveta i zadovoljni kupci su najbolja preporuka
           za{" "}
-          <Link target="blank" to="https://www.decoprintwallcoverings.com/">
+          <Link target="_blank" to="https://www.decoprintwallcoverings.com/">
             Decoprint
           </Link>
           , a mi smo se potrudili da i kupcima na našem tržištu ove vrhunske
           tapete budu dostupne.
         </p>
         <p className="kategorija-info">
-            <Link target="blank" to="https://www.decoprintwallcoverings.com/en/collections">Uživajte</Link>
+            <Link target="_blank" to="https://www.decoprintwallcoverings.com/en/collections">Uživajte</Link>
         </p>
         
         <div className="grid-proizvoda tapete">
           {tapete.map(({ ime, slika, url }) => (
             <div className="proizvod" key={ime} id="tapeta">
-                <Link target="blank" to={url}><div className="img-container">
+                <Link target="_blank" to={url}><div className="img-container">
                 <img src={slika} alt={ime} />
               </div></Link>
               <p className="ime-proizvoda">{ime}</p>

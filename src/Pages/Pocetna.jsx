@@ -14,7 +14,7 @@ const Pocetna = ({ slides }) => {
           <div className="insta-img-container"></div>
           <Link
             to="https://www.instagram.com/decorvision.rs/?hl=en"
-            target="blank"
+            target="_blank"
           >
             @decorvision.rs
           </Link>
@@ -24,7 +24,7 @@ const Pocetna = ({ slides }) => {
 
         <div className="dole">
           <h3>
-            UZ PRIRODNU ELEGANCIJU NAŠIH PROIZVODE DEKORIŠITE INSPIRATIVNO VAŠ
+            UZ PRIRODNU ELEGANCIJU NAŠIH PROIZVODA DEKORIŠITE INSPIRATIVNO VAŠ
             PROSTOR
           </h3>
           <div className="separator"></div>

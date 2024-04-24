@@ -17,10 +17,7 @@ logo za sajt
 logo za favicon
 logo za firme
 boje
-boje u futeru, drugacije na razlicitim stranicama
 strelice
-
-
 
 //////////    pitanja za Acu    //////////
 slike sa instragrama
@@ -32,5 +29,10 @@ da li da kontakti nesto rade (da otvori link sa mapom...)
 jel su slajderi i karuseli linkovi?
 broj telefona na KONTAKTIRAJTE NAS
 jel se tako zove AA XX L M
+broj telefona
 
 FALI F- slike
+
+
+//////////    pitanja za Savketa    //////////
+slanje mejla na submit

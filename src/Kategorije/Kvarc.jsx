@@ -44,7 +44,7 @@ const Latho = ({ lathoMilled, lathoMilledInfo, lathoMove, lathoMoveInfo, noIMG }
           {lathoMilled.map(({ ime, slike }) => (
             <div className="proizvod" key={ime}>
               <div className="img-container">
-                <img src={slike.kvadrat} alt={ime} />
+                <img src={slike.kvadrat || noIMG } alt={ime} />
               </div>
               <p className="ime-proizvoda">{ime}</p>
               <p className="proizvodjac">{lathoMilledInfo.firma}</p>
