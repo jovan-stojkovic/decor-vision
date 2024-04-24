@@ -244,6 +244,137 @@ p {
   }
 }
 
+.forma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+
+  h3 {
+    color: $main-green;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 100%;
+
+    .inputi {
+      width: 100%;
+      height: 50px;
+      background-color: $light-blue;
+      padding: 0 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      border: 2px solid $light-blue;
+
+      &:hover {
+        box-shadow: $shadow-light;
+      }
+
+      &#message {
+        height: 400px;
+        padding-top: 10px;
+        word-wrap: break-word;
+      }
+
+      &::placeholder {
+        font-family: $font;
+      }
+    }
+
+    p.error {
+      text-align: right;
+      font-size: 0.7rem;
+      margin: 0;
+      color: red;
+      height: 25px;
+
+      &.check {
+        text-align: left;
+      }
+    }
+
+    .saglasnost {
+      text-align: justify;
+      font-size: 1rem;
+      color: gray;
+      margin-bottom: 15px;
+    }
+
+    #checkbox {
+      accent-color: $main-green;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .checkbox-label {
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 100%;
+      background-color: $main-green;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .success {
+    padding: 50px;
+    @include flex-center;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    background-color: $light-blue;
+
+    .success-img-cont {
+      @include background;
+      background-image: url("/src/Assets/logos/success.svg");
+      height: 300px;
+      aspect-ratio: 1;
+    }
+
+    .p-success {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 80%;
+      background-color: $main-green;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 //POČETNA
 .home-page {
   .slide-container {
@@ -567,10 +698,8 @@ p {
     }
 
     .forma {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 65%;
+      justify-content: center;
+      width: 60%;
       margin-bottom: 100px;
 
       h3 {
@@ -582,120 +711,13 @@ p {
       }
 
       form {
-        width: 100%;
-
-        .inputi {
-          width: 100%;
-          height: 50px;
-          background-color: $light-blue;
-          padding: 0 20px;
-          border-radius: 5px;
-          margin-bottom: 20px;
-          font-size: 1.4rem;
-          border: 2px solid $light-blue;
-
-          &:hover {
-            box-shadow: $shadow-light;
-          }
-
-          &#message {
-            height: 300px;
-            padding-top: 10px;
-            word-wrap: break-word;
-          }
-
-          &::placeholder {
-            font-family: $font;
-          }
-        }
-
-        p.error {
-          text-align: right;
-          font-size: 0.7rem;
-          margin: 0;
-          color: red;
-          height: 25px;
-
-          &.check {
-            text-align: left;
-          }
-        }
-
         .saglasnost {
           text-align: justify;
-          font-size: 1rem;
-          color: gray;
-          margin-bottom: 15px;
-        }
-
-        #checkbox {
-          accent-color: $main-green;
-          margin-right: 20px;
-          cursor: pointer;
-        }
-
-        .checkbox-label {
-          font-weight: 500;
-          cursor: pointer;
-        }
-
-        button {
-          all: unset;
-          height: 50px;
-          width: 100%;
-          background-color: $main-green;
-          text-align: center;
-          margin-top: 25px;
-          border-radius: 5px;
-          color: white;
-          font-size: 1.2rem;
-          letter-spacing: 10px;
-
-          &:hover {
-            filter: brightness(120%);
-            cursor: pointer;
-          }
         }
       }
 
-      .success {
-        padding: 50px;
-        @include flex-center;
-        flex-direction: column;
-        gap: 50px;
-        height: 600px;
-        background-color: $light-blue;
-        border-radius: 10px;
-        box-shadow: $shadow-light;
-
-        .success-img-cont {
-          @include background;
-          background-image: url("/src/Assets/logos/success.svg");
-          height: 300px;
-          aspect-ratio: 1;
-        }
-
-        .p-success {
-          margin: 0;
-          font-size: 1.5rem;
-        }
-
-        button {
-          all: unset;
-          height: 50px;
-          width: 50%;
-          background-color: $main-green;
-          text-align: center;
-          border-radius: 5px;
-          color: white;
-          font-size: 1.2rem;
-          letter-spacing: 10px;
-
-          &:hover {
-            filter: brightness(120%);
-            cursor: pointer;
-          }
-        }
+      button {
+        width: 50%;
       }
     }
   }
@@ -729,13 +751,8 @@ nav {
     z-index: 5;
     @include flex-space;
 
-    .logo {
-      all: unset;
-      cursor: pointer;
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: 3px;
-      color: $dark;
+    img {
+      height: 30px;
     }
 
     .nav-links {
@@ -836,19 +853,14 @@ footer {
   gap: 20px;
 
   .footer-logo {
-    border: 10px solid white;
-    border-radius: 40px;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    background-image: url("https://www.iconbolt.com/iconsets/tabler/letter-d.svg");
+    width: 300px;
+    height: 100px;
     margin-bottom: 20px;
-    transition: 0.5s;
-    @include background;
+    transition: 0.2s;
+    @include flex-center;
 
-    &:hover {
-      border: 10px solid $main-green;
-      transition: 0.5s;
+    img {
+      height: 40px;
     }
   }
 
@@ -998,6 +1010,13 @@ footer {
       }
     }
   }
+  .p-debljine {
+    font-size: 1.4rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
 
   .proizvod-grid {
     display: grid;
@@ -1019,14 +1038,13 @@ footer {
       grid-column-start: 1;
       grid-column-end: 3;
       height: 100%;
-        width: 100%;
+      width: 100%;
     }
 
     #grid-two {
       grid-row-start: 1;
       grid-row-end: 3;
       grid-column: 3;
-      
     }
 
     #grid-three {
@@ -1039,137 +1057,6 @@ footer {
       grid-column-start: 2;
       grid-column-end: 3;
       aspect-ratio: 1;
-    }
-  }
-}
-
-.forma {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  width: 100%;
-
-  h3 {
-    color: $main-green;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-
-  form {
-    width: 100%;
-
-    .inputi {
-      width: 100%;
-      height: 50px;
-      background-color: $light-blue;
-      padding: 0 20px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      font-size: 1.4rem;
-      border: 2px solid $light-blue;
-
-      &:hover {
-        box-shadow: $shadow-light;
-      }
-
-      &#message {
-        height: 400px;
-        padding-top: 10px;
-        word-wrap: break-word;
-      }
-
-      &::placeholder {
-        font-family: $font;
-      }
-    }
-
-    p.error {
-      text-align: right;
-      font-size: 0.7rem;
-      margin: 0;
-      color: red;
-      height: 25px;
-
-      &.check {
-        text-align: left;
-      }
-    }
-
-    .saglasnost {
-      text-align: justify;
-      font-size: 1rem;
-      color: gray;
-      margin-bottom: 15px;
-    }
-
-    #checkbox {
-      accent-color: $main-green;
-      margin-right: 20px;
-      cursor: pointer;
-    }
-
-    .checkbox-label {
-      font-weight: 500;
-      cursor: pointer;
-    }
-
-    button {
-      all: unset;
-      height: 50px;
-      width: 100%;
-      background-color: $main-green;
-      text-align: center;
-      margin-top: 25px;
-      margin-bottom: 5px;
-      border-radius: 5px;
-      color: white;
-      font-size: 1.2rem;
-      letter-spacing: 10px;
-
-      &:hover {
-        filter: brightness(120%);
-        cursor: pointer;
-      }
-    }
-  }
-
-  .proizvod-success {
-    padding: 50px;
-    @include flex-center;
-    flex-direction: column;
-    gap: 50px;
-    height: 100%;
-    background-color: $light-blue;
-
-    .success-img-cont {
-      @include background;
-      background-image: url("/src/Assets/logos/success.svg");
-      height: 300px;
-      aspect-ratio: 1;
-    }
-
-    .p-success {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-
-    button {
-      all: unset;
-      height: 50px;
-      width: 80%;
-      background-color: $main-green;
-      text-align: center;
-      border-radius: 5px;
-      color: white;
-      font-size: 1.2rem;
-      letter-spacing: 10px;
-
-      &:hover {
-        filter: brightness(120%);
-        cursor: pointer;
-      }
     }
   }
 }

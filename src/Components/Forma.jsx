@@ -31,7 +31,7 @@ const Forma = () => {
   };
 
   return (
-    <div className="forma">
+    <div className="forma kontakt">
       {success ? (
         <div className="success">
           <div className="success-img-cont"></div>

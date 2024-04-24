@@ -163,7 +163,7 @@ export const lapitec = [
     firma: "Musa",
     ime: "Bianco Vittoria",
     opis: "Bianco Vittoria je originalna interpretacija mermernih žilica, laganih i ujednačenih po celoj površini i u srcu ploče. Bianco Vittoria je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
-    debljine: "12mm, 20 mm, 30 mm",
+    debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
       "/src/Assets/proizvodi/Lapitec/Musa/9 bianco vittoria/Bianco Vittoria_satin.jpg",
@@ -175,7 +175,7 @@ export const lapitec = [
     firma: "Musa",
     ime: "Bianco Giulia",
     opis: "Ton vena sa tamom i intenzitetom koji daje veoma prirodan efekat, dodajući jedinstvenu ličnost sobama koje obavija. Bianco Giulia je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
-    debljine: "12mm, 20 mm, 30 mm",
+    debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
       "/src/Assets/proizvodi/Lapitec/Musa/10 bianco giulia/Bianco Giulia_Satin.jpg",

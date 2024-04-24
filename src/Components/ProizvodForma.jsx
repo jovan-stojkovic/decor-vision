@@ -26,7 +26,7 @@ const ProizvodForma = () => {
   };
 
   return (
-    <div className="forma" id="grid-two">
+    <div className="forma proizvod" id="grid-two">
       {success ? (
         <div className="proizvod-success">
           <div className="success-img-cont"></div>

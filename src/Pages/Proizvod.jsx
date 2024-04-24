@@ -19,7 +19,7 @@ const Proizvod = () => {
 
       <div className="container">
         <div className="text"><p>{opis}</p>
-        <p>{`Dostupne debljine: ${debljine}`}</p></div>
+        <p className="p-debljine">Dostupne debljine: <span>{debljine}</span></p></div>
         <div className="proizvod-grid">
           <div className="grid-img-container" id="grid-one">
             <img src={wide} alt={`wide ${ime}`} />

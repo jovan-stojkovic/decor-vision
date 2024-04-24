@@ -32,8 +32,8 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
-        <Link to="/" className="logo">
-          DECOR VISION
+        <Link to="/" className="logo" onClick={()=>window.scrollTo(0,0)}>
+          <img src="/src/Assets/logos/decor_vision.svg" alt="DECOR VISION" />
         </Link>
         <div className="nav-links">
           <div
