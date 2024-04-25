@@ -4,19 +4,20 @@ const ProizvodiGrid = ({ proizvodi }) => {
   return (
     <>
       <div className="proizvodi-grid">
-        {proizvodi.map((item, index) => (
+        {proizvodi.map(({ text, url }, index) => (
           <div className="jedan-proizvod" key={index}>
-            <Link to={`/proizvodi/${item.text}`} 
-            onClick={() => {
-              window.scrollTo(0,0)
-            }}
+            <Link
+              to={`/proizvodi/${text}`}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
             >
               <div
-                className="proizvod-img-cont"
-                style={{ backgroundImage: `url(${item.url})` }}
+                className="proizvod-img-container"
+                style={{ backgroundImage: `url(${encodeURI(url)})` }}
               ></div>
             </Link>
-            <p className="proizvod-naziv">{item.text}</p>
+            <p className="proizvod-naziv">{text}</p>
           </div>
         ))}
       </div>
