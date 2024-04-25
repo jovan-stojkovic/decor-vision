@@ -58,7 +58,7 @@ const App = () => {
             />
 
             <Route
-              path="/proizvodi/Kvarc"
+              path="/proizvodi/Latho"
               element={
                 <Latho
                   lathoMilled={lathoMilled}

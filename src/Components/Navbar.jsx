@@ -17,7 +17,7 @@ const Navbar = () => {
   const instaPage = "https://www.instagram.com/decorvision.rs/?hl=en";
   const kategorije = [
     "Lapitec",
-    "Kvarc",
+    "Latho",
     "Kameni furniri",
     "Tapete",
   ];

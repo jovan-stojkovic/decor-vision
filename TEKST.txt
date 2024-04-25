@@ -1,31 +1,14 @@
 //////////    TO DO LIST    //////////
 IMPORTI SREDI IH U SVAKOJ STRANICI
 napravi sto vise komponenti
-kolacici, raspitaj se
-proizvodi
 carousel na prvoj stranici
-da se posalje mejl na submit
 spelcheck
 responsivnes
-custom checkbox?
-prevedi fajlove na srpski
 zoomin samo slike na hover
-1400widht?
 da se otvore slike
 tab ime za svaku stranicu
 SCSS haos razdeli
 fensi underline na hover
-
-ocisti proizvode, da ostanu 4
-
-
-//////////    dizajneru pitanja    //////////
-font
-logo za sajt
-logo za favicon
-logo za firme
-boje
-strelice
 
 //////////    pitanja za Acu    //////////
 naslov ispod u O_NAMA

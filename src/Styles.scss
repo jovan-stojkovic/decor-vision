@@ -175,11 +175,11 @@ p {
     .potkategorije {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 50px;
+      gap: 40px;
 
       .side {
         width: 100%;
-        aspect-ratio: 1;
+        aspect-ratio: 0.8;
         padding: 10px;
         @include flex-space;
         flex-direction: column;
@@ -217,15 +217,10 @@ p {
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 100px 0;
-      gap: 37.3px;
-
-      &:after {
-        content: "";
-        flex: auto;
-      }
 
       .proizvod {
         width: 23%;
+        margin-bottom: 50px;
 
         .img-container {
           width: 100%;
@@ -288,7 +283,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
   width: 100%;
 
   h3 {
@@ -367,7 +361,7 @@ p {
       background-color: $main-green;
       text-align: center;
       margin-top: 25px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
       border-radius: 5px;
       color: white;
       font-size: 1.2rem;
@@ -1069,13 +1063,13 @@ footer {
     font-size: 1.4rem;
 
     span {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 
   .proizvod-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 30% 30% auto;
     gap: 20px;
 
     .grid-img-container {
@@ -1094,7 +1088,7 @@ footer {
       grid-column-end: 3;
       height: 100%;
       width: 100%;
-      aspect-ratio: 1.8;
+      aspect-ratio: 1.4;
     }
 
     #grid-two {
@@ -1122,7 +1116,7 @@ footer {
   .p-milled-opis {
     font-size: 1.4rem;
     span {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 }
@@ -1131,6 +1125,10 @@ footer {
 .proizvod-page.move {
   .p-milled-opis {
     line-height: 2.5rem;
+
+    span {
+      font-weight: 600;
+    }
 
     .proizvod-grid {
       display: grid;
