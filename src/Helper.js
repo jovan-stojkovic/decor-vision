@@ -11,11 +11,11 @@ export const slides = [
     text: "Jedini sertifikovani sintrovani kamen na svetu. 100% prirodan. ",
   },
   {
-    url: "s/slike/sliders/3.jpg",
+    url: "/slike/sliders/3.jpg",
     text: "Move kolekcija. Jedinstveni pločasti materijali.",
   },
   {
-    url: "s/slike/sliders/4.jpg",
+    url: "/slike/sliders/4.jpg",
     text: "Puno drvo u svojoj najupečatljivijoj formi.",
   },
 ];
