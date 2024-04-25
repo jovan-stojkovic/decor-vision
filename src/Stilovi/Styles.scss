@@ -1,0 +1,818 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+// font-family: "Open Sans", sans-serif;
+
+//VARIABLES
+$text-background: rgba(0, 0, 0, 0.25);
+$dark: rgb(35, 35, 35);
+$main-green: rgb(31, 148, 90);
+$almost-white: rgb(232, 232, 232);
+$light-blue: rgb(236, 241, 252);
+$shadow-strong: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$shadow-light: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+//MIXINS
+@mixin background {
+  background-position: center;
+  background-size: cover;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin text-background {
+  padding: 5px 25px;
+  background-color: $text-background;
+  border-radius: 5px;
+  color: $almost-white;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//OPŠTI STILOVI
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 2.8rem;
+  margin-top: 100px;
+  color: $dark;
+  @include text-background;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: $dark;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  @include text-background;      
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  color: $dark;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+}
+
+.arrows {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 30px;
+  filter: invert(0.8);
+}
+
+.separator {
+  width: 100px;
+  height: 3px;
+  margin: 50px 0;
+  background-color: $almost-white;
+}
+
+main {
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+
+
+
+
+.kategorija-info {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: $dark;
+}
+
+//STRANICA
+//     .potkategorije {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//       gap: 40px;
+
+//       .side {
+//         width: 100%;
+//         aspect-ratio: 0.8;
+//         padding: 10px;
+//         @include flex-space;
+//         flex-direction: column;
+//         box-shadow: $shadow-light;
+//         border-radius: 5px;
+
+//         h3 {
+//           margin-bottom: 20px;
+//         }
+
+//         .desc {
+//           font-size: 1.4rem;
+//         }
+
+//         .img-container {
+//           @include background;
+//           width: 100%;
+//           height: 50%;
+//         }
+
+//         &.right {
+//           h3 {
+//             text-align: end;
+//           }
+
+//           .desc {
+//             text-align: end;
+//           }
+//         }
+//       }
+//     }
+
+//     .grid-proizvoda {
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//       margin: 100px 0;
+
+//       .proizvod {
+//         width: 23%;
+//         margin-bottom: 50px;
+
+//         .img-container {
+//           width: 100%;
+//           aspect-ratio: 1;
+
+//           img {
+//             height: 100%;
+//             width: 100%;
+//             object-fit: cover;
+//             box-shadow: $shadow-light;
+//             filter: opacity(0.9);
+//             transition: 0.2s;
+//             border-radius: 5px;
+
+//             &:hover {
+//               filter: opacity(1);
+//               transition: 0.2s;
+//               cursor: pointer;
+//               box-shadow: $shadow-strong;
+//             }
+
+//             &:active {
+//               box-shadow: $shadow-light;
+//             }
+//           }
+//         }
+
+//         p.ime-proizvoda {
+//           text-align: center;
+//           margin: 15px 0;
+//           font-size: 1.3rem;
+//         }
+
+//         p.proizvodjac {
+//           margin: 0;
+//           text-align: center;
+//           font-size: 1rem;
+//           margin-top: -15px;
+//           color: gray;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.head.proizvod {
+  @include background;
+  height: 400px;
+  .head-cont {
+    opacity: 0;
+    transition: opacity 2s ease;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+//POČETNA
+.home-page {
+  .slide-container {
+    height: 600px;
+
+    .react-slideshow-container .nav:first-of-type {
+      left: 100px;
+    }
+
+    .react-slideshow-container .nav:last-of-type {
+      right: 100px;
+    }
+  }
+
+  #slide {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    @include flex-center;
+
+    p.caption {
+      font-size: 2rem;
+      color: $almost-white;
+      padding: 25px 45px;
+      background-color: $text-background;
+      border-radius: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    .carousel {
+      height: 300px;
+      gap: 50px;
+      margin: 100px 0;
+      @include flex-space;
+
+      .card {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        &.one {
+          background-image: url("/slike/carousel/1.jpg");
+        }
+
+        &.two {
+          background-image: url("/slike/carousel/2.jpg");
+        }
+
+        &.three {
+          background-image: url("/slike/carousel/3.jpg");
+        }
+      }
+    }
+
+    .insta-link-cont {
+      margin: 50px auto;
+      width: 150px;
+      @include flex-center;
+      flex-direction: column;
+
+      .insta-img-container {
+        background-image: url("/slike/icons/instagram-light-blue.svg");
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 10px;
+      }
+
+      a {
+        all: unset;
+        margin: 0 auto;
+        cursor: pointer;
+        color: $main-green;
+        font-size: 1.2rem;
+      }
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: auto auto auto auto;
+
+      .cell {
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 1;
+      }
+
+      .one {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-image: url("/slike/instagram/1.jpg");
+      }
+
+      .two {
+        background-image: url("/slike/instagram/2.jpg");
+      }
+
+      .three {
+        background-image: url("/slike/instagram/3.jpg");
+      }
+
+      .four {
+        background-image: url("/slike/instagram/4.jpg");
+      }
+
+      .five {
+        background-image: url("/slike/instagram/5.jpg");
+      }
+    }
+
+    .dole {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+//PROIZVODI STRANICA
+// .proizvodi-page {
+//   .head {
+//     background-image: url("/slike/backgrounds/1.jpg");
+//   }
+
+//   .container {
+//     .proizvodi-grid {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//       gap: 40px;
+
+//       .jedan-proizvod {
+//         .proizvod-img-container {
+//           border-radius: 5px;
+//           box-shadow: $shadow-light;
+//           filter: opacity(0.7);
+//           @include background;
+//           aspect-ratio: 1;
+
+//           &:hover {
+//             filter: opacity(1);
+//             transition: 0.2s;
+//             box-shadow: $shadow-strong;
+//           }
+
+//           &:active {
+//             box-shadow: $shadow-light;
+//           }
+//         }
+
+//         .proizvod-naziv {
+//           text-align: center;
+//           font-size: 1.3rem;
+//           margin: 15px 0;
+//           font-weight: 500;
+//           color: $dark;
+//         }
+//       }
+//     }
+//   }
+// }
+
+//KONTAKT STRANICA
+//     .forma {
+//       justify-content: center;
+//       width: 60%;
+//       margin-bottom: 100px;
+
+//       h3 {
+//         text-align: center;
+//         font-size: 1.6rem;
+//       }
+
+//       p {
+//         text-align: center;
+//       }
+
+//       form {
+//         .saglasnost {
+//           text-align: justify;
+//         }
+
+//         p.error {
+//           text-align: right;
+//           font-size: 0.7rem;
+//           margin: 0;
+//           color: red;
+//           height: 25px;
+
+//           &.check {
+//             text-align: left;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+//USLOVI KORIŠĆENJA STRANICA
+.uslovi-koriscenja-page {
+  .head {
+    height: 400px;
+    background-image: url("/slike/backgrounds/14.jpg");
+  }
+
+  .container {
+    margin-top: 100px;
+
+    h4 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//NAVBAR
+nav {
+  .nav-container {
+    max-width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 5;
+    @include flex-space;
+
+    img {
+      height: 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+
+      .nav-link {
+        all: unset;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        z-index: 2;
+        color: $dark;
+
+        &.active {
+          color: $main-green;
+        }
+
+        &:hover {
+          color: $main-green;
+          cursor: pointer;
+        }
+      }
+
+      .proizvodi-div {
+        @include flex-center;
+        position: relative;
+
+        .hidden-nav-div {
+          position: absolute;
+          top: -20px;
+          left: -25px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.2s;
+          z-index: 1;
+          scale: 0.7;
+
+          .empty {
+            height: 60.6px;
+          }
+
+          .hidden-nav-div-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 25px;
+            width: 170px;
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+          &.show {
+            top: 0px;
+            visibility: visible;
+            transition: 0.2s;
+            opacity: 1;
+            scale: 1;
+          }
+
+          .hidden-category {
+            all: unset;
+            color: $almost-white;
+            font-size: 0.8rem;
+            font-weight: 500;
+
+            &:hover {
+              color: $main-green;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      #insta-link {
+        height: 1.4rem;
+        width: 1.4rem;
+        background-image: url("/slike/icons/instagram-black.svg");
+        transition: 0.2s;
+        @include background;
+
+        &:hover {
+          background-image: url("/slike/icons/instagram-green.svg");
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
+
+//FOOTER
+footer {
+  width: 100%;
+  background-color: $light-blue;
+  height: 350px;
+  @include flex-center;
+  flex-direction: column;
+  gap: 20px;
+
+  .footer-logo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    @include flex-center;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .uslovi-link {
+    all: unset;
+    color: $main-green;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  p.copyright {
+    color: $main-green;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+}
+
+//BACK TO THE TOP BUTTON
+.to-the-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  z-index: 5;
+  cursor: pointer;
+
+  img {
+    height: 50px;
+  }
+}
+
+//LAPITEC STRANICA
+.lapitec-page {
+  .head {
+    height: 400px;
+    background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+  }
+
+  .img-container {
+    &.left {
+      background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+    }
+
+    &.right {
+      background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+    }
+  }
+}
+
+//LATHO STRANICA
+.latho-page {
+  .head {
+    height: 400px;
+  }
+
+  #move-img-container-l {
+    background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+    height: 70%;
+    background-size: fill;
+  }
+
+  #move-img-container-r {
+    background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+    height: 70%;
+  }
+}
+
+//KAMENI FURNIRI PAGE
+.kameni-furniri-page {
+  .head {
+    height: 400px;
+    background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+  }
+
+  a {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  ul {
+    margin-left: 75px;
+    li::marker {
+      color: $main-green;
+    }
+  }
+}
+
+//TAPETE
+.tapete-page {
+  .head {
+    height: 400px;
+    background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+    background-position: top;
+  }
+
+  a {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #tapeta {
+    width: 48%;
+  }
+}
+
+//LAPITEC PROIZVOD STRANICA
+.proizvod-page {
+  .proizvod-head {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .proizvod-naslov {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 400px;
+      height: 100px;
+      text-align: center;
+      background-color: $text-background;
+      padding: 10px;
+      border-radius: 10px;
+
+      h3 {
+        color: $almost-white;
+      }
+
+      p {
+        margin: 0;
+        color: $almost-white;
+        text-align: center;
+      }
+    }
+  }
+  .p-debljine {
+    font-size: 1.4rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .proizvod-grid {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    gap: 20px;
+
+    .grid-img-container {
+      width: 100%;
+      height: auto;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #grid-one {
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      height: 100%;
+      width: 100%;
+      aspect-ratio: 1.4;
+    }
+
+    #grid-two {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column: 3;
+    }
+
+    #grid-three {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      aspect-ratio: 1;
+    }
+
+    #grid-four {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+//MILLED PROIZVOD STRANICA
+.proizvod-page.milled {
+  .p-milled-opis {
+    font-size: 1.4rem;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+//MOVE PROIZVOD STRANICA
+.proizvod-page.move {
+  .p-milled-opis {
+    line-height: 2.5rem;
+
+    span {
+      font-weight: 600;
+    }
+
+    .proizvod-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .grid-img-container {
+        width: 100%;
+        height: auto;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#grid-three-move {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  aspect-ratio: 2;
+}

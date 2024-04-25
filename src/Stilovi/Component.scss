@@ -1,0 +1,136 @@
+@import "./Styles.scss";
+
+.forma {
+  @include flex-column;
+
+  h2 {
+    color: $main-green;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  form {
+    margin-bottom: 100px;
+
+    .inputi {
+      width: 100%;
+      height: 50px;
+      background-color: $light-blue;
+      padding: 0 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      border: 2px solid $light-blue;
+
+      &:hover {
+        box-shadow: $shadow-light;
+      }
+
+      &#message {
+        height: 400px;
+        padding-top: 10px;
+        word-wrap: break-word;
+      }
+
+      &::placeholder {
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    p.error {
+      text-align: right;
+      font-size: 0.8rem;
+      margin: 0;
+      color: red;
+      height: 25px;
+
+      &.check {
+        text-align: left;
+      }
+    }
+
+    .saglasnost {
+      text-align: justify;
+      font-size: 1rem;
+      color: gray;
+      margin-bottom: 15px;
+    }
+
+    #checkbox {
+      accent-color: $main-green;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    .checkbox-label {
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 100%;
+      background-color: $main-green;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .success {
+    padding: 50px;
+    @include flex-center;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    background-color: $light-blue;
+    margin-bottom: 100px;
+
+    .success-img-cont {
+      @include background;
+      background-image: url("/slike/icons/success.svg");
+      height: 300px;
+      aspect-ratio: 1;
+    }
+
+    .p-success {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 80%;
+      background-color: $main-green;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  #pravila-url {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}

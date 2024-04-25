@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
 import Head from "../Components/Head";
-
+import "../Stilovi/Stranica.scss";
+import LinkKontakt from "../Components/LinkKontakt";
 
 const ONama = () => {
   const headline = "O NAMA";
   const text =
     "Dobrodošli u naš svet. Naša strast prema dekoraciji prostora traje već dugo. Naša priča počinje sa vizijom da svaki prostor može postati remek-delo, a svaki dom - priča za sebe.";
   return (
-    <div className="o-nama-page page">
+    <div className="o-nama page">
       <Head headline={headline} text={text} />
 
       <div className="container">
-        <div className="gore">
-          <div className="left-side"></div>
-          <div className="right-side">
-            <h3>MI BUDIMO VAŠE ŽELJE I POKLANJAMO VAM SVOJU KREATIVNOST</h3>
+        <div className="o-nama gore">
+          <div className="levo"></div>
+          <div className="desno">
+            <h2>MI BUDIMO VAŠE ŽELJE I POKLANJAMO VAM SVOJU KREATIVNOST</h2>
             <div className="separator"></div>
-            <p className="text">
+            <p>
               Mi smo tim entuzijasta koji su posvećeni donošenju najfinijih
               brendova u vaš dom. Naš cilj je da spojimo funkcionalnost i
               estetiku, kako biste uživali u svakom trenutku provedenom u svom
@@ -26,7 +27,7 @@ const ONama = () => {
               prostoru ima svoju priču, svoju dušu.
             </p>
 
-            <p className="text">
+            <p>
               To je ono što nas izdvaja - sposobnost da stvorimo priču u svakom
               detalju.
             </p>
@@ -34,21 +35,15 @@ const ONama = () => {
         </div>
 
         <div className="dole">
-          <h3>U SVAKOM TRENUTKU PRUŽAMO VAM PUNO PODRŠKU</h3>
+          <h2>U SVAKOM TRENUTKU PRUŽAMO VAM PUNO PODRŠKU</h2>
           <div className="separator"></div>
           <p>
             Kontaktirajte nas i zajedno ćemo pretvoriti vaše projekte u
             umetnička dela.
           </p>
-          <Link
-            to="/kontakt"
-            className="link-kontakt"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-          >
-            Kontaktirajte nas!
-          </Link>
+          
+          <LinkKontakt />
+
         </div>
 
         <div className="o-nama-grid">

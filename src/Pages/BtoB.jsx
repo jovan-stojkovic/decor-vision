@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
 import Head from "../Components/Head";
+import LinkKontakt from "../Components/LinkKontakt";
+import BtoBGrid from "../Components/BtoBGrid";
+import "../Stilovi/Stranica.scss";
+
 
 const BtoB = () => {
-  const headline = "POSLOVNA SARADNJA"
-  const text = "Tu smo da stvaramo uspešne priče."
+  const headline = "POSLOVNA SARADNJA";
+  const text = "Tu smo da stvaramo uspešne priče.";
   return (
-    <div className="btob-page page">
-      <Head headline={headline} text={text}/>
+    <div className="btob page">
+      <Head headline={headline} text={text} />
 
-      <div className="btob-container container">
-        <div className="btob-gore gore">
-          <div className="left-side"></div>
-          <div className="right-side">
-            <h3>Dragi poslovni partneri,</h3>
+      <div className="container">
+        <div className="btob gore">
+          <div className="levo"></div>
+          <div className="desno">
+            <h2>Dragi poslovni partneri,</h2>
             <div className="separator"></div>
             <p>
               U vašem traganju za najfinijim detaljima u dekoraciji prostora, mi
@@ -29,46 +33,16 @@ const BtoB = () => {
           </div>
         </div>
 
-        <div className="btob-dole dole">
-          <h3>U SVAKOM TRENUTKU PRUŽAMO VAM PUNO PODRŠKU</h3>
+        <div className="dole">
+          <h2>U SVAKOM TRENUTKU PRUŽAMO VAM PUNO PODRŠKU</h2>
           <div className="separator"></div>
           <p>
             Kontaktirajte nas i zajedno ćemo pretvoriti vaše projekte u
             umetnička dela.
           </p>
-          <Link
-            to="/kontakt"
-            className="link-kontakt"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-          >
-            Kontaktirajte nas!
-          </Link>
+          <LinkKontakt />
         </div>
-
-        <div className="btob-grid">
-          <Link
-            to="https://www.latho.it/en/"
-            className="btob-grid-img one"
-            target="_blank"
-          />
-          <Link
-            to="https://www.lapitec.com/"
-            className="btob-grid-img two"
-            target="_blank"
-          />
-          <Link
-            to="https://www.slate-lite.com/eng/"
-            className="btob-grid-img three"
-            target="_blank"
-          />
-          <Link
-            to="https://www.decoprintwallcoverings.com/"
-            className="btob-grid-img four"
-            target="_blank"
-          />
-        </div>
+        <BtoBGrid />
       </div>
     </div>
   );

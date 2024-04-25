@@ -49,7 +49,7 @@ const Forma = () => {
         </div>
       ) : (
         <>
-          <h3 className="">VAŠA DEKORATIVNA AVANTURA POČINJE OVDE</h3>
+          <h2>VAŠA DEKORATIVNA AVANTURA POČINJE OVDE</h2>
           <div className="separator"></div>
           <p>
             Radujemo se razmeni ideja o vašem prostoru! Ako želite da oživite

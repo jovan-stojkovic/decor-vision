@@ -14,9 +14,9 @@ const Head = ({ headline, text }) => {
   return (
     <div className="head">
       <div className={`head-cont ${isVisible ? "visible" : ""}`}>
-        <h3>{headline}</h3>
+        <h1>{headline}</h1>
         <div className="separator"></div>
-        <p>{text}</p>
+        <h3 className="head-text">{text}</h3>
         <div className="arrows">
           <img src="/slike/icons/down-double.svg" />
         </div>

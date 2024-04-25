@@ -2,6 +2,7 @@ import Slider from "../Components/Slider";
 import Carousel from "../Components/Carousel";
 import Grid from "../Components/Grid";
 import { Link } from "react-router-dom";
+import "../Stilovi/Stranica.scss";
 
 const Pocetna = ({ slides }) => {
   return (
