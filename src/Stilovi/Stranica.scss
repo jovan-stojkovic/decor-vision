@@ -215,6 +215,55 @@
   }
 }
 
+//////  PROIZVODI STRANICA  //////
+.page.proizvodi {
+  .head {
+    background-image: url("/slike/backgrounds/1.jpg");
+  }
+  .container {
+    margin: 0 auto;
+    @include flex-center;
+
+    .proizvodi-grid {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-gap: 80px;
+      width: 1200px;
+      height: 1200px;
+      margin: 100px 0;
+
+      .jedan-proizvod {
+        .proizvod-img-container {
+          @include background;
+          border-radius: 5px;
+          box-shadow: $shadow-light;
+          transition: 0.2s;
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            box-shadow: $shadow-strong;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+
+          &:active {
+            box-shadow: $shadow-light;
+            transition: 0.2s;
+          }
+        }
+
+        .proizvod-naziv {
+          text-align: center;
+          font-size: 1.5rem;
+          margin: 10px 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
 //////  O NAMA STRANICA  //////
 .page.o-nama {
   .head {
