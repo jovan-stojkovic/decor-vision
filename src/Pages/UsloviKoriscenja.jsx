@@ -1,14 +1,16 @@
 import HeadProizvod from "../Components/HeadProizvod";
+import "../Stilovi/Stranica.scss";
+
 
 const UsloviKoriscenja = () => {
   const headline = "USLOVI KORIŠĆENJA";
   return (
     <>
-      <div className="uslovi-koriscenja-page page">
+      <div className="uslovi-koriscenja page">
         <HeadProizvod headline={headline} />
 
         <div className="container">
-          <h3>USLOVI KORIŠĆENJA I POLITIKA PRIVATNOSTI</h3>
+          <h2>USLOVI KORIŠĆENJA I POLITIKA PRIVATNOSTI</h2>
           <div className="separator"></div>
           <p>
             Poštovani korisnici, pre nego što koristite naše usluge, molimo vas

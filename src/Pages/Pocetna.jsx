@@ -6,7 +6,7 @@ import "../Stilovi/Stranica.scss";
 
 const Pocetna = ({ slides }) => {
   return (
-    <div className="home-page page">
+    <div className="home page">
       <Slider slides={slides} />
       <div className="container">
         <Carousel />
@@ -24,10 +24,10 @@ const Pocetna = ({ slides }) => {
         <Grid />
 
         <div className="dole">
-          <h3>
+          <h2>
             UZ PRIRODNU ELEGANCIJU NAŠIH PROIZVODA DEKORIŠITE INSPIRATIVNO VAŠ
             PROSTOR
-          </h3>
+          </h2>
           <div className="separator"></div>
           <p>
             Uživajte u našoj bogatoj ponudi za dekoraciju prostora. Uđite u

@@ -22,6 +22,28 @@
       }
     }
   }
+
+  .head.proizvod {
+    @include background;
+    height: 300px;
+
+    .head-cont {
+      opacity: 0;
+      transition: 2s ease;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      max-width: 1200px;
+
+      &.visible {
+        opacity: 1;
+      }
+    }
+  }
+
   .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -66,6 +88,128 @@
 
       p {
         text-align: center;
+      }
+    }
+  }
+}
+
+//////  POČETNA STRANICA  //////
+.page.home {
+  .slide-container {
+    height: 500px;
+
+    .react-slideshow-container .nav:first-of-type {
+      left: 400px;
+    }
+
+    .react-slideshow-container .nav:last-of-type {
+      right: 400px;
+    }
+  }
+
+  #slide {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    @include flex-center;
+
+    p.caption {
+      font-size: 2rem;
+      color: $almost-white;
+      padding: 25px 45px;
+      background-color: $text-background;
+      border-radius: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    .carousel {
+      height: 300px;
+      gap: 50px;
+      margin: 100px 0;
+      @include flex-space;
+
+      .card {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        &.one {
+          background-image: url("/slike/carousel/1.jpg");
+        }
+
+        &.two {
+          background-image: url("/slike/carousel/2.jpg");
+        }
+
+        &.three {
+          background-image: url("/slike/carousel/3.jpg");
+        }
+      }
+    }
+
+    .insta-link-cont {
+      margin: 50px auto;
+      width: 200px;
+      @include flex-center;
+      flex-direction: column;
+
+      .insta-img-container {
+        background-image: url("/slike/icons/instagram-light-blue.svg");
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      a {
+        all: unset;
+        margin: 0 auto;
+        cursor: pointer;
+        color: $main-green;
+        font-size: 1.4rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+      }
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: auto auto auto auto;
+
+      .cell {
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 1;
+      }
+
+      .one {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-image: url("/slike/instagram/1.jpg");
+      }
+
+      .two {
+        background-image: url("/slike/instagram/2.jpg");
+      }
+
+      .three {
+        background-image: url("/slike/instagram/3.jpg");
+      }
+
+      .four {
+        background-image: url("/slike/instagram/4.jpg");
+      }
+
+      .five {
+        background-image: url("/slike/instagram/5.jpg");
       }
     }
   }
@@ -184,4 +328,22 @@
   }
 }
 
+//////  USLOVI KORIŠĆENJA STRANICA  //////
+.page.uslovi-koriscenja {
+  .head {
+    background-image: url("/slike/backgrounds/14.jpg");
+  }
 
+  .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    h4 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+  }
+}

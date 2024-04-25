@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 const HeadProizvod = ({ headline }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -13,7 +14,7 @@ const HeadProizvod = ({ headline }) => {
   return (
     <div className="head proizvod">
       <div className={`head-cont ${isVisible ? "visible" : ""}`}>
-        <h3>{headline}</h3>
+        <h1>{headline}</h1>
         <div className="arrows">
           <img src="/slike/icons/down-double.svg" />
         </div>
