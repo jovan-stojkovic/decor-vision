@@ -3,10 +3,10 @@ import HeadProizvod from "../Components/HeadProizvod";
 import "../Stilovi/Stranica.scss";
 
 const Lapitec = ({ lapitec, noIMG }) => {
-  const headline = "LAPITEC"
+  const headline = "LAPITEC";
   return (
     <div className="lapitec page">
-      <HeadProizvod headline={headline}/>
+      <HeadProizvod headline={headline} />
 
       <div className="container">
         <p className="kategorija-info lapitec">
@@ -64,9 +64,9 @@ const Lapitec = ({ lapitec, noIMG }) => {
                       wide,
                     },
                   }}
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                  }}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                 >
                   <div className="img-container">
                     <img src={narrow || noIMG} alt={ime} />

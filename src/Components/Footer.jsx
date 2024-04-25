@@ -7,7 +7,7 @@ const Footer = () => {
       <Link
         to="/"
         className="footer-logo"
-        onClick={() => window.scrollTo(0, 0)}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <img src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
       </Link>
@@ -15,9 +15,7 @@ const Footer = () => {
       <Link
         to="/uslovi-koriscenja"
         className="uslovi-link"
-        onClick={() => {
-          window.scrollTo(0, 0);
-        }}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         USLOVI KORIŠĆENJA | PRAVILA PRIVATNOSTI
       </Link>

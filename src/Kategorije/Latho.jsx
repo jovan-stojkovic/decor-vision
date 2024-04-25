@@ -57,9 +57,7 @@ const Latho = ({
                 state={{
                   proizvod: { ime, kvadrat, strana, patern, tech, index },
                 }}
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               >
                 <div className="img-container">
                   <img src={kvadrat || noIMG} alt={ime} />
@@ -76,9 +74,7 @@ const Latho = ({
                 state={{
                   proizvod: { ime, kvadrat, wide },
                 }}
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               >
                 <div className="img-container">
                   <img src={kvadrat || wide || noIMG} alt={ime} />

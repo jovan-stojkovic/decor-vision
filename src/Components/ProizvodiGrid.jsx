@@ -8,9 +8,7 @@ const ProizvodiGrid = ({ proizvodi }) => {
           <div className="jedan-proizvod" key={index}>
             <Link
               to={`/proizvodi/${text}`}
-              onClick={() => {
-                window.scrollTo(0, 0);
-              }}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               <div
                 className="proizvod-img-container"

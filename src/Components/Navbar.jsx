@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import "../Stilovi/Component.scss";
 
-
 const Navbar = () => {
   const [showNavbarDiv, setShowNavbarDiv] = useState(false);
 
@@ -22,7 +21,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
-        <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)}>
+        <Link to="/" className="logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <img src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
         </Link>
         <div className="nav-links">
@@ -31,7 +30,11 @@ const Navbar = () => {
             onMouseEnter={() => handleHover(true)}
             onMouseLeave={() => handleHover(false)}
           >
-            <NavLink className="nav-link" to="/proizvodi">
+            <NavLink
+              className="nav-link"
+              to="/proizvodi"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
               PROIZVODI
             </NavLink>
 
@@ -55,13 +58,25 @@ const Navbar = () => {
             </div>
           </div>
 
-          <NavLink className="nav-link" to="/o-nama">
+          <NavLink
+            className="nav-link"
+            to="/o-nama"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             O NAMA
           </NavLink>
-          <NavLink className="nav-link" to="/b2b">
+          <NavLink
+            className="nav-link"
+            to="/b2b"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             B2B
           </NavLink>
-          <NavLink className="nav-link" to="/kontakt">
+          <NavLink
+            className="nav-link"
+            to="/kontakt"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             KONTAKT
           </NavLink>
           <Link to={instaPage} target="_blank" id="insta-link" />
