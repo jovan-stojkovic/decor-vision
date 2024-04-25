@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import HeadProizvod from "../Components/HeadProizvod";
 
 const Lapitec = ({ lapitec, noIMG }) => {
+  const headline = "LAPITEC"
   return (
     <div className="lapitec-page page">
-      <div className="head">
-        <h3>Lapitec</h3>
-      </div>
+      <HeadProizvod headline={headline}/>
+
+      
 
       <div className="container lapitec">
         <p className="kategorija-info lapitec">

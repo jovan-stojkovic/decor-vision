@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
+import HeadProizvod from "../Components/HeadProizvod";
 
 const KameniFurniri = () => {
+  const headline = "KAMENI FURNIRI";
   return (
     <div className="kameni-furniri-page page">
-      <div className="head">
-        <h3>Kameni furniri</h3>
-        
-      </div>
+      <HeadProizvod headline={headline} />
 
       <div className="container">
-      <p className="kategorija-info">Slate-Lite</p>
+        <p className="kategorija-info">Slate-Lite</p>
 
         <p className="kategorija-info">
           Sa velikim zadovoljstvom Vam predstavljamo kamene furnire našeg
@@ -37,13 +36,11 @@ const KameniFurniri = () => {
             }
           >
             obrađivati
-          </Link>
-          {" "}- bez obzira da li ste profesionalac ili ambiciozan amater.
+          </Link>{" "}
+          - bez obzira da li ste profesionalac ili ambiciozan amater.
         </p>
 
-        <p className="kategorija-info">
-          Pravi proizvod za svaki projekat
-        </p>
+        <p className="kategorija-info">Pravi proizvod za svaki projekat</p>
 
         <p className="kategorija-info">
           Otkrijte ukupno preko 70 dekora sa pet različitih vrsta kamena: Ne
@@ -110,7 +107,8 @@ const KameniFurniri = () => {
             to="https://www.slate-lite.com/eng/c/products.html"
           >
             CENE POGLEDAJTE OVDE
-          </Link>!
+          </Link>
+          !
         </p>
       </div>
     </div>

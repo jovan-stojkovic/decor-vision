@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
+import HeadProizvod from "../Components/HeadProizvod";
 
-const Tapete = ({tapete}) => {
+const Tapete = ({ tapete }) => {
+  const headline = "TAPETE";
   return (
     <div className="tapete-page page">
-      <div className="head">
-        <h3>Tapete</h3>
-      </div>
+      <HeadProizvod headline={headline} />
 
       <div className="container">
         <p className="kategorija-info">Decoprint</p>
@@ -26,15 +26,22 @@ const Tapete = ({tapete}) => {
           tapete budu dostupne.
         </p>
         <p className="kategorija-info">
-            <Link target="_blank" to="https://www.decoprintwallcoverings.com/en/collections">Uživajte</Link>
+          <Link
+            target="_blank"
+            to="https://www.decoprintwallcoverings.com/en/collections"
+          >
+            Uživajte
+          </Link>
         </p>
-        
+
         <div className="grid-proizvoda tapete">
           {tapete.map(({ ime, slika, url }) => (
             <div className="proizvod" key={ime} id="tapeta">
-                <Link target="_blank" to={url}><div className="img-container">
-                <img src={slika} alt={ime} />
-              </div></Link>
+              <Link target="_blank" to={url}>
+                <div className="img-container">
+                  <img src={slika} alt={ime} />
+                </div>
+              </Link>
               <p className="ime-proizvoda">{ime}</p>
             </div>
           ))}

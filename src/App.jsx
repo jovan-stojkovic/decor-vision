@@ -45,7 +45,7 @@ const App = () => {
             <Route exact path="/" element={<Pocetna slides={slides} />} />
             <Route
               path="/proizvodi"
-              element={<Proizvodi proizvodi={proizvodi} />}
+              element={<Proizvodi proizvodi={proizvodi}/>}
             />
             <Route path="/o-nama" element={<ONama />} />
             <Route path="/b2b" element={<BtoB />} />

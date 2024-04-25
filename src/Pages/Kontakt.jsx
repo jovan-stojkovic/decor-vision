@@ -1,16 +1,12 @@
 import Forma from "../Components/Forma";
+import Head from "../Components/Head";
 
 const Kontakt = () => {
+  const headline = "KONTAKTIRAJTE NAS";
+  const text = "Tu smo da pomognemo.";
   return (
     <div className="kontakt-page page">
-      <div className="head">
-        <h3>KONTAKTIRAJTE NAS</h3>
-        <div className="separator"></div>
-        <p className="opis">Tu smo da pomognemo.</p>
-        <div className="arrows">
-          <img src="/src/Assets/logos/down-double.svg"/>
-        </div>
-      </div>
+      <Head headline={headline} text={text} />
 
       <div className="kontakt-container container">
         <div className="kontakt-info">

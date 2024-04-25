@@ -1,16 +1,12 @@
 import { Link } from "react-router-dom";
+import Head from "../Components/Head";
 
 const BtoB = () => {
+  const headline = "POSLOVNA SARADNJA"
+  const text = "Tu smo da stvaramo uspešne priče."
   return (
     <div className="btob-page page">
-      <div className="head">
-        <h3>POSLOVNA SARADNJA</h3>
-        <div className="separator"></div>
-        <p>Tu smo da stvaramo uspešne priče.</p>
-        <div className="arrows">
-        <img src="/src/Assets/logos/down-double.svg"/>
-        </div>
-      </div>
+      <Head headline={headline} text={text}/>
 
       <div className="btob-container container">
         <div className="btob-gore gore">

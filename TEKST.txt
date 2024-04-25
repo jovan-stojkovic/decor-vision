@@ -16,6 +16,9 @@ smanji FOTOS da ne ucitava predugo
 da se otvore slike
 tab ime za svaku stranicu
 SCSS haos razdeli
+fensi underline na hover
+
+ocisti proizvode, da ostanu 4
 
 
 //////////    dizajneru pitanja    //////////

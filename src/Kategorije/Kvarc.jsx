@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HeadProizvod from "../Components/HeadProizvod";
 
 const Latho = ({
   lathoMilled,
@@ -7,11 +8,10 @@ const Latho = ({
   lathoMoveInfo,
   noIMG,
 }) => {
+  const headline = "LATHO";
   return (
     <div className="latho-page page">
-      <div className="head">
-        <h3>Latho</h3>
-      </div>
+      <HeadProizvod headline={headline} />
 
       <div className="container latho">
         <p className="kategorija-info latho">
@@ -70,11 +70,13 @@ const Latho = ({
           {lathoMove.map(({ ime, kvadrat, wide }) => (
             <div className="proizvod" key={ime}>
               <Link
-              to={`/proizvodi/Latho/Move/${ime}`}
-              state={{
-                proizvod: {ime, kvadrat, wide}
-              }}
-              onClick={() => {window.scrollTo(0,0)}}
+                to={`/proizvodi/Latho/Move/${ime}`}
+                state={{
+                  proizvod: { ime, kvadrat, wide },
+                }}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
               >
                 <div className="img-container">
                   <img src={kvadrat || wide || noIMG} alt={ime} />

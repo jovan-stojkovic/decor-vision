@@ -1,20 +1,14 @@
 import { Link } from "react-router-dom";
+import Head from "../Components/Head";
+
 
 const ONama = () => {
+  const headline = "O NAMA";
+  const text =
+    "Dobrodošli u naš svet. Naša strast prema dekoraciji prostora traje već dugo. Naša priča počinje sa vizijom da svaki prostor može postati remek-delo, a svaki dom - priča za sebe.";
   return (
     <div className="o-nama-page page">
-      <div className="head">
-        <h3>O NAMA</h3>
-        <div className="separator"></div>
-        <p className="opis">
-          Dobrodošli u naš svet. <br /> Naša strast prema dekoraciji prostora
-          traje već dugo. Naša priča počinje sa vizijom da svaki prostor može
-          postati remek-delo, a svaki dom - priča za sebe.
-        </p>
-        <div className="arrows">
-        <img src="/src/Assets/logos/down-double.svg"/>
-        </div>
-      </div>
+      <Head headline={headline} text={text} />
 
       <div className="container">
         <div className="gore">
