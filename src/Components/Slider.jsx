@@ -13,6 +13,7 @@ const Slider = ({slides}) => {
                             <p className="caption">{image.text}</p>
                         </div>
                     </div>
+
                 ))}
 
             </Slide>

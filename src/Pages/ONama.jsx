@@ -11,7 +11,9 @@ const ONama = () => {
           traje već dugo. Naša priča počinje sa vizijom da svaki prostor može
           postati remek-delo, a svaki dom - priča za sebe.
         </p>
-        <div className="arrows"></div>
+        <div className="arrows">
+        <img src="/src/Assets/logos/down-double.svg"/>
+        </div>
       </div>
 
       <div className="container">

@@ -7,7 +7,9 @@ const BtoB = () => {
         <h3>POSLOVNA SARADNJA</h3>
         <div className="separator"></div>
         <p>Tu smo da stvaramo uspešne priče.</p>
-        <div className="arrows"></div>
+        <div className="arrows">
+        <img src="/src/Assets/logos/down-double.svg"/>
+        </div>
       </div>
 
       <div className="btob-container container">

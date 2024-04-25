@@ -18,7 +18,9 @@ const Proizvodi = ({ proizvodi }) => {
         <h3 className={isVisible ? "visible" : ""}>PROIZVODI</h3>
         <div className="separator"></div>
         <p>Istražite našu ponudu koja će dodati poseban šarm vašem prostoru.</p>
-        <div className="arrows"></div>
+        <div className="arrows">
+        <img src="/src/Assets/logos/down-double.svg"/>
+        </div>
       </div>
 
       <div className="proizvodi-container container">

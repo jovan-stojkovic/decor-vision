@@ -7,7 +7,9 @@ const Kontakt = () => {
         <h3>KONTAKTIRAJTE NAS</h3>
         <div className="separator"></div>
         <p className="opis">Tu smo da pomognemo.</p>
-        <div className="arrows"></div>
+        <div className="arrows">
+          <img src="/src/Assets/logos/down-double.svg"/>
+        </div>
       </div>
 
       <div className="kontakt-container container">
