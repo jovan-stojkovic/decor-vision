@@ -22,19 +22,19 @@ export const slides = [
 
 export const proizvodi = [
   {
-    url: "public/slike/backgrounds/Lapitec-background.jpg",
+    url: "/slike/backgrounds/Lapitec-background.jpg",
     text: "Lapitec",
   },
   {
-    url: "public/slike/proizvodi/Latho/Milled/Roma/fresati-roma-brown-head-bnr-1024x640.jpg",
+    url: "/slike/proizvodi/Latho/Milled/Roma/fresati-roma-brown-head-bnr-1024x640.jpg",
     text: "Latho",
   },
   {
-    url: "public/slike/proizvodi/Kameni furniri/Hotspot_Innen_2023.webp",
+    url: "/slike/proizvodi/Kameni furniri/Hotspot_Innen_2023.webp",
     text: "Kameni furniri",
   },
   {
-    url: "public/slike/proizvodi/Tapete/Decoprint/Shades of colour.jpg",
+    url: "/slike/proizvodi/Tapete/Decoprint/Shades of colour.jpg",
     text: "Tapete",
   },
 ];

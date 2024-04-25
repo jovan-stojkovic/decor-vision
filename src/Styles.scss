@@ -382,7 +382,7 @@ p {
 
     .success-img-cont {
       @include background;
-      background-image: url("public/slike/icons/success.svg");
+      background-image: url("/slike/icons/success.svg");
       height: 300px;
       aspect-ratio: 1;
     }
@@ -464,15 +464,15 @@ p {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
         &.one {
-          background-image: url("public/slike/carousel/1.jpg");
+          background-image: url("/slike/carousel/1.jpg");
         }
 
         &.two {
-          background-image: url("public/slike/carousel/2.jpg");
+          background-image: url("/slike/carousel/2.jpg");
         }
 
         &.three {
-          background-image: url("public/slike/carousel/3.jpg");
+          background-image: url("/slike/carousel/3.jpg");
         }
       }
     }
@@ -484,7 +484,7 @@ p {
       flex-direction: column;
 
       .insta-img-container {
-        background-image: url("public/slike/icons/instagram-light-blue.svg");
+        background-image: url("/slike/icons/instagram-light-blue.svg");
         width: 50px;
         height: 50px;
         background-size: cover;
@@ -517,23 +517,23 @@ p {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-image: url("public/slike/instagram/1.jpg");
+        background-image: url("/slike/instagram/1.jpg");
       }
 
       .two {
-        background-image: url("public/slike/instagram/2.jpg");
+        background-image: url("/slike/instagram/2.jpg");
       }
 
       .three {
-        background-image: url("public/slike/instagram/3.jpg");
+        background-image: url("/slike/instagram/3.jpg");
       }
 
       .four {
-        background-image: url("public/slike/instagram/4.jpg");
+        background-image: url("/slike/instagram/4.jpg");
       }
 
       .five {
-        background-image: url("public/slike/instagram/5.jpg");
+        background-image: url("/slike/instagram/5.jpg");
       }
     }
 
@@ -548,7 +548,7 @@ p {
 //PROIZVODI STRANICA
 .proizvodi-page {
   .head {
-    background-image: url("public/slike/backgrounds/1.jpg");
+    background-image: url("/slike/backgrounds/1.jpg");
   }
 
   .container {
@@ -591,11 +591,11 @@ p {
 //O NAMA STRANICA
 .o-nama-page {
   .head {
-    background-image: url("public/slike/backgrounds/2.jpg");
+    background-image: url("/slike/backgrounds/2.jpg");
   }
 
   .left-side {
-    background-image: url("public/slike/backgrounds/8.jpg");
+    background-image: url("/slike/backgrounds/8.jpg");
   }
 
   .o-nama-grid {
@@ -607,16 +607,16 @@ p {
       @include background;
 
       &.one {
-        background-image: url("public/slike/instagram/6.jpg");
+        background-image: url("/slike/instagram/6.jpg");
       }
       &.two {
-        background-image: url("public/slike/instagram/7.jpg");
+        background-image: url("/slike/instagram/7.jpg");
       }
       &.three {
-        background-image: url("public/slike/instagram/8.jpg");
+        background-image: url("/slike/instagram/8.jpg");
       }
       &.four {
-        background-image: url("public/slike/instagram/9.jpg");
+        background-image: url("/slike/instagram/9.jpg");
       }
     }
   }
@@ -625,12 +625,12 @@ p {
 //B2B STRANICA
 .btob-page {
   .head {
-    background-image: url("public/slike/backgrounds/11.jpg");
+    background-image: url("/slike/backgrounds/11.jpg");
   }
 
   .btob-container {
     .left-side {
-      background-image: url("public/slike/backgrounds/12.jpg");
+      background-image: url("/slike/backgrounds/12.jpg");
     }
 
     .btob-grid {
@@ -660,16 +660,16 @@ p {
         }
 
         &.one {
-          background-image: url("public/slike/logos/latho.jpg");
+          background-image: url("/slike/logos/latho.jpg");
         }
         &.two {
-          background-image: url("public/slike/logos/lapitec.jpg");
+          background-image: url("/slike/logos/lapitec.jpg");
         }
         &.three {
-          background-image: url("public/slike/logos/slate_lite.jpg");
+          background-image: url("/slike/logos/slate_lite.jpg");
         }
         &.four {
-          background-image: url("public/slike/logos/decoprint.jpg");
+          background-image: url("/slike/logos/decoprint.jpg");
         }
       }
     }
@@ -679,7 +679,7 @@ p {
 //KONTAKT STRANICA
 .kontakt-page {
   .head {
-    background-image: url("public/slike/backgrounds/13.jpg");
+    background-image: url("/slike/backgrounds/13.jpg");
   }
 
   .container {
@@ -768,7 +768,7 @@ p {
 .uslovi-koriscenja-page {
   .head {
     height: 400px;
-    background-image: url("public/slike/backgrounds/14.jpg");
+    background-image: url("/slike/backgrounds/14.jpg");
   }
 
   .container {
@@ -873,12 +873,12 @@ nav {
       #insta-link {
         height: 1.4rem;
         width: 1.4rem;
-        background-image: url("public/slike/icons/instagram-black.svg");
+        background-image: url("/slike/icons/instagram-black.svg");
         transition: 0.2s;
         @include background;
 
         &:hover {
-          background-image: url("public/slike/icons/instagram-green.svg");
+          background-image: url("/slike/icons/instagram-green.svg");
           transition: 0.2s;
         }
       }
