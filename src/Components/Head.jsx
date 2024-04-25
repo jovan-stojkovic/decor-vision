@@ -19,7 +19,7 @@ const Head = ({headline, text}) => {
         <div className="separator"></div>
         <p>{text}</p>
         <div className="arrows">
-          <img src="/src/Assets/logos/down-double.svg" />
+          <img src="public/slike/icons/down-double.svg"/>
         </div>
       </div>
     </div>

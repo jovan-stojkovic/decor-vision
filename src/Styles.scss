@@ -91,7 +91,7 @@ p {
   .head {
     @include background;
     height: 600px;
-    background-image: url("/src/Assets/backgrounds/14.jpg");
+    background-image: url("/public/slike/backgrounds/14.jpg");
 
     .head-cont {
       opacity: 0;
@@ -382,7 +382,7 @@ p {
 
     .success-img-cont {
       @include background;
-      background-image: url("/src/Assets/logos/success.svg");
+      background-image: url("public/slike/icons/success.svg");
       height: 300px;
       aspect-ratio: 1;
     }
@@ -464,15 +464,15 @@ p {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
         &.one {
-          background-image: url("./src/Assets/carousel/1.jpg");
+          background-image: url("public/slike/carousel/1.jpg");
         }
 
         &.two {
-          background-image: url("./src/Assets/carousel/2.jpg");
+          background-image: url("public/slike/carousel/2.jpg");
         }
 
         &.three {
-          background-image: url("./src/Assets/carousel/3.jpg");
+          background-image: url("public/slike/carousel/3.jpg");
         }
       }
     }
@@ -484,7 +484,7 @@ p {
       flex-direction: column;
 
       .insta-img-container {
-        background-image: url("src/Assets/logos/instagram-light-blue.svg");
+        background-image: url("public/slike/icons/instagram-light-blue.svg");
         width: 50px;
         height: 50px;
         background-size: cover;
@@ -517,23 +517,23 @@ p {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-image: url("src/Assets/instagram/1.jpg");
+        background-image: url("public/slike/instagram/1.jpg");
       }
 
       .two {
-        background-image: url("src/Assets/instagram/2.jpg");
+        background-image: url("public/slike/instagram/2.jpg");
       }
 
       .three {
-        background-image: url("src/Assets/instagram/3.jpg");
+        background-image: url("public/slike/instagram/3.jpg");
       }
 
       .four {
-        background-image: url("src/Assets/instagram/4.jpg");
+        background-image: url("public/slike/instagram/4.jpg");
       }
 
       .five {
-        background-image: url("src/Assets/instagram/5.jpg");
+        background-image: url("public/slike/instagram/5.jpg");
       }
     }
 
@@ -548,7 +548,7 @@ p {
 //PROIZVODI STRANICA
 .proizvodi-page {
   .head {
-    background-image: url("src/Assets/backgrounds/1.jpg");
+    background-image: url("public/slike/backgrounds/1.jpg");
   }
 
   .container {
@@ -591,11 +591,11 @@ p {
 //O NAMA STRANICA
 .o-nama-page {
   .head {
-    background-image: url("src/Assets/backgrounds/2.jpg");
+    background-image: url("public/slike/backgrounds/2.jpg");
   }
 
   .left-side {
-    background-image: url("src/Assets/backgrounds/8.jpg");
+    background-image: url("public/slike/backgrounds/8.jpg");
   }
 
   .o-nama-grid {
@@ -607,16 +607,16 @@ p {
       @include background;
 
       &.one {
-        background-image: url("/src/Assets/instagram/6.jpg");
+        background-image: url("public/slike/instagram/6.jpg");
       }
       &.two {
-        background-image: url("/src/Assets/instagram/7.jpg");
+        background-image: url("public/slike/instagram/7.jpg");
       }
       &.three {
-        background-image: url("/src/Assets/instagram/8.jpg");
+        background-image: url("public/slike/instagram/8.jpg");
       }
       &.four {
-        background-image: url("/src/Assets/instagram/9.jpg");
+        background-image: url("public/slike/instagram/9.jpg");
       }
     }
   }
@@ -625,12 +625,12 @@ p {
 //B2B STRANICA
 .btob-page {
   .head {
-    background-image: url("src/Assets/backgrounds/11.jpg");
+    background-image: url("public/slike/backgrounds/11.jpg");
   }
 
   .btob-container {
     .left-side {
-      background-image: url("src/Assets/backgrounds/12.jpg");
+      background-image: url("public/slike/backgrounds/12.jpg");
     }
 
     .btob-grid {
@@ -660,16 +660,16 @@ p {
         }
 
         &.one {
-          background-image: url("src/Assets/logos/latho.jpg");
+          background-image: url("public/slike/logos/latho.jpg");
         }
         &.two {
-          background-image: url("src/Assets/logos/lapitec.jpg");
+          background-image: url("public/slike/logos/lapitec.jpg");
         }
         &.three {
-          background-image: url("src/Assets/logos/slate_lite.jpg");
+          background-image: url("public/slike/logos/slate_lite.jpg");
         }
         &.four {
-          background-image: url("src/Assets/logos/decoprint.jpg");
+          background-image: url("public/slike/logos/decoprint.jpg");
         }
       }
     }
@@ -679,7 +679,7 @@ p {
 //KONTAKT STRANICA
 .kontakt-page {
   .head {
-    background-image: url("src/Assets/backgrounds/13.jpg");
+    background-image: url("public/slike/backgrounds/13.jpg");
   }
 
   .container {
@@ -768,7 +768,7 @@ p {
 .uslovi-koriscenja-page {
   .head {
     height: 400px;
-    background-image: url("src/Assets/backgrounds/14.jpg");
+    background-image: url("public/slike/backgrounds/14.jpg");
   }
 
   .container {
@@ -873,12 +873,12 @@ nav {
       #insta-link {
         height: 1.4rem;
         width: 1.4rem;
-        background-image: url("./Assets/logos/instagram-black.svg");
+        background-image: url("public/slike/icons/instagram-black.svg");
         transition: 0.2s;
         @include background;
 
         &:hover {
-          background-image: url("./Assets/logos/instagram-green.svg");
+          background-image: url("public/slike/icons/instagram-green.svg");
           transition: 0.2s;
         }
       }
@@ -945,16 +945,16 @@ footer {
 .lapitec-page {
   .head {
     height: 400px;
-    background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+    background-image: url("/public/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
   }
 
   .img-container {
     &.left {
-      background-image: url("/src/Assets/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+      background-image: url("/public/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
     }
 
     &.right {
-      background-image: url("/src/Assets/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+      background-image: url("/public/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
     }
   }
 }
@@ -966,13 +966,13 @@ footer {
   }
 
   #move-img-container-l {
-    background-image: url("/src/Assets/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+    background-image: url("/public/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
     height: 70%;
     background-size: fill;
   }
 
   #move-img-container-r {
-    background-image: url("/src/Assets/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+    background-image: url("/public/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
     height: 70%;
   }
 }
@@ -981,7 +981,7 @@ footer {
 .kameni-furniri-page {
   .head {
     height: 400px;
-    background-image: url("/src/Assets/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+    background-image: url("/public/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
   }
 
   a {
@@ -1003,7 +1003,7 @@ footer {
 .tapete-page {
   .head {
     height: 400px;
-    background-image: url("/src/Assets/proizvodi/Tapete/Decoprint/Essentials.jpg");
+    background-image: url("/public/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
     background-position: top;
   }
 

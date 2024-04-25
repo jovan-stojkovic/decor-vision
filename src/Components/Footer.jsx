@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <Link to="/" className="footer-logo" onClick={()=>window.scrollTo(0,0)}>
-          <img src="/src/Assets/logos/decor_vision.svg" alt="DECOR VISION" />
+          <img src="/public/slike/logos/decor_vision.svg" alt="DECOR VISION" />
         </Link>
 
           <Link to="/uslovi-koriscenja" className="uslovi-link"
