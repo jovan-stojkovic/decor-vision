@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "../Stilovi/Component.scss";
+
 
 const BackToTopButton = () => {
   const [backToTopButton, setBackToTopButton] = useState(false);
@@ -25,8 +27,8 @@ const BackToTopButton = () => {
       {backToTopButton && (
         <button onClick={scrollUp} className="to-the-top-button">
           <img
-            src="https://www.iconbolt.com/iconsets/heroicons-outline/arrow-up-circle.svg"
-            alt=""
+            src="/slike/icons/arrow-up-circle.svg"
+            alt="arrow-up"
           />
         </button>
       )}

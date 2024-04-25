@@ -1,5 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
+import "../Stilovi/Component.scss";
+
 
 const Navbar = () => {
   const [showNavbarDiv, setShowNavbarDiv] = useState(false);

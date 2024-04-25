@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
+import "../Stilovi/Stranica.scss";
 
 const KameniFurniri = () => {
   const headline = "KAMENI FURNIRI";
   return (
-    <div className="kameni-furniri-page page">
+    <div className="kameni-furniri page">
       <HeadProizvod headline={headline} />
 
       <div className="container">
-        <p className="kategorija-info">Slate-Lite</p>
+        <h2 className="kategorija-info">Slate-Lite</h2>
 
         <p className="kategorija-info">
           Sa velikim zadovoljstvom Vam predstavljamo kamene furnire našeg

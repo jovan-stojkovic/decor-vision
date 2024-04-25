@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
+import "../Stilovi/Stranica.scss";
+
 
 const Latho = ({
   lathoMilled,
@@ -10,10 +12,10 @@ const Latho = ({
 }) => {
   const headline = "LATHO";
   return (
-    <div className="latho-page page">
+    <div className="latho page">
       <HeadProizvod headline={headline} />
 
-      <div className="container latho">
+      <div className="container">
         <p className="kategorija-info latho">
           Vrhunski pločasti materijala od drveta.
         </p>

@@ -1,5 +1,6 @@
 @import "./Styles.scss";
 
+//////  KONTAKT FORMA  //////
 .forma {
   @include flex-column;
 
@@ -107,6 +108,7 @@
     .p-success {
       margin: 0;
       font-size: 1.5rem;
+      text-align: center;
     }
 
     button {
@@ -132,5 +134,295 @@
     color: $main-green;
     font-weight: 500;
     cursor: pointer;
+  }
+}
+
+//////  PROIZVOD FORMA  //////
+.forma.proizvod {
+  @include flex-column;
+  justify-content: space-between;
+  width: 50%;
+  height: 800px;
+
+  h2 {
+    color: $main-green;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  form {
+      margin-bottom: 0;
+
+    .inputi {
+      font-size: 1.3rem;
+      
+
+      &#message {
+        height: 235px;
+        padding-top: 10px;
+        word-wrap: break-word;
+      }
+    }
+
+    p.error {
+      text-align: right;
+      font-size: 0.6rem;
+      margin: 0;
+      color: red;
+      height: 25px;
+
+      &.check {
+        text-align: left;
+      }
+    }
+
+    .saglasnost {
+      text-align: justify;
+      font-size: 0.9rem;
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+    #checkbox {
+      accent-color: $main-green;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    .checkbox-label {
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 100%;
+      background-color: $main-green;
+      text-align: center;
+      margin-top: 25px;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.1rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .proizvod-success {
+    padding: 50px;
+    @include flex-center;
+    flex-direction: column;
+    gap: 50px;
+    height: 800px;
+    background-color: $light-blue;
+
+    .success-img-cont {
+      @include background;
+      background-image: url("/slike/icons/success.svg");
+      height: 300px;
+      aspect-ratio: 1;
+    }
+
+    .p-success {
+      text-align: center;
+    }
+
+    button {
+      all: unset;
+      height: 50px;
+      width: 80%;
+      background-color: $main-green;
+      text-align: center;
+      margin-top: 25px;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+
+      &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+      }
+    }
+
+
+  }
+
+  #pravila-url {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+
+//////  NAVBAR  //////
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  @include flex-center;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(7px);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  z-index: 6;
+
+  .nav-container {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 5;
+    @include flex-space;
+
+    img {
+      height: 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .nav-link {
+        all: unset;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        z-index: 2;
+        color: $dark;
+
+        &.active {
+          color: $main-green;
+        }
+
+        &:hover {
+          color: $main-green;
+          cursor: pointer;
+        }
+      }
+
+      .proizvodi-div {
+        @include flex-center;
+        position: relative;
+
+        .hidden-nav-div {
+          position: absolute;
+          top: -20px;
+          left: -25px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.2s;
+          z-index: 1;
+          scale: 0.7;
+
+          .empty {
+            height: 60.6px;
+          }
+
+          .hidden-nav-div-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 25px;
+            width: 170px;
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+          &.show {
+            top: 0px;
+            visibility: visible;
+            transition: 0.2s;
+            opacity: 1;
+            scale: 1;
+          }
+
+          .hidden-category {
+            all: unset;
+            color: $almost-white;
+            font-size: 0.8rem;
+            font-weight: 500;
+
+            &:hover {
+              color: $main-green;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      #insta-link {
+        height: 1.4rem;
+        width: 1.4rem;
+        background-image: url("/slike/icons/instagram-black.svg");
+        transition: 0.2s;
+        @include background;
+
+        &:hover {
+          background-image: url("/slike/icons/instagram-green.svg");
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
+
+//////  FOOTER  //////
+footer {
+  width: 100%;
+  background-color: $light-blue;
+  height: 350px;
+  @include flex-center;
+  flex-direction: column;
+  gap: 20px;
+
+  .footer-logo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    @include flex-center;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .uslovi-link {
+    all: unset;
+    color: $main-green;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  p.copyright {
+    color: $main-green;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+}
+
+//////  BACK TO THE TOP BUTTON  //////
+.to-the-top-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  z-index: 5;
+  cursor: pointer;
+  img {
+    height: 50px;
   }
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../Stilovi/Component.scss";
 
 const Footer = () => {
   return (

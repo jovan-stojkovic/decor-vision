@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
+import "../Stilovi/Stranica.scss";
+
 
 const Tapete = ({ tapete }) => {
   const headline = "TAPETE";
   return (
-    <div className="tapete-page page">
+    <div className="tapete page">
       <HeadProizvod headline={headline} />
 
       <div className="container">

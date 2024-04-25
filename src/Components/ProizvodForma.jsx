@@ -27,7 +27,7 @@ const ProizvodForma = () => {
   };
 
   return (
-    <div className="forma proizvod" id="grid-two">
+    <div className="forma proizvod">
       {success ? (
         <div className="proizvod-success">
           <div className="success-img-cont"></div>
@@ -44,7 +44,7 @@ const ProizvodForma = () => {
         </div>
       ) : (
         <>
-          <h3>POŠALJI UPIT ZA OVAJ PROIZVOD</h3>
+          <h2>POŠALJI UPIT ZA OVAJ PROIZVOD</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <p className="error">{errors.ime?.message}</p>
             <input

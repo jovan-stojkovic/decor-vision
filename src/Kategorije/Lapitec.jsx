@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
+import "../Stilovi/Stranica.scss";
 
 const Lapitec = ({ lapitec, noIMG }) => {
   const headline = "LAPITEC"
   return (
-    <div className="lapitec-page page">
+    <div className="lapitec page">
       <HeadProizvod headline={headline}/>
 
-      
-
-      <div className="container lapitec">
+      <div className="container">
         <p className="kategorija-info lapitec">
           Lapitec kolekcije prate najnovije trendove dizajna i proizvode se
           korišćenjem najsavremenijih tehnologija. Sa izuzetnim dizajnom i
@@ -17,10 +16,10 @@ const Lapitec = ({ lapitec, noIMG }) => {
           stvarajući dinamičan moderan izgled i generišu toplinu i emocije.
         </p>
 
-        <div className="potkategorije lapitec">
+        <div className="potkategorije">
           <div className="side left">
             <div className="text-part">
-              <h3>Musa</h3>
+              <h2>Musa</h2>
               <p className="desc">Lagano, svetlo, elegantno.</p>
               <p>
                 Musa kolekcija se odlikuje dugim žilama koje prolaze kroz
@@ -34,7 +33,7 @@ const Lapitec = ({ lapitec, noIMG }) => {
 
           <div className="side right">
             <div className="text-part">
-              <h3>Essenza</h3>
+              <h2>Essenza</h2>
               <p className="desc">Linearno, jednobojno, teksturirano.</p>
               <p>
                 Essenza kolekcija prikazuje snagu zemlje, kombinovanu sa

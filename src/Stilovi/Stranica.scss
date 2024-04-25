@@ -58,7 +58,6 @@
         width: 100%;
         height: max;
         @include background;
-        // background-image: url;
       }
 
       .desno {
@@ -89,6 +88,194 @@
       p {
         text-align: center;
       }
+    }
+
+    .potkategorije {
+      @include flex-space;
+
+      .side {
+        width: 48%;
+        height: 800px;
+        @include flex-space;
+        flex-direction: column;
+        box-shadow: $shadow-light;
+        padding: 20px;
+        border-radius: 5px;
+
+        h2 {
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 1.4rem;
+          text-align: justify;
+          margin-bottom: 0;
+
+          &.desc {
+            margin-bottom: 20px;
+          }
+        }
+
+        .img-container {
+          @include background;
+          width: 100%;
+          height: 55%;
+        }
+        &.right {
+          h2 {
+            text-align: end;
+          }
+          .desc {
+            text-align: end;
+          }
+        }
+      }
+    }
+
+    .kategorija-info {
+      text-align: justify;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: $dark;
+      margin: 100px 0;
+    }
+
+    .grid-proizvoda {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 100px 0;
+
+      .proizvod {
+        width: 23%;
+        aspect-ratio: 1;
+
+        .img-container {
+          width: 100%;
+          aspect-ratio: 1;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: $shadow-light;
+            filter: opacity(0.9);
+            transition: 0.2s;
+            border-radius: 5px;
+
+            &:hover {
+              filter: opacity(1);
+              transition: 0.2s;
+              cursor: pointer;
+              box-shadow: $shadow-strong;
+            }
+
+            &:active {
+              box-shadow: $shadow-light;
+            }
+          }
+        }
+
+        p.ime-proizvoda {
+          text-align: center;
+          margin: 15px 0;
+          font-size: 1.3rem;
+        }
+
+        p.proizvodjac {
+          margin: 0;
+          text-align: center;
+          font-size: 1rem;
+          margin-top: -15px;
+          color: gray;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .proizvod-grid {
+      @include flex-space;
+      width: 100%;
+      gap: 30px;
+      height: 800px;
+      margin: 100px 0;
+
+      .levo {
+        @include flex-column;
+        justify-content: space-between;
+        gap: 30px;
+        width: 50%;
+        height: 800px;
+
+        .grid-img-container.one {
+          height: 550px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .levo-dole {
+          @include flex-space;
+          gap: 30px;
+          width: 100%;
+          height: 250px;
+
+          .two {
+            width: 50%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page.proizvod {
+  .proizvod-head {
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .proizvod-naslov {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 500px;
+      height: 140px;
+      text-align: center;
+      @include flex-center;
+      flex-direction: column;
+      background-color: $text-background;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+
+  p.opis {
+    margin: 50px 0;
+  }
+
+  .key {
+    font-size: 1.4rem;
+
+    span {
+      font-weight: 600;
     }
   }
 }
@@ -393,6 +580,130 @@
       font-size: 1.5rem;
       letter-spacing: 2px;
       margin-bottom: 20px;
+    }
+  }
+}
+
+//////  LAPITEC STRANICA  //////
+.page.lapitec {
+  .head {
+    height: 300px;
+    background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+  }
+
+  .img-container {
+    &.left {
+      background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+    }
+
+    &.right {
+      background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+    }
+  }
+}
+
+//////  LATHO STRANICA  //////
+.page.latho {
+  .head {
+    height: 300px;
+    background-image: url("/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg");
+  }
+
+  #move-img-container-l {
+    background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+    height: 70%;
+    background-size: fill;
+  }
+
+  #move-img-container-r {
+    background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+    height: 70%;
+  }
+}
+
+//////  KAMENI FURNIRI STRANICA  //////
+.page.kameni-furniri {
+  .head {
+    height: 300px;
+    background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+  }
+
+  a {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  ul {
+    margin-left: 75px;
+    li::marker {
+      color: $main-green;
+    }
+  }
+}
+
+//////  TAPETE STRANICA  //////
+.page.tapete {
+  .head {
+    height: 300px;
+    background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+    background-position: top;
+  }
+
+  a {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #tapeta {
+    width: 48%;
+  }
+}
+
+//////  MOVE PROIZVOD STRANICA  //////
+.proizvod.page.move {
+  .proizvod-grid {
+    @include flex-space;
+    width: 100%;
+    gap: 30px;
+    height: 800px;
+    margin: 100px 0;
+
+    .levo {
+      @include flex-column;
+      justify-content: space-between;
+      gap: 30px;
+      width: 50%;
+      height: 800px;
+
+      .grid-img-container {
+        height: 550px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .levo-dole {
+        width: 100%;
+        height: 250px;
+
+        .grid-img-container {
+          width: 100%;
+          height: 250px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
 }

@@ -33,6 +33,7 @@ const App = () => {
   return (
     <Router>
       <main>
+        <div className="nav-background"></div>
         <Navbar />
         <BackToTopButton />
         <div className="app">

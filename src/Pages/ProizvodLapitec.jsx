@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import ProizvodForma from "../Components/ProizvodForma";
+import "../Stilovi/Stranica.scss";
 
 const ProizvodLapitec = ({ noIMG }) => {
   const location = useLocation();
@@ -7,33 +8,38 @@ const ProizvodLapitec = ({ noIMG }) => {
     location.state.proizvod;
 
   return (
-    <div className="lapitec-proizvod-page proizvod-page page">
+    <div className="lapitec proizvod page">
       <div className="proizvod-head">
         <img src={patern} />
         <div className="proizvod-naslov">
-          <h3>{ime}</h3>
-          <p>{firma}</p>
+          <h5>{ime}</h5>
+          <h6>{firma}</h6>
         </div>
       </div>
 
       <div className="container">
         <div className="text">
-          <p>{opis}</p>
-          <p className="p-debljine">
+          <p className="opis">{opis}</p>
+          <p className="key">
             Dostupne debljine: <span>{debljine}</span>
           </p>
         </div>
+
         <div className="proizvod-grid">
-          <div className="grid-img-container" id="grid-one">
-            <img src={wide || noIMG} alt={`wide ${ime}`} />
+          <div className="levo">
+            <div className="grid-img-container one">
+              <img src={wide || noIMG} alt={`wide ${ime}`} />
+            </div>
+            <div className="levo-dole">
+              <div className="grid-img-container two">
+                <img src={narrow || noIMG} alt={`narrow ${ime}`} />
+              </div>
+              <div className="grid-img-container two">
+                <img src={patern || noIMG} alt={`patern ${ime}`} />
+              </div>
+            </div>
           </div>
           <ProizvodForma />
-          <div className="grid-img-container" id="grid-three">
-            <img src={narrow || noIMG} alt={`narrow ${ime}`} />
-          </div>
-          <div className="grid-img-container" id="grid-four">
-            <img src={patern || noIMG} alt={`patern ${ime}`} />
-          </div>
         </div>
       </div>
     </div>
