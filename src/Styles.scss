@@ -39,7 +39,8 @@ $shadow-light: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 //OPŠTI STILOVI
 main {
-  max-width: 100vw;
+  max-width: 2200px;
+  margin: 0 auto;
 
   .app {
     width: 100%;
@@ -103,7 +104,7 @@ p {
       align-items: center;
       position: relative;
       height: 100%;
-      max-width: 1400px;
+      max-width: 1280px;
 
       &.visible {
         opacity: 1;
@@ -143,7 +144,7 @@ p {
 
   .container {
     margin: 100px auto;
-    max-width: 1400px;
+    max-width: 1280px;
 
     .gore {
       margin-top: 100px;
@@ -705,12 +706,12 @@ p {
 
       .segment {
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
         @include flex-space;
 
         .kontakt-logo {
-          height: 60px;
-          width: 60px;
+          height: 50px;
+          width: 50px;
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
@@ -730,7 +731,7 @@ p {
 
         p {
           font-weight: 700;
-          font-size: 1.3rem;
+          font-size: 1rem;
           margin-bottom: 0;
         }
       }
@@ -743,6 +744,7 @@ p {
 
       h3 {
         text-align: center;
+        font-size: 1.6rem;
       }
 
       p {
@@ -793,7 +795,7 @@ p {
 //NAVBAR
 nav {
   .nav-container {
-    width: 1400px;
+    max-width: 1280px;
     height: 100px;
     margin: 0 auto;
     z-index: 5;

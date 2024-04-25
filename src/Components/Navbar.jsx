@@ -9,7 +9,6 @@ const Navbar = () => {
   };
 
   const handleSubmenuHover = (hovering) => {
-    // Only hide the submenu if both PROIZVODI and the submenu are not being hovered
     if (!hovering && showNavbarDiv) {
       setShowNavbarDiv(false);
     }
@@ -19,14 +18,8 @@ const Navbar = () => {
   const kategorije = [
     "Lapitec",
     "Kvarc",
-    "Porcelanske ploče",
     "Kameni furniri",
-    "Pločice",
-    "Parket",
-    "Drveni paneli",
-    "Drveni furniri",
     "Tapete",
-    "Stolovi",
   ];
 
   return (

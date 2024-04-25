@@ -1,11 +1,11 @@
+import HeadProizvod from "../Components/HeadProizvod";
+
 const UsloviKoriscenja = () => {
+  const headline = "USLOVI KORIŠĆENJA";
   return (
     <>
       <div className="uslovi-koriscenja-page page">
-        <div className="head">
-          <h3>USLOVI KORIŠĆENJA</h3>
-          <div className="arrows"></div>
-        </div>
+        <HeadProizvod headline={headline} />
 
         <div className="container">
           <h3>USLOVI KORIŠĆENJA I POLITIKA PRIVATNOSTI</h3>
