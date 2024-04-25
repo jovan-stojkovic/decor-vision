@@ -91,7 +91,7 @@ p {
   .head {
     @include background;
     height: 600px;
-    background-image: url("/public/slike/backgrounds/14.jpg");
+    background-image: url("/slike/backgrounds/14.jpg");
 
     .head-cont {
       opacity: 0;
@@ -945,16 +945,16 @@ footer {
 .lapitec-page {
   .head {
     height: 400px;
-    background-image: url("/public/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+    background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
   }
 
   .img-container {
     &.left {
-      background-image: url("/public/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+      background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
     }
 
     &.right {
-      background-image: url("/public/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+      background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
     }
   }
 }
@@ -966,13 +966,13 @@ footer {
   }
 
   #move-img-container-l {
-    background-image: url("/public/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+    background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
     height: 70%;
     background-size: fill;
   }
 
   #move-img-container-r {
-    background-image: url("/public/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+    background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
     height: 70%;
   }
 }
@@ -981,7 +981,7 @@ footer {
 .kameni-furniri-page {
   .head {
     height: 400px;
-    background-image: url("/public/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+    background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
   }
 
   a {
@@ -1003,7 +1003,7 @@ footer {
 .tapete-page {
   .head {
     height: 400px;
-    background-image: url("/public/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+    background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
     background-position: top;
   }
 

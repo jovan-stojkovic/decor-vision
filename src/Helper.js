@@ -3,19 +3,19 @@ export const noIMG =
 
 export const slides = [
   {
-    url: "/public/slike/sliders/1.jpg",
+    url: "/slike/sliders/1.jpg",
     text: "Lapitec kamene ploče. Garancija 25 godina.",
   },
   {
-    url: "/public/slike/sliders//2.jpg",
+    url: "/slike/sliders//2.jpg",
     text: "Jedini sertifikovani sintrovani kamen na svetu. 100% prirodan. ",
   },
   {
-    url: "s/public/slike/sliders/3.jpg",
+    url: "s/slike/sliders/3.jpg",
     text: "Move kolekcija. Jedinstveni pločasti materijali.",
   },
   {
-    url: "s/public/slike/sliders/4.jpg",
+    url: "s/slike/sliders/4.jpg",
     text: "Puno drvo u svojoj najupečatljivijoj formi.",
   },
 ];
@@ -46,10 +46,10 @@ export const lapitec = [
     opis: "Topla osnova, koja vuče na nijansu slonovače, obogaćena širokim i blistavim zlatnim venama koje se graciozno provlače duž površine. Prelepa nijansa koja kao da prikazuje lepotu zore u sebi. Bianco Alba je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
     debljine: "20 mm, 30 mm",
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/1 bianco alba/Bianco Alba_Satin_fullslab_HD.jpg",
+      "/slike/proizvodi/Lapitec/Musa/1 bianco alba/Bianco Alba_Satin_fullslab_HD.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/1 bianco alba/bianco-alba-zoom-02.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/1 bianco alba/bianco-alba-zoom-01.jpg",
+      "/slike/proizvodi/Lapitec/Musa/1 bianco alba/bianco-alba-zoom-02.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/1 bianco alba/bianco-alba-zoom-01.jpg",
   },
   {
     firma: "Musa",
@@ -58,10 +58,10 @@ export const lapitec = [
     debljine: "20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/2 bianco dina/Bianco Diana_Satin_fullslab_HD.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/2 bianco dina/bianco-diana-zoom-01.jpg",
+      "/slike/proizvodi/Lapitec/Musa/2 bianco dina/Bianco Diana_Satin_fullslab_HD.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/2 bianco dina/bianco-diana-zoom-01.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/2 bianco dina/bianco-diana-zoom-02.jpg",
+      "/slike/proizvodi/Lapitec/Musa/2 bianco dina/bianco-diana-zoom-02.jpg",
   },
   {
     firma: "Musa",
@@ -70,10 +70,10 @@ export const lapitec = [
     debljine: "20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/3 bianco pandora/Bianco Pandora_Satin_fullslab_HD.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/3 bianco pandora/bianco-pandora-zoom-00.jpg",
+      "/slike/proizvodi/Lapitec/Musa/3 bianco pandora/Bianco Pandora_Satin_fullslab_HD.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/3 bianco pandora/bianco-pandora-zoom-00.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/3 bianco pandora/bianco-pandora-zoom-02.jpg",
+      "/slike/proizvodi/Lapitec/Musa/3 bianco pandora/bianco-pandora-zoom-02.jpg",
   },
   {
     firma: "Musa",
@@ -82,10 +82,10 @@ export const lapitec = [
     debljine: "20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/4 bianco atena/Bianco Atena_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/4 bianco atena/bianco-atena-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Musa/4 bianco atena/Bianco Atena_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/4 bianco atena/bianco-atena-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/4 bianco atena/bianco-atena-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Musa/4 bianco atena/bianco-atena-zoom-2.jpg",
   },
   {
     firma: "Musa",
@@ -94,10 +94,10 @@ export const lapitec = [
     debljine: "20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/5 bianco olimpia/Bianco Olimpia_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/5 bianco olimpia/bianco-olimpia-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Musa/5 bianco olimpia/Bianco Olimpia_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/5 bianco olimpia/bianco-olimpia-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/5 bianco olimpia/bianco-olimpia-zoom-2(0).jpg",
+      "/slike/proizvodi/Lapitec/Musa/5 bianco olimpia/bianco-olimpia-zoom-2(0).jpg",
   },
   {
     firma: "Musa",
@@ -106,10 +106,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/Bianco Andromeda_Satin(0).jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/Bianco Andromeda_Satin(0).jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg",
   },
   {
     firma: "Musa",
@@ -118,10 +118,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/7 bianco angelica/Bianco Angelica_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/7 bianco angelica/bianco-angelica-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Musa/7 bianco angelica/Bianco Angelica_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/7 bianco angelica/bianco-angelica-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/7 bianco angelica/bianco-angelica-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Musa/7 bianco angelica/bianco-angelica-zoom-2.jpg",
   },
   {
     firma: "Musa",
@@ -130,10 +130,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/8 bianco serena/Bianco Serena_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/8 bianco serena/bianco-serena-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Musa/8 bianco serena/Bianco Serena_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/8 bianco serena/bianco-serena-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/8 bianco serena/bianco-serena-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Musa/8 bianco serena/bianco-serena-zoom-2.jpg",
   },
   {
     firma: "Musa",
@@ -142,10 +142,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/9 bianco vittoria/Bianco Vittoria_satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/9 bianco vittoria/bianco-vittoria-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Musa/9 bianco vittoria/Bianco Vittoria_satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/9 bianco vittoria/bianco-vittoria-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/9 bianco vittoria/bianco-vittoria-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Musa/9 bianco vittoria/bianco-vittoria-zoom-2.jpg",
   },
   {
     firma: "Musa",
@@ -154,10 +154,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Musa/10 bianco giulia/Bianco Giulia_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Musa/10 bianco giulia/bianco-giulia-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Musa/10 bianco giulia/Bianco Giulia_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Musa/10 bianco giulia/bianco-giulia-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Musa/10 bianco giulia/bianco-giulia-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Musa/10 bianco giulia/bianco-giulia-zoom-2.jpg",
   },
   {
     firma: "Essenza",
@@ -166,10 +166,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Essenza/1 bianco assoluto/Bianco Assoluto_Satin(0).jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-1(0).jpg",
+      "/slike/proizvodi/Lapitec/Essenza/1 bianco assoluto/Bianco Assoluto_Satin(0).jpg",
+    wide: "/slike/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-1(0).jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-2(0).jpg",
+      "/slike/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-2(0).jpg",
   },
   {
     firma: "Essenza",
@@ -178,10 +178,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Essenza/2 bianco polare/Bianco Polare_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/2 bianco polare/Bianco Polare_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-2.jpg",
   },
   {
     firma: "Essenza",
@@ -190,10 +190,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Essenza/3 bianco crema/Bianco Crema_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/3 bianco crema/Bianco Crema_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-2.jpg",
   },
   {
     firma: "Essenza",
@@ -202,10 +202,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Essenza/4 terra avana/Terra Avana_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/4 terra avana/Terra Avana_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-2.jpg",
   },
   {
     firma: "Essenza",
@@ -214,10 +214,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/Grigio Cemento_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/Grigio Cemento_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-2.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-2.jpg",
   },
   {
     firma: "Essenza",
@@ -226,10 +226,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Essenza/6 nero antacite/Nero Antracite_Satin.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-1.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/6 nero antacite/Nero Antracite_Satin.jpg",
+    wide: "/slike/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-1.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-2(0).jpg",
+      "/slike/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-2(0).jpg",
   },
   {
     firma: "Essenza",
@@ -238,10 +238,10 @@ export const lapitec = [
     debljine: "12 mm, 20 mm, 30 mm",
 
     patern:
-      "/public/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg",
-    wide: "/public/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/nero-assoluto-zoom-01.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg",
+    wide: "/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/nero-assoluto-zoom-01.jpg",
     narrow:
-      "/public/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/nero-assoluto-zoom-02.jpg",
+      "/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/nero-assoluto-zoom-02.jpg",
   },
 ];
 
@@ -249,123 +249,123 @@ export const lathoMilled = [
   {
     ime: "Asolo",
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/asolo/fresati-latho-asolo-dark-900x900-1.jpg",
+      "/slike/proizvodi/Latho/Milled/asolo/fresati-latho-asolo-dark-900x900-1.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/asolo/fresati-latho-asolo-medio-MDF-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/asolo/fresati-latho-asolo-medio-MDF-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/asolo/fresati-latho-B-asolo-medio-850x520-1.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/asolo/technical_asolo.jpg",
+      "/slike/proizvodi/Latho/Milled/asolo/fresati-latho-B-asolo-medio-850x520-1.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/asolo/technical_asolo.jpg",
   },
 
   {
     ime: "Capri",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Capri/fresati-latho-capri-nero-900x900-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Capri/fresati-latho-capri-nero-900x900-1.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Capri/fresati-latho-capri-nero-TRUCIOLARE-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Capri/fresati-latho-capri-nero-TRUCIOLARE-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Capri/fresati-latho-B-capri-medio-850x520-1.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Capri/technical_capri.jpg",
+      "/slike/proizvodi/Latho/Milled/Capri/fresati-latho-B-capri-medio-850x520-1.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Capri/technical_capri.jpg",
   },
   {
     ime: "Everest",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-fronte.jpg",
+      "/slike/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-fronte.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-fronte-sch-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-fronte-sch-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-iso-1024x640.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Everest/technical_Everest.jpg",
+      "/slike/proizvodi/Latho/Milled/Everest/fresati-everest-noce-latho-iso-1024x640.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Everest/technical_Everest.jpg",
   },
   {
     ime: "Firenze",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-900x900-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-900x900-1.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-MDF-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-MDF-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-1280x800-1-1024x640.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Firenze/technical_Firenze.jpg",
+      "/slike/proizvodi/Latho/Milled/Firenze/fresati-latho-firenze-1280x800-1-1024x640.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Firenze/technical_Firenze.jpg",
   },
   {
     ime: "Grappa",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-900x900.jpg.jpg",
+      "/slike/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-900x900.jpg.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-MULTISTRATO1-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-MULTISTRATO1-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-1280x800-1-1024x640.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Grappa/technical_Grappa.jpg",
+      "/slike/proizvodi/Latho/Milled/Grappa/fresati-latho-grappa-grigio-1280x800-1-1024x640.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Grappa/technical_Grappa.jpg",
   },
   {
     ime: "K2",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-fronte.jpg",
+      "/slike/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-fronte.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-fronte-sch.jpg",
+      "/slike/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-fronte-sch.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-iso-1024x640.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/K2/technical_K2.jpg",
+      "/slike/proizvodi/Latho/Milled/K2/fresati-k2-rovere-latho-iso-1024x640.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/K2/technical_K2.jpg",
   },
   {
     ime: "Milano",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Milano/fresati-latho-milano-900x900.jpg.jpg",
+      "/slike/proizvodi/Latho/Milled/Milano/fresati-latho-milano-900x900.jpg.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Milano/fresati-latho-milano-iso-MULTISTRATO2-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Milano/fresati-latho-milano-iso-MULTISTRATO2-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Milano/fresati-latho-milano-chiaro-1280x800-1-1024x640.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Milano/technical_Milano.jpg",
+      "/slike/proizvodi/Latho/Milled/Milano/fresati-latho-milano-chiaro-1280x800-1-1024x640.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Milano/technical_Milano.jpg",
   },
   {
     ime: "Portofino",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-grigio-900x900.jpg.jpg",
+      "/slike/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-grigio-900x900.jpg.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-chiaro-iso-MDF-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-chiaro-iso-MDF-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-grigio-1280x800-1-1024x640.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Portofino/technical_Portofino.jpg",
+      "/slike/proizvodi/Latho/Milled/Portofino/fresati-latho-portofino-grigio-1280x800-1-1024x640.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Portofino/technical_Portofino.jpg",
   },
   {
     ime: "Roma",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Roma/fresati-latho-roma-scuro-900x900.jpg.jpg",
+      "/slike/proizvodi/Latho/Milled/Roma/fresati-latho-roma-scuro-900x900.jpg.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Roma/fresati-latho-roma-chiaro-iso-MULTISTRATO2-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Roma/fresati-latho-roma-chiaro-iso-MULTISTRATO2-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Roma/fresati-latho-B-roma-scura-850x520-1.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Roma/technical_Roma.jpg",
+      "/slike/proizvodi/Latho/Milled/Roma/fresati-latho-B-roma-scura-850x520-1.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Roma/technical_Roma.jpg",
   },
   {
     ime: "Venezia",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Venezia/fresati-latho-venezia-900x900-3.jpg",
+      "/slike/proizvodi/Latho/Milled/Venezia/fresati-latho-venezia-900x900-3.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Venezia/fresati-latho-venezia-iso-MDF-1024x678-1.jpg",
+      "/slike/proizvodi/Latho/Milled/Venezia/fresati-latho-venezia-iso-MDF-1024x678-1.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Venezia/fresati-latho-B-venezia-850x520-1.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Venezia/technical_Venezia.jpg",
+      "/slike/proizvodi/Latho/Milled/Venezia/fresati-latho-B-venezia-850x520-1.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Venezia/technical_Venezia.jpg",
   },
   {
     ime: "Verona",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-fronte.jpg",
+      "/slike/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-fronte.jpg",
     strana:
-      "/public/slike/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-fronte-sch.jpg",
+      "/slike/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-fronte-sch.jpg",
     patern:
-      "/public/slike/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-iso-1024x640.jpg",
-    tech: "/public/slike/proizvodi/Latho/Milled/Verona/technical_Verona.jpg",
+      "/slike/proizvodi/Latho/Milled/Verona/fresati-verona-noce-latho-iso-1024x640.jpg",
+    tech: "/slike/proizvodi/Latho/Milled/Verona/technical_Verona.jpg",
   },
 ];
 
@@ -383,93 +383,90 @@ export const lathoMove = [
   {
     ime: "XX",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move XX/pann-move-XX-testa.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move XX/pann-move-XX-iso.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move XX/pann-move-XX-testa.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move XX/pann-move-XX-iso.jpg",
   },
   {
     ime: "LOFT",
 
-    kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-testa.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-testa.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg",
   },
   {
     ime: "CHAIN",
 
-    kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move Chain/pann-move-chain-testa.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move Chain/pann-move-chain-iso.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move Chain/pann-move-chain-testa.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move Chain/pann-move-chain-iso.jpg",
   },
   {
     ime: "J",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move J/pann-move-J-iso.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move J/pann-move-J-iso.jpg",
     wide: "/",
   },
   {
     ime: "X",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move X/move-X-index-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move X/move-X-head-bnr.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move X/move-X-index-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move X/move-X-head-bnr.jpg",
   },
   {
     ime: "A",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move A/A-move-rid-1200x1200px-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move A/A-tavolino.jpg",
+      "/slike/proizvodi/Latho/Move/Move A/A-move-rid-1200x1200px-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move A/A-tavolino.jpg",
   },
   {
     ime: "A+A",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move A+A/A-A-move-1200x1200-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move A+A/A-A-porta-uff.jpg",
+      "/slike/proizvodi/Latho/Move/Move A+A/A-A-move-1200x1200-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move A+A/A-A-porta-uff.jpg",
   },
   {
     ime: "B",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move B/B-move-virato-1200x1200-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move B/B-ambient.jpg",
+      "/slike/proizvodi/Latho/Move/Move B/B-move-virato-1200x1200-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move B/B-ambient.jpg",
   },
   {
     ime: "B+B",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move B+B/camp-B-B-banner.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move B+B/camp-B-B-banner.jpg",
     wide: "/",
   },
   {
     ime: "N",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move N/move-N-index-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move N/move-N-head-bnr.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move N/move-N-index-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move N/move-N-head-bnr.jpg",
   },
   {
     ime: "C",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move C/move-C-14-1200pxx1200-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move C/C-ambient.jpg",
+      "/slike/proizvodi/Latho/Move/Move C/move-C-14-1200pxx1200-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move C/C-ambient.jpg",
   },
   {
     ime: "D",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move D/move-D-tecnica-brown-1200px-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move D/D-ambient.jpg",
+      "/slike/proizvodi/Latho/Move/Move D/move-D-tecnica-brown-1200px-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move D/D-ambient.jpg",
   },
   {
     ime: "D+D",
 
-    wide: "/public/slike/proizvodi/Latho/Move/Move D+D/ambient-D-D.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move D+D/ambient-D-D.jpg",
   },
   {
     ime: "E",
 
-    kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move E/move-E-12-1200px-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move E/E-ambient.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move E/move-E-12-1200px-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move E/E-ambient.jpg",
   },
   {
     ime: "F",
@@ -480,90 +477,88 @@ export const lathoMove = [
   {
     ime: "M",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move M/move-M-36-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move M/M-move.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move M/move-M-36-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move M/M-move.jpg",
   },
   {
     ime: "G",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move G/move-G-tecnica-1200px-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move G/G-move-bagno.jpg",
+      "/slike/proizvodi/Latho/Move/Move G/move-G-tecnica-1200px-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move G/G-move-bagno.jpg",
   },
   {
     ime: "W",
 
-    kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move W/stilo-Pagina-9-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move W/Y-move-amb.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move W/stilo-Pagina-9-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move W/Y-move-amb.jpg",
   },
   {
     ime: "H",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move H/camp-H-banner.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move H/camp-H-banner.jpg",
     wide: "/",
   },
   {
     ime: "L",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move L/move-L-tecnica-big-1200px-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move L/L-move-L-amb.jpg",
+      "/slike/proizvodi/Latho/Move/Move L/move-L-tecnica-big-1200px-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move L/L-move-L-amb.jpg",
   },
   {
     ime: "P",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move P/P-move1200-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move P/P-ambient.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move P/P-move1200-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move P/P-ambient.jpg",
   },
   {
     ime: "MOVE CARBON PLUS(U+)",
 
     kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move Carbon Plus (U+)/carbon-plus-112300.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move Carbon Plus (U+)/move-CARBON-head-bnr.jpg",
+      "/slike/proizvodi/Latho/Move/Move Carbon Plus (U+)/carbon-plus-112300.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move Carbon Plus (U+)/move-CARBON-head-bnr.jpg",
   },
   {
     ime: "Q",
 
-    kvadrat:
-      "/public/slike/proizvodi/Latho/Move/Move Q/Q-move-rid-1200px-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move Q/Q-move-rid-1200px-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg",
   },
   {
     ime: "R",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move R/R-move1200px-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move R/R-ambient-R.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move R/R-move1200px-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move R/R-ambient-R.jpg",
   },
   {
     ime: "S",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move S/S-move-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move S/S-ambient-S.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move S/S-move-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move S/S-ambient-S.jpg",
   },
   {
     ime: "K",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move K/move-K-3-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move K/K-move-k.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move K/move-K-3-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move K/K-move-k.jpg",
   },
   {
     ime: "T",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move T/move-T-index-900x900.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move T/T-move-amb.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move T/move-T-index-900x900.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move T/T-move-amb.jpg",
   },
   {
     ime: "Y",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move Y/move-Y-head-bnr.jpg",
-    wide: "/public/slike/proizvodi/Latho/Move/Move Y/move-Y-900x900.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move Y/move-Y-head-bnr.jpg",
+    wide: "/slike/proizvodi/Latho/Move/Move Y/move-Y-900x900.jpg",
   },
   {
     ime: "Z",
 
-    kvadrat: "/public/slike/proizvodi/Latho/Move/Move Z/camp-Z-banner.jpg",
+    kvadrat: "/slike/proizvodi/Latho/Move/Move Z/camp-Z-banner.jpg",
     wide: "/",
   },
 ];
@@ -579,37 +574,37 @@ export const lathoMoveInfo = {
 export const tapete = [
   {
     ime: "Shades of colour",
-    slika: "/public/slike/proizvodi/Tapete/Decoprint/Shades of colour.jpg",
+    slika: "/slike/proizvodi/Tapete/Decoprint/Shades of colour.jpg",
     url: "https://www.decoprintwallcoverings.com/en/products/shades-of-colour",
   },
   {
     ime: "Soleado",
-    slika: "/public/slike/proizvodi/Tapete/Decoprint/Soleado.jpg",
+    slika: "/slike/proizvodi/Tapete/Decoprint/Soleado.jpg",
     url: "https://www.decoprintwallcoverings.com/en/products/soleado",
   },
   {
     ime: "Allure",
-    slika: "/public/slike/proizvodi/Tapete/Decoprint/Allure.jpg",
+    slika: "/slike/proizvodi/Tapete/Decoprint/Allure.jpg",
     url: "https://www.decoprintwallcoverings.com/en/products/allure",
   },
   {
     ime: "Brazil",
-    slika: "/public/slike/proizvodi/Tapete/Decoprint/Brazil.jpg",
+    slika: "/slike/proizvodi/Tapete/Decoprint/Brazil.jpg",
     url: "https://www.decoprintwallcoverings.com/en/products/brazil",
   },
   {
     ime: "Reflect",
-    slika: "/public/slike/proizvodi/Tapete/Decoprint/Reflect.jpg",
+    slika: "/slike/proizvodi/Tapete/Decoprint/Reflect.jpg",
     url: "https://www.decoprintwallcoverings.com/en/products/reflect",
   },
   {
     ime: "Tahiti",
-    slika: "/public/slike/proizvodi/Tapete/Decoprint/Tahiti.jpg",
+    slika: "/slike/proizvodi/Tapete/Decoprint/Tahiti.jpg",
     url: "https://www.decoprintwallcoverings.com/en/products/tahiti",
   },
   {
     ime: "Essentials",
-    slika: "/public/slike/proizvodi/Tapete/Decoprint/Essentials.jpg",
+    slika: "/slike/proizvodi/Tapete/Decoprint/Essentials.jpg",
     url: "https://www.decoprintwallcoverings.com/en/products/essentials",
   },
 ];

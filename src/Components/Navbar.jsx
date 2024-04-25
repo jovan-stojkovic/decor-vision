@@ -15,18 +15,13 @@ const Navbar = () => {
   };
 
   const instaPage = "https://www.instagram.com/decorvision.rs/?hl=en";
-  const kategorije = [
-    "Lapitec",
-    "Latho",
-    "Kameni furniri",
-    "Tapete",
-  ];
+  const kategorije = ["Lapitec", "Latho", "Kameni furniri", "Tapete"];
 
   return (
     <nav>
       <div className="nav-container">
-        <Link to="/" className="logo" onClick={()=>window.scrollTo(0,0)}>
-          <img src="/public/slike/logos/decor_vision.svg" alt="DECOR VISION" />
+        <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)}>
+          <img src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
         </Link>
         <div className="nav-links">
           <div
@@ -67,7 +62,7 @@ const Navbar = () => {
           <NavLink className="nav-link" to="/kontakt">
             KONTAKT
           </NavLink>
-          <Link to={instaPage} target="_blank" id="insta-link"/>
+          <Link to={instaPage} target="_blank" id="insta-link" />
         </div>
       </div>
     </nav>

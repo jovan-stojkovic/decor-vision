@@ -15,7 +15,7 @@ const HeadProizvod = ({ headline }) => {
       <div className={`head-cont ${isVisible ? "visible" : ""}`}>
         <h3>{headline}</h3>
         <div className="arrows">
-          <img src="/public/slike/icons/down-double.svg" />
+          <img src="/slike/icons/down-double.svg" />
         </div>
       </div>
     </div>
