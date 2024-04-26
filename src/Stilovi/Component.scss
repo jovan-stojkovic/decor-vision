@@ -164,7 +164,7 @@ nav {
   padding: 20px;
   gap: 50px;
   z-index: 10;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.90);
   box-shadow: $shadow-strong;
   backdrop-filter: blur(8px);
 
@@ -184,6 +184,10 @@ nav {
     }
 
     &.active {
+      color: $main-green;
+    }
+
+    &:hover {
       color: $main-green;
     }
   }
