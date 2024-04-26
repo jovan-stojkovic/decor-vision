@@ -528,15 +528,6 @@ footer {
       img {
         height: 15px;
       }
-      #decor-logo {
-        display: none;
-      }
-      a.logo {
-        background-image: url('/slike/logos/decor_vision_d.jpg');
-        height: 25px;
-        width: 25px;
-        @include background;
-      }
       .nav-links {
         display: none;
       }
