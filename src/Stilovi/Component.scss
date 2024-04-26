@@ -127,7 +127,7 @@ nav {
         }
       }
     }
-  
+
     .menu-button {
       all: unset;
       height: 1.4rem;
@@ -157,7 +157,7 @@ nav {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 30%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -167,7 +167,6 @@ nav {
   background-color: white;
   box-shadow: $shadow-strong;
   backdrop-filter: blur(8px);
-  transition: 2s ease;
 
   .sidebar-nav-link {
     all: unset;
@@ -514,26 +513,395 @@ footer {
 
 //////  RESPONSIVENESS  //////
 
+
+
 // <<<600px
 @media only screen and (max-width: 600px) {
+  nav {
+    .nav-container {
+      width: 100vw;
+      height: 50px;
+      img {
+        height: 15px;
+      }
+      #decor-logo {
+        display: none;
+      }
+      a.logo {
+        background-image: url('/slike/logos/decor_vision_d.jpg');
+        height: 25px;
+        width: 25px;
+        @include background;
+      }
+      .nav-links {
+        display: none;
+      }
+      .menu-button {
+        display: flex;
+      }
+    }
+  }
+  footer {
+    height: 150px;
+    gap: 5px;
+  
+    .footer-logo {
+      width: 100px;
+      height: 50px;
+      margin-bottom: 5px;
+  
+      img {
+        height: 20px;
+      }
+    }
+  
+    .uslovi-link {
+      font-weight: 300;
+      font-size: 0.7rem;
+    }
+  
+    p.copyright {
+      font-size: 0.6rem;
+      margin-bottom: 0;
+    }
+  }
+  .forma {
+    width: 100%;
+  
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+  
+    form {
+      margin-bottom: 50px;
+  
+      .inputi {
+        height: 30px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+  
+        &#message {
+          height: 200px;
+        }
+      }
+  
+      p.error {
+        font-size: 0.6rem;
+        height: 20px;
+      }
+  
+      .saglasnost {
+        font-size: 0.8rem;
+      }
+  
+      #checkbox {
+        margin-right: 10px;
+      }
+  
+      .checkbox-label {
+        font-weight: 400;
+      }
+    }
+  
+    .success {
+      padding: 20px;
+      gap: 20px;
+      margin-bottom: 50px;
+  
+      .success-img-cont {
+        height: 150px;
+      }
+  
+      .p-success {
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  
+    #pravila-url {
+      all: unset;
+      color: $main-green;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  .forma.proizvod {
+    width: 100%;
+    height: auto;
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    form {
+  
+      .inputi {
+        font-size: 0.9rem;
+  
+        &#message {
+          height: 200px;
+        }
+      }
+  
+      p.error {
+        height: 20px;
+  
+        &.check {
+          text-align: left;
+        }
+      }
+  
+      .saglasnost {
+        font-size: 0.8rem;
+      }
+  
+      #checkbox {
+        margin-right: 10px;
+      }
+  
+      .checkbox-label {
+        font-weight: 400;
+      }
+  
+    }
+  
+    .proizvod-success {
+      padding: 20px;
+      gap: 20px;
+      height: 100%;
+  
+      .success-img-cont {
+        height: 150px;
+      }
+    }
+  }
+  .to-the-top-button {
+    display: none;
+  }
 }
 
 // 601px - 768px
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  nav {
+    .nav-container {
+      width: 100vw;
+      height: 70px;
+      img {
+        height: 20px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .menu-button {
+        display: flex;
+      }
+    }
+  }
+  .sidebar {
+    width: 50%;
+  }
+  footer {
+    height: 180px;
+    gap: 10px;
+  
+    .footer-logo {
+      width: 100px;
+      height: 60px;
+      margin-bottom: 5px;
+  
+      img {
+        height: 22px;
+      }
+    }
+  
+    .uslovi-link {
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
+  
+    p.copyright {
+      font-size: 0.6rem;
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 //769px - 992px
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  nav {
+    .nav-container {
+      width: 100vw;
+      height: 80px;
+      img {
+        height: 25px;
+      }
+      .nav-links {
+        gap: 40px;
+
+        .nav-link {
+          font-size: 0.8rem;
+
+          &::after {
+            height: 3px;
+          }
+        }
+
+        .proizvodi-div {
+          .hidden-nav-div {
+            .empty {
+              height: 49px;
+            }
+            .hidden-nav-div-cont {
+              width: 150px;
+            }
+          }
+        }
+
+        #insta-link {
+          height: 1.2rem;
+          width: 1.2rem;
+        }
+      }
+
+      .x-button {
+        display: none;
+      }
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+  footer {
+    height: 200px;
+    gap: 15px;
+  
+    .footer-logo {
+      width: 120px;
+      height: 80px;
+      margin-bottom: 10px;
+  
+      img {
+        height: 25px;
+      }
+    }
+  
+    .uslovi-link {
+      font-size: 0.9rem;
+    }
+  
+    p.copyright {
+      font-size: 0.7rem;
+    }
+  }
 }
 
 //993px - 1200px
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  nav {
+    .nav-container {
+      width: 100vw;
+      height: 90px;
+      img {
+        height: 28px;
+      }
+
+      .nav-links {
+        gap: 45px;
+
+        .nav-link {
+          font-size: 0.9rem;
+
+          &::after {
+            height: 3.5px;
+          }
+        }
+
+        .proizvodi-div {
+          .hidden-nav-div {
+            .empty {
+              height: 55px;
+            }
+
+            .hidden-nav-div-cont {
+              width: 160px;
+            }
+          }
+        }
+
+        #insta-link {
+          height: 1.3rem;
+          width: 1.3rem;
+        }
+      }
+
+      .x-button {
+        display: none;
+      }
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+  footer {
+    height: 250px;
+  
+    .footer-logo {
+      margin-bottom: 10px;
+  
+      img {
+        height: 30px;
+      }
+    }
+  }
 }
 
 //1201px - 1600px
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  nav {
+    .nav-container {
+      img {
+        height: 29px;
+      }
+
+      .nav-links {
+        gap: 48px;
+
+        .nav-link {
+          font-size: 0.95rem;
+        }
+
+        #insta-link {
+          height: 1.35rem;
+          width: 1.35rem;
+        }
+      }
+
+      .x-button {
+        display: none;
+      }
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+  footer {
+    height: 300px;
+  
+    .footer-logo {
+  
+      img {
+        height: 35px;
+      }
+    }
+  }
 }
 
 //>>>1600
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 1601px) {
+
 }

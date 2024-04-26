@@ -1,14 +1,9 @@
-import { Link, useAsyncError } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../Stilovi/Component.scss";
 import NavLinks from "./NavLinks";
 import SidebarLinks from "./SidebarLinks";
-import { useState } from "react";
 
-const Navbar = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
-  const handleClick = () => {
-    setShowSidebar(!showSidebar);
-  };
+const Navbar = ({ showSidebar, handleClick }) => {
   return (
     <nav>
       <div className="nav-container">
@@ -17,7 +12,7 @@ const Navbar = () => {
           className="logo"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <img src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
+          <img id="decor-logo" src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
         </Link>
         <NavLinks />
         {showSidebar && <SidebarLinks />}

@@ -727,23 +727,4007 @@
   }
 }
 
-
 //////  RESPONSIVENESS  //////
 
 // <<<600px
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  //////  STRANICA  //////
+  .page {
+    .head {
+      height: 200px;
+    }
+
+    .head.proizvod {
+      height: 200px;
+    }
+
+    .container {
+      padding: 10px;
+      .gore {
+        margin: 50px 0;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 20px;
+
+        .levo {
+          width: 100%;
+          height: 400px;
+        }
+
+        .desno {
+          width: 100%;
+        }
+      }
+
+      .dole {
+        margin: 50px 0;
+
+        .link-kontakt {
+          font-size: 1rem;
+        }
+      }
+
+      .potkategorije {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .side {
+          width: 100%;
+          padding: 10px;
+          height: 700px;
+
+          p {
+            font-size: 0.85rem;
+          }
+
+          &.right {
+            h2 {
+              text-align: left;
+            }
+            .desc {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .kategorija-info {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+        margin: 50px 0;
+      }
+
+      .grid-proizvoda {
+        margin: 50px 0;
+
+        .proizvod {
+          width: 48%;
+
+          p.ime-proizvoda {
+            margin: 10px 0;
+            font-size: 1rem;
+          }
+
+          p.proizvodjac {
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .proizvod-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        height: auto;
+        margin: 50px 0;
+
+        .levo {
+          gap: 10px;
+          width: 100%;
+          height: auto;
+
+          .grid-img-container.one {
+            height: 400px;
+          }
+
+          .levo-dole {
+            @include flex-space;
+            gap: 10px;
+            width: 100%;
+            aspect-ratio: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .page.proizvod {
+    .proizvod-head {
+      height: 150px;
+
+      .proizvod-naslov {
+        width: 200px;
+        height: 80px;
+        padding: 5px;
+      }
+    }
+
+    .text {
+      margin-top: 50px;
+      p.opis {
+        margin: 20px 0;
+      }
+
+      .key {
+        font-size: 0.9rem;
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  //////  POČETNA STRANICA  //////
+  .page.home {
+    .slide-container {
+      height: 400px;
+
+      .react-slideshow-container .nav:first-of-type {
+        left: 3px;
+      }
+
+      .react-slideshow-container .nav:last-of-type {
+        right: 3px;
+      }
+    }
+
+    #slide {
+      height: 400px;
+
+      p.caption {
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px;
+      }
+    }
+
+    .container {
+      .carousel {
+        height: 300px;
+        gap: 15px;
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .insta-link-cont {
+        margin: 50px auto;
+
+        .insta-img-container {
+          width: 50px;
+          height: 50px;
+        }
+
+        a {
+          font-size: 0.9rem;
+          font-weight: 400;
+        }
+      }
+
+      .grid {
+        gap: 15px;
+        grid-template-columns: auto auto;
+      }
+    }
+  }
+
+  //////  PROIZVODI STRANICA  //////
+  .page.proizvodi {
+    .container {
+      margin: 0 auto;
+      @include flex-center;
+
+      .proizvodi-grid {
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+        grid-gap: 60px;
+        width: 90%;
+        height: 1500px;
+        margin: 50px 0;
+
+        .jedan-proizvod {
+          .proizvod-naziv {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  //////  B2B STRANICA  //////
+  .page.btob {
+
+    .btob-grid {
+      gap: 5px;
+      margin-bottom: 50px;
+    }
+  }
+
+  //////  KONTAKT STRANICA  //////
+  .page.kontakt {
+    .container {
+      .kontakt-info {
+        width: 70%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px 0;
+
+        .segment {
+          gap: 20px;
+
+          .kontakt-logo {
+            height: 40px;
+            width: 40px;
+          }
+          p {
+            font-weight: 700;
+            font-size: 0.7rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //////  USLOVI KORIŠĆENJA STRANICA  //////
+  .page.uslovi-koriscenja {
+    .head {
+      background-image: url("/slike/backgrounds/14.jpg");
+    }
+
+    .container {
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      h4 {
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  //////  LAPITEC STRANICA  //////
+  .page.lapitec {
+    .head {
+      height: 150px;
+    }
+  }
+
+  //////  LATHO STRANICA  //////
+  .page.latho {
+    .head {
+      height: 150px;
+    }
+
+    .potkategorije {
+      .side {
+        .text-part {
+          width: 100%;
+        }
+        &.right {
+          h2 {
+            text-align: left;
+          }
+          .desc {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  //////  KAMENI FURNIRI STRANICA  //////
+  .page.kameni-furniri {
+    .head {
+      height: 150px;
+    }
+
+    ul {
+      margin-left: 40px;
+    }
+  }
+
+  //////  TAPETE STRANICA  //////
+  .page.tapete {
+    .head {
+      height: 150px;
+    }
+    .container {
+      .grid-proizvoda.tapete {
+        justify-content: center;
+        gap: 30px;
+      }
+    }
+    #tapeta {
+      width: 100%;
+    }
+  }
+
+  //////  MOVE PROIZVOD STRANICA  //////
+  .proizvod.page.move {
+    .proizvod-grid {
+      @include flex-space;
+      width: 100%;
+      gap: 15px;
+      height: auto;
+      margin: 50px 0;
+
+      .levo {
+        gap: 15px;
+        width: 100%;
+        height: auto;
+
+        .grid-img-container {
+          height: 550px;
+        }
+      }
+    }
+  }
+}
 
 // 601px - 768px
-@media only screen and (min-width: 600px) {}
+// @media only screen and (min-width: 601px) and (max-width: 768px) {
+//   //////  STRANICA  //////
+//   .page {
+//     .head {
+//       @include background;
+//       height: 500px;
+//       // background-image: url;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .head.proizvod {
+//       @include background;
+//       height: 300px;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .container {
+//       margin: 0 auto;
+//       max-width: 1200px;
+
+//       .gore {
+//         margin: 100px 0;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 50px;
+
+//         .levo {
+//           width: 100%;
+//           height: max;
+//           @include background;
+//         }
+
+//         .desno {
+//           width: 100%;
+//         }
+//       }
+
+//       .dole {
+//         @include flex-column;
+//         margin: 100px 0;
+
+//         .link-kontakt {
+//           all: unset;
+//           color: $main-green;
+//           font-size: 1.5rem;
+//           letter-spacing: 2px;
+//           text-align: center;
+//           max-width: 250px;
+//           cursor: pointer;
+//           font-weight: 500;
+//           font-family: "Montserrat", sans-serif;
+//         }
+
+//         h2 {
+//           text-align: center;
+//         }
+
+//         p {
+//           text-align: center;
+//         }
+//       }
+
+//       .potkategorije {
+//         @include flex-space;
+
+//         .side {
+//           width: 48%;
+//           height: 800px;
+//           @include flex-space;
+//           flex-direction: column;
+//           box-shadow: $shadow-light;
+//           padding: 20px;
+//           border-radius: 5px;
+
+//           h2 {
+//             margin-bottom: 20px;
+//           }
+
+//           p {
+//             font-size: 1.4rem;
+//             text-align: justify;
+//             margin-bottom: 0;
+
+//             &.desc {
+//               margin-bottom: 20px;
+//             }
+//           }
+
+//           .img-container {
+//             @include background;
+//             width: 100%;
+//             height: 55%;
+//           }
+//           &.right {
+//             h2 {
+//               text-align: end;
+//             }
+//             .desc {
+//               text-align: end;
+//             }
+//           }
+//         }
+//       }
+
+//       .kategorija-info {
+//         text-align: justify;
+//         font-size: 1.8rem;
+//         line-height: 3rem;
+//         color: $dark;
+//         margin: 100px 0;
+//       }
+
+//       .grid-proizvoda {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         margin: 100px 0;
+
+//         .proizvod {
+//           width: 23%;
+//           aspect-ratio: 1;
+
+//           .img-container {
+//             width: 100%;
+//             aspect-ratio: 1;
+
+//             img {
+//               height: 100%;
+//               width: 100%;
+//               object-fit: cover;
+//               box-shadow: $shadow-light;
+//               filter: opacity(0.9);
+//               transition: 0.2s;
+//               border-radius: 5px;
+
+//               &:hover {
+//                 filter: opacity(1);
+//                 transition: 0.2s;
+//                 cursor: pointer;
+//                 box-shadow: $shadow-strong;
+//               }
+
+//               &:active {
+//                 box-shadow: $shadow-light;
+//               }
+//             }
+//           }
+
+//           p.ime-proizvoda {
+//             text-align: center;
+//             margin: 15px 0;
+//             font-size: 1.3rem;
+//           }
+
+//           p.proizvodjac {
+//             margin: 0;
+//             text-align: center;
+//             font-size: 1rem;
+//             margin-top: -15px;
+//             color: gray;
+//             margin-bottom: 20px;
+//           }
+//         }
+//       }
+//       .proizvod-grid {
+//         @include flex-space;
+//         width: 100%;
+//         gap: 30px;
+//         height: 800px;
+//         margin: 100px 0;
+
+//         .levo {
+//           @include flex-column;
+//           justify-content: space-between;
+//           gap: 30px;
+//           width: 50%;
+//           height: 800px;
+
+//           .grid-img-container.one {
+//             height: 550px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+
+//           .levo-dole {
+//             @include flex-space;
+//             gap: 30px;
+//             width: 100%;
+//             height: 250px;
+
+//             .two {
+//               width: 50%;
+//               height: 100%;
+
+//               img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .page.proizvod {
+//     .proizvod-head {
+//       height: 300px;
+//       position: relative;
+//       margin: 0 auto;
+
+//       img {
+//         height: 100%;
+//         width: 100%;
+//       }
+
+//       .proizvod-naslov {
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         left: 0;
+//         right: 0;
+//         width: 500px;
+//         height: 140px;
+//         text-align: center;
+//         @include flex-center;
+//         flex-direction: column;
+//         background-color: $text-background;
+//         padding: 10px;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .text {
+//       margin-top: 100px;
+//       p.opis {
+//         margin: 50px 0;
+//       }
+
+//       .key {
+//         font-size: 1.4rem;
+
+//         span {
+//           font-weight: 600;
+//         }
+//       }
+//     }
+//   }
+
+//   //////  POČETNA STRANICA  //////
+//   .page.home {
+//     .slide-container {
+//       height: 500px;
+
+//       .react-slideshow-container .nav:first-of-type {
+//         left: 100px;
+//       }
+
+//       .react-slideshow-container .nav:last-of-type {
+//         right: 100px;
+//       }
+//     }
+
+//     #slide {
+//       height: 500px;
+//       background-size: cover;
+//       background-position: center;
+//       @include flex-center;
+
+//       p.caption {
+//         font-size: 2rem;
+//         color: $almost-white;
+//         padding: 25px 45px;
+//         background-color: $text-background;
+//         border-radius: 10px;
+//         margin-bottom: 0;
+//       }
+//     }
+
+//     .container {
+//       .carousel {
+//         height: 300px;
+//         gap: 50px;
+//         margin: 100px 0;
+//         @include flex-space;
+
+//         .card {
+//           height: 100%;
+//           width: 100%;
+//           background-position: center;
+//           background-size: cover;
+//           border-radius: 5px;
+//           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+//           &.one {
+//             background-image: url("/slike/carousel/1.jpg");
+//           }
+
+//           &.two {
+//             background-image: url("/slike/carousel/2.jpg");
+//           }
+
+//           &.three {
+//             background-image: url("/slike/carousel/3.jpg");
+//           }
+//         }
+//       }
+
+//       .insta-link-cont {
+//         margin: 50px auto;
+//         width: 200px;
+//         @include flex-center;
+//         flex-direction: column;
+
+//         .insta-img-container {
+//           background-image: url("/slike/icons/instagram-light-blue.svg");
+//           width: 70px;
+//           height: 70px;
+//           background-size: cover;
+//           background-position: center;
+//         }
+
+//         a {
+//           all: unset;
+//           margin: 0 auto;
+//           cursor: pointer;
+//           color: $main-green;
+//           font-size: 1.4rem;
+//           font-family: "Montserrat", sans-serif;
+//           font-weight: 500;
+//         }
+//       }
+
+//       .grid {
+//         display: grid;
+//         gap: 20px;
+//         grid-template-columns: auto auto auto auto;
+
+//         .cell {
+//           background-position: center;
+//           background-size: cover;
+//           aspect-ratio: 1;
+//         }
+
+//         .one {
+//           grid-column-start: 1;
+//           grid-column-end: 3;
+//           grid-row-start: 1;
+//           grid-row-end: 3;
+//           background-image: url("/slike/instagram/1.jpg");
+//         }
+
+//         .two {
+//           background-image: url("/slike/instagram/2.jpg");
+//         }
+
+//         .three {
+//           background-image: url("/slike/instagram/3.jpg");
+//         }
+
+//         .four {
+//           background-image: url("/slike/instagram/4.jpg");
+//         }
+
+//         .five {
+//           background-image: url("/slike/instagram/5.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  PROIZVODI STRANICA  //////
+//   .page.proizvodi {
+//     .head {
+//       background-image: url("/slike/backgrounds/1.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+
+//       .proizvodi-grid {
+//         display: grid;
+//         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+//         grid-gap: 80px;
+//         width: 1200px;
+//         height: 1200px;
+//         margin: 100px 0;
+
+//         .jedan-proizvod {
+//           .proizvod-img-container {
+//             @include background;
+//             border-radius: 5px;
+//             box-shadow: $shadow-light;
+//             transition: 0.2s;
+//             width: 100%;
+//             height: 100%;
+
+//             &:hover {
+//               box-shadow: $shadow-strong;
+//               cursor: pointer;
+//               transition: 0.2s;
+//             }
+
+//             &:active {
+//               box-shadow: $shadow-light;
+//               transition: 0.2s;
+//             }
+//           }
+
+//           .proizvod-naziv {
+//             text-align: center;
+//             font-size: 1.5rem;
+//             margin: 10px 0;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  O NAMA STRANICA  //////
+//   .page.o-nama {
+//     .head {
+//       background-image: url("/slike/backgrounds/2.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/8.jpg");
+//     }
+//   }
+
+//   //////  B2B STRANICA  //////
+//   .page.btob {
+//     .head {
+//       background-image: url("/slike/backgrounds/11.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/12.jpg");
+//     }
+
+//     .btob-grid {
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//       gap: 20px;
+//       margin-bottom: 100px;
+//       .btob-grid-img {
+//         aspect-ratio: 1;
+//         box-shadow: $shadow-light;
+//         transition: 0.2s;
+//         background-position: center;
+//         background-size: contain;
+//         border-radius: 5px;
+//         filter: invert(0.7);
+
+//         &:hover {
+//           transition: 0.2s;
+//           cursor: pointer;
+//           box-shadow: $shadow-strong;
+//           filter: invert(0.1);
+//         }
+
+//         &:active {
+//           box-shadow: $shadow-light;
+//         }
+
+//         &.one {
+//           background-image: url("/slike/logos/latho.jpg");
+//         }
+//         &.two {
+//           background-image: url("/slike/logos/lapitec.jpg");
+//         }
+//         &.three {
+//           background-image: url("/slike/logos/slate_lite.jpg");
+//         }
+//         &.four {
+//           background-image: url("/slike/logos/decoprint.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KONTAKT STRANICA  //////
+//   .page.kontakt {
+//     .head {
+//       background-image: url("/slike/backgrounds/13.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+//       flex-direction: column;
+
+//       .kontakt-info {
+//         width: 100%;
+//         background-color: $light-blue;
+//         aspect-ratio: 4;
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         align-items: center;
+//         margin: 100px 0;
+
+//         .segment {
+//           flex-direction: column;
+//           @include flex-space;
+//           gap: 40px;
+
+//           .kontakt-logo {
+//             height: 50px;
+//             width: 50px;
+//             background-size: contain;
+//             background-position: center;
+//             background-repeat: no-repeat;
+
+//             &.one {
+//               background-image: url("https://www.iconbolt.com/iconsets/carbon-design-system/phone.svg");
+//             }
+
+//             &.two {
+//               background-image: url("https://www.iconbolt.com/iconsets/eleken-essential/mail.svg");
+//             }
+
+//             &.three {
+//               background-image: url("https://www.iconbolt.com/iconsets/akar-icons/location.svg");
+//             }
+//           }
+//           p {
+//             font-weight: 700;
+//             font-size: 1rem;
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  USLOVI KORIŠĆENJA STRANICA  //////
+//   .page.uslovi-koriscenja {
+//     .head {
+//       background-image: url("/slike/backgrounds/14.jpg");
+//     }
+
+//     .container {
+//       margin-top: 100px;
+//       margin-bottom: 100px;
+
+//       h4 {
+//         font-family: "Open Sans", sans-serif;
+//         font-weight: 600;
+//         font-size: 1.5rem;
+//         letter-spacing: 2px;
+//         margin-bottom: 20px;
+//       }
+//     }
+//   }
+
+//   //////  LAPITEC STRANICA  //////
+//   .page.lapitec {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+//     }
+
+//     .img-container {
+//       &.left {
+//         background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+//       }
+
+//       &.right {
+//         background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+//       }
+//     }
+//   }
+
+//   //////  LATHO STRANICA  //////
+//   .page.latho {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg");
+//     }
+
+//     #move-img-container-l {
+//       background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+//       height: 70%;
+//       background-size: fill;
+//     }
+
+//     #move-img-container-r {
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+//       height: 70%;
+//     }
+
+//     .potkategorije {
+//       .side {
+//         .text-part {
+//           width: 100%;
+//         }
+//         &.right {
+//           h2 {
+//             text-align: end;
+//           }
+//           .desc {
+//             text-align: end;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KAMENI FURNIRI STRANICA  //////
+//   .page.kameni-furniri {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     ul {
+//       margin-left: 75px;
+//       li::marker {
+//         color: $main-green;
+//       }
+//     }
+//   }
+
+//   //////  TAPETE STRANICA  //////
+//   .page.tapete {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+//       background-position: top;
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     #tapeta {
+//       width: 48%;
+//     }
+//   }
+
+//   //////  MOVE PROIZVOD STRANICA  //////
+//   .proizvod.page.move {
+//     .proizvod-grid {
+//       @include flex-space;
+//       width: 100%;
+//       gap: 30px;
+//       height: 800px;
+//       margin: 100px 0;
+
+//       .levo {
+//         @include flex-column;
+//         justify-content: space-between;
+//         gap: 30px;
+//         width: 50%;
+//         height: 800px;
+
+//         .grid-img-container {
+//           height: 550px;
+
+//           img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//           }
+//         }
+
+//         .levo-dole {
+//           width: 100%;
+//           height: 250px;
+
+//           .grid-img-container {
+//             width: 100%;
+//             height: 250px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 //769px - 992px
-@media only screen and (max-width: 768px) {}
+// @media only screen and (min-width: 769px) and (max-width: 992px) {
+//   //////  STRANICA  //////
+//   .page {
+//     .head {
+//       @include background;
+//       height: 500px;
+//       // background-image: url;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .head.proizvod {
+//       @include background;
+//       height: 300px;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .container {
+//       margin: 0 auto;
+//       max-width: 1200px;
+
+//       .gore {
+//         margin: 100px 0;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 50px;
+
+//         .levo {
+//           width: 100%;
+//           height: max;
+//           @include background;
+//         }
+
+//         .desno {
+//           width: 100%;
+//         }
+//       }
+
+//       .dole {
+//         @include flex-column;
+//         margin: 100px 0;
+
+//         .link-kontakt {
+//           all: unset;
+//           color: $main-green;
+//           font-size: 1.5rem;
+//           letter-spacing: 2px;
+//           text-align: center;
+//           max-width: 250px;
+//           cursor: pointer;
+//           font-weight: 500;
+//           font-family: "Montserrat", sans-serif;
+//         }
+
+//         h2 {
+//           text-align: center;
+//         }
+
+//         p {
+//           text-align: center;
+//         }
+//       }
+
+//       .potkategorije {
+//         @include flex-space;
+
+//         .side {
+//           width: 48%;
+//           height: 800px;
+//           @include flex-space;
+//           flex-direction: column;
+//           box-shadow: $shadow-light;
+//           padding: 20px;
+//           border-radius: 5px;
+
+//           h2 {
+//             margin-bottom: 20px;
+//           }
+
+//           p {
+//             font-size: 1.4rem;
+//             text-align: justify;
+//             margin-bottom: 0;
+
+//             &.desc {
+//               margin-bottom: 20px;
+//             }
+//           }
+
+//           .img-container {
+//             @include background;
+//             width: 100%;
+//             height: 55%;
+//           }
+//           &.right {
+//             h2 {
+//               text-align: end;
+//             }
+//             .desc {
+//               text-align: end;
+//             }
+//           }
+//         }
+//       }
+
+//       .kategorija-info {
+//         text-align: justify;
+//         font-size: 1.8rem;
+//         line-height: 3rem;
+//         color: $dark;
+//         margin: 100px 0;
+//       }
+
+//       .grid-proizvoda {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         margin: 100px 0;
+
+//         .proizvod {
+//           width: 23%;
+//           aspect-ratio: 1;
+
+//           .img-container {
+//             width: 100%;
+//             aspect-ratio: 1;
+
+//             img {
+//               height: 100%;
+//               width: 100%;
+//               object-fit: cover;
+//               box-shadow: $shadow-light;
+//               filter: opacity(0.9);
+//               transition: 0.2s;
+//               border-radius: 5px;
+
+//               &:hover {
+//                 filter: opacity(1);
+//                 transition: 0.2s;
+//                 cursor: pointer;
+//                 box-shadow: $shadow-strong;
+//               }
+
+//               &:active {
+//                 box-shadow: $shadow-light;
+//               }
+//             }
+//           }
+
+//           p.ime-proizvoda {
+//             text-align: center;
+//             margin: 15px 0;
+//             font-size: 1.3rem;
+//           }
+
+//           p.proizvodjac {
+//             margin: 0;
+//             text-align: center;
+//             font-size: 1rem;
+//             margin-top: -15px;
+//             color: gray;
+//             margin-bottom: 20px;
+//           }
+//         }
+//       }
+//       .proizvod-grid {
+//         @include flex-space;
+//         width: 100%;
+//         gap: 30px;
+//         height: 800px;
+//         margin: 100px 0;
+
+//         .levo {
+//           @include flex-column;
+//           justify-content: space-between;
+//           gap: 30px;
+//           width: 50%;
+//           height: 800px;
+
+//           .grid-img-container.one {
+//             height: 550px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+
+//           .levo-dole {
+//             @include flex-space;
+//             gap: 30px;
+//             width: 100%;
+//             height: 250px;
+
+//             .two {
+//               width: 50%;
+//               height: 100%;
+
+//               img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .page.proizvod {
+//     .proizvod-head {
+//       height: 300px;
+//       position: relative;
+//       margin: 0 auto;
+
+//       img {
+//         height: 100%;
+//         width: 100%;
+//       }
+
+//       .proizvod-naslov {
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         left: 0;
+//         right: 0;
+//         width: 500px;
+//         height: 140px;
+//         text-align: center;
+//         @include flex-center;
+//         flex-direction: column;
+//         background-color: $text-background;
+//         padding: 10px;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .text {
+//       margin-top: 100px;
+//       p.opis {
+//         margin: 50px 0;
+//       }
+
+//       .key {
+//         font-size: 1.4rem;
+
+//         span {
+//           font-weight: 600;
+//         }
+//       }
+//     }
+//   }
+
+//   //////  POČETNA STRANICA  //////
+//   .page.home {
+//     .slide-container {
+//       height: 500px;
+
+//       .react-slideshow-container .nav:first-of-type {
+//         left: 100px;
+//       }
+
+//       .react-slideshow-container .nav:last-of-type {
+//         right: 100px;
+//       }
+//     }
+
+//     #slide {
+//       height: 500px;
+//       background-size: cover;
+//       background-position: center;
+//       @include flex-center;
+
+//       p.caption {
+//         font-size: 2rem;
+//         color: $almost-white;
+//         padding: 25px 45px;
+//         background-color: $text-background;
+//         border-radius: 10px;
+//         margin-bottom: 0;
+//       }
+//     }
+
+//     .container {
+//       .carousel {
+//         height: 300px;
+//         gap: 50px;
+//         margin: 100px 0;
+//         @include flex-space;
+
+//         .card {
+//           height: 100%;
+//           width: 100%;
+//           background-position: center;
+//           background-size: cover;
+//           border-radius: 5px;
+//           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+//           &.one {
+//             background-image: url("/slike/carousel/1.jpg");
+//           }
+
+//           &.two {
+//             background-image: url("/slike/carousel/2.jpg");
+//           }
+
+//           &.three {
+//             background-image: url("/slike/carousel/3.jpg");
+//           }
+//         }
+//       }
+
+//       .insta-link-cont {
+//         margin: 50px auto;
+//         width: 200px;
+//         @include flex-center;
+//         flex-direction: column;
+
+//         .insta-img-container {
+//           background-image: url("/slike/icons/instagram-light-blue.svg");
+//           width: 70px;
+//           height: 70px;
+//           background-size: cover;
+//           background-position: center;
+//         }
+
+//         a {
+//           all: unset;
+//           margin: 0 auto;
+//           cursor: pointer;
+//           color: $main-green;
+//           font-size: 1.4rem;
+//           font-family: "Montserrat", sans-serif;
+//           font-weight: 500;
+//         }
+//       }
+
+//       .grid {
+//         display: grid;
+//         gap: 20px;
+//         grid-template-columns: auto auto auto auto;
+
+//         .cell {
+//           background-position: center;
+//           background-size: cover;
+//           aspect-ratio: 1;
+//         }
+
+//         .one {
+//           grid-column-start: 1;
+//           grid-column-end: 3;
+//           grid-row-start: 1;
+//           grid-row-end: 3;
+//           background-image: url("/slike/instagram/1.jpg");
+//         }
+
+//         .two {
+//           background-image: url("/slike/instagram/2.jpg");
+//         }
+
+//         .three {
+//           background-image: url("/slike/instagram/3.jpg");
+//         }
+
+//         .four {
+//           background-image: url("/slike/instagram/4.jpg");
+//         }
+
+//         .five {
+//           background-image: url("/slike/instagram/5.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  PROIZVODI STRANICA  //////
+//   .page.proizvodi {
+//     .head {
+//       background-image: url("/slike/backgrounds/1.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+
+//       .proizvodi-grid {
+//         display: grid;
+//         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+//         grid-gap: 80px;
+//         width: 1200px;
+//         height: 1200px;
+//         margin: 100px 0;
+
+//         .jedan-proizvod {
+//           .proizvod-img-container {
+//             @include background;
+//             border-radius: 5px;
+//             box-shadow: $shadow-light;
+//             transition: 0.2s;
+//             width: 100%;
+//             height: 100%;
+
+//             &:hover {
+//               box-shadow: $shadow-strong;
+//               cursor: pointer;
+//               transition: 0.2s;
+//             }
+
+//             &:active {
+//               box-shadow: $shadow-light;
+//               transition: 0.2s;
+//             }
+//           }
+
+//           .proizvod-naziv {
+//             text-align: center;
+//             font-size: 1.5rem;
+//             margin: 10px 0;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  O NAMA STRANICA  //////
+//   .page.o-nama {
+//     .head {
+//       background-image: url("/slike/backgrounds/2.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/8.jpg");
+//     }
+//   }
+
+//   //////  B2B STRANICA  //////
+//   .page.btob {
+//     .head {
+//       background-image: url("/slike/backgrounds/11.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/12.jpg");
+//     }
+
+//     .btob-grid {
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//       gap: 20px;
+//       margin-bottom: 100px;
+//       .btob-grid-img {
+//         aspect-ratio: 1;
+//         box-shadow: $shadow-light;
+//         transition: 0.2s;
+//         background-position: center;
+//         background-size: contain;
+//         border-radius: 5px;
+//         filter: invert(0.7);
+
+//         &:hover {
+//           transition: 0.2s;
+//           cursor: pointer;
+//           box-shadow: $shadow-strong;
+//           filter: invert(0.1);
+//         }
+
+//         &:active {
+//           box-shadow: $shadow-light;
+//         }
+
+//         &.one {
+//           background-image: url("/slike/logos/latho.jpg");
+//         }
+//         &.two {
+//           background-image: url("/slike/logos/lapitec.jpg");
+//         }
+//         &.three {
+//           background-image: url("/slike/logos/slate_lite.jpg");
+//         }
+//         &.four {
+//           background-image: url("/slike/logos/decoprint.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KONTAKT STRANICA  //////
+//   .page.kontakt {
+//     .head {
+//       background-image: url("/slike/backgrounds/13.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+//       flex-direction: column;
+
+//       .kontakt-info {
+//         width: 100%;
+//         background-color: $light-blue;
+//         aspect-ratio: 4;
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         align-items: center;
+//         margin: 100px 0;
+
+//         .segment {
+//           flex-direction: column;
+//           @include flex-space;
+//           gap: 40px;
+
+//           .kontakt-logo {
+//             height: 50px;
+//             width: 50px;
+//             background-size: contain;
+//             background-position: center;
+//             background-repeat: no-repeat;
+
+//             &.one {
+//               background-image: url("https://www.iconbolt.com/iconsets/carbon-design-system/phone.svg");
+//             }
+
+//             &.two {
+//               background-image: url("https://www.iconbolt.com/iconsets/eleken-essential/mail.svg");
+//             }
+
+//             &.three {
+//               background-image: url("https://www.iconbolt.com/iconsets/akar-icons/location.svg");
+//             }
+//           }
+//           p {
+//             font-weight: 700;
+//             font-size: 1rem;
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  USLOVI KORIŠĆENJA STRANICA  //////
+//   .page.uslovi-koriscenja {
+//     .head {
+//       background-image: url("/slike/backgrounds/14.jpg");
+//     }
+
+//     .container {
+//       margin-top: 100px;
+//       margin-bottom: 100px;
+
+//       h4 {
+//         font-family: "Open Sans", sans-serif;
+//         font-weight: 600;
+//         font-size: 1.5rem;
+//         letter-spacing: 2px;
+//         margin-bottom: 20px;
+//       }
+//     }
+//   }
+
+//   //////  LAPITEC STRANICA  //////
+//   .page.lapitec {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+//     }
+
+//     .img-container {
+//       &.left {
+//         background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+//       }
+
+//       &.right {
+//         background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+//       }
+//     }
+//   }
+
+//   //////  LATHO STRANICA  //////
+//   .page.latho {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg");
+//     }
+
+//     #move-img-container-l {
+//       background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+//       height: 70%;
+//       background-size: fill;
+//     }
+
+//     #move-img-container-r {
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+//       height: 70%;
+//     }
+
+//     .potkategorije {
+//       .side {
+//         .text-part {
+//           width: 100%;
+//         }
+//         &.right {
+//           h2 {
+//             text-align: end;
+//           }
+//           .desc {
+//             text-align: end;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KAMENI FURNIRI STRANICA  //////
+//   .page.kameni-furniri {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     ul {
+//       margin-left: 75px;
+//       li::marker {
+//         color: $main-green;
+//       }
+//     }
+//   }
+
+//   //////  TAPETE STRANICA  //////
+//   .page.tapete {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+//       background-position: top;
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     #tapeta {
+//       width: 48%;
+//     }
+//   }
+
+//   //////  MOVE PROIZVOD STRANICA  //////
+//   .proizvod.page.move {
+//     .proizvod-grid {
+//       @include flex-space;
+//       width: 100%;
+//       gap: 30px;
+//       height: 800px;
+//       margin: 100px 0;
+
+//       .levo {
+//         @include flex-column;
+//         justify-content: space-between;
+//         gap: 30px;
+//         width: 50%;
+//         height: 800px;
+
+//         .grid-img-container {
+//           height: 550px;
+
+//           img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//           }
+//         }
+
+//         .levo-dole {
+//           width: 100%;
+//           height: 250px;
+
+//           .grid-img-container {
+//             width: 100%;
+//             height: 250px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 //993px - 1200px
-@media only screen and (min-width: 992px) {}
+// @media only screen and (min-width: 993px) and (max-width: 1200px) {
+//   //////  STRANICA  //////
+//   .page {
+//     .head {
+//       @include background;
+//       height: 500px;
+//       // background-image: url;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .head.proizvod {
+//       @include background;
+//       height: 300px;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .container {
+//       margin: 0 auto;
+//       max-width: 1200px;
+
+//       .gore {
+//         margin: 100px 0;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 50px;
+
+//         .levo {
+//           width: 100%;
+//           height: max;
+//           @include background;
+//         }
+
+//         .desno {
+//           width: 100%;
+//         }
+//       }
+
+//       .dole {
+//         @include flex-column;
+//         margin: 100px 0;
+
+//         .link-kontakt {
+//           all: unset;
+//           color: $main-green;
+//           font-size: 1.5rem;
+//           letter-spacing: 2px;
+//           text-align: center;
+//           max-width: 250px;
+//           cursor: pointer;
+//           font-weight: 500;
+//           font-family: "Montserrat", sans-serif;
+//         }
+
+//         h2 {
+//           text-align: center;
+//         }
+
+//         p {
+//           text-align: center;
+//         }
+//       }
+
+//       .potkategorije {
+//         @include flex-space;
+
+//         .side {
+//           width: 48%;
+//           height: 800px;
+//           @include flex-space;
+//           flex-direction: column;
+//           box-shadow: $shadow-light;
+//           padding: 20px;
+//           border-radius: 5px;
+
+//           h2 {
+//             margin-bottom: 20px;
+//           }
+
+//           p {
+//             font-size: 1.4rem;
+//             text-align: justify;
+//             margin-bottom: 0;
+
+//             &.desc {
+//               margin-bottom: 20px;
+//             }
+//           }
+
+//           .img-container {
+//             @include background;
+//             width: 100%;
+//             height: 55%;
+//           }
+//           &.right {
+//             h2 {
+//               text-align: end;
+//             }
+//             .desc {
+//               text-align: end;
+//             }
+//           }
+//         }
+//       }
+
+//       .kategorija-info {
+//         text-align: justify;
+//         font-size: 1.8rem;
+//         line-height: 3rem;
+//         color: $dark;
+//         margin: 100px 0;
+//       }
+
+//       .grid-proizvoda {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         margin: 100px 0;
+
+//         .proizvod {
+//           width: 23%;
+//           aspect-ratio: 1;
+
+//           .img-container {
+//             width: 100%;
+//             aspect-ratio: 1;
+
+//             img {
+//               height: 100%;
+//               width: 100%;
+//               object-fit: cover;
+//               box-shadow: $shadow-light;
+//               filter: opacity(0.9);
+//               transition: 0.2s;
+//               border-radius: 5px;
+
+//               &:hover {
+//                 filter: opacity(1);
+//                 transition: 0.2s;
+//                 cursor: pointer;
+//                 box-shadow: $shadow-strong;
+//               }
+
+//               &:active {
+//                 box-shadow: $shadow-light;
+//               }
+//             }
+//           }
+
+//           p.ime-proizvoda {
+//             text-align: center;
+//             margin: 15px 0;
+//             font-size: 1.3rem;
+//           }
+
+//           p.proizvodjac {
+//             margin: 0;
+//             text-align: center;
+//             font-size: 1rem;
+//             margin-top: -15px;
+//             color: gray;
+//             margin-bottom: 20px;
+//           }
+//         }
+//       }
+//       .proizvod-grid {
+//         @include flex-space;
+//         width: 100%;
+//         gap: 30px;
+//         height: 800px;
+//         margin: 100px 0;
+
+//         .levo {
+//           @include flex-column;
+//           justify-content: space-between;
+//           gap: 30px;
+//           width: 50%;
+//           height: 800px;
+
+//           .grid-img-container.one {
+//             height: 550px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+
+//           .levo-dole {
+//             @include flex-space;
+//             gap: 30px;
+//             width: 100%;
+//             height: 250px;
+
+//             .two {
+//               width: 50%;
+//               height: 100%;
+
+//               img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .page.proizvod {
+//     .proizvod-head {
+//       height: 300px;
+//       position: relative;
+//       margin: 0 auto;
+
+//       img {
+//         height: 100%;
+//         width: 100%;
+//       }
+
+//       .proizvod-naslov {
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         left: 0;
+//         right: 0;
+//         width: 500px;
+//         height: 140px;
+//         text-align: center;
+//         @include flex-center;
+//         flex-direction: column;
+//         background-color: $text-background;
+//         padding: 10px;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .text {
+//       margin-top: 100px;
+//       p.opis {
+//         margin: 50px 0;
+//       }
+
+//       .key {
+//         font-size: 1.4rem;
+
+//         span {
+//           font-weight: 600;
+//         }
+//       }
+//     }
+//   }
+
+//   //////  POČETNA STRANICA  //////
+//   .page.home {
+//     .slide-container {
+//       height: 500px;
+
+//       .react-slideshow-container .nav:first-of-type {
+//         left: 100px;
+//       }
+
+//       .react-slideshow-container .nav:last-of-type {
+//         right: 100px;
+//       }
+//     }
+
+//     #slide {
+//       height: 500px;
+//       background-size: cover;
+//       background-position: center;
+//       @include flex-center;
+
+//       p.caption {
+//         font-size: 2rem;
+//         color: $almost-white;
+//         padding: 25px 45px;
+//         background-color: $text-background;
+//         border-radius: 10px;
+//         margin-bottom: 0;
+//       }
+//     }
+
+//     .container {
+//       .carousel {
+//         height: 300px;
+//         gap: 50px;
+//         margin: 100px 0;
+//         @include flex-space;
+
+//         .card {
+//           height: 100%;
+//           width: 100%;
+//           background-position: center;
+//           background-size: cover;
+//           border-radius: 5px;
+//           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+//           &.one {
+//             background-image: url("/slike/carousel/1.jpg");
+//           }
+
+//           &.two {
+//             background-image: url("/slike/carousel/2.jpg");
+//           }
+
+//           &.three {
+//             background-image: url("/slike/carousel/3.jpg");
+//           }
+//         }
+//       }
+
+//       .insta-link-cont {
+//         margin: 50px auto;
+//         width: 200px;
+//         @include flex-center;
+//         flex-direction: column;
+
+//         .insta-img-container {
+//           background-image: url("/slike/icons/instagram-light-blue.svg");
+//           width: 70px;
+//           height: 70px;
+//           background-size: cover;
+//           background-position: center;
+//         }
+
+//         a {
+//           all: unset;
+//           margin: 0 auto;
+//           cursor: pointer;
+//           color: $main-green;
+//           font-size: 1.4rem;
+//           font-family: "Montserrat", sans-serif;
+//           font-weight: 500;
+//         }
+//       }
+
+//       .grid {
+//         display: grid;
+//         gap: 20px;
+//         grid-template-columns: auto auto auto auto;
+
+//         .cell {
+//           background-position: center;
+//           background-size: cover;
+//           aspect-ratio: 1;
+//         }
+
+//         .one {
+//           grid-column-start: 1;
+//           grid-column-end: 3;
+//           grid-row-start: 1;
+//           grid-row-end: 3;
+//           background-image: url("/slike/instagram/1.jpg");
+//         }
+
+//         .two {
+//           background-image: url("/slike/instagram/2.jpg");
+//         }
+
+//         .three {
+//           background-image: url("/slike/instagram/3.jpg");
+//         }
+
+//         .four {
+//           background-image: url("/slike/instagram/4.jpg");
+//         }
+
+//         .five {
+//           background-image: url("/slike/instagram/5.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  PROIZVODI STRANICA  //////
+//   .page.proizvodi {
+//     .head {
+//       background-image: url("/slike/backgrounds/1.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+
+//       .proizvodi-grid {
+//         display: grid;
+//         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+//         grid-gap: 80px;
+//         width: 1200px;
+//         height: 1200px;
+//         margin: 100px 0;
+
+//         .jedan-proizvod {
+//           .proizvod-img-container {
+//             @include background;
+//             border-radius: 5px;
+//             box-shadow: $shadow-light;
+//             transition: 0.2s;
+//             width: 100%;
+//             height: 100%;
+
+//             &:hover {
+//               box-shadow: $shadow-strong;
+//               cursor: pointer;
+//               transition: 0.2s;
+//             }
+
+//             &:active {
+//               box-shadow: $shadow-light;
+//               transition: 0.2s;
+//             }
+//           }
+
+//           .proizvod-naziv {
+//             text-align: center;
+//             font-size: 1.5rem;
+//             margin: 10px 0;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  O NAMA STRANICA  //////
+//   .page.o-nama {
+//     .head {
+//       background-image: url("/slike/backgrounds/2.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/8.jpg");
+//     }
+//   }
+
+//   //////  B2B STRANICA  //////
+//   .page.btob {
+//     .head {
+//       background-image: url("/slike/backgrounds/11.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/12.jpg");
+//     }
+
+//     .btob-grid {
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//       gap: 20px;
+//       margin-bottom: 100px;
+//       .btob-grid-img {
+//         aspect-ratio: 1;
+//         box-shadow: $shadow-light;
+//         transition: 0.2s;
+//         background-position: center;
+//         background-size: contain;
+//         border-radius: 5px;
+//         filter: invert(0.7);
+
+//         &:hover {
+//           transition: 0.2s;
+//           cursor: pointer;
+//           box-shadow: $shadow-strong;
+//           filter: invert(0.1);
+//         }
+
+//         &:active {
+//           box-shadow: $shadow-light;
+//         }
+
+//         &.one {
+//           background-image: url("/slike/logos/latho.jpg");
+//         }
+//         &.two {
+//           background-image: url("/slike/logos/lapitec.jpg");
+//         }
+//         &.three {
+//           background-image: url("/slike/logos/slate_lite.jpg");
+//         }
+//         &.four {
+//           background-image: url("/slike/logos/decoprint.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KONTAKT STRANICA  //////
+//   .page.kontakt {
+//     .head {
+//       background-image: url("/slike/backgrounds/13.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+//       flex-direction: column;
+
+//       .kontakt-info {
+//         width: 100%;
+//         background-color: $light-blue;
+//         aspect-ratio: 4;
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         align-items: center;
+//         margin: 100px 0;
+
+//         .segment {
+//           flex-direction: column;
+//           @include flex-space;
+//           gap: 40px;
+
+//           .kontakt-logo {
+//             height: 50px;
+//             width: 50px;
+//             background-size: contain;
+//             background-position: center;
+//             background-repeat: no-repeat;
+
+//             &.one {
+//               background-image: url("https://www.iconbolt.com/iconsets/carbon-design-system/phone.svg");
+//             }
+
+//             &.two {
+//               background-image: url("https://www.iconbolt.com/iconsets/eleken-essential/mail.svg");
+//             }
+
+//             &.three {
+//               background-image: url("https://www.iconbolt.com/iconsets/akar-icons/location.svg");
+//             }
+//           }
+//           p {
+//             font-weight: 700;
+//             font-size: 1rem;
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  USLOVI KORIŠĆENJA STRANICA  //////
+//   .page.uslovi-koriscenja {
+//     .head {
+//       background-image: url("/slike/backgrounds/14.jpg");
+//     }
+
+//     .container {
+//       margin-top: 100px;
+//       margin-bottom: 100px;
+
+//       h4 {
+//         font-family: "Open Sans", sans-serif;
+//         font-weight: 600;
+//         font-size: 1.5rem;
+//         letter-spacing: 2px;
+//         margin-bottom: 20px;
+//       }
+//     }
+//   }
+
+//   //////  LAPITEC STRANICA  //////
+//   .page.lapitec {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+//     }
+
+//     .img-container {
+//       &.left {
+//         background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+//       }
+
+//       &.right {
+//         background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+//       }
+//     }
+//   }
+
+//   //////  LATHO STRANICA  //////
+//   .page.latho {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg");
+//     }
+
+//     #move-img-container-l {
+//       background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+//       height: 70%;
+//       background-size: fill;
+//     }
+
+//     #move-img-container-r {
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+//       height: 70%;
+//     }
+
+//     .potkategorije {
+//       .side {
+//         .text-part {
+//           width: 100%;
+//         }
+//         &.right {
+//           h2 {
+//             text-align: end;
+//           }
+//           .desc {
+//             text-align: end;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KAMENI FURNIRI STRANICA  //////
+//   .page.kameni-furniri {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     ul {
+//       margin-left: 75px;
+//       li::marker {
+//         color: $main-green;
+//       }
+//     }
+//   }
+
+//   //////  TAPETE STRANICA  //////
+//   .page.tapete {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+//       background-position: top;
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     #tapeta {
+//       width: 48%;
+//     }
+//   }
+
+//   //////  MOVE PROIZVOD STRANICA  //////
+//   .proizvod.page.move {
+//     .proizvod-grid {
+//       @include flex-space;
+//       width: 100%;
+//       gap: 30px;
+//       height: 800px;
+//       margin: 100px 0;
+
+//       .levo {
+//         @include flex-column;
+//         justify-content: space-between;
+//         gap: 30px;
+//         width: 50%;
+//         height: 800px;
+
+//         .grid-img-container {
+//           height: 550px;
+
+//           img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//           }
+//         }
+
+//         .levo-dole {
+//           width: 100%;
+//           height: 250px;
+
+//           .grid-img-container {
+//             width: 100%;
+//             height: 250px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 //1201px - 1600px
-@media only screen and (max-width: 1200px) {}
+// @media only screen and (min-width: 1201px) and (max-width: 1600px) {
+//   //////  STRANICA  //////
+//   .page {
+//     .head {
+//       @include background;
+//       height: 500px;
+//       // background-image: url;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .head.proizvod {
+//       @include background;
+//       height: 300px;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .container {
+//       margin: 0 auto;
+//       max-width: 1200px;
+
+//       .gore {
+//         margin: 100px 0;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 50px;
+
+//         .levo {
+//           width: 100%;
+//           height: max;
+//           @include background;
+//         }
+
+//         .desno {
+//           width: 100%;
+//         }
+//       }
+
+//       .dole {
+//         @include flex-column;
+//         margin: 100px 0;
+
+//         .link-kontakt {
+//           all: unset;
+//           color: $main-green;
+//           font-size: 1.5rem;
+//           letter-spacing: 2px;
+//           text-align: center;
+//           max-width: 250px;
+//           cursor: pointer;
+//           font-weight: 500;
+//           font-family: "Montserrat", sans-serif;
+//         }
+
+//         h2 {
+//           text-align: center;
+//         }
+
+//         p {
+//           text-align: center;
+//         }
+//       }
+
+//       .potkategorije {
+//         @include flex-space;
+
+//         .side {
+//           width: 48%;
+//           height: 800px;
+//           @include flex-space;
+//           flex-direction: column;
+//           box-shadow: $shadow-light;
+//           padding: 20px;
+//           border-radius: 5px;
+
+//           h2 {
+//             margin-bottom: 20px;
+//           }
+
+//           p {
+//             font-size: 1.4rem;
+//             text-align: justify;
+//             margin-bottom: 0;
+
+//             &.desc {
+//               margin-bottom: 20px;
+//             }
+//           }
+
+//           .img-container {
+//             @include background;
+//             width: 100%;
+//             height: 55%;
+//           }
+//           &.right {
+//             h2 {
+//               text-align: end;
+//             }
+//             .desc {
+//               text-align: end;
+//             }
+//           }
+//         }
+//       }
+
+//       .kategorija-info {
+//         text-align: justify;
+//         font-size: 1.8rem;
+//         line-height: 3rem;
+//         color: $dark;
+//         margin: 100px 0;
+//       }
+
+//       .grid-proizvoda {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         margin: 100px 0;
+
+//         .proizvod {
+//           width: 23%;
+//           aspect-ratio: 1;
+
+//           .img-container {
+//             width: 100%;
+//             aspect-ratio: 1;
+
+//             img {
+//               height: 100%;
+//               width: 100%;
+//               object-fit: cover;
+//               box-shadow: $shadow-light;
+//               filter: opacity(0.9);
+//               transition: 0.2s;
+//               border-radius: 5px;
+
+//               &:hover {
+//                 filter: opacity(1);
+//                 transition: 0.2s;
+//                 cursor: pointer;
+//                 box-shadow: $shadow-strong;
+//               }
+
+//               &:active {
+//                 box-shadow: $shadow-light;
+//               }
+//             }
+//           }
+
+//           p.ime-proizvoda {
+//             text-align: center;
+//             margin: 15px 0;
+//             font-size: 1.3rem;
+//           }
+
+//           p.proizvodjac {
+//             margin: 0;
+//             text-align: center;
+//             font-size: 1rem;
+//             margin-top: -15px;
+//             color: gray;
+//             margin-bottom: 20px;
+//           }
+//         }
+//       }
+//       .proizvod-grid {
+//         @include flex-space;
+//         width: 100%;
+//         gap: 30px;
+//         height: 800px;
+//         margin: 100px 0;
+
+//         .levo {
+//           @include flex-column;
+//           justify-content: space-between;
+//           gap: 30px;
+//           width: 50%;
+//           height: 800px;
+
+//           .grid-img-container.one {
+//             height: 550px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+
+//           .levo-dole {
+//             @include flex-space;
+//             gap: 30px;
+//             width: 100%;
+//             height: 250px;
+
+//             .two {
+//               width: 50%;
+//               height: 100%;
+
+//               img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .page.proizvod {
+//     .proizvod-head {
+//       height: 300px;
+//       position: relative;
+//       margin: 0 auto;
+
+//       img {
+//         height: 100%;
+//         width: 100%;
+//       }
+
+//       .proizvod-naslov {
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         left: 0;
+//         right: 0;
+//         width: 500px;
+//         height: 140px;
+//         text-align: center;
+//         @include flex-center;
+//         flex-direction: column;
+//         background-color: $text-background;
+//         padding: 10px;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .text {
+//       margin-top: 100px;
+//       p.opis {
+//         margin: 50px 0;
+//       }
+
+//       .key {
+//         font-size: 1.4rem;
+
+//         span {
+//           font-weight: 600;
+//         }
+//       }
+//     }
+//   }
+
+//   //////  POČETNA STRANICA  //////
+//   .page.home {
+//     .slide-container {
+//       height: 500px;
+
+//       .react-slideshow-container .nav:first-of-type {
+//         left: 100px;
+//       }
+
+//       .react-slideshow-container .nav:last-of-type {
+//         right: 100px;
+//       }
+//     }
+
+//     #slide {
+//       height: 500px;
+//       background-size: cover;
+//       background-position: center;
+//       @include flex-center;
+
+//       p.caption {
+//         font-size: 2rem;
+//         color: $almost-white;
+//         padding: 25px 45px;
+//         background-color: $text-background;
+//         border-radius: 10px;
+//         margin-bottom: 0;
+//       }
+//     }
+
+//     .container {
+//       .carousel {
+//         height: 300px;
+//         gap: 50px;
+//         margin: 100px 0;
+//         @include flex-space;
+
+//         .card {
+//           height: 100%;
+//           width: 100%;
+//           background-position: center;
+//           background-size: cover;
+//           border-radius: 5px;
+//           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+//           &.one {
+//             background-image: url("/slike/carousel/1.jpg");
+//           }
+
+//           &.two {
+//             background-image: url("/slike/carousel/2.jpg");
+//           }
+
+//           &.three {
+//             background-image: url("/slike/carousel/3.jpg");
+//           }
+//         }
+//       }
+
+//       .insta-link-cont {
+//         margin: 50px auto;
+//         width: 200px;
+//         @include flex-center;
+//         flex-direction: column;
+
+//         .insta-img-container {
+//           background-image: url("/slike/icons/instagram-light-blue.svg");
+//           width: 70px;
+//           height: 70px;
+//           background-size: cover;
+//           background-position: center;
+//         }
+
+//         a {
+//           all: unset;
+//           margin: 0 auto;
+//           cursor: pointer;
+//           color: $main-green;
+//           font-size: 1.4rem;
+//           font-family: "Montserrat", sans-serif;
+//           font-weight: 500;
+//         }
+//       }
+
+//       .grid {
+//         display: grid;
+//         gap: 20px;
+//         grid-template-columns: auto auto auto auto;
+
+//         .cell {
+//           background-position: center;
+//           background-size: cover;
+//           aspect-ratio: 1;
+//         }
+
+//         .one {
+//           grid-column-start: 1;
+//           grid-column-end: 3;
+//           grid-row-start: 1;
+//           grid-row-end: 3;
+//           background-image: url("/slike/instagram/1.jpg");
+//         }
+
+//         .two {
+//           background-image: url("/slike/instagram/2.jpg");
+//         }
+
+//         .three {
+//           background-image: url("/slike/instagram/3.jpg");
+//         }
+
+//         .four {
+//           background-image: url("/slike/instagram/4.jpg");
+//         }
+
+//         .five {
+//           background-image: url("/slike/instagram/5.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  PROIZVODI STRANICA  //////
+//   .page.proizvodi {
+//     .head {
+//       background-image: url("/slike/backgrounds/1.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+
+//       .proizvodi-grid {
+//         display: grid;
+//         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+//         grid-gap: 80px;
+//         width: 1200px;
+//         height: 1200px;
+//         margin: 100px 0;
+
+//         .jedan-proizvod {
+//           .proizvod-img-container {
+//             @include background;
+//             border-radius: 5px;
+//             box-shadow: $shadow-light;
+//             transition: 0.2s;
+//             width: 100%;
+//             height: 100%;
+
+//             &:hover {
+//               box-shadow: $shadow-strong;
+//               cursor: pointer;
+//               transition: 0.2s;
+//             }
+
+//             &:active {
+//               box-shadow: $shadow-light;
+//               transition: 0.2s;
+//             }
+//           }
+
+//           .proizvod-naziv {
+//             text-align: center;
+//             font-size: 1.5rem;
+//             margin: 10px 0;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  O NAMA STRANICA  //////
+//   .page.o-nama {
+//     .head {
+//       background-image: url("/slike/backgrounds/2.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/8.jpg");
+//     }
+//   }
+
+//   //////  B2B STRANICA  //////
+//   .page.btob {
+//     .head {
+//       background-image: url("/slike/backgrounds/11.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/12.jpg");
+//     }
+
+//     .btob-grid {
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//       gap: 20px;
+//       margin-bottom: 100px;
+//       .btob-grid-img {
+//         aspect-ratio: 1;
+//         box-shadow: $shadow-light;
+//         transition: 0.2s;
+//         background-position: center;
+//         background-size: contain;
+//         border-radius: 5px;
+//         filter: invert(0.7);
+
+//         &:hover {
+//           transition: 0.2s;
+//           cursor: pointer;
+//           box-shadow: $shadow-strong;
+//           filter: invert(0.1);
+//         }
+
+//         &:active {
+//           box-shadow: $shadow-light;
+//         }
+
+//         &.one {
+//           background-image: url("/slike/logos/latho.jpg");
+//         }
+//         &.two {
+//           background-image: url("/slike/logos/lapitec.jpg");
+//         }
+//         &.three {
+//           background-image: url("/slike/logos/slate_lite.jpg");
+//         }
+//         &.four {
+//           background-image: url("/slike/logos/decoprint.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KONTAKT STRANICA  //////
+//   .page.kontakt {
+//     .head {
+//       background-image: url("/slike/backgrounds/13.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+//       flex-direction: column;
+
+//       .kontakt-info {
+//         width: 100%;
+//         background-color: $light-blue;
+//         aspect-ratio: 4;
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         align-items: center;
+//         margin: 100px 0;
+
+//         .segment {
+//           flex-direction: column;
+//           @include flex-space;
+//           gap: 40px;
+
+//           .kontakt-logo {
+//             height: 50px;
+//             width: 50px;
+//             background-size: contain;
+//             background-position: center;
+//             background-repeat: no-repeat;
+
+//             &.one {
+//               background-image: url("https://www.iconbolt.com/iconsets/carbon-design-system/phone.svg");
+//             }
+
+//             &.two {
+//               background-image: url("https://www.iconbolt.com/iconsets/eleken-essential/mail.svg");
+//             }
+
+//             &.three {
+//               background-image: url("https://www.iconbolt.com/iconsets/akar-icons/location.svg");
+//             }
+//           }
+//           p {
+//             font-weight: 700;
+//             font-size: 1rem;
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  USLOVI KORIŠĆENJA STRANICA  //////
+//   .page.uslovi-koriscenja {
+//     .head {
+//       background-image: url("/slike/backgrounds/14.jpg");
+//     }
+
+//     .container {
+//       margin-top: 100px;
+//       margin-bottom: 100px;
+
+//       h4 {
+//         font-family: "Open Sans", sans-serif;
+//         font-weight: 600;
+//         font-size: 1.5rem;
+//         letter-spacing: 2px;
+//         margin-bottom: 20px;
+//       }
+//     }
+//   }
+
+//   //////  LAPITEC STRANICA  //////
+//   .page.lapitec {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+//     }
+
+//     .img-container {
+//       &.left {
+//         background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+//       }
+
+//       &.right {
+//         background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+//       }
+//     }
+//   }
+
+//   //////  LATHO STRANICA  //////
+//   .page.latho {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg");
+//     }
+
+//     #move-img-container-l {
+//       background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+//       height: 70%;
+//       background-size: fill;
+//     }
+
+//     #move-img-container-r {
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+//       height: 70%;
+//     }
+
+//     .potkategorije {
+//       .side {
+//         .text-part {
+//           width: 100%;
+//         }
+//         &.right {
+//           h2 {
+//             text-align: end;
+//           }
+//           .desc {
+//             text-align: end;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KAMENI FURNIRI STRANICA  //////
+//   .page.kameni-furniri {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     ul {
+//       margin-left: 75px;
+//       li::marker {
+//         color: $main-green;
+//       }
+//     }
+//   }
+
+//   //////  TAPETE STRANICA  //////
+//   .page.tapete {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+//       background-position: top;
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     #tapeta {
+//       width: 48%;
+//     }
+//   }
+
+//   //////  MOVE PROIZVOD STRANICA  //////
+//   .proizvod.page.move {
+//     .proizvod-grid {
+//       @include flex-space;
+//       width: 100%;
+//       gap: 30px;
+//       height: 800px;
+//       margin: 100px 0;
+
+//       .levo {
+//         @include flex-column;
+//         justify-content: space-between;
+//         gap: 30px;
+//         width: 50%;
+//         height: 800px;
+
+//         .grid-img-container {
+//           height: 550px;
+
+//           img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//           }
+//         }
+
+//         .levo-dole {
+//           width: 100%;
+//           height: 250px;
+
+//           .grid-img-container {
+//             width: 100%;
+//             height: 250px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 //>>>1600
-@media only screen and (max-width: 1600px) {}
+// @media only screen and (max-width: 1600px) {
+//   //////  STRANICA  //////
+//   .page {
+//     .head {
+//       @include background;
+//       height: 500px;
+//       // background-image: url;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .head.proizvod {
+//       @include background;
+//       height: 300px;
+
+//       .head-cont {
+//         opacity: 0;
+//         transition: 2s ease;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         height: 100%;
+//         max-width: 1200px;
+
+//         &.visible {
+//           opacity: 1;
+//         }
+//       }
+//     }
+
+//     .container {
+//       margin: 0 auto;
+//       max-width: 1200px;
+
+//       .gore {
+//         margin: 100px 0;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 50px;
+
+//         .levo {
+//           width: 100%;
+//           height: max;
+//           @include background;
+//         }
+
+//         .desno {
+//           width: 100%;
+//         }
+//       }
+
+//       .dole {
+//         @include flex-column;
+//         margin: 100px 0;
+
+//         .link-kontakt {
+//           all: unset;
+//           color: $main-green;
+//           font-size: 1.5rem;
+//           letter-spacing: 2px;
+//           text-align: center;
+//           max-width: 250px;
+//           cursor: pointer;
+//           font-weight: 500;
+//           font-family: "Montserrat", sans-serif;
+//         }
+
+//         h2 {
+//           text-align: center;
+//         }
+
+//         p {
+//           text-align: center;
+//         }
+//       }
+
+//       .potkategorije {
+//         @include flex-space;
+
+//         .side {
+//           width: 48%;
+//           height: 800px;
+//           @include flex-space;
+//           flex-direction: column;
+//           box-shadow: $shadow-light;
+//           padding: 20px;
+//           border-radius: 5px;
+
+//           h2 {
+//             margin-bottom: 20px;
+//           }
+
+//           p {
+//             font-size: 1.4rem;
+//             text-align: justify;
+//             margin-bottom: 0;
+
+//             &.desc {
+//               margin-bottom: 20px;
+//             }
+//           }
+
+//           .img-container {
+//             @include background;
+//             width: 100%;
+//             height: 55%;
+//           }
+//           &.right {
+//             h2 {
+//               text-align: end;
+//             }
+//             .desc {
+//               text-align: end;
+//             }
+//           }
+//         }
+//       }
+
+//       .kategorija-info {
+//         text-align: justify;
+//         font-size: 1.8rem;
+//         line-height: 3rem;
+//         color: $dark;
+//         margin: 100px 0;
+//       }
+
+//       .grid-proizvoda {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         margin: 100px 0;
+
+//         .proizvod {
+//           width: 23%;
+//           aspect-ratio: 1;
+
+//           .img-container {
+//             width: 100%;
+//             aspect-ratio: 1;
+
+//             img {
+//               height: 100%;
+//               width: 100%;
+//               object-fit: cover;
+//               box-shadow: $shadow-light;
+//               filter: opacity(0.9);
+//               transition: 0.2s;
+//               border-radius: 5px;
+
+//               &:hover {
+//                 filter: opacity(1);
+//                 transition: 0.2s;
+//                 cursor: pointer;
+//                 box-shadow: $shadow-strong;
+//               }
+
+//               &:active {
+//                 box-shadow: $shadow-light;
+//               }
+//             }
+//           }
+
+//           p.ime-proizvoda {
+//             text-align: center;
+//             margin: 15px 0;
+//             font-size: 1.3rem;
+//           }
+
+//           p.proizvodjac {
+//             margin: 0;
+//             text-align: center;
+//             font-size: 1rem;
+//             margin-top: -15px;
+//             color: gray;
+//             margin-bottom: 20px;
+//           }
+//         }
+//       }
+//       .proizvod-grid {
+//         @include flex-space;
+//         width: 100%;
+//         gap: 30px;
+//         height: 800px;
+//         margin: 100px 0;
+
+//         .levo {
+//           @include flex-column;
+//           justify-content: space-between;
+//           gap: 30px;
+//           width: 50%;
+//           height: 800px;
+
+//           .grid-img-container.one {
+//             height: 550px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+
+//           .levo-dole {
+//             @include flex-space;
+//             gap: 30px;
+//             width: 100%;
+//             height: 250px;
+
+//             .two {
+//               width: 50%;
+//               height: 100%;
+
+//               img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .page.proizvod {
+//     .proizvod-head {
+//       height: 300px;
+//       position: relative;
+//       margin: 0 auto;
+
+//       img {
+//         height: 100%;
+//         width: 100%;
+//       }
+
+//       .proizvod-naslov {
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         left: 0;
+//         right: 0;
+//         width: 500px;
+//         height: 140px;
+//         text-align: center;
+//         @include flex-center;
+//         flex-direction: column;
+//         background-color: $text-background;
+//         padding: 10px;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .text {
+//       margin-top: 100px;
+//       p.opis {
+//         margin: 50px 0;
+//       }
+
+//       .key {
+//         font-size: 1.4rem;
+
+//         span {
+//           font-weight: 600;
+//         }
+//       }
+//     }
+//   }
+
+//   //////  POČETNA STRANICA  //////
+//   .page.home {
+//     .slide-container {
+//       height: 500px;
+
+//       .react-slideshow-container .nav:first-of-type {
+//         left: 100px;
+//       }
+
+//       .react-slideshow-container .nav:last-of-type {
+//         right: 100px;
+//       }
+//     }
+
+//     #slide {
+//       height: 500px;
+//       background-size: cover;
+//       background-position: center;
+//       @include flex-center;
+
+//       p.caption {
+//         font-size: 2rem;
+//         color: $almost-white;
+//         padding: 25px 45px;
+//         background-color: $text-background;
+//         border-radius: 10px;
+//         margin-bottom: 0;
+//       }
+//     }
+
+//     .container {
+//       .carousel {
+//         height: 300px;
+//         gap: 50px;
+//         margin: 100px 0;
+//         @include flex-space;
+
+//         .card {
+//           height: 100%;
+//           width: 100%;
+//           background-position: center;
+//           background-size: cover;
+//           border-radius: 5px;
+//           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+//           &.one {
+//             background-image: url("/slike/carousel/1.jpg");
+//           }
+
+//           &.two {
+//             background-image: url("/slike/carousel/2.jpg");
+//           }
+
+//           &.three {
+//             background-image: url("/slike/carousel/3.jpg");
+//           }
+//         }
+//       }
+
+//       .insta-link-cont {
+//         margin: 50px auto;
+//         width: 200px;
+//         @include flex-center;
+//         flex-direction: column;
+
+//         .insta-img-container {
+//           background-image: url("/slike/icons/instagram-light-blue.svg");
+//           width: 70px;
+//           height: 70px;
+//           background-size: cover;
+//           background-position: center;
+//         }
+
+//         a {
+//           all: unset;
+//           margin: 0 auto;
+//           cursor: pointer;
+//           color: $main-green;
+//           font-size: 1.4rem;
+//           font-family: "Montserrat", sans-serif;
+//           font-weight: 500;
+//         }
+//       }
+
+//       .grid {
+//         display: grid;
+//         gap: 20px;
+//         grid-template-columns: auto auto auto auto;
+
+//         .cell {
+//           background-position: center;
+//           background-size: cover;
+//           aspect-ratio: 1;
+//         }
+
+//         .one {
+//           grid-column-start: 1;
+//           grid-column-end: 3;
+//           grid-row-start: 1;
+//           grid-row-end: 3;
+//           background-image: url("/slike/instagram/1.jpg");
+//         }
+
+//         .two {
+//           background-image: url("/slike/instagram/2.jpg");
+//         }
+
+//         .three {
+//           background-image: url("/slike/instagram/3.jpg");
+//         }
+
+//         .four {
+//           background-image: url("/slike/instagram/4.jpg");
+//         }
+
+//         .five {
+//           background-image: url("/slike/instagram/5.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  PROIZVODI STRANICA  //////
+//   .page.proizvodi {
+//     .head {
+//       background-image: url("/slike/backgrounds/1.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+
+//       .proizvodi-grid {
+//         display: grid;
+//         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+//         grid-gap: 80px;
+//         width: 1200px;
+//         height: 1200px;
+//         margin: 100px 0;
+
+//         .jedan-proizvod {
+//           .proizvod-img-container {
+//             @include background;
+//             border-radius: 5px;
+//             box-shadow: $shadow-light;
+//             transition: 0.2s;
+//             width: 100%;
+//             height: 100%;
+
+//             &:hover {
+//               box-shadow: $shadow-strong;
+//               cursor: pointer;
+//               transition: 0.2s;
+//             }
+
+//             &:active {
+//               box-shadow: $shadow-light;
+//               transition: 0.2s;
+//             }
+//           }
+
+//           .proizvod-naziv {
+//             text-align: center;
+//             font-size: 1.5rem;
+//             margin: 10px 0;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  O NAMA STRANICA  //////
+//   .page.o-nama {
+//     .head {
+//       background-image: url("/slike/backgrounds/2.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/8.jpg");
+//     }
+//   }
+
+//   //////  B2B STRANICA  //////
+//   .page.btob {
+//     .head {
+//       background-image: url("/slike/backgrounds/11.jpg");
+//     }
+//     .levo {
+//       background-image: url("/slike/backgrounds/12.jpg");
+//     }
+
+//     .btob-grid {
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//       gap: 20px;
+//       margin-bottom: 100px;
+//       .btob-grid-img {
+//         aspect-ratio: 1;
+//         box-shadow: $shadow-light;
+//         transition: 0.2s;
+//         background-position: center;
+//         background-size: contain;
+//         border-radius: 5px;
+//         filter: invert(0.7);
+
+//         &:hover {
+//           transition: 0.2s;
+//           cursor: pointer;
+//           box-shadow: $shadow-strong;
+//           filter: invert(0.1);
+//         }
+
+//         &:active {
+//           box-shadow: $shadow-light;
+//         }
+
+//         &.one {
+//           background-image: url("/slike/logos/latho.jpg");
+//         }
+//         &.two {
+//           background-image: url("/slike/logos/lapitec.jpg");
+//         }
+//         &.three {
+//           background-image: url("/slike/logos/slate_lite.jpg");
+//         }
+//         &.four {
+//           background-image: url("/slike/logos/decoprint.jpg");
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KONTAKT STRANICA  //////
+//   .page.kontakt {
+//     .head {
+//       background-image: url("/slike/backgrounds/13.jpg");
+//     }
+//     .container {
+//       margin: 0 auto;
+//       @include flex-center;
+//       flex-direction: column;
+
+//       .kontakt-info {
+//         width: 100%;
+//         background-color: $light-blue;
+//         aspect-ratio: 4;
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         align-items: center;
+//         margin: 100px 0;
+
+//         .segment {
+//           flex-direction: column;
+//           @include flex-space;
+//           gap: 40px;
+
+//           .kontakt-logo {
+//             height: 50px;
+//             width: 50px;
+//             background-size: contain;
+//             background-position: center;
+//             background-repeat: no-repeat;
+
+//             &.one {
+//               background-image: url("https://www.iconbolt.com/iconsets/carbon-design-system/phone.svg");
+//             }
+
+//             &.two {
+//               background-image: url("https://www.iconbolt.com/iconsets/eleken-essential/mail.svg");
+//             }
+
+//             &.three {
+//               background-image: url("https://www.iconbolt.com/iconsets/akar-icons/location.svg");
+//             }
+//           }
+//           p {
+//             font-weight: 700;
+//             font-size: 1rem;
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  USLOVI KORIŠĆENJA STRANICA  //////
+//   .page.uslovi-koriscenja {
+//     .head {
+//       background-image: url("/slike/backgrounds/14.jpg");
+//     }
+
+//     .container {
+//       margin-top: 100px;
+//       margin-bottom: 100px;
+
+//       h4 {
+//         font-family: "Open Sans", sans-serif;
+//         font-weight: 600;
+//         font-size: 1.5rem;
+//         letter-spacing: 2px;
+//         margin-bottom: 20px;
+//       }
+//     }
+//   }
+
+//   //////  LAPITEC STRANICA  //////
+//   .page.lapitec {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+//     }
+
+//     .img-container {
+//       &.left {
+//         background-image: url("/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg");
+//       }
+
+//       &.right {
+//         background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
+//       }
+//     }
+//   }
+
+//   //////  LATHO STRANICA  //////
+//   .page.latho {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg");
+//     }
+
+//     #move-img-container-l {
+//       background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
+//       height: 70%;
+//       background-size: fill;
+//     }
+
+//     #move-img-container-r {
+//       background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
+//       height: 70%;
+//     }
+
+//     .potkategorije {
+//       .side {
+//         .text-part {
+//           width: 100%;
+//         }
+//         &.right {
+//           h2 {
+//             text-align: end;
+//           }
+//           .desc {
+//             text-align: end;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   //////  KAMENI FURNIRI STRANICA  //////
+//   .page.kameni-furniri {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     ul {
+//       margin-left: 75px;
+//       li::marker {
+//         color: $main-green;
+//       }
+//     }
+//   }
+
+//   //////  TAPETE STRANICA  //////
+//   .page.tapete {
+//     .head {
+//       height: 300px;
+//       background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+//       background-position: top;
+//     }
+
+//     a {
+//       all: unset;
+//       color: $main-green;
+//       font-weight: 500;
+//       cursor: pointer;
+//     }
+
+//     #tapeta {
+//       width: 48%;
+//     }
+//   }
+
+//   //////  MOVE PROIZVOD STRANICA  //////
+//   .proizvod.page.move {
+//     .proizvod-grid {
+//       @include flex-space;
+//       width: 100%;
+//       gap: 30px;
+//       height: 800px;
+//       margin: 100px 0;
+
+//       .levo {
+//         @include flex-column;
+//         justify-content: space-between;
+//         gap: 30px;
+//         width: 50%;
+//         height: 800px;
+
+//         .grid-img-container {
+//           height: 550px;
+
+//           img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//           }
+//         }
+
+//         .levo-dole {
+//           width: 100%;
+//           height: 250px;
+
+//           .grid-img-container {
+//             width: 100%;
+//             height: 250px;
+
+//             img {
+//               width: 100%;
+//               height: 100%;
+//               object-fit: cover;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

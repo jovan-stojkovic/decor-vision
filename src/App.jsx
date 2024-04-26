@@ -13,6 +13,7 @@ import Lapitec from "./Kategorije/Lapitec";
 import KameniFurniri from "./Kategorije/KameniFurniri";
 import Latho from "./Kategorije/Latho";
 import Tapete from "./Kategorije/Tapete";
+import { useState } from "react";
 
 import {
   noIMG,
@@ -30,11 +31,18 @@ import ProizvodMilled from "./Pages/ProizvodMilled";
 import ProizvodMove from "./Pages/ProizvodMove";
 
 const App = () => {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const handleClick = () => {
+    setShowSidebar(!showSidebar);
+    console.log('hello')
+    console.log(showSidebar)
+  };
+
   return (
     <Router>
       <main>
         <div className="nav-background"></div>
-        <Navbar />
+        <Navbar showSidebar={showSidebar} handleClick={handleClick}/>
         <BackToTopButton />
         <div className="app">
           <Routes>
