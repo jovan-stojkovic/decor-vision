@@ -3,6 +3,7 @@
 //////  KONTAKT FORMA  //////
 .forma {
   @include flex-column;
+  width: 70%;
 
   h2 {
     color: $main-green;
@@ -260,7 +261,6 @@
     cursor: pointer;
   }
 }
-
 
 //////  NAVBAR  //////
 nav {

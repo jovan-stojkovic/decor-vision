@@ -50,6 +50,7 @@ const Navbar = () => {
                     key={index}
                     className="hidden-category"
                     to={`/proizvodi/${kategorija}`}
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                   >
                     {kategorija}
                   </Link>

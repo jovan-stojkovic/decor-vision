@@ -33,14 +33,14 @@ const Latho = ({
         <div className="potkategorije latho">
           <div className="side left">
             <div className="text-part">
-              <h3>Milled</h3>
+              <h2 className="left-headline">Milled</h2>
             </div>
             <div className="img-container left" id="move-img-container-l"></div>
           </div>
 
           <div className="side right">
             <div className="text-part">
-              <h3>Move</h3>
+              <h2 className="right-headline">Move</h2>
             </div>
 
             <div

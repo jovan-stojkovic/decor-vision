@@ -267,20 +267,20 @@
     }
   }
 
-.text {
-  margin-top: 100px;
-  p.opis {
-    margin: 50px 0;
-  }
+  .text {
+    margin-top: 100px;
+    p.opis {
+      margin: 50px 0;
+    }
 
-  .key {
-    font-size: 1.4rem;
+    .key {
+      font-size: 1.4rem;
 
-    span {
-      font-weight: 600;
+      span {
+        font-weight: 600;
+      }
     }
   }
-}
 }
 
 //////  POČETNA STRANICA  //////
@@ -621,6 +621,22 @@
   #move-img-container-r {
     background-image: url("/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg");
     height: 70%;
+  }
+
+  .potkategorije {
+    .side {
+      .text-part {
+        width: 100%;
+      }
+      &.right {
+        h2 {
+          text-align: end;
+        }
+        .desc {
+          text-align: end;
+        }
+      }
+    }
   }
 }
 
