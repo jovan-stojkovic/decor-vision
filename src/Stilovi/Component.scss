@@ -135,7 +135,7 @@ nav {
       @include flex-center;
       cursor: pointer;
       position: absolute;
-      right: 0;
+      right: 10px;
       display: none;
     }
 
@@ -146,7 +146,7 @@ nav {
       @include flex-center;
       cursor: pointer;
       position: absolute;
-      right: 0;
+      right: 10px;
       z-index: 20;
     }
   }
@@ -164,7 +164,7 @@ nav {
   padding: 20px;
   gap: 50px;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.90);
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: $shadow-strong;
   backdrop-filter: blur(8px);
 
@@ -229,12 +229,14 @@ footer {
     letter-spacing: 1px;
     cursor: pointer;
     font-weight: 500;
+    font-family: "Open Sans", sans-serif;
   }
 
   p.copyright {
     color: $main-green;
     font-size: 0.8rem;
     margin-bottom: 0;
+    font-family: "Open Sans", sans-serif;
   }
 }
 
@@ -306,6 +308,7 @@ footer {
     .checkbox-label {
       font-weight: 500;
       cursor: pointer;
+      font-family: "Open Sans", sans-serif;
     }
 
     button {
@@ -320,6 +323,7 @@ footer {
       color: white;
       font-size: 1.2rem;
       letter-spacing: 10px;
+      font-family: "Open Sans", sans-serif;
 
       &:hover {
         filter: brightness(120%);
@@ -430,6 +434,7 @@ footer {
     .checkbox-label {
       font-weight: 500;
       cursor: pointer;
+      font-family: "Open Sans", sans-serif;
     }
 
     button {
@@ -443,6 +448,7 @@ footer {
       color: white;
       font-size: 1.1rem;
       letter-spacing: 10px;
+      font-family: "Open Sans", sans-serif;
 
       &:hover {
         filter: brightness(120%);
@@ -517,8 +523,6 @@ footer {
 
 //////  RESPONSIVENESS  //////
 
-
-
 // <<<600px
 @media only screen and (max-width: 600px) {
   nav {
@@ -527,6 +531,7 @@ footer {
       height: 50px;
       img {
         height: 15px;
+        margin-left: 10px;
       }
       .nav-links {
         display: none;
@@ -539,22 +544,22 @@ footer {
   footer {
     height: 150px;
     gap: 5px;
-  
+
     .footer-logo {
       width: 100px;
       height: 50px;
       margin-bottom: 5px;
-  
+
       img {
         height: 20px;
       }
     }
-  
+
     .uslovi-link {
       font-weight: 300;
       font-size: 0.7rem;
     }
-  
+
     p.copyright {
       font-size: 0.6rem;
       margin-bottom: 0;
@@ -562,61 +567,61 @@ footer {
   }
   .forma {
     width: 100%;
-  
+
     h2 {
       font-size: 1.2rem;
       text-align: center;
       margin-bottom: 0px;
     }
-  
+
     form {
       margin-bottom: 50px;
-  
+
       .inputi {
         height: 30px;
         padding: 0 10px;
         margin-bottom: 10px;
         font-size: 0.9rem;
-  
+
         &#message {
           height: 200px;
         }
       }
-  
+
       p.error {
         font-size: 0.6rem;
         height: 20px;
       }
-  
+
       .saglasnost {
         font-size: 0.8rem;
       }
-  
+
       #checkbox {
         margin-right: 10px;
       }
-  
+
       .checkbox-label {
         font-weight: 400;
       }
     }
-  
+
     .success {
       padding: 20px;
       gap: 20px;
       margin-bottom: 50px;
-  
+
       .success-img-cont {
         height: 150px;
       }
-  
+
       .p-success {
         margin: 0;
         font-size: 1rem;
         text-align: center;
       }
     }
-  
+
     #pravila-url {
       all: unset;
       color: $main-green;
@@ -627,48 +632,46 @@ footer {
   .forma.proizvod {
     width: 100%;
     height: auto;
-  
+
     h2 {
       font-size: 1.2rem;
     }
-  
+
     form {
-  
       .inputi {
         font-size: 0.9rem;
-  
+
         &#message {
           height: 200px;
         }
       }
-  
+
       p.error {
         height: 20px;
-  
+
         &.check {
           text-align: left;
         }
       }
-  
+
       .saglasnost {
         font-size: 0.8rem;
       }
-  
+
       #checkbox {
         margin-right: 10px;
       }
-  
+
       .checkbox-label {
         font-weight: 400;
       }
-  
     }
-  
+
     .proizvod-success {
       padding: 20px;
       gap: 20px;
       height: 100%;
-  
+
       .success-img-cont {
         height: 150px;
       }
@@ -702,28 +705,27 @@ footer {
   footer {
     height: 180px;
     gap: 10px;
-  
+
     .footer-logo {
       width: 100px;
       height: 60px;
       margin-bottom: 5px;
-  
+
       img {
         height: 22px;
       }
     }
-  
+
     .uslovi-link {
       font-weight: 300;
       font-size: 0.8rem;
     }
-  
+
     p.copyright {
       font-size: 0.6rem;
       margin-bottom: 0;
     }
   }
-
 }
 
 //769px - 992px
@@ -774,21 +776,21 @@ footer {
   footer {
     height: 200px;
     gap: 15px;
-  
+
     .footer-logo {
       width: 120px;
       height: 80px;
       margin-bottom: 10px;
-  
+
       img {
         height: 25px;
       }
     }
-  
+
     .uslovi-link {
       font-size: 0.9rem;
     }
-  
+
     p.copyright {
       font-size: 0.7rem;
     }
@@ -844,10 +846,10 @@ footer {
   }
   footer {
     height: 250px;
-  
+
     .footer-logo {
       margin-bottom: 10px;
-  
+
       img {
         height: 30px;
       }
@@ -886,9 +888,8 @@ footer {
   }
   footer {
     height: 300px;
-  
+
     .footer-logo {
-  
       img {
         height: 35px;
       }
@@ -898,5 +899,4 @@ footer {
 
 //>>>1600
 @media only screen and (min-width: 1601px) {
-
 }
