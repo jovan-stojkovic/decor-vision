@@ -1,5 +1,240 @@
 @import "./Styles.scss";
 
+//////  NAVBAR  //////
+nav {
+  width: 100%;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  @include flex-center;
+  @include navbar;
+  z-index: 6;
+
+  .nav-container {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 5;
+    @include flex-space;
+    position: relative;
+
+    img {
+      height: 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .nav-link {
+        all: unset;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        z-index: 2;
+        color: $dark;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 4px;
+          left: 0;
+          bottom: -5px;
+          width: 0;
+          background: $main-green;
+          transition: width 0.3s;
+          border-radius: 100px;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+
+        &.active {
+          color: $main-green;
+        }
+
+        &:hover {
+          color: $main-green;
+          cursor: pointer;
+        }
+      }
+
+      .proizvodi-div {
+        @include flex-center;
+        position: relative;
+
+        .hidden-nav-div {
+          position: absolute;
+          top: -20px;
+          left: -25px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.2s;
+          z-index: 1;
+          scale: 0.7;
+
+          .empty {
+            height: 60.6px;
+          }
+
+          .hidden-nav-div-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 25px;
+            width: 170px;
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+          &.show {
+            top: 0px;
+            visibility: visible;
+            transition: 0.2s;
+            opacity: 1;
+            scale: 1;
+          }
+
+          .hidden-category {
+            all: unset;
+            color: $almost-white;
+            font-size: 0.8rem;
+            font-weight: 500;
+
+            &:hover {
+              color: $main-green;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      #insta-link {
+        height: 1.4rem;
+        width: 1.4rem;
+        background-image: url("/slike/icons/instagram-black.svg");
+        transition: 0.2s;
+        @include background;
+
+        &:hover {
+          background-image: url("/slike/icons/instagram-green.svg");
+          transition: 0.2s;
+        }
+      }
+    }
+  
+    .menu-button {
+      all: unset;
+      height: 1.4rem;
+      width: 1.4rem;
+      @include flex-center;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      display: none;
+    }
+
+    .x-button {
+      all: unset;
+      height: 1.4rem;
+      width: 1.4rem;
+      @include flex-center;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      z-index: 20;
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  gap: 50px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: $shadow-strong;
+  backdrop-filter: blur(8px);
+  transition: 2s ease;
+
+  .sidebar-nav-link {
+    all: unset;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    z-index: 2;
+    color: $dark;
+    position: relative;
+    cursor: pointer;
+
+    &.sidebar-kategorija {
+      font-size: 0.8rem;
+    }
+
+    &.active {
+      color: $main-green;
+    }
+  }
+
+  .kategorije {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}
+
+//////  FOOTER  //////
+footer {
+  width: 100%;
+  background-color: $light-blue;
+  height: 350px;
+  @include flex-center;
+  flex-direction: column;
+  gap: 20px;
+
+  .footer-logo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    @include flex-center;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .uslovi-link {
+    all: unset;
+    color: $main-green;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  p.copyright {
+    color: $main-green;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+}
+
 //////  KONTAKT FORMA  //////
 .forma {
   @include flex-column;
@@ -152,11 +387,10 @@
   }
 
   form {
-      margin-bottom: 0;
+    margin-bottom: 0;
 
     .inputi {
       font-size: 1.3rem;
-      
 
       &#message {
         height: 235px;
@@ -250,8 +484,6 @@
         cursor: pointer;
       }
     }
-
-
   }
 
   #pravila-url {
@@ -259,156 +491,6 @@
     color: $main-green;
     font-weight: 500;
     cursor: pointer;
-  }
-}
-
-//////  NAVBAR  //////
-nav {
-  width: 100%;
-  position: fixed;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  @include flex-center;
-  background-color: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(7px);
-  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
-  z-index: 6;
-
-  .nav-container {
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    z-index: 5;
-    @include flex-space;
-
-    img {
-      height: 30px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 50px;
-
-      .nav-link {
-        all: unset;
-        font-size: 1rem;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-        letter-spacing: 3px;
-        z-index: 2;
-        color: $dark;
-
-        &.active {
-          color: $main-green;
-        }
-
-        &:hover {
-          color: $main-green;
-          cursor: pointer;
-        }
-      }
-
-      .proizvodi-div {
-        @include flex-center;
-        position: relative;
-
-        .hidden-nav-div {
-          position: absolute;
-          top: -20px;
-          left: -25px;
-          visibility: hidden;
-          opacity: 0;
-          transition: 0.2s;
-          z-index: 1;
-          scale: 0.7;
-
-          .empty {
-            height: 60.6px;
-          }
-
-          .hidden-nav-div-cont {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 25px;
-            width: 170px;
-            background-color: rgba(0, 0, 0, 0.8);
-          }
-
-          &.show {
-            top: 0px;
-            visibility: visible;
-            transition: 0.2s;
-            opacity: 1;
-            scale: 1;
-          }
-
-          .hidden-category {
-            all: unset;
-            color: $almost-white;
-            font-size: 0.8rem;
-            font-weight: 500;
-
-            &:hover {
-              color: $main-green;
-              cursor: pointer;
-            }
-          }
-        }
-      }
-
-      #insta-link {
-        height: 1.4rem;
-        width: 1.4rem;
-        background-image: url("/slike/icons/instagram-black.svg");
-        transition: 0.2s;
-        @include background;
-
-        &:hover {
-          background-image: url("/slike/icons/instagram-green.svg");
-          transition: 0.2s;
-        }
-      }
-    }
-  }
-}
-
-//////  FOOTER  //////
-footer {
-  width: 100%;
-  background-color: $light-blue;
-  height: 350px;
-  @include flex-center;
-  flex-direction: column;
-  gap: 20px;
-
-  .footer-logo {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 20px;
-    transition: 0.2s;
-    @include flex-center;
-
-    img {
-      height: 40px;
-    }
-  }
-
-  .uslovi-link {
-    all: unset;
-    color: $main-green;
-    letter-spacing: 1px;
-    cursor: pointer;
-    font-weight: 500;
-  }
-
-  p.copyright {
-    color: $main-green;
-    font-size: 0.8rem;
-    margin-bottom: 0;
   }
 }
 
@@ -428,4 +510,30 @@ footer {
   img {
     height: 50px;
   }
+}
+
+//////  RESPONSIVENESS  //////
+
+// <<<600px
+@media only screen and (max-width: 600px) {
+}
+
+// 601px - 768px
+@media only screen and (min-width: 600px) {
+}
+
+//769px - 992px
+@media only screen and (max-width: 768px) {
+}
+
+//993px - 1200px
+@media only screen and (min-width: 992px) {
+}
+
+//1201px - 1600px
+@media only screen and (max-width: 1200px) {
+}
+
+//>>>1600
+@media only screen and (max-width: 1600px) {
 }

@@ -1,14 +1,11 @@
 //////////    TO DO LIST    //////////
 IMPORTI SREDI IH U SVAKOJ STRANICI
-napravi sto vise komponenti
 carousel na prvoj stranici
 spelcheck
 responsivnes
 zoomin samo slike na hover
 da se otvore slike
 tab ime za svaku stranicu
-SCSS haos razdeli
-fensi underline na hover
 
 //////////    pitanja za Acu    //////////
 naslov ispod u O_NAMA
@@ -40,3 +37,23 @@ Responsive dizajn: Vaša web stranica treba da bude prilagođena za prikaz na sv
 Pratite analitiku: Koristite alate poput Google Analytics-a kako biste pratili performanse vašeg sajta, identifikovali oblasti za poboljšanje i prilagodili svoju strategiju SEO-a na osnovu podataka.
 Backlinking: Pokušajte da dobijete kvalitetne povratne linkove sa drugih relevantnih i autoritativnih sajtova. Ovo može poboljšati reputaciju vašeg sajta i povećati njegovu vidljivost na pretraživačima.
 Ovi su samo osnovni koraci za poboljšanje SEO-a vaše web stranice. U praksi, SEO je kontinuirani proces koji zahteva strpljenje, praćenje trendova i redovno ažuriranje strategije u skladu sa promenama algoritama pretraživača i promenama u industriji.
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+

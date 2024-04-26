@@ -726,3 +726,24 @@
     }
   }
 }
+
+
+//////  RESPONSIVENESS  //////
+
+// <<<600px
+@media only screen and (max-width: 600px) {}
+
+// 601px - 768px
+@media only screen and (min-width: 600px) {}
+
+//769px - 992px
+@media only screen and (max-width: 768px) {}
+
+//993px - 1200px
+@media only screen and (min-width: 992px) {}
+
+//1201px - 1600px
+@media only screen and (max-width: 1200px) {}
+
+//>>>1600
+@media only screen and (max-width: 1600px) {}

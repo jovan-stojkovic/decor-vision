@@ -1,87 +1,35 @@
-import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { Link, useAsyncError } from "react-router-dom";
 import "../Stilovi/Component.scss";
+import NavLinks from "./NavLinks";
+import SidebarLinks from "./SidebarLinks";
+import { useState } from "react";
 
 const Navbar = () => {
-  const [showNavbarDiv, setShowNavbarDiv] = useState(false);
-
-  const handleHover = (hovering) => {
-    setShowNavbarDiv(hovering);
+  const [showSidebar, setShowSidebar] = useState(false);
+  const handleClick = () => {
+    setShowSidebar(!showSidebar);
   };
-
-  const handleSubmenuHover = (hovering) => {
-    if (!hovering && showNavbarDiv) {
-      setShowNavbarDiv(false);
-    }
-  };
-
-  const instaPage = "https://www.instagram.com/decorvision.rs/?hl=en";
-  const kategorije = ["Lapitec", "Latho", "Kameni furniri", "Tapete"];
-
   return (
     <nav>
       <div className="nav-container">
-        <Link to="/" className="logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <Link
+          to="/"
+          className="logo"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <img src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
         </Link>
-        <div className="nav-links">
-          <div
-            className="proizvodi-div"
-            onMouseEnter={() => handleHover(true)}
-            onMouseLeave={() => handleHover(false)}
-          >
-            <NavLink
-              className="nav-link"
-              to="/proizvodi"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              PROIZVODI
-            </NavLink>
+        <NavLinks />
+        {showSidebar && <SidebarLinks />}
+        <button onClick={handleClick} className="menu-button">
+          <img src="/slike/icons/menu.svg" alt="menu" />
+        </button>
 
-            <div
-              className={`hidden-nav-div ${showNavbarDiv ? "show" : ""}`}
-              onMouseEnter={() => handleSubmenuHover(true)}
-              onMouseLeave={() => handleSubmenuHover(false)}
-            >
-              <div className="empty"></div>
-              <div className="hidden-nav-div-cont">
-                {kategorije.map((kategorija, index) => (
-                  <Link
-                    key={index}
-                    className="hidden-category"
-                    to={`/proizvodi/${kategorija}`}
-                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                  >
-                    {kategorija}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <NavLink
-            className="nav-link"
-            to="/o-nama"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            O NAMA
-          </NavLink>
-          <NavLink
-            className="nav-link"
-            to="/b2b"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            B2B
-          </NavLink>
-          <NavLink
-            className="nav-link"
-            to="/kontakt"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            KONTAKT
-          </NavLink>
-          <Link to={instaPage} target="_blank" id="insta-link" />
-        </div>
+        {showSidebar && (
+          <button onClick={handleClick} className="x-button">
+            <img src="/slike/icons/close.svg" alt="X" />
+          </button>
+        )}
       </div>
     </nav>
   );

@@ -11,6 +11,9 @@ $almost-white: rgb(232, 232, 232);
 $light-blue: rgb(236, 241, 252);
 $shadow-strong: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 $shadow-light: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$shadow-white: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+$navbar-background: rgba(255, 255, 255, 0.35);
+
 
 //MIXINS
 @mixin background {
@@ -37,6 +40,11 @@ $shadow-light: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@mixin navbar {
+  background-color: $navbar-background;
+  backdrop-filter: blur(7px);
+  box-shadow: $shadow-white;
 }
 
 //UNIVERZALNI STILOVI
@@ -121,3 +129,99 @@ main {
   max-width: 100vw;
   margin: 0 auto;
 }
+
+//////  RESPONSIVENESS  //////
+
+// <<<600px
+@media only screen and (max-width: 600px) {
+  .nav-background {
+    width: 100%;
+    height: 50px;
+  }
+  
+  //OPŠTI STILOVI
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 2.8rem;
+    margin-top: 100px;
+    color: $dark;
+    @include text-background;
+  }
+  
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: $dark;
+  }
+  
+  h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+    @include text-background;      
+  }
+  
+  h5 {
+    color: $almost-white;
+    font-size: 2.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+  }
+  
+  h6 {
+    color: $almost-white;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    color: $dark;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 40px;
+  }
+  
+  .arrows {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 30px;
+    filter: invert(0.8);
+  }
+  
+  .separator {
+    width: 100px;
+    height: 3px;
+    margin: 50px 0;
+    background-color: $almost-white;
+  }
+  
+  main {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+}
+
+// 601px - 768px
+@media only screen and (min-width: 600px) {}
+
+//769px - 992px
+@media only screen and (max-width: 768px) {}
+
+//993px - 1200px
+@media only screen and (min-width: 992px) {}
+
+//1201px - 1600px
+@media only screen and (max-width: 1200px) {}
+
+//>>>1600
+@media only screen and (max-width: 1600px) {}
