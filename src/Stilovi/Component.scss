@@ -798,38 +798,27 @@ footer {
     .nav-container {
       width: 100vw;
       height: 80px;
+
       img {
         height: 20px;
       }
       .nav-links {
         gap: 30px;
-
         .nav-link {
           font-size: 0.8rem;
-
-          &::after {
-            height: 3px;
-          }
         }
-
         .proizvodi-div {
           .hidden-nav-div {
-            z-index: 11;
             .empty {
               height: 49px;
             }
-            .hidden-nav-div-cont {
-              width: 150px;
-            }
           }
         }
-
         #insta-link {
           height: 1.2rem;
           width: 1.2rem;
         }
       }
-
       .x-button {
         display: none;
       }
