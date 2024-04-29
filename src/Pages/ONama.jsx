@@ -2,13 +2,17 @@ import { Link } from "react-router-dom";
 import Head from "../Components/Head";
 import "../Stilovi/Stranica.scss";
 import LinkKontakt from "../Components/LinkKontakt";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const ONama = () => {
+  const { theme } = useContext(ThemeContext);
+
   const headline = "O NAMA";
   const text =
     "Dobrodošli u naš svet. Naša strast prema dekoraciji prostora traje već dugo. Naša priča počinje sa vizijom da svaki prostor može postati remek-delo, a svaki dom - priča za sebe.";
   return (
-    <div className="o-nama page">
+    <div className={`page o-nama ${theme}`}>
       <Head headline={headline} text={text} />
 
       <div className="container">
@@ -41,9 +45,8 @@ const ONama = () => {
             Kontaktirajte nas i zajedno ćemo pretvoriti vaše projekte u
             umetnička dela.
           </p>
-          
-          <LinkKontakt />
 
+          <LinkKontakt />
         </div>
 
         <div className="o-nama-grid">

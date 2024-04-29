@@ -121,7 +121,8 @@ nav {
         width: 1.4rem;
         background-image: url("/slike/icons/instagram-black.svg");
         transition: 0.2s;
-        @include background;
+        background-position: center;
+        background-size: contain;
 
         &:hover {
           background-image: url("/slike/icons/instagram-green.svg");
@@ -131,8 +132,8 @@ nav {
 
       .theme-btn {
         all: unset;
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 1.2rem;
+        width: 1.2rem;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;

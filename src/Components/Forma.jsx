@@ -6,11 +6,9 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
-
 const Forma = () => {
   const [success, setSuccess] = useState(false);
   const { theme } = useContext(ThemeContext);
-
 
   const schema = yup.object().shape({
     fullName: yup.string().required("Polje ne sme ostati prazno"),
@@ -72,7 +70,7 @@ const Forma = () => {
               className="inputi"
               name="fullName"
               id="name"
-              placeholder="Full Name*"
+              placeholder="Ime i Prezime*"
               {...register("fullName")}
             />
             <p className="error">{errors.email?.message}</p>
@@ -81,7 +79,7 @@ const Forma = () => {
               className="inputi"
               name="email"
               id="email"
-              placeholder="Email*"
+              placeholder="Email adresa*"
               {...register("email")}
             />
             <p className="error">{errors.subject?.message}</p>
@@ -90,7 +88,7 @@ const Forma = () => {
               className="inputi"
               name="subject"
               id="subject"
-              placeholder="Subject*"
+              placeholder="Naslov*"
               {...register("subject")}
             />
             <p className="error">{errors.text?.message}</p>
@@ -99,7 +97,7 @@ const Forma = () => {
               className="inputi"
               name="text"
               id="message"
-              placeholder="Message*"
+              placeholder="Tekst poruke*"
               {...register("text")}
             />
 

@@ -324,9 +324,31 @@
 }
 
 .page.dark {
+  .head {
+    filter: brightness(80%);
+  }
   .container {
     .kategorija-info {
       color: $almost-white;
+    }
+    .potkategorije {
+      .side {
+        .img-container {
+          filter: brightness(80%);
+        }
+      }
+    }
+    .gore {
+      .levo {
+        filter: brightness(80%);
+      }
+    }
+    .grid-proizvoda {
+      .proizvod {
+        .img-container {
+          filter: brightness(80%);
+        }
+      }
     }
   }
 }
@@ -455,6 +477,22 @@
   }
 }
 
+.page.home.dark {
+  .slide-container {
+    filter: brightness(80%);
+  }
+
+  .container {
+    .carousel {
+      filter: brightness(80%);
+    }
+  }
+
+  .grid {
+    filter: brightness(80%);
+
+  }
+}
 //////  PROIZVODI STRANICA  //////
 .page.proizvodi {
   .head {
@@ -498,6 +536,17 @@
           font-size: 1.5rem;
           margin: 10px 0;
           font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.page.proizvodi.dark {
+  .container {
+    .proizvodi-grid {
+      .jedan-proizvod {
+        .proizvod-img-container {
+          filter: brightness(80%);
         }
       }
     }
