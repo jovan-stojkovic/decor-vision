@@ -3,7 +3,6 @@ import Head from "../Components/Head";
 import LinkKontakt from "../Components/LinkKontakt";
 import BtoBGrid from "../Components/BtoBGrid";
 import "../Stilovi/Stranica.scss";
-import "../Stilovi/StranicaDark.scss";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 

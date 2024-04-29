@@ -3,9 +3,14 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
+
 
 const Forma = () => {
   const [success, setSuccess] = useState(false);
+  const { theme } = useContext(ThemeContext);
+
 
   const schema = yup.object().shape({
     fullName: yup.string().required("Polje ne sme ostati prazno"),
@@ -32,7 +37,7 @@ const Forma = () => {
   };
 
   return (
-    <div className="forma kontakt">
+    <div className={`forma kontakt ${theme}`}>
       {success ? (
         <div className="success">
           <div className="success-img-cont"></div>

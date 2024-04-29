@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import "../Stilovi/Component.scss";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const Footer = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <footer>
+    <footer className={theme}>
       <Link
         to="/"
         className="footer-logo"

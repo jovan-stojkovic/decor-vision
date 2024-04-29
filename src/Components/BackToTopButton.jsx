@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import "../Stilovi/Component.scss";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 
 const BackToTopButton = () => {
   const [backToTopButton, setBackToTopButton] = useState(false);
+  const { theme } = useContext(ThemeContext);
+
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -25,7 +29,7 @@ const BackToTopButton = () => {
   return (
     <>
       {backToTopButton && (
-        <button onClick={scrollUp} className="to-the-top-button">
+        <button onClick={scrollUp} className={`to-the-top-button ${theme}`}>
           <img
             src="/slike/icons/arrow-up-circle.svg"
             alt="arrow-up"

@@ -166,55 +166,102 @@ nav {
       z-index: 20;
     }
   }
-}
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 80px 20px;
-  gap: 50px;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: $shadow-strong;
-  backdrop-filter: blur(8px);
-
-  .sidebar-nav-link {
-    all: unset;
-    font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 3px;
-    z-index: 2;
-    color: $dark;
-    position: relative;
-    cursor: pointer;
-
-    &.sidebar-kategorija {
-      font-size: 0.8rem;
-    }
-
-    &.active {
-      color: $main-green;
-    }
-
-    &:hover {
-      color: $main-green;
-    }
-  }
-
-  .kategorije {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-left: 20px;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    align-items: start;
+    padding: 80px 20px;
+    gap: 50px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: $shadow-strong;
+    backdrop-filter: blur(8px);
+
+    .sidebar-nav-link {
+      all: unset;
+      font-size: 1rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      letter-spacing: 3px;
+      z-index: 2;
+      color: $dark;
+      position: relative;
+      cursor: pointer;
+
+      &.sidebar-kategorija {
+        font-size: 0.8rem;
+      }
+
+      &.active {
+        color: $main-green;
+      }
+
+      &:hover {
+        color: $main-green;
+      }
+    }
+
+    .kategorije {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-left: 20px;
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
+  }
+}
+
+nav.dark {
+  background-color: $very-dark-blue;
+  box-shadow: $shadow-strong;
+
+  .nav-container {
+    img {
+      filter: invert(1);
+    }
+    .nav-links {
+      .nav-link {
+        color: $almost-white;
+      }
+
+      #insta-link {
+        background-image: url("/slike/icons/instagram-white.svg");
+
+        &:hover {
+          background-image: url("/slike/icons/instagram-green.svg");
+        }
+      }
+
+      .theme-btn {
+        background-image: url("/slike/icons/sun.svg");
+      }
+    }
+
+    .menu-button {
+      img {
+        filter: invert(1);
+      }
+    }
+
+    .x-button {
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+  .sidebar {
+    background-color: rgb(32, 44, 55, 0.9);
+
+    .sidebar-nav-link {
+      color: $almost-white;
+    }
   }
 }
 
@@ -256,6 +303,19 @@ footer {
   }
 }
 
+footer.dark {
+  background-color: $very-dark-blue;
+
+  .footer-logo {
+    img {
+      filter: invert(1);
+    }
+  }
+  p.copyright {
+    color: $main-green;
+  }
+}
+
 //////  KONTAKT FORMA  //////
 .forma {
   @include flex-column;
@@ -293,6 +353,7 @@ footer {
         height: 400px;
         padding-top: 10px;
         word-wrap: break-word;
+        font-family: "Montserrat", sans-serif;
       }
 
       &::placeholder {
@@ -400,6 +461,37 @@ footer {
   }
 }
 
+.forma.dark {
+  form {
+    .inputi {
+      background-color: $blue;
+      border: 2px solid $blue;
+      color: $dark;
+
+      &::placeholder {
+        color: $dark;
+      }
+    }
+
+    p.error {
+      color: rgb(255, 131, 131);
+    }
+
+    .saglasnost {
+      color: $almost-white;
+    }
+
+    .checkbox-label {
+      font-weight: 500;
+      color: $almost-white;
+    }
+  }
+
+  .success {
+    background-color: $very-dark-blue;
+  }
+}
+
 //////  PROIZVOD FORMA  //////
 .forma.proizvod {
   @include flex-column;
@@ -423,6 +515,7 @@ footer {
         height: 235px;
         padding-top: 10px;
         word-wrap: break-word;
+        font-family: "Montserrat", sans-serif;
       }
     }
 
@@ -523,6 +616,32 @@ footer {
   }
 }
 
+.forma.proizvod.dark {
+  form {
+    .inputi {
+      background-color: $blue;
+      border: 2px solid $blue;
+      color: $dark;
+    }
+
+    p.error {
+      color: rgb(255, 131, 131);
+
+      &.check {
+        text-align: left;
+      }
+    }
+
+    .saglasnost {
+      color: $almost-white;
+    }
+  }
+
+  .proizvod-success {
+    background-color: $very-dark-blue;
+  }
+}
+
 //////  BACK TO THE TOP BUTTON  //////
 .to-the-top-button {
   position: fixed;
@@ -536,8 +655,17 @@ footer {
   background-color: transparent;
   z-index: 5;
   cursor: pointer;
+  @include flex-center;
   img {
     height: 50px;
+  }
+}
+
+.to-the-top-button.dark {
+  background-color: rgb(32, 44, 55, 0.4);
+  cursor: pointer;
+  img {
+    filter: invert(0.8);
   }
 }
 
