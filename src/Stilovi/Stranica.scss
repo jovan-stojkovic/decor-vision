@@ -323,6 +323,14 @@
   }
 }
 
+.page.dark {
+  .container {
+    .kategorija-info {
+      color: $almost-white;
+    }
+  }
+}
+
 //////  POČETNA STRANICA  //////
 .page.home {
   .slide-container {
@@ -650,6 +658,14 @@
       font-size: 1.5rem;
       letter-spacing: 2px;
       margin-bottom: 20px;
+    }
+  }
+}
+
+.page.uslovi-koriscenja.dark {
+  .container {
+    h4 {
+      color: white;
     }
   }
 }

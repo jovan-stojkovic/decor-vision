@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
 import "../Stilovi/Stranica.scss";
-import "../Stilovi/StranicaDark.scss";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 

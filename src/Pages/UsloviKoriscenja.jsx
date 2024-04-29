@@ -1,12 +1,15 @@
 import HeadProizvod from "../Components/HeadProizvod";
 import "../Stilovi/Stranica.scss";
-
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const UsloviKoriscenja = () => {
+  const { theme } = useContext(ThemeContext);
+
   const headline = "USLOVI KORIŠĆENJA";
   return (
     <>
-      <div className="uslovi-koriscenja page">
+      <div className={`uslovi-koriscenja page ${theme}`}>
         <HeadProizvod headline={headline} />
 
         <div className="container">
