@@ -2,7 +2,14 @@ import { useLocation } from "react-router-dom";
 import ProizvodForma from "../Components/ProizvodForma";
 import "../Stilovi/Stranica.scss";
 
-const ProizvodMove = ({ noIMG, lathoMoveInfo }) => {
+const ProizvodMove = ({
+  noIMG,
+  lathoMoveInfo,
+  isOpen,
+  openIMG,
+  selectedIMG,
+  closeIMG,
+}) => {
   const location = useLocation();
   const { ime, kvadrat, wide } = location.state.proizvod;
 
@@ -32,16 +39,30 @@ const ProizvodMove = ({ noIMG, lathoMoveInfo }) => {
 
           <div className="proizvod-grid">
             <div className="levo move">
-              <div className="grid-img-container">
+              <div
+                className="grid-img-container"
+                onClick={() => openIMG(wide || noIMG)}
+              >
                 <img src={wide || noIMG} alt={`wide ${ime}`} />
               </div>
               <div className="levo-dole move">
-                <div className="grid-img-container">
+                <div
+                  className="grid-img-container"
+                  onClick={() => openIMG(kvadrat || noIMG)}
+                >
                   <img src={kvadrat || noIMG} alt={`tech ${ime}`} />
                 </div>
               </div>
             </div>
 
+            {isOpen && (
+              <div className="large-image open">
+                <img src={selectedIMG} alt="Large Image" />
+                <button onClick={closeIMG}>
+                  <img src="/slike/icons/close.svg" alt="a" />
+                </button>
+              </div>
+            )}
             <ProizvodForma />
           </div>
         </div>

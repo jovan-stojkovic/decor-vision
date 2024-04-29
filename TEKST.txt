@@ -3,12 +3,8 @@ IMPORTI SREDI IH U SVAKOJ STRANICI
 carousel na prvoj stranici
 spelcheck
 zoomin samo slike na hover
-da se otvore slike
 tab ime za svaku stranicu
-skloni se sidebar na klik
-proizvod grid jedan nevidljiv? da bi se slozili _x3
-manje koda fontsize 1.2 1/6 2/6...
-move wide slike
+borderradius 
 
 //////////    pitanja za Acu    //////////
 naslov ispod u O_NAMA
@@ -17,7 +13,6 @@ da li hoce THEME
 da li hoce da menja jezik
 jel su slajderi i karuseli linkovi?
 broj telefona na KONTAKTIRAJTE NAS
-o-nama stranica da li su instagram linkovi ili samo slike?
 FALI F- slike
 
 

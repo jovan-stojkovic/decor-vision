@@ -402,7 +402,6 @@ export const lathoMove = [
     ime: "J",
 
     kvadrat: "/slike/proizvodi/Latho/Move/Move J/pann-move-J-iso.jpg",
-    wide: "/",
   },
   {
     ime: "X",
@@ -433,9 +432,7 @@ export const lathoMove = [
   },
   {
     ime: "B+B",
-
     kvadrat: "/slike/proizvodi/Latho/Move/Move B+B/camp-B-B-banner.jpg",
-    wide: "/",
   },
   {
     ime: "N",
@@ -497,11 +494,9 @@ export const lathoMove = [
     ime: "H",
 
     kvadrat: "/slike/proizvodi/Latho/Move/Move H/camp-H-banner.jpg",
-    wide: "/",
   },
   {
     ime: "L",
-
     kvadrat:
       "/slike/proizvodi/Latho/Move/Move L/move-L-tecnica-big-1200px-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move L/L-move-L-amb.jpg",
@@ -559,7 +554,6 @@ export const lathoMove = [
     ime: "Z",
 
     kvadrat: "/slike/proizvodi/Latho/Move/Move Z/camp-Z-banner.jpg",
-    wide: "/",
   },
 ];
 

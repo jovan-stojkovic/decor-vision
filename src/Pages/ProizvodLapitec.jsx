@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import ProizvodForma from "../Components/ProizvodForma";
 import "../Stilovi/Stranica.scss";
 
-const ProizvodLapitec = ({ noIMG }) => {
+const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
   const location = useLocation();
   const { ime, firma, wide, opis, debljine, narrow, patern } =
     location.state.proizvod;
@@ -27,18 +27,35 @@ const ProizvodLapitec = ({ noIMG }) => {
 
         <div className="proizvod-grid">
           <div className="levo">
-            <div className="grid-img-container one">
+            <div
+              className="grid-img-container one"
+              onClick={() => openIMG(wide || noIMG)}
+            >
               <img src={wide || noIMG} alt={`wide ${ime}`} />
             </div>
             <div className="levo-dole">
-              <div className="grid-img-container two">
+              <div
+                className="grid-img-container two"
+                onClick={() => openIMG(narrow || noIMG)}
+              >
                 <img src={narrow || noIMG} alt={`narrow ${ime}`} />
               </div>
-              <div className="grid-img-container two">
+              <div
+                className="grid-img-container two"
+                onClick={() => openIMG(patern || noIMG)}
+              >
                 <img src={patern || noIMG} alt={`patern ${ime}`} />
               </div>
             </div>
           </div>
+          {isOpen && (
+            <div className="large-image open">
+              <img src={selectedIMG} alt="Large Image" />
+              <button onClick={closeIMG}>
+                <img src="/slike/icons/close.svg" alt="a" />
+              </button>
+            </div>
+          )}
           <ProizvodForma />
         </div>
       </div>
