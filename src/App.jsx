@@ -1,4 +1,5 @@
 import "./Stilovi/Styles.scss";
+import "./Stilovi/StylesDark.scss";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Pocetna from "./Pages/Pocetna";
@@ -73,7 +74,7 @@ const App = () => {
   return (
     <Router>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <main>
+        <main className={theme}>
           <div className="nav-background"></div>
           <Navbar showSidebar={showSidebar} handleClick={handleClick} />
           <BackToTopButton />

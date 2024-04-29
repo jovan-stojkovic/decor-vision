@@ -5,7 +5,6 @@
   .head {
     @include background;
     height: 500px;
-    // background-image: url;
 
     .head-cont {
       opacity: 0;
@@ -557,6 +556,18 @@
   }
 }
 
+.page.btob.dark {
+  .btob-grid {
+    .btob-grid-img {
+      filter: invert(0.3);
+
+      &:hover {
+        filter: invert(0.8);
+      }
+    }
+  }
+}
+
 //////  KONTAKT STRANICA  //////
 .page.kontakt {
   .head {
@@ -604,6 +615,20 @@
           font-weight: 700;
           font-size: 1rem;
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.page.kontakt.dark {
+  .container {
+    .kontakt-info {
+      background-color: $very-dark-blue;
+
+      .segment {
+        .kontakt-logo {
+          filter: invert(0.9);
         }
       }
     }

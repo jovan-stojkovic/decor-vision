@@ -5,6 +5,7 @@ spelcheck
 zoomin samo slike na hover
 tab ime za svaku stranicu
 borderradius 
+theme na refres?
 
 //////////    pitanja za Acu    //////////
 naslov ispod u O_NAMA

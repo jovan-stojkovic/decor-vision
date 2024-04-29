@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../Stilovi/Component.scss";
+import "../Stilovi/ComponentDark.scss"
 import NavLinks from "./NavLinks";
 import SidebarLinks from "./SidebarLinks";
 import { useContext } from "react";
@@ -10,7 +11,7 @@ const Navbar = ({ showSidebar, handleClick }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <nav>
+    <nav className={theme}>
       <div className="nav-container">
         <Link
           to="/"

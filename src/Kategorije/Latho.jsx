@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
 import "../Stilovi/Stranica.scss";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 
 const Latho = ({
@@ -10,9 +12,10 @@ const Latho = ({
   lathoMoveInfo,
   noIMG,
 }) => {
+  const { theme } = useContext(ThemeContext);
   const headline = "LATHO";
   return (
-    <div className="latho page">
+    <div className={`latho page ${theme}`}>
       <HeadProizvod headline={headline} />
 
       <div className="container">

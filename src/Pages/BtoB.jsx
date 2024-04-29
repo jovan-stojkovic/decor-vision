@@ -3,13 +3,18 @@ import Head from "../Components/Head";
 import LinkKontakt from "../Components/LinkKontakt";
 import BtoBGrid from "../Components/BtoBGrid";
 import "../Stilovi/Stranica.scss";
+import "../Stilovi/StranicaDark.scss";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 
 const BtoB = () => {
+  const { theme } = useContext(ThemeContext);
+
   const headline = "POSLOVNA SARADNJA";
   const text = "Tu smo da stvaramo uspešne priče.";
   return (
-    <div className="btob page">
+    <div className={`btob page ${theme}`}>
       <Head headline={headline} text={text} />
 
       <div className="container">

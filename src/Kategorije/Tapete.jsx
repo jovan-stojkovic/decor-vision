@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
 import "../Stilovi/Stranica.scss";
-
+import "../Stilovi/StranicaDark.scss";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const Tapete = ({ tapete }) => {
+  const { theme } = useContext(ThemeContext);
+
   const headline = "TAPETE";
   return (
-    <div className="tapete page">
+    <div className={`tapete page ${theme}`}>
       <HeadProizvod headline={headline} />
 
       <div className="container">

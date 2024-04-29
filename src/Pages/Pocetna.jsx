@@ -2,11 +2,14 @@ import Slider from "../Components/Slider";
 import Carousel from "../Components/Carousel";
 import Grid from "../Components/Grid";
 import { Link } from "react-router-dom";
-import "../Stilovi/Stranica.scss";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const Pocetna = ({ slides }) => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="home page">
+    <div className={`home page ${theme}`}>
       <Slider slides={slides} />
       <div className="container">
         <Carousel />

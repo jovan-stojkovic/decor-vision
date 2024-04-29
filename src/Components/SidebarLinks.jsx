@@ -1,6 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const SidebarLinks = ({ handleClick }) => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   const instaPage = "https://www.instagram.com/decorvision.rs/?hl=en";
 
   return (
@@ -94,6 +98,12 @@ const SidebarLinks = ({ handleClick }) => {
       >
         INSTAGRAM
       </Link>
+      <button
+        className="sidebar-theme-btn sidebar-nav-link"
+        onClick={toggleTheme}
+      >
+        {`${theme.toUpperCase()} THEME`}
+      </button>
     </div>
   );
 };

@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import HeadProizvod from "../Components/HeadProizvod";
 import "../Stilovi/Stranica.scss";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const KameniFurniri = () => {
+  const { theme } = useContext(ThemeContext);
+
   const headline = "KAMENI FURNIRI";
   return (
-    <div className="kameni-furniri page">
+    <div className={`kameni-furniri page ${theme}`}>
       <HeadProizvod headline={headline} />
 
       <div className="container">
