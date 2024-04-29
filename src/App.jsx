@@ -39,10 +39,9 @@ const App = () => {
   };
 
   const [showSidebar, setShowSidebar] = useState(false);
+
   const handleClick = () => {
     setShowSidebar(!showSidebar);
-    console.log("hello");
-    console.log(showSidebar);
   };
 
   const [isOpen, setIsOpen] = useState(false);

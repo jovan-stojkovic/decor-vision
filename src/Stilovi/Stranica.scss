@@ -659,6 +659,9 @@
       letter-spacing: 2px;
       margin-bottom: 20px;
     }
+    p {
+      text-align: justify;
+    }
   }
 }
 
@@ -1268,11 +1271,11 @@
       height: 400px;
 
       .react-slideshow-container .nav:first-of-type {
-        left: 5px;
+        display: none;
       }
 
       .react-slideshow-container .nav:last-of-type {
-        right: 5px;
+        display: none;
       }
     }
 

@@ -133,7 +133,9 @@ nav {
         all: unset;
         height: 1.4rem;
         width: 1.4rem;
-        @include background;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         background-image: url("/slike/icons/moon.svg");
         transition: 0.2s;
         cursor: pointer;
@@ -168,52 +170,59 @@ nav {
   }
 
   .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 55%;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 80px 20px;
-    gap: 50px;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: $shadow-strong;
-    backdrop-filter: blur(8px);
-
-    .sidebar-nav-link {
-      all: unset;
-      font-size: 1rem;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      letter-spacing: 3px;
-      z-index: 2;
-      color: $dark;
-      position: relative;
-      cursor: pointer;
-
-      &.sidebar-kategorija {
-        font-size: 0.8rem;
-      }
-
-      &.active {
-        color: $main-green;
-      }
-
-      &:hover {
-        color: $main-green;
-      }
+    .dark-part {
+      height: 100vh;
+      width: 60%;
+      background-color: rgba(0, 0, 0, 0.8);
     }
-
-    .kategorije {
+    .sidebar-container {
       display: flex;
       flex-direction: column;
-      gap: 30px;
-      margin-left: 20px;
-      margin-top: -20px;
-      margin-bottom: -20px;
+      height: 100vh;
+      width: 40%;
+      padding: 80px 20px;
+      gap: 50px;
+      background-color: rgba(255, 255, 255, 0.95);
+
+      .sidebar-nav-link {
+        all: unset;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        z-index: 2;
+        color: $dark;
+        position: relative;
+        cursor: pointer;
+
+        &.sidebar-kategorija {
+          font-size: 0.8rem;
+        }
+
+        &.active {
+          color: $main-green;
+        }
+
+        &:hover {
+          color: $main-green;
+        }
+      }
+
+      .kategorije {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 20px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+      }
     }
   }
 }
@@ -257,10 +266,23 @@ nav.dark {
     }
   }
   .sidebar {
-    background-color: rgb(32, 44, 55, 0.9);
+    .dark-part {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .sidebar-container {
+      background-color: rgba(43, 57, 69, 0.95);
 
-    .sidebar-nav-link {
-      color: $almost-white;
+      .sidebar-nav-link {
+        color: $almost-white;
+
+        &.active {
+          color: $main-green;
+        }
+
+        &:hover {
+          color: $main-green;
+        }
+      }
     }
   }
 }
@@ -462,6 +484,9 @@ footer.dark {
 }
 
 .forma.dark {
+  h2 {
+    color: $main-green;
+  }
   form {
     .inputi {
       background-color: $blue;
@@ -687,6 +712,17 @@ footer.dark {
         display: flex;
       }
     }
+    .sidebar {
+      .sidebar-container {
+        .sidebar-nav-link {
+          font-size: 0.8rem;
+
+          &.sidebar-kategorija {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
   }
   footer {
     height: 150px;
@@ -822,10 +858,19 @@ footer.dark {
         display: flex;
       }
     }
+    .sidebar {
+      .sidebar-container {
+        .sidebar-nav-link {
+          font-size: 1rem;
+
+          &.sidebar-kategorija {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
   }
-  .sidebar {
-    width: 50%;
-  }
+
   footer {
     height: 180px;
     gap: 10px;
@@ -966,10 +1011,11 @@ footer.dark {
         display: none;
       }
     }
+    .sidebar {
+      display: none;
+    }
   }
-  .sidebar {
-    display: none;
-  }
+
   footer {
     height: 200px;
     gap: 15px;
