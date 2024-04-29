@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 import "../Stilovi/Component.scss";
 import NavLinks from "./NavLinks";
 import SidebarLinks from "./SidebarLinks";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const Navbar = ({ showSidebar, handleClick }) => {
+
+  const { theme } = useContext(ThemeContext);
+
   return (
     <nav>
       <div className="nav-container">
@@ -12,7 +17,11 @@ const Navbar = ({ showSidebar, handleClick }) => {
           className="logo"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <img id="decor-logo" src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
+          <img
+            id="decor-logo"
+            src="/slike/logos/decor_vision.svg"
+            alt="DECOR VISION"
+          />
         </Link>
         <NavLinks />
         {showSidebar && <SidebarLinks handleClick={handleClick} />}

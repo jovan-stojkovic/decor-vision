@@ -50,37 +50,35 @@ const Lapitec = ({ lapitec, noIMG }) => {
           {lapitec.map(
             ({ ime, index, firma, patern, wide, narrow, opis, debljine }) => (
               <>
-              <div className="proizvod" key={index}>
-                <Link
-                  to={`/proizvodi/lapitec/${firma}/${ime}`}
-                  state={{
-                    proizvod: {
-                      ime,
-                      index,
-                      firma,
-                      opis,
-                      debljine,
-                      narrow,
-                      patern,
-                      wide,
-                    },
-                  }}
-                  onClick={() =>
-                    window.scrollTo({ top: 0, behavior: "smooth" })
-                  }
-                >
-                  <div className="img-container">
-                    <img src={narrow || noIMG} alt={ime} />
-                  </div>
-                </Link>
-                <p className="ime-proizvoda">{ime}</p>
-                <p className="proizvodjac">{firma}</p>
-              </div>
-              
+                <div className="proizvod" key={index}>
+                  <Link
+                    to={`/proizvodi/lapitec/${firma}/${ime}`}
+                    state={{
+                      proizvod: {
+                        ime,
+                        index,
+                        firma,
+                        opis,
+                        debljine,
+                        narrow,
+                        patern,
+                        wide,
+                      },
+                    }}
+                    onClick={() =>
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
+                  >
+                    <div className="img-container">
+                      <img src={narrow || noIMG} alt={ime} />
+                    </div>
+                  </Link>
+                  <p className="ime-proizvoda">{ime}</p>
+                  <p className="proizvodjac">{firma}</p>
+                </div>
               </>
             )
           )}
-          <div className="proizvod prazan"></div>
         </div>
       </div>
     </div>

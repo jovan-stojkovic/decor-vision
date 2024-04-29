@@ -14,7 +14,7 @@ import KameniFurniri from "./Kategorije/KameniFurniri";
 import Latho from "./Kategorije/Latho";
 import Tapete from "./Kategorije/Tapete";
 import { useState, useEffect } from "react";
-
+import ThemeContext from "./Helpers/ThemeContext";
 import {
   noIMG,
   lapitec,
@@ -31,6 +31,13 @@ import ProizvodMilled from "./Pages/ProizvodMilled";
 import ProizvodMove from "./Pages/ProizvodMove";
 
 const App = () => {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+    console.log(theme);
+  };
+
   const [showSidebar, setShowSidebar] = useState(false);
   const handleClick = () => {
     setShowSidebar(!showSidebar);
@@ -65,93 +72,95 @@ const App = () => {
 
   return (
     <Router>
-      <main>
-        <div className="nav-background"></div>
-        <Navbar showSidebar={showSidebar} handleClick={handleClick} />
-        <BackToTopButton />
-        <div className="app">
-          <Routes>
-            <Route exact path="/" element={<Pocetna slides={slides} />} />
-            <Route
-              path="/proizvodi"
-              element={<Proizvodi proizvodi={proizvodi} />}
-            />
-            <Route path="/o-nama" element={<ONama />} />
-            <Route path="/b2b" element={<BtoB />} />
-            <Route path="/kontakt" element={<Kontakt />} />
-            <Route path="/uslovi-koriscenja" element={<UsloviKoriscenja />} />
+      <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <main>
+          <div className="nav-background"></div>
+          <Navbar showSidebar={showSidebar} handleClick={handleClick} />
+          <BackToTopButton />
+          <div className="app">
+            <Routes>
+              <Route exact path="/" element={<Pocetna slides={slides} />} />
+              <Route
+                path="/proizvodi"
+                element={<Proizvodi proizvodi={proizvodi} />}
+              />
+              <Route path="/o-nama" element={<ONama />} />
+              <Route path="/b2b" element={<BtoB />} />
+              <Route path="/kontakt" element={<Kontakt />} />
+              <Route path="/uslovi-koriscenja" element={<UsloviKoriscenja />} />
 
-            <Route
-              path="/proizvodi/Lapitec"
-              element={<Lapitec lapitec={lapitec} noIMG={noIMG} />}
-            />
+              <Route
+                path="/proizvodi/Lapitec"
+                element={<Lapitec lapitec={lapitec} noIMG={noIMG} />}
+              />
 
-            <Route
-              path="/proizvodi/Lapitec/:firma/:ime"
-              element={
-                <ProizvodLapitec
-                  noIMG={noIMG}
-                  isOpen={isOpen}
-                  openIMG={openIMG}
-                  selectedIMG={selectedIMG}
-                  closeIMG={closeIMG}
-                />
-              }
-            />
+              <Route
+                path="/proizvodi/Lapitec/:firma/:ime"
+                element={
+                  <ProizvodLapitec
+                    noIMG={noIMG}
+                    isOpen={isOpen}
+                    openIMG={openIMG}
+                    selectedIMG={selectedIMG}
+                    closeIMG={closeIMG}
+                  />
+                }
+              />
 
-            <Route
-              path="/proizvodi/Latho"
-              element={
-                <Latho
-                  lathoMilled={lathoMilled}
-                  lathoMilledInfo={lathoMilledInfo}
-                  lathoMove={lathoMove}
-                  lathoMoveInfo={lathoMoveInfo}
-                  noIMG={noIMG}
-                />
-              }
-            />
+              <Route
+                path="/proizvodi/Latho"
+                element={
+                  <Latho
+                    lathoMilled={lathoMilled}
+                    lathoMilledInfo={lathoMilledInfo}
+                    lathoMove={lathoMove}
+                    lathoMoveInfo={lathoMoveInfo}
+                    noIMG={noIMG}
+                  />
+                }
+              />
 
-            <Route
-              path="/proizvodi/Latho/Milled/:ime"
-              element={
-                <ProizvodMilled
-                  lathoMilledInfo={lathoMilledInfo}
-                  noIMG={noIMG}
-                  isOpen={isOpen}
-                  openIMG={openIMG}
-                  selectedIMG={selectedIMG}
-                  closeIMG={closeIMG}
-                />
-              }
-            />
+              <Route
+                path="/proizvodi/Latho/Milled/:ime"
+                element={
+                  <ProizvodMilled
+                    lathoMilledInfo={lathoMilledInfo}
+                    noIMG={noIMG}
+                    isOpen={isOpen}
+                    openIMG={openIMG}
+                    selectedIMG={selectedIMG}
+                    closeIMG={closeIMG}
+                  />
+                }
+              />
 
-            <Route
-              path="/proizvodi/Latho/Move/:ime"
-              element={
-                <ProizvodMove
-                  lathoMoveInfo={lathoMoveInfo}
-                  noIMG={noIMG}
-                  isOpen={isOpen}
-                  openIMG={openIMG}
-                  selectedIMG={selectedIMG}
-                  closeIMG={closeIMG}
-                />
-              }
-            />
+              <Route
+                path="/proizvodi/Latho/Move/:ime"
+                element={
+                  <ProizvodMove
+                    lathoMoveInfo={lathoMoveInfo}
+                    noIMG={noIMG}
+                    isOpen={isOpen}
+                    openIMG={openIMG}
+                    selectedIMG={selectedIMG}
+                    closeIMG={closeIMG}
+                  />
+                }
+              />
 
-            <Route
-              path="/proizvodi/Kameni furniri"
-              element={<KameniFurniri />}
-            />
-            <Route
-              path="/proizvodi/Tapete"
-              element={<Tapete tapete={tapete} />}
-            />
-          </Routes>
-        </div>
-        <Footer />
-      </main>
+              <Route
+                path="/proizvodi/Kameni furniri"
+                element={<KameniFurniri />}
+              />
+              <Route
+                path="/proizvodi/Tapete"
+                element={<Tapete tapete={tapete} />}
+              />
+            </Routes>
+          </div>
+          <Footer />
+        </main>
+      </ThemeContext.Provider>
     </Router>
   );
 };

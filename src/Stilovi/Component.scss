@@ -128,6 +128,20 @@ nav {
           transition: 0.2s;
         }
       }
+
+      .theme-btn {
+        all: unset;
+        height: 1.4rem;
+        width: 1.4rem;
+        @include background;
+        background-image: url("/slike/icons/moon.svg");
+        transition: 0.2s;
+        cursor: pointer;
+
+        &.dark {
+          background-image: url("/slike/icons/sun.svg");
+        }
+      }
     }
 
     .menu-button {

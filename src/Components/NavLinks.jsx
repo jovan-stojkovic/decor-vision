@@ -1,7 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
+import { useContext } from "react";
+import ThemeContext from "../Helpers/ThemeContext";
 
 const NavLinks = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [showNavbarDiv, setShowNavbarDiv] = useState(false);
 
   const handleHover = (hovering) => {
@@ -75,6 +78,7 @@ const NavLinks = () => {
         KONTAKT
       </NavLink>
       <Link to={instaPage} target="_blank" id="insta-link" />
+      <button className={`theme-btn ${theme}`} onClick={toggleTheme}></button>
     </div>
   );
 };
