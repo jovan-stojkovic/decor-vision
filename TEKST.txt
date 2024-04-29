@@ -2,10 +2,13 @@
 IMPORTI SREDI IH U SVAKOJ STRANICI
 carousel na prvoj stranici
 spelcheck
-responsivnes
 zoomin samo slike na hover
 da se otvore slike
 tab ime za svaku stranicu
+skloni se sidebar na klik
+proizvod grid jedan nevidljiv? da bi se slozili _x3
+manje koda fontsize 1.2 1/6 2/6...
+move wide slike
 
 //////////    pitanja za Acu    //////////
 naslov ispod u O_NAMA

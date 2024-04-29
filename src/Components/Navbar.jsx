@@ -15,7 +15,7 @@ const Navbar = ({ showSidebar, handleClick }) => {
           <img id="decor-logo" src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
         </Link>
         <NavLinks />
-        {showSidebar && <SidebarLinks />}
+        {showSidebar && <SidebarLinks handleClick={handleClick} />}
         <button onClick={handleClick} className="menu-button">
           <img src="/slike/icons/menu.svg" alt="menu" />
         </button>

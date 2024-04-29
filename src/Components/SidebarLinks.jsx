@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-const SidebarLinks = () => {
+const SidebarLinks = ({ handleClick }) => {
   const instaPage = "https://www.instagram.com/decorvision.rs/?hl=en";
 
   return (
@@ -8,7 +8,10 @@ const SidebarLinks = () => {
       <NavLink
         className="sidebar-nav-link"
         to="/proizvodi"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          handleClick();
+        }}
       >
         PROIZVODI
       </NavLink>
@@ -16,28 +19,40 @@ const SidebarLinks = () => {
         <NavLink
           className="sidebar-kategorija sidebar-nav-link"
           to="/proizvodi/Lapitec"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            handleClick();
+          }}
         >
           LAPITEC
         </NavLink>
         <NavLink
           className="sidebar-kategorija sidebar-nav-link"
           to="/proizvodi/Latho"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            handleClick();
+          }}
         >
           LATHO
         </NavLink>
         <NavLink
           className="sidebar-kategorija sidebar-nav-link"
           to="/proizvodi/Kameni Furniri"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            handleClick();
+          }}
         >
           KAMENI FURNIRI
         </NavLink>
         <NavLink
           className="sidebar-kategorija sidebar-nav-link"
           to="/proizvodi/Tapete"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            handleClick();
+          }}
         >
           TAPETE
         </NavLink>
@@ -45,25 +60,38 @@ const SidebarLinks = () => {
       <NavLink
         className="sidebar-nav-link"
         to="/o-nama"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          handleClick();
+        }}
       >
         O NAMA
       </NavLink>
       <NavLink
         className="sidebar-nav-link"
         to="/b2b"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          handleClick();
+        }}
       >
         B2B
       </NavLink>
       <NavLink
         className="sidebar-nav-link"
         to="/kontakt"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          handleClick();
+        }}
       >
         KONTAKT
       </NavLink>
-      <Link to={instaPage} target="_blank" className="sidebar-instagram sidebar-nav-link">
+      <Link
+        to={instaPage}
+        target="_blank"
+        className="sidebar-instagram sidebar-nav-link"
+      >
         INSTAGRAM
       </Link>
     </div>
