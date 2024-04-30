@@ -388,45 +388,17 @@
   }
 
   .container {
-    .carousel {
-      height: 300px;
-      gap: 50px;
-      margin: 100px 0;
-      @include flex-space;
-
-      .card {
-        height: 100%;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        border-radius: 5px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-        &.one {
-          background-image: url("/slike/carousel/1.jpg");
-        }
-
-        &.two {
-          background-image: url("/slike/carousel/2.jpg");
-        }
-
-        &.three {
-          background-image: url("/slike/carousel/3.jpg");
-        }
-      }
-    }
 
     .carousel-container {
-      width: 80%; // Prilagodi širinu carousel-a po potrebi
-      height: 400px;
-      background-color: beige;
+      width: 90%; // Prilagodi širinu carousel-a po potrebi
+      height: 200px;
       margin: 0 auto; // Centriraj carousel
       position: relative; // Postavi relativnu poziciju za potrebe apsolutno pozicioniranih strelica
     }
     
     .slick-arrow {
       position: absolute; // Postavi strelice na apsolutnu poziciju unutar kontejnera
-      top: 200px; // Postavi strelice vertikalno na sredinu kontejnera
+      top: 45%; // Postavi strelice vertikalno na sredinu kontejnera
       z-index: 1; // Postavi strelice iznad slika
       color: white; // Boja strelica
       padding: 10px; // Dodaj malo prostora oko strelica
@@ -434,11 +406,11 @@
       transition: background-color 0.3s; // Dodaj efekat prelaska boje na strelice
     
       &.slick-prev {
-        left: 0; // Postavi levu strelicu na levu stranu kontejnera
+        left: 5px; // Postavi levu strelicu na levu stranu kontejnera
       }
     
       &.slick-next {
-        right: 18px; // Postavi desnu strelicu na desnu stranu kontejnera
+        right: 25px; // Postavi desnu strelicu na desnu stranu kontejnera
       }
     
       &:before {
@@ -454,19 +426,16 @@
         content: '→'; // Podesi sadržaj strelice za desno
       }
     }
-    
+   
     // Stilizacija slika
     .slick-slide img {
       width: 100%; // Podesi širinu slike na 100% kontejnera
-      height: 400px; // Automatski odabir visine slike
-      border: 2px solid white; // Dodaj beli okvir oko slike
-      border-radius: 5px; // Dodaj blagi zaobljeni ivice slike
+      height: 200px; // Automatski odabir visine slike
+      padding: 10px;
     }
     
     // Promeni izgled aktuelne slike
-    .slick-current img {
-      border: 2px solid yellow; // Promeni boju okvira aktuelne slike
-    }
+
     
 
     .insta-link-cont {

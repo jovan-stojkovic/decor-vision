@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from "react-router-dom";
 
 const CarouselLinks = ({ lapitec, lathoMilled, lathoMove, noIMG }) => {
   const sviProizvodi = [...lapitec, ...lathoMilled, ...lathoMove];
@@ -13,21 +12,19 @@ const CarouselLinks = ({ lapitec, lathoMilled, lathoMove, noIMG }) => {
     slidesToScroll: 1,
   };
 
-  const randomStartIndex = Math.floor(Math.random() * (sviProizvodi.length - 6));
-  console.log(randomStartIndex);
-  console.log(sviProizvodi);
+  const random = Math.floor(Math.random() * (sviProizvodi.length - 6));
+
+  const noviNiz = sviProizvodi.slice(random, random + 6);
+  console.log(noviNiz);
+
+  console.log(sviProizvodi[random]);
 
   return (
-    <div className="slider-container">
+    <div className="carousel-container">
       <Slider {...settings}>
-        {Array.from({ length: 6 }, (_, i) => (
-          <div key={i}>
-            <Link
-              to={`/proizvodi/${sviProizvodi[randomStartIndex + i].proizvodjac}/${sviProizvodi[randomStartIndex + i].firma}/${sviProizvodi[randomStartIndex + i].ime}`}
-            >
-              <img src={sviProizvodi[randomStartIndex + i].patern || noIMG} alt={`Photo${i + 1}`} />
-              <p>{sviProizvodi[randomStartIndex + i].ime}</p>
-            </Link>
+        {noviNiz.map(({ patern, ime, index }) => (
+          <div key={index}>
+            <img src={patern || noIMG} alt={ime} />
           </div>
         ))}
       </Slider>
