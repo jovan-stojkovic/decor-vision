@@ -4,7 +4,7 @@ import "../Stilovi/Stranica.scss";
 
 const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
   const location = useLocation();
-  const { ime, firma, wide, opis, debljine, narrow, patern } =
+  const { ime, firma, wide, opis, debljine, kvadrat, patern, proizvodjac } =
     location.state.proizvod;
 
   return (
@@ -36,9 +36,9 @@ const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
             <div className="levo-dole">
               <div
                 className="grid-img-container two"
-                onClick={() => openIMG(narrow || noIMG)}
+                onClick={() => openIMG(kvadrat || noIMG)}
               >
-                <img src={narrow || noIMG} alt={`narrow ${ime}`} />
+                <img src={kvadrat || noIMG} alt={`kvadrat ${ime}`} />
               </div>
               <div
                 className="grid-img-container two"

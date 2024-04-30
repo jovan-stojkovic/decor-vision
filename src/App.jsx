@@ -78,7 +78,19 @@ const App = () => {
           <BackToTopButton />
           <div className="app">
             <Routes>
-              <Route exact path="/" element={<Pocetna slides={slides} />} />
+              <Route
+                exact
+                path="/"
+                element={
+                  <Pocetna
+                    slides={slides}
+                    lapitec={lapitec}
+                    lathoMilled={lathoMilled}
+                    lathoMove={lathoMove}
+                    noIMG={noIMG}
+                  />
+                }
+              />
               <Route
                 path="/proizvodi"
                 element={<Proizvodi proizvodi={proizvodi} />}
@@ -94,7 +106,7 @@ const App = () => {
               />
 
               <Route
-                path="/proizvodi/Lapitec/:firma/:ime"
+                path="/proizvodi/:proizvodjac/:firma/:ime"
                 element={
                   <ProizvodLapitec
                     noIMG={noIMG}

@@ -4,15 +4,16 @@ import Grid from "../Components/Grid";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
+import CarouselLinks from "../Components/CarouselLinks";
 
-const Pocetna = ({ slides }) => {
+const Pocetna = ({ slides, lapitec, lathoMilled, lathoMove, noIMG }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <div className={`home page ${theme}`}>
       <Slider slides={slides} />
       <div className="container">
-        <Carousel />
+        <CarouselLinks lapitec={lapitec} lathoMilled={lathoMilled} lathoMove={lathoMove} noIMG={noIMG}/>
 
         <div className="insta-link-cont">
           <div className="insta-img-container"></div>

@@ -70,17 +70,17 @@ const Latho = ({
               <p className="proizvodjac">{lathoMilledInfo.firma}</p>
             </div>
           ))}
-          {lathoMove.map(({ ime, kvadrat, wide }) => (
+          {lathoMove.map(({ ime, patern, wide }) => (
             <div className="proizvod" key={ime}>
               <Link
                 to={`/proizvodi/Latho/Move/${ime}`}
                 state={{
-                  proizvod: { ime, kvadrat, wide },
+                  proizvod: { ime, patern, wide },
                 }}
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               >
                 <div className="img-container">
-                  <img src={kvadrat || wide || noIMG} alt={ime} />
+                  <img src={patern || wide || noIMG} alt={ime} />
                 </div>
               </Link>
               <p className="ime-proizvoda">{ime}</p>

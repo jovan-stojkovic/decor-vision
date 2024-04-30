@@ -7,7 +7,7 @@ import ThemeContext from "../Helpers/ThemeContext";
 const Lapitec = ({ lapitec, noIMG }) => {
   const { theme } = useContext(ThemeContext);
   const headline = "LAPITEC";
-  
+
   return (
     <div className={`lapitec page ${theme}`}>
       <HeadProizvod headline={headline} />
@@ -52,11 +52,21 @@ const Lapitec = ({ lapitec, noIMG }) => {
 
         <div className="grid-proizvoda lapitec">
           {lapitec.map(
-            ({ ime, index, firma, patern, wide, narrow, opis, debljine }) => (
+            ({
+              ime,
+              index,
+              firma,
+              patern,
+              wide,
+              kvadrat,
+              opis,
+              debljine,
+              proizvodjac,
+            }) => (
               <>
-                <div className="proizvod" key={index}>
+                <div className="proizvod" key={ime}>
                   <Link
-                    to={`/proizvodi/lapitec/${firma}/${ime}`}
+                    to={`/proizvodi/${proizvodjac}/${firma}/${ime}`}
                     state={{
                       proizvod: {
                         ime,
@@ -64,9 +74,10 @@ const Lapitec = ({ lapitec, noIMG }) => {
                         firma,
                         opis,
                         debljine,
-                        narrow,
+                        kvadrat,
                         patern,
                         wide,
+                        proizvodjac,
                       },
                     }}
                     onClick={() =>
@@ -74,7 +85,7 @@ const Lapitec = ({ lapitec, noIMG }) => {
                     }
                   >
                     <div className="img-container">
-                      <img src={narrow || noIMG} alt={ime} />
+                      <img src={kvadrat || noIMG} alt={ime} />
                     </div>
                   </Link>
                   <p className="ime-proizvoda">{ime}</p>

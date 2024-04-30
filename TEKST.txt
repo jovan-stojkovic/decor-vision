@@ -2,9 +2,7 @@
 IMPORTI SREDI IH U SVAKOJ STRANICI
 carousel na prvoj stranici
 spelcheck
-zoomin samo slike na hover
 tab ime za svaku stranicu
-borderradius 
 theme na refres?
 
 //////////    pitanja za Acu    //////////

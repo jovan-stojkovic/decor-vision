@@ -11,13 +11,13 @@ const ProizvodMove = ({
   closeIMG,
 }) => {
   const location = useLocation();
-  const { ime, kvadrat, wide } = location.state.proizvod;
+  const { ime, patern, wide } = location.state.proizvod;
 
   return (
     <>
       <div className="proizvod move page">
         <div className="proizvod-head">
-          <img src={kvadrat || wide} />
+          <img src={patern || wide} />
           <div className="proizvod-naslov">
             <h5>{ime}</h5>
             <h6>{lathoMoveInfo.firma}</h6>
@@ -48,9 +48,9 @@ const ProizvodMove = ({
               <div className="levo-dole move">
                 <div
                   className="grid-img-container"
-                  onClick={() => openIMG(kvadrat || noIMG)}
+                  onClick={() => openIMG(patern || noIMG)}
                 >
-                  <img src={kvadrat || noIMG} alt={`tech ${ime}`} />
+                  <img src={patern || noIMG} alt={`tech ${ime}`} />
                 </div>
               </div>
             </div>
