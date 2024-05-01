@@ -1,13 +1,10 @@
-import { useEffect, useState } from "react";
 import "../Stilovi/Component.scss";
-import { useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
-
 
 const BackToTopButton = () => {
   const [backToTopButton, setBackToTopButton] = useState(false);
   const { theme } = useContext(ThemeContext);
-
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

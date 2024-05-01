@@ -41,7 +41,7 @@ export const proizvodi = [
 
 export const lapitec = [
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Alba",
     opis: "Topla osnova, koja vuče na nijansu slonovače, obogaćena širokim i blistavim zlatnim venama koje se graciozno provlače duž površine. Prelepa nijansa koja kao da prikazuje lepotu zore u sebi. Bianco Alba je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -53,7 +53,7 @@ export const lapitec = [
     wide: "/slike/proizvodi/Lapitec/Musa/1 bianco alba/bianco-alba-zoom-01.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Diana",
     opis: "Čista i blistava bela osnova sa elegantnim preplitanjem vena u nijansama sive. Harmoničan ples između širokih i delikatnih pruga koje se stapaju sa suptilnim i odlučnim zrnima, stvarajući smelu igru kontrasta. Bianco Diana je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -65,7 +65,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/2 bianco dina/bianco-diana-zoom-02.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Pandora",
     opis: "Harmoničan susret suprotnosti: isprepletena zrna različitih boja ističu se na pozadini koja spaja dve nijanse bele. Sive i zlatne pruge se sukobljavaju, dajući pikantnu hromatsku notu. Bianco Pandora je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -77,7 +77,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/3 bianco pandora/bianco-pandora-zoom-02.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Atena",
     opis: "Čista, bela Bianco Assoluto osnova i geometrijske vene u svetlo sivoj boji presecaju XXL format ploča na dva dela. Bianco Atena je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -89,7 +89,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/4 bianco atena/bianco-atena-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Olimpia",
     opis: "Snažan, autoritativni karakter nijanse sa jedinstvenom osnovom, dobijen izborom različitih dragocenih minerala koji osvetljavaju istaknute vene, okupane rekama svetlo sive. Bianco Olimpia je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -101,7 +101,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/5 bianco olimpia/bianco-olimpia-zoom-2(0).jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Andromeda",
     opis: "Vene pršte od originalnog, moćnog šarma u različitim nijansama sive, od najsvetlijih i nežnijih tonova do tamnije i grandiozne sive. Bianco Andromeda je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -113,7 +113,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/6 bianco andromeda/bianco-andromeda-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Angelica",
     opis: "Sa sličnim šarama kao Bianco Serena, ima svetlu bazu i zlatne i ružičaste nijanse u venama, pomešane sa različitim tonovima sive. Bianco Angelica je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -125,7 +125,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/7 bianco angelica/bianco-angelica-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Serena",
     opis: "Muza par ekcellence. Predstavlja bogate, zlatne vene, sa osnovom boje koja teži slonovači. Vijugavost koja pleni, sa bezvremenskim šarmom. Bianco Serena je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -137,7 +137,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/8 bianco serena/bianco-serena-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Vittoria",
     opis: "Bianco Vittoria je originalna interpretacija mermernih žilica, laganih i ujednačenih po celoj površini i u srcu ploče. Bianco Vittoria je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -149,7 +149,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/9 bianco vittoria/bianco-vittoria-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Musa",
     ime: "Bianco Giulia",
     opis: "Ton vena sa tamom i intenzitetom koji daje veoma prirodan efekat, dodajući jedinstvenu ličnost sobama koje obavija. Bianco Giulia je dostupna u 4 različite površinske obrade – Lux, Satin, Lithos, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -161,7 +161,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Musa/10 bianco giulia/bianco-giulia-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Essenza",
     ime: "Bianco Assoluto",
     opis: "Najbelji od svih materijala. Čistoća i sjaj sijaju u ovoj nijansi, sa svojom belinom i sjajem bez premca. Bianco Assoluto je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -173,7 +173,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Essenza/1 bianco assoluto/bianco-assoluto-preview-2(0).jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Essenza",
     ime: "Bianco Polare",
     opis: "Jedinstvena nijansa koja dočarava kristalnu lepotu sunčanih glečera, blago zagrevajući najčistiju belu sa ružičastim tonovima. Bianco Polare je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -185,7 +185,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Essenza/2 bianco polare/bianco-polare-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Essenza",
     ime: "Bianco Crema",
     opis: "Boja koja obavija, fascinira i greje pogled i dodir, Bianco Crema reinterpretira jednu od najklasičnijih nijansi sa karakterističnom mekoćom i toplinom, za obloge ili kuhinje. Bianco Crema je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -197,7 +197,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Essenza/3 bianco crema/bianco-crema-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Essenza",
     ime: "Terra Avana",
     opis: "Toplina, vitalnost i energija se ogledaju u Terra Avani, boji sa snažnom stilskom ličnošću koja daje suptilne tonove unutrašnjim i spoljašnjim prostorima. Terra Avana je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -209,7 +209,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Essenza/4 terra avana/terra-avana-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Essenza",
     ime: "Grigio Cemento",
     opis: "Čvrsta nijansa sa jakom stabilnošću boje. Kao i beton, on je izdržljiv, svestran i otporan. Grigio Cemento je moderna, urbana boja. Grigio Cemento je dostupna u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -221,7 +221,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-2.jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Essenza",
     ime: "Nero Antracite",
     opis: "Stil, šarm i privlačnost su suština Nero Antracita. Tamna, ne-ekstremna boja koja nudi svu uobičajenu svestranost Lapitec-a, od sjajnih završnih obrada do hrapavih. Nero Antracite je dostupan u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala. ",
@@ -233,7 +233,7 @@ export const lapitec = [
       "/slike/proizvodi/Lapitec/Essenza/6 nero antacite/nero-antacite-zoom-2(0).jpg",
   },
   {
-    proizvodjac:"lapitec",
+    proizvodjac: "lapitec",
     firma: "Essenza",
     ime: "Nero Assoluto",
     opis: "Izuzetan intenzitet i dubina boje za najcrnju crnu koja postoji. Elegancija, modernost i klasa. Rešenje da se svaki prostor izdvoji. Nero Assoluto je dostupan u 6 različitih površinskih obrada – Lux, Satin, Lithos, Vesuvio, Arena, Velluto. Otkrijte onu koja najviše odgovara vašem projektu. Sve završne obrade su rezultat mehaničke obrade, bez upotrebe štampe ili sintetičkih materijala.",
@@ -249,8 +249,8 @@ export const lapitec = [
 
 export const lathoMilled = [
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Asolo",
     kvadrat:
       "/slike/proizvodi/Latho/Milled/asolo/fresati-latho-asolo-dark-900x900-1.jpg",
@@ -262,8 +262,8 @@ export const lathoMilled = [
   },
 
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Capri",
 
     kvadrat:
@@ -275,8 +275,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Capri/technical_capri.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Everest",
 
     kvadrat:
@@ -288,8 +288,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Everest/technical_Everest.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Firenze",
 
     kvadrat:
@@ -301,8 +301,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Firenze/technical_Firenze.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Grappa",
 
     kvadrat:
@@ -314,8 +314,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Grappa/technical_Grappa.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "K2",
 
     kvadrat:
@@ -327,8 +327,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/K2/technical_K2.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Milano",
 
     kvadrat:
@@ -340,8 +340,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Milano/technical_Milano.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Portofino",
 
     kvadrat:
@@ -353,8 +353,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Portofino/technical_Portofino.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Roma",
 
     kvadrat:
@@ -366,8 +366,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Roma/technical_Roma.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Venezia",
 
     kvadrat:
@@ -379,8 +379,8 @@ export const lathoMilled = [
     tech: "/slike/proizvodi/Latho/Milled/Venezia/technical_Venezia.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "milled",
+    proizvodjac: "latho",
+    firma: "Milled",
     ime: "Verona",
 
     kvadrat:
@@ -405,47 +405,47 @@ export const lathoMilledInfo = {
 
 export const lathoMove = [
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "XX",
 
     patern: "/slike/proizvodi/Latho/Move/Move XX/pann-move-XX-testa.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move XX/pann-move-XX-iso.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "LOFT",
 
     patern: "/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-testa.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "CHAIN",
 
     patern: "/slike/proizvodi/Latho/Move/Move Chain/pann-move-chain-testa.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move Chain/pann-move-chain-iso.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "J",
 
     patern: "/slike/proizvodi/Latho/Move/Move J/pann-move-J-iso.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "X",
 
     patern: "/slike/proizvodi/Latho/Move/Move X/move-X-index-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move X/move-X-head-bnr.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "A",
 
     patern:
@@ -453,8 +453,8 @@ export const lathoMove = [
     wide: "/slike/proizvodi/Latho/Move/Move A/A-tavolino.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "A+A",
 
     patern:
@@ -462,8 +462,8 @@ export const lathoMove = [
     wide: "/slike/proizvodi/Latho/Move/Move A+A/A-A-porta-uff.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "B",
 
     patern:
@@ -471,22 +471,22 @@ export const lathoMove = [
     wide: "/slike/proizvodi/Latho/Move/Move B/B-ambient.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "B+B",
     patern: "/slike/proizvodi/Latho/Move/Move B+B/camp-B-B-banner.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "N",
 
     patern: "/slike/proizvodi/Latho/Move/Move N/move-N-index-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move N/move-N-head-bnr.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "C",
 
     patern:
@@ -494,8 +494,8 @@ export const lathoMove = [
     wide: "/slike/proizvodi/Latho/Move/Move C/C-ambient.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "D",
 
     patern:
@@ -503,39 +503,39 @@ export const lathoMove = [
     wide: "/slike/proizvodi/Latho/Move/Move D/D-ambient.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "D+D",
 
     wide: "/slike/proizvodi/Latho/Move/Move D+D/ambient-D-D.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "E",
 
     patern: "/slike/proizvodi/Latho/Move/Move E/move-E-12-1200px-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move E/E-ambient.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "F",
 
     patern: "",
     wide: "",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "M",
 
     patern: "/slike/proizvodi/Latho/Move/Move M/move-M-36-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move M/M-move.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "G",
 
     patern:
@@ -543,39 +543,39 @@ export const lathoMove = [
     wide: "/slike/proizvodi/Latho/Move/Move G/G-move-bagno.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "W",
 
     patern: "/slike/proizvodi/Latho/Move/Move W/stilo-Pagina-9-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move W/Y-move-amb.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "H",
 
     patern: "/slike/proizvodi/Latho/Move/Move H/camp-H-banner.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "L",
     patern:
       "/slike/proizvodi/Latho/Move/Move L/move-L-tecnica-big-1200px-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move L/L-move-L-amb.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "P",
 
     patern: "/slike/proizvodi/Latho/Move/Move P/P-move1200-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move P/P-ambient.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "MOVE CARBON PLUS(U+)",
 
     patern:
@@ -583,54 +583,54 @@ export const lathoMove = [
     wide: "/slike/proizvodi/Latho/Move/Move Carbon Plus (U+)/move-CARBON-head-bnr.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "Q",
     patern: "/slike/proizvodi/Latho/Move/Move Q/Q-move-rid-1200px-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move Q/Q-ambient-Q.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "R",
     patern: "/slike/proizvodi/Latho/Move/Move R/R-move1200px-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move R/R-ambient-R.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "S",
 
     patern: "/slike/proizvodi/Latho/Move/Move S/S-move-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move S/S-ambient-S.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "K",
 
     patern: "/slike/proizvodi/Latho/Move/Move K/move-K-3-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move K/K-move-k.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "T",
 
     patern: "/slike/proizvodi/Latho/Move/Move T/move-T-index-900x900.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move T/T-move-amb.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "Y",
 
     patern: "/slike/proizvodi/Latho/Move/Move Y/move-Y-head-bnr.jpg",
     wide: "/slike/proizvodi/Latho/Move/Move Y/move-Y-900x900.jpg",
   },
   {
-    proizvodjac:"latho",
-    firma: "move",
+    proizvodjac: "latho",
+    firma: "Move",
     ime: "Z",
 
     patern: "/slike/proizvodi/Latho/Move/Move Z/camp-Z-banner.jpg",

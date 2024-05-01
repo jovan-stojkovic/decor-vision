@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
-import ProizvodForma from "../Components/ProizvodForma";
+import Forma from "../Components/Forma";
 import "../Stilovi/Stranica.scss";
+import { useState, useEffect } from "react";
 
 const ProizvodMilled = ({
   noIMG,
@@ -11,7 +12,14 @@ const ProizvodMilled = ({
   closeIMG,
 }) => {
   const location = useLocation();
-  const { ime, kvadrat, strana, patern, tech, index } = location.state.proizvod;
+  const { ime, kvadrat, strana, patern, tech, index, firma } = location.state.proizvod;
+  const [subject, setSubject] = useState("");
+
+  useEffect(() => {
+    setSubject(`${firma}, ${ime}`);
+  }, [firma, ime]);
+
+  const naslov = "POŠALJI UPIT ZA OVAJ PROIZVOD";
 
   return (
     <div className="proizvod milled page">
@@ -73,7 +81,7 @@ const ProizvodMilled = ({
               </button>
             </div>
           )}
-          <ProizvodForma />
+          <Forma subject={subject} naslov={naslov} />
         </div>
       </div>
     </div>

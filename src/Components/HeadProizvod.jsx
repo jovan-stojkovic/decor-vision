@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 const HeadProizvod = ({ headline }) => {
   const [isVisible, setIsVisible] = useState(false);
 

@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
-const SidebarLinks = ({ handleClick }) => {
+const Sidebar = ({ handleClick }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const instaPage = "https://www.instagram.com/decorvision.rs/?hl=en";
 
@@ -110,4 +110,4 @@ const SidebarLinks = ({ handleClick }) => {
   );
 };
 
-export default SidebarLinks;
+export default Sidebar;

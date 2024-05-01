@@ -1,12 +1,11 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
-const Forma = () => {
+const Forma = ({ naslov, subject }) => {
   const [success, setSuccess] = useState(false);
   const { theme } = useContext(ThemeContext);
 
@@ -16,7 +15,7 @@ const Forma = () => {
       .string()
       .email("Molimo Vas unesite ispravnu email adresu")
       .required("Polje ne sme ostati prazno"),
-    subject: yup.string().required("Polje ne sme ostati prazno"),
+    subject: yup.string(),
     text: yup.string().required("Polje ne sme ostati prazno"),
     agreement: yup.bool().oneOf([true], "Morate prihvatiti"),
   });
@@ -52,17 +51,7 @@ const Forma = () => {
         </div>
       ) : (
         <>
-          <h2>VAŠA DEKORATIVNA AVANTURA POČINJE OVDE</h2>
-          <div className="separator"></div>
-          <p>
-            Radujemo se razmeni ideja o vašem prostoru! Ako želite da oživite
-            svoj dom ili poslovni prostor uz naše dekorativne materijale, ili
-            imate pitanja u vezi sa našim proizvodima, slobodno nas
-            kontaktirajte.
-          </p>
-
-          <p>Naš tim je tu da vam pruži personalizovane savete.</p>
-
+          <h2 className="naslov-upita">{naslov}</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <p className="error">{errors.fullName?.message}</p>
             <input
@@ -89,6 +78,7 @@ const Forma = () => {
               name="subject"
               id="subject"
               placeholder="Naslov*"
+              value={subject || ""}
               {...register("subject")}
             />
             <p className="error">{errors.text?.message}</p>
@@ -101,7 +91,7 @@ const Forma = () => {
               {...register("text")}
             />
 
-            <p className="saglasnost">
+            <p id="saglasnost">
               Saglasan sam sa svim pojedinostima navedenim o korišćenju i
               upotrebi ovog sajta, politikom privatnosti i ostalim poslovnim
               <Link

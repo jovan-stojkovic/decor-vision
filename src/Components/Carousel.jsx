@@ -1,9 +1,33 @@
-const Carousel = () => {
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const Carousel = ({ lapitec, lathoMilled, lathoMove, noIMG }) => {
+  const sviProizvodi = [...lapitec, ...lathoMilled, ...lathoMove];
+
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
+  const random = Math.floor(Math.random() * (sviProizvodi.length - 6));
+
+  const noviNiz = sviProizvodi.slice(random, random + 6);
+  console.log(noviNiz);
+
+  console.log(sviProizvodi[random]);
+
   return (
-    <div className="carousel">
-      <div className="card one"></div>
-      <div className="card two"></div>
-      <div className="card three"></div>
+    <div className="carousel-container">
+      <Slider {...settings}>
+        {noviNiz.map(({ patern, ime, index }) => (
+          <div key={index}>
+            <img src={patern || noIMG} alt={ime} />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

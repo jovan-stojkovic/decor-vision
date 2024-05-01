@@ -194,6 +194,7 @@
         }
       }
     }
+
     .proizvod-grid {
       @include flex-space;
       width: 100%;
@@ -274,6 +275,34 @@
           height: 100%;
           width: 100%;
           object-fit: cover;
+        }
+      }
+      .forma {
+        width: 50%;
+        height: 800px;
+        @include flex-column;
+        justify-content: space-between;
+        form {
+          margin-bottom: 0;
+          .inputi {
+            height: 40px;
+            padding: 0 10px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+
+            &#message {
+              height: 200px;
+            }
+          }
+
+          #saglasnost {
+            font-size: 0.9rem;
+          }
+
+          button {
+            height: 40px;
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -388,55 +417,49 @@
   }
 
   .container {
-
     .carousel-container {
-      width: 90%; // Prilagodi širinu carousel-a po potrebi
+      width: 90%;
       height: 200px;
-      margin: 0 auto; // Centriraj carousel
-      position: relative; // Postavi relativnu poziciju za potrebe apsolutno pozicioniranih strelica
+      margin: 0 auto;
+      position: relative;
     }
-    
+
     .slick-arrow {
-      position: absolute; // Postavi strelice na apsolutnu poziciju unutar kontejnera
-      top: 45%; // Postavi strelice vertikalno na sredinu kontejnera
-      z-index: 1; // Postavi strelice iznad slika
-      color: white; // Boja strelica
-      padding: 10px; // Dodaj malo prostora oko strelica
-      cursor: pointer; // Promeni kursor na pokazivač kada se pređe preko strelice
-      transition: background-color 0.3s; // Dodaj efekat prelaska boje na strelice
-    
+      position: absolute;
+      top: 45%;
+      z-index: 1;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
       &.slick-prev {
-        left: 5px; // Postavi levu strelicu na levu stranu kontejnera
+        left: 5px;
       }
-    
+
       &.slick-next {
-        right: 25px; // Postavi desnu strelicu na desnu stranu kontejnera
+        right: 25px;
       }
-    
+
       &:before {
-        font-family: 'slick'; // Koristi font familiju 'slick' za strelice
-        font-size: 20px; // Veličina fonta strelice
+        font-family: "slick";
+        font-size: 20px;
       }
-    
+
       &.slick-prev:before {
-        content: '←'; // Podesi sadržaj strelice za levo
+        content: "←";
       }
-    
+
       &.slick-next:before {
-        content: '→'; // Podesi sadržaj strelice za desno
+        content: "→";
       }
     }
-   
-    // Stilizacija slika
+
     .slick-slide img {
-      width: 100%; // Podesi širinu slike na 100% kontejnera
-      height: 200px; // Automatski odabir visine slike
+      width: 100%;
+      height: 200px;
       padding: 10px;
     }
-    
-    // Promeni izgled aktuelne slike
-
-    
 
     .insta-link-cont {
       margin: 50px auto;
@@ -516,7 +539,6 @@
 
   .grid {
     filter: brightness(80%);
-
   }
 }
 //////  PROIZVODI STRANICA  //////
@@ -543,7 +565,7 @@
           box-shadow: $shadow-light;
           transition: 0.2s;
           width: 100%;
-          height: 100%;     
+          height: 100%;
 
           &:hover {
             box-shadow: $shadow-strong;
@@ -670,7 +692,7 @@
       align-items: center;
       margin: 100px 0;
       border-radius: 5px;
-        box-shadow: $shadow-light;
+      box-shadow: $shadow-light;
 
       .segment {
         flex-direction: column;
@@ -700,8 +722,20 @@
           font-weight: 700;
           font-size: 1rem;
           margin-bottom: 0;
+          text-align: center;
         }
       }
+    }
+
+    h2 {
+      color: $main-green;
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .p-kontakt {
+      text-align: center;
     }
   }
 }
@@ -716,6 +750,10 @@
           filter: invert(0.9);
         }
       }
+    }
+
+    h2 {
+      color: $main-green;
     }
   }
 }
@@ -995,6 +1033,10 @@
             aspect-ratio: 1;
           }
         }
+        .forma {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
@@ -1128,6 +1170,10 @@
             font-size: 0.7rem;
           }
         }
+      }
+      h2 {
+        font-size: 1.2rem;
+        text-align: center;
       }
     }
   }
@@ -1313,6 +1359,29 @@
             gap: 15px;
           }
         }
+        .forma {
+          width: 100%;
+          height: auto;
+          form {
+            .inputi {
+              height: 50px;
+              padding: 0 20px;
+              margin-bottom: 15px;
+
+              &#message {
+                height: 300px;
+              }
+            }
+
+            #saglasnost {
+              font-size: 1rem;
+            }
+
+            button {
+              height: 50px;
+            }
+          }
+        }
       }
     }
   }
@@ -1438,6 +1507,11 @@
             font-size: 0.9rem;
           }
         }
+      }
+      h2 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 0px;
       }
     }
   }
@@ -1619,6 +1693,27 @@
             gap: 20px;
           }
         }
+        .forma {
+          width: 100%;
+          height: auto;
+          form {
+            .inputi {
+              height: 50px;
+              padding: 0 20px;
+              margin-bottom: 15px;
+
+              &#message {
+                height: 300px;
+              }
+            }
+            #saglasnost {
+              font-size: 1rem;
+            }
+            button {
+              height: 50px;
+            }
+          }
+        }
       }
     }
   }
@@ -1733,6 +1828,9 @@
         .segment {
           gap: 20px;
         }
+      }
+      h2 {
+        font-size: 1.5rem;
       }
     }
   }
@@ -1874,6 +1972,22 @@
       }
       .proizvod-grid {
         margin: 60px 0;
+        .forma {
+          width: 50%;
+          form {
+            .inputi {
+              height: 35px;
+              font-size: 1rem;
+
+              &#message {
+                height: 200px;
+              }
+            }
+            button {
+              height: 35px;
+            }
+          }
+        }
       }
     }
   }
@@ -1958,6 +2072,9 @@
         .segment {
           gap: 20px;
         }
+      }
+      h2 {
+        font-size: 1.7rem;
       }
     }
   }

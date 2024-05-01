@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import "../Stilovi/Component.scss";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
@@ -15,7 +15,6 @@ const Footer = () => {
       >
         <img src="/slike/logos/decor_vision.svg" alt="DECOR VISION" />
       </Link>
-
       <Link
         to="/uslovi-koriscenja"
         className="uslovi-link"
@@ -23,7 +22,6 @@ const Footer = () => {
       >
         USLOVI KORIŠĆENJA | PRAVILA PRIVATNOSTI
       </Link>
-
       <p className="copyright">© Copyright 2023 DECOR VISION</p>
     </footer>
   );

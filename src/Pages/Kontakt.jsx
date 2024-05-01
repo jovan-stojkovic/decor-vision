@@ -17,6 +17,16 @@ const Kontakt = () => {
 
       <div className="container">
         <KontaktInfo />
+        <h2>VAŠA DEKORATIVNA AVANTURA POČINJE OVDE</h2>
+          <div className="separator"></div>
+          <p className="p-kontakt">
+            Radujemo se razmeni ideja o vašem prostoru! Ako želite da oživite
+            svoj dom ili poslovni prostor uz naše dekorativne materijale, ili
+            imate pitanja u vezi sa našim proizvodima, slobodno nas
+            kontaktirajte.
+          </p>
+
+          <p>Naš tim je tu da vam pruži personalizovane savete.</p>
         <Forma />
       </div>
     </div>

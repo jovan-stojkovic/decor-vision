@@ -1,11 +1,21 @@
-import { useLocation } from "react-router-dom";
-import ProizvodForma from "../Components/ProizvodForma";
 import "../Stilovi/Stranica.scss";
+import { useLocation } from "react-router-dom";
+import Forma from "../Components/Forma";
+import { useState, useEffect } from "react";
 
 const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
+  const [subject, setSubject] = useState("");
   const location = useLocation();
   const { ime, firma, wide, opis, debljine, kvadrat, patern, proizvodjac } =
     location.state.proizvod;
+
+    useEffect(() => {
+      setSubject(`${firma}, ${ime}`);
+    }, [firma, ime]);
+
+    const naslov = "POŠALJI UPIT ZA OVAJ PROIZVOD"
+    
+
 
   return (
     <div className="lapitec proizvod page">
@@ -56,7 +66,7 @@ const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
               </button>
             </div>
           )}
-          <ProizvodForma />
+          <Forma subject={subject} naslov={naslov}/>
         </div>
       </div>
     </div>

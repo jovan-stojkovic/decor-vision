@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import "../Stilovi/Component.scss";
 import NavLinks from "./NavLinks";
-import SidebarLinks from "./SidebarLinks";
+import Sidebar from "./Sidebar";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
 const Navbar = ({ showSidebar, handleClick }) => {
-
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -24,7 +23,7 @@ const Navbar = ({ showSidebar, handleClick }) => {
           />
         </Link>
         <NavLinks />
-        {showSidebar && <SidebarLinks handleClick={handleClick} />}
+        {showSidebar && <Sidebar handleClick={handleClick} />}
         <button onClick={handleClick} className="menu-button">
           <img src="/slike/icons/menu.svg" alt="menu" />
         </button>

@@ -4,7 +4,6 @@ import "../Stilovi/Stranica.scss";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
-
 const Latho = ({
   lathoMilled,
   lathoMilledInfo,
@@ -53,29 +52,41 @@ const Latho = ({
           </div>
         </div>
         <div className="grid-proizvoda latho">
-          {lathoMilled.map(({ ime, kvadrat, strana, patern, tech, index }) => (
-            <div className="proizvod" key={ime}>
-              <Link
-                to={`/proizvodi/Latho/Milled/${ime}`}
-                state={{
-                  proizvod: { ime, kvadrat, strana, patern, tech, index },
-                }}
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              >
-                <div className="img-container">
-                  <img src={kvadrat || noIMG} alt={ime} />
-                </div>
-              </Link>
-              <p className="ime-proizvoda">{ime}</p>
-              <p className="proizvodjac">{lathoMilledInfo.firma}</p>
-            </div>
-          ))}
-          {lathoMove.map(({ ime, patern, wide }) => (
+          {lathoMilled.map(
+            ({ ime, kvadrat, strana, patern, tech, index, firma }) => (
+              <div className="proizvod" key={ime}>
+                <Link
+                  to={`/proizvodi/Latho/Milled/${ime}`}
+                  state={{
+                    proizvod: {
+                      ime,
+                      kvadrat,
+                      strana,
+                      patern,
+                      tech,
+                      index,
+                      firma,
+                    },
+                  }}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  <div className="img-container">
+                    <img src={kvadrat || noIMG} alt={ime} />
+                  </div>
+                </Link>
+                <p className="ime-proizvoda">{ime}</p>
+                <p className="proizvodjac">{lathoMilledInfo.firma}</p>
+              </div>
+            )
+          )}
+          {lathoMove.map(({ ime, patern, wide, firma }) => (
             <div className="proizvod" key={ime}>
               <Link
                 to={`/proizvodi/Latho/Move/${ime}`}
                 state={{
-                  proizvod: { ime, patern, wide },
+                  proizvod: { ime, patern, wide, firma },
                 }}
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               >

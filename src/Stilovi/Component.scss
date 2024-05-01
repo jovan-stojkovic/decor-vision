@@ -345,17 +345,6 @@ footer.dark {
   @include flex-column;
   width: 70%;
 
-  h2 {
-    color: $main-green;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-  }
-
   form {
     margin-bottom: 100px;
 
@@ -397,7 +386,7 @@ footer.dark {
       }
     }
 
-    .saglasnost {
+    #saglasnost {
       text-align: justify;
       font-size: 1rem;
       color: gray;
@@ -486,9 +475,6 @@ footer.dark {
 }
 
 .forma.dark {
-  h2 {
-    color: $main-green;
-  }
   form {
     .inputi {
       background-color: $blue;
@@ -515,156 +501,6 @@ footer.dark {
   }
 
   .success {
-    background-color: $very-dark-blue;
-  }
-}
-
-//////  PROIZVOD FORMA  //////
-.forma.proizvod {
-  @include flex-column;
-  justify-content: space-between;
-  width: 50%;
-  height: 800px;
-
-  h2 {
-    color: $main-green;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
-  form {
-    margin-bottom: 0;
-
-    .inputi {
-      font-size: 1.3rem;
-
-      &#message {
-        height: 235px;
-        padding-top: 10px;
-        word-wrap: break-word;
-        font-family: "Montserrat", sans-serif;
-      }
-    }
-
-    p.error {
-      text-align: right;
-      font-size: 0.6rem;
-      margin: 0;
-      color: red;
-      height: 25px;
-
-      &.check {
-        text-align: left;
-      }
-    }
-
-    .saglasnost {
-      text-align: justify;
-      font-size: 0.9rem;
-      color: gray;
-      margin-bottom: 20px;
-    }
-
-    #checkbox {
-      accent-color: $main-green;
-      margin-right: 15px;
-      cursor: pointer;
-    }
-
-    .checkbox-label {
-      font-weight: 500;
-      cursor: pointer;
-      font-family: "Open Sans", sans-serif;
-    }
-
-    button {
-      all: unset;
-      height: 50px;
-      width: 100%;
-      background-color: $main-green;
-      text-align: center;
-      margin-top: 25px;
-      border-radius: 5px;
-      color: white;
-      font-size: 1.1rem;
-      letter-spacing: 10px;
-      font-family: "Open Sans", sans-serif;
-
-      &:hover {
-        filter: brightness(120%);
-        cursor: pointer;
-      }
-    }
-  }
-
-  .proizvod-success {
-    padding: 50px;
-    @include flex-center;
-    flex-direction: column;
-    gap: 50px;
-    height: 800px;
-    background-color: $light-blue;
-
-    .success-img-cont {
-      @include background;
-      background-image: url("/slike/icons/success.svg");
-      height: 300px;
-      aspect-ratio: 1;
-    }
-
-    .p-success {
-      text-align: center;
-    }
-
-    button {
-      all: unset;
-      height: 50px;
-      width: 80%;
-      background-color: $main-green;
-      text-align: center;
-      margin-top: 25px;
-      border-radius: 5px;
-      color: white;
-      font-size: 1.2rem;
-      letter-spacing: 10px;
-
-      &:hover {
-        filter: brightness(120%);
-        cursor: pointer;
-      }
-    }
-  }
-
-  #pravila-url {
-    all: unset;
-    color: $main-green;
-    font-weight: 500;
-    cursor: pointer;
-  }
-}
-
-.forma.proizvod.dark {
-  form {
-    .inputi {
-      background-color: $blue;
-      border: 2px solid $blue;
-      color: $dark;
-    }
-
-    p.error {
-      color: rgb(255, 131, 131);
-
-      &.check {
-        text-align: left;
-      }
-    }
-
-    .saglasnost {
-      color: $almost-white;
-    }
-  }
-
-  .proizvod-success {
     background-color: $very-dark-blue;
   }
 }
@@ -726,6 +562,7 @@ footer.dark {
       }
     }
   }
+
   footer {
     height: 150px;
     gap: 5px;
@@ -750,12 +587,10 @@ footer.dark {
       margin-bottom: 0;
     }
   }
+
   .forma {
     width: 100%;
-    h2 {
-      font-size: 1.2rem;
-      text-align: center;
-    }
+
     form {
       margin-bottom: 50px;
       .inputi {
@@ -795,50 +630,7 @@ footer.dark {
       }
     }
   }
-  .forma.proizvod {
-    width: 100%;
-    height: auto;
 
-    h2 {
-      font-size: 1.2rem;
-    }
-
-    form {
-      .inputi {
-        font-size: 0.9rem;
-
-        &#message {
-          height: 200px;
-        }
-      }
-
-      p.error {
-        height: 20px;
-      }
-
-      .saglasnost {
-        font-size: 0.8rem;
-      }
-
-      #checkbox {
-        margin-right: 10px;
-      }
-
-      .checkbox-label {
-        font-weight: 400;
-      }
-    }
-
-    .proizvod-success {
-      padding: 20px;
-      gap: 20px;
-      height: 100%;
-
-      .success-img-cont {
-        height: 150px;
-      }
-    }
-  }
   .to-the-top-button {
     display: none;
   }
@@ -897,15 +689,10 @@ footer.dark {
       margin-bottom: 0;
     }
   }
+
   .forma {
     @include flex-column;
     width: 100%;
-
-    h2 {
-      font-size: 1.3rem;
-      text-align: center;
-      margin-bottom: 0px;
-    }
 
     form {
       margin-bottom: 50px;
@@ -944,32 +731,7 @@ footer.dark {
       }
     }
   }
-  .forma.proizvod {
-    width: 100%;
-    height: auto;
 
-    h2 {
-      font-size: 1.2rem;
-    }
-
-    form {
-      .inputi {
-        font-size: 1rem;
-        &#message {
-          height: 200px;
-        }
-      }
-    }
-    .proizvod-success {
-      padding: 20px;
-      gap: 20px;
-      height: 100%;
-
-      .success-img-cont {
-        height: 150px;
-      }
-    }
-  }
   .to-the-top-button {
     bottom: 20px;
     right: 20px;
@@ -1040,12 +802,9 @@ footer.dark {
       font-size: 0.7rem;
     }
   }
+
   .forma {
     width: 90%;
-
-    h2 {
-      font-size: 1.5rem;
-    }
 
     form {
       margin-bottom: 50px;
@@ -1073,30 +832,8 @@ footer.dark {
       }
     }
   }
-  .forma.proizvod {
-    width: 100%;
-    height: auto;
 
-    h2 {
-      font-size: 1.3rem;
-    }
 
-    form {
-      .inputi {
-        font-size: 1.1rem;
-      }
-    }
-
-    .proizvod-success {
-      padding: 30px;
-      gap: 30px;
-      height: 100%;
-
-      .success-img-cont {
-        height: 200px;
-      }
-    }
-  }
   .to-the-top-button {
     bottom: 30px;
     right: 30px;
@@ -1151,10 +888,11 @@ footer.dark {
         display: none;
       }
     }
+    .sidebar {
+      display: none;
+    }
   }
-  .sidebar {
-    display: none;
-  }
+
   footer {
     height: 250px;
 
@@ -1166,12 +904,9 @@ footer.dark {
       }
     }
   }
+
   .forma {
     width: 80%;
-
-    h2 {
-      font-size: 1.7rem;
-    }
 
     form {
       margin-bottom: 60px;
@@ -1195,25 +930,7 @@ footer.dark {
       }
     }
   }
-  .forma.proizvod {
-    h2 {
-      font-size: 1.3rem;
-    }
-    form {
-      .inputi {
-        font-size: 1.1rem;
-      }
-    }
 
-    .proizvod-success {
-      padding: 30px;
-      gap: 30px;
-
-      .success-img-cont {
-        height: 200px;
-      }
-    }
-  }
   .to-the-top-button {
     bottom: 40px;
     right: 40px;
@@ -1283,26 +1000,7 @@ footer.dark {
       }
     }
   }
-  .forma.proizvod {
-    h2 {
-      font-size: 1.4rem;
-    }
 
-    form {
-      .inputi {
-        font-size: 1.2rem;
-      }
-    }
-
-    .proizvod-success {
-      padding: 40px;
-      gap: 40px;
-
-      .success-img-cont {
-        height: 250px;
-      }
-    }
-  }
   .to-the-top-button {
     bottom: 50px;
     right: 50px;
