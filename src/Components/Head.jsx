@@ -10,7 +10,6 @@ const Head = ({ headline, text }) => {
 
     return () => clearTimeout(timer);
   }, []);
-
   return (
     <div className="head">
       <div className={`head-cont ${isVisible ? "visible" : ""}`}>

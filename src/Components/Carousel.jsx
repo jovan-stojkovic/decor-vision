@@ -23,7 +23,7 @@ const Carousel = ({ lapitec, lathoMilled, lathoMove, noIMG }) => {
     <div className="carousel-container">
       <Slider {...settings}>
         {noviNiz.map(({ patern, ime, index }) => (
-          <div key={index}>
+          <div key={ime}>
             <img src={patern || noIMG} alt={ime} />
           </div>
         ))}

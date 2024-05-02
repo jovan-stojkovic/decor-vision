@@ -420,8 +420,10 @@
     .carousel-container {
       width: 90%;
       height: 200px;
-      margin: 0 auto;
+      margin: 20px auto;
       position: relative;
+      border-radius: 5px;
+      box-shadow: $shadow-light;
     }
 
     .slick-arrow {
@@ -1433,10 +1435,6 @@
     }
 
     .container {
-      .carousel {
-        gap: 10px;
-        margin: 50px 0;
-      }
 
       .insta-link-cont {
         .insta-img-container {

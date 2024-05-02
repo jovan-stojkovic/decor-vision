@@ -1,14 +1,14 @@
 import "./Stilovi/Styles.scss";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Pocetna from "./Pages/Pocetna";
-import Proizvodi from "./Pages/Proizvodi";
-import ONama from "./Pages/ONama";
-import BtoB from "./Pages/BtoB";
-import Kontakt from "./Pages/Kontakt";
+import Pocetna from "./Stranice/Pocetna";
+import Proizvodi from "./Stranice/Proizvodi";
+import ONama from "./Stranice/ONama";
+import BtoB from "./Stranice/BtoB";
+import Kontakt from "./Stranice/Kontakt";
 import Footer from "./Components/Footer";
 import BackToTopButton from "./Components/BackToTopButton";
-import UsloviKoriscenja from "./Pages/UsloviKoriscenja";
+import UsloviKoriscenja from "./Stranice/UsloviKoriscenja";
 import Lapitec from "./Kategorije/Lapitec";
 import KameniFurniri from "./Kategorije/KameniFurniri";
 import Latho from "./Kategorije/Latho";
@@ -26,9 +26,9 @@ import {
   lathoMoveInfo,
   tapete,
 } from "./Helpers/Helper";
-import ProizvodLapitec from "./Pages/ProizvodLapitec";
-import ProizvodMilled from "./Pages/ProizvodMilled";
-import ProizvodMove from "./Pages/ProizvodMove";
+import ProizvodLapitec from "./Stranice/ProizvodLapitec";
+import ProizvodMilled from "./Stranice/ProizvodMilled";
+import ProizvodMove from "./Stranice/ProizvodMove";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
