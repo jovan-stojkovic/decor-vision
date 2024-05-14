@@ -1,4 +1,4 @@
-import "../Stilovi/Component.scss";
+import "../Stilovi/Komponente.scss";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";

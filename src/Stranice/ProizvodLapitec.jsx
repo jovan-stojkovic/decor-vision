@@ -1,7 +1,7 @@
 import "../Stilovi/Stranica.scss";
 import { useLocation } from "react-router-dom";
-import Forma from "../Components/Forma";
 import { useState, useEffect } from "react";
+import Forma from "../Komponente/Forma";
 
 const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
   const [subject, setSubject] = useState("");

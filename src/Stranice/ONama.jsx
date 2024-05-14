@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import Head from "../Components/Head";
 import "../Stilovi/Stranica.scss";
-import LinkKontakt from "../Components/LinkKontakt";
 import { useContext } from "react";
+import Head from "../Komponente/Head";
+import LinkKontakt from "../Komponente/LinkKontakt";
 import ThemeContext from "../Helpers/ThemeContext";
 
 const ONama = () => {

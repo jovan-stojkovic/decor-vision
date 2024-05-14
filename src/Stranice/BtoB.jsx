@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-import Head from "../Components/Head";
-import LinkKontakt from "../Components/LinkKontakt";
-import BtoBGrid from "../Components/BtoBGrid";
 import "../Stilovi/Stranica.scss";
 import { useContext } from "react";
+import Head from "../Komponente/Head";
+import LinkKontakt from "../Komponente/LinkKontakt";
+import BtoBGrid from "../Komponente/BtoBGrid";
 import ThemeContext from "../Helpers/ThemeContext";
 
 

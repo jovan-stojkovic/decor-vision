@@ -1,6 +1,6 @@
-import HeadProizvod from "../Components/HeadProizvod";
 import "../Stilovi/Stranica.scss";
 import { useContext } from "react";
+import HeadProizvod from "../Komponente/HeadProizvod";
 import ThemeContext from "../Helpers/ThemeContext";
 
 const UsloviKoriscenja = () => {

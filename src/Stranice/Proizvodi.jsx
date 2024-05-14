@@ -1,7 +1,7 @@
-import ProizvodiGrid from "../Components/ProizvodiGrid";
-import Head from "../Components/Head";
 import "../Stilovi/Stranica.scss";
 import { useContext } from "react";
+import ProizvodiGrid from "../Komponente/ProizvodiGrid";
+import Head from "../Komponente/Head";
 import ThemeContext from "../Helpers/ThemeContext";
 
 const Proizvodi = ({ proizvodi }) => {

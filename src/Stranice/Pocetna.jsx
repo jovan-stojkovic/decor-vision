@@ -1,9 +1,9 @@
-import Slider from "../Components/Slider";
-import Grid from "../Components/Grid";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+import Slider from "../Komponente/Slider";
+import Grid from "../Komponente/Grid";
 import ThemeContext from "../Helpers/ThemeContext";
-import Carousel from "../Components/Carousel";
+import Carousel from "../Komponente/Carousel";
 
 const Pocetna = ({ slides, lapitec, lathoMilled, lathoMove, noIMG }) => {
   const { theme } = useContext(ThemeContext);

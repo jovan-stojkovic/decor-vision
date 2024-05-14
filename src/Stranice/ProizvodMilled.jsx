@@ -1,7 +1,7 @@
-import { useLocation } from "react-router-dom";
-import Forma from "../Components/Forma";
 import "../Stilovi/Stranica.scss";
+import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Forma from "../Komponente/Forma";
 
 const ProizvodMilled = ({
   noIMG,

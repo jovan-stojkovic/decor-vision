@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
 const NavLinks = () => {

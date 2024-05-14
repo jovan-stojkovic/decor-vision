@@ -1,9 +1,9 @@
-import Forma from "../Components/Forma";
-import Head from "../Components/Head";
-import KontaktInfo from "../Components/KontaktInfo";
 import "../Stilovi/Stranica.scss";
-import "../Stilovi/Component.scss";
+import "../Stilovi/Komponente.scss";
 import { useContext } from "react";
+import Forma from "../Komponente/Forma";
+import Head from "../Komponente/Head";
+import KontaktInfo from "../Komponente/KontaktInfo";
 import ThemeContext from "../Helpers/ThemeContext";
 
 

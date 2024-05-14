@@ -1,4 +1,4 @@
-import "../Stilovi/Component.scss";
+import "../Stilovi/Komponente.scss";
 import { useEffect, useState, useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 

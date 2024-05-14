@@ -1,8 +1,8 @@
+import "../Stilovi/Komponente.scss";
 import { Link } from "react-router-dom";
-import "../Stilovi/Component.scss";
+import { useContext } from "react";
 import NavLinks from "./NavLinks";
 import Sidebar from "./Sidebar";
-import { useContext } from "react";
 import ThemeContext from "../Helpers/ThemeContext";
 
 const Navbar = ({ showSidebar, handleClick }) => {

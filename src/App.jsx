@@ -1,19 +1,26 @@
-import "./Stilovi/Styles.scss";
-import Navbar from "./Components/Navbar";
+import "./Stilovi/App.scss";
+
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Pocetna from "./Stranice/Pocetna";
 import Proizvodi from "./Stranice/Proizvodi";
 import ONama from "./Stranice/ONama";
 import BtoB from "./Stranice/BtoB";
 import Kontakt from "./Stranice/Kontakt";
-import Footer from "./Components/Footer";
-import BackToTopButton from "./Components/BackToTopButton";
 import UsloviKoriscenja from "./Stranice/UsloviKoriscenja";
+
+import Navbar from "./Komponente/Navbar";
+import Footer from "./Komponente/Footer";
+import BackToTopButton from "./Komponente/BackToTopButton";
 import Lapitec from "./Kategorije/Lapitec";
 import KameniFurniri from "./Kategorije/KameniFurniri";
 import Latho from "./Kategorije/Latho";
 import Tapete from "./Kategorije/Tapete";
-import { useState, useEffect } from "react";
+import ProizvodLapitec from "./Stranice/ProizvodLapitec";
+import ProizvodMove from "./Stranice/ProizvodMove";
+import ProizvodMilled from "./Stranice/ProizvodMilled";
+
 import ThemeContext from "./Helpers/ThemeContext";
 import {
   noIMG,
@@ -26,25 +33,20 @@ import {
   lathoMoveInfo,
   tapete,
 } from "./Helpers/Helper";
-import ProizvodLapitec from "./Stranice/ProizvodLapitec";
-import ProizvodMilled from "./Stranice/ProizvodMilled";
-import ProizvodMove from "./Stranice/ProizvodMove";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedIMG, setSelectedIMG] = useState(null);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const [showSidebar, setShowSidebar] = useState(false);
-
   const handleClick = () => {
     setShowSidebar(!showSidebar);
   };
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedIMG, setSelectedIMG] = useState(null);
 
   const openIMG = (img) => {
     setSelectedIMG(img);
