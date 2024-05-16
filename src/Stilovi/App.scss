@@ -64,7 +64,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   letter-spacing: 5px;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   margin-top: 100px;
   color: $dark;
   @include text-background;
@@ -73,21 +73,21 @@ h1 {
 h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.2rem;
   letter-spacing: 5px;
   color: $dark;
 
   &.naslov-upita {
     color: $main-green;
     margin: 20px 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 3px;
   text-align: center;
   @include text-background;
@@ -95,20 +95,20 @@ h3 {
 
 h5 {
   color: $almost-white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 
 h6 {
   color: $almost-white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   line-height: 2rem;
   color: $dark;
@@ -189,7 +189,7 @@ main.dark {
   }
 
   p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     letter-spacing: 1.5px;
     line-height: 1.5rem;
     margin-bottom: 20px;
@@ -268,13 +268,13 @@ main.dark {
 
   h1 {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 90px;
   }
 
   h2 {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1rem;
     &.naslov-upita {
       font-size: 1.4rem;
     }
@@ -282,11 +282,11 @@ main.dark {
 
   h3 {
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   h5 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 
@@ -296,7 +296,7 @@ main.dark {
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 35px;
   }
 
@@ -317,11 +317,11 @@ main.dark {
     height: 90px;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     font-weight: 400;
     &.naslov-upita {
       font-size: 1.2rem;
@@ -329,18 +329,17 @@ main.dark {
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   h5 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 400;
   }
 
   h6 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
-
   .arrows {
     bottom: 25px;
   }
@@ -354,20 +353,20 @@ main.dark {
 //1201px - 1600px   5/6
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     font-weight: 400;
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   h5 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 400;
   }
 }

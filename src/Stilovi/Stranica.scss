@@ -74,7 +74,7 @@
       .link-kontakt {
         all: unset;
         color: $main-green;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         letter-spacing: 2px;
         text-align: center;
         max-width: 250px;
@@ -109,7 +109,7 @@
         }
 
         p {
-          font-size: 1.4rem;
+          font-size: 1rem;
           text-align: justify;
           margin-bottom: 0;
 
@@ -122,6 +122,7 @@
           @include background;
           width: 100%;
           height: 55%;
+          border-radius: 5px;
         }
         &.right {
           h2 {
@@ -136,8 +137,8 @@
 
     .kategorija-info {
       text-align: justify;
-      font-size: 1.8rem;
-      line-height: 3rem;
+      font-size: 1rem;
+      line-height: 2.2rem;
       color: $dark;
       margin: 100px 0;
     }
@@ -181,14 +182,14 @@
         p.ime-proizvoda {
           text-align: center;
           margin: 15px 0;
-          font-size: 1.3rem;
+          font-size: 0.9rem;
         }
 
         p.proizvodjac {
           margin: 0;
           text-align: center;
-          font-size: 1rem;
-          margin-top: -15px;
+          font-size: 0.7rem;
+          margin-top: -25px;
           color: gray;
           margin-bottom: 20px;
         }
@@ -216,6 +217,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 5px;
+            box-shadow: $shadow-light;
           }
         }
 
@@ -233,6 +236,8 @@
               width: 100%;
               height: 100%;
               object-fit: cover;
+              border-radius: 5px;
+              box-shadow: $shadow-light;
             }
           }
         }
@@ -277,6 +282,7 @@
           object-fit: cover;
         }
       }
+
       .forma {
         width: 50%;
         height: 800px;
@@ -345,7 +351,7 @@
     }
 
     .key {
-      font-size: 1.4rem;
+      font-size: 1em;
 
       span {
         font-weight: 600;
@@ -407,7 +413,7 @@
     @include flex-center;
 
     p.caption {
-      font-size: 2rem;
+      font-size: 1.3rem;
       color: $almost-white;
       padding: 25px 45px;
       background-color: $text-background;
@@ -482,7 +488,7 @@
         margin: 0 auto;
         cursor: pointer;
         color: $main-green;
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
       }
@@ -583,7 +589,7 @@
 
         .proizvod-naziv {
           text-align: center;
-          font-size: 1.5rem;
+          font-size: 1rem;
           margin: 10px 0;
           font-weight: 500;
         }
@@ -731,7 +737,7 @@
 
     h2 {
       color: $main-green;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       font-weight: 400;
       text-align: center;
     }
@@ -814,6 +820,13 @@
     background-image: url("/slike/proizvodi/Latho/Move/Move Loft/pann-move-loft-iso.jpg");
   }
 
+  .container {
+    .kategorija-info {
+      margin: 30px 0;
+      font-size: 1rem;
+    }
+  }
+
   #move-img-container-l {
     background-image: url("/slike/proizvodi/Latho/Milled/Capri/fresati-capri-brown-head-bnr-1024x640.jpg");
     height: 70%;
@@ -849,6 +862,13 @@
     background-image: url("/slike/proizvodi/Kameni furniri/whatsapp-bild-2023-01-17-um-132508-9252.webp");
   }
 
+  .container {
+    .kategorija-info {
+      margin: 30px 0;
+      font-size: 1rem;
+    }
+  }
+
   a {
     all: unset;
     color: $main-green;
@@ -868,7 +888,7 @@
 .page.tapete {
   .head {
     height: 300px;
-    background-image: url("/slike/proizvodi/Tapete/Decoprint/Essentials.jpg");
+    background-image: url("/slike/proizvodi/Tapete/Decoprint/Reflect.jpg");
     background-position: top;
   }
 
@@ -903,11 +923,14 @@
       .grid-img-container {
         height: 550px;
         cursor: pointer;
+        
 
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-radius: 5px;
+          box-shadow: $shadow-light;
         }
       }
 
@@ -919,6 +942,8 @@
         .grid-img-container {
           width: 100%;
           height: 250px;
+          border-radius: 5px;
+          box-shadow: $shadow-light;
 
           img {
             width: 100%;
@@ -962,7 +987,7 @@
         margin: 50px 0;
 
         .link-kontakt {
-          font-size: 1rem;
+          font-size: 0.7rem;
         }
       }
 
@@ -1005,11 +1030,11 @@
 
           p.ime-proizvoda {
             margin: 10px 0;
-            font-size: 1rem;
+            font-size: 0.8rem;
           }
 
           p.proizvodjac {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             margin-bottom: 10px;
           }
         }
@@ -1109,7 +1134,7 @@
         }
 
         a {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           font-weight: 400;
         }
       }
@@ -1289,7 +1314,7 @@
         margin: 50px 0;
 
         .link-kontakt {
-          font-size: 1.2rem;
+          font-size: 0.9rem;
         }
       }
 
@@ -1332,11 +1357,11 @@
 
           p.ime-proizvoda {
             margin: 12px 0;
-            font-size: 1rem;
+            font-size: 0.8rem;
           }
 
           p.proizvodjac {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             margin-bottom: 15px;
           }
         }
@@ -1622,7 +1647,7 @@
         margin: 50px 0;
 
         .link-kontakt {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
         }
       }
 
@@ -1662,12 +1687,12 @@
           width: 30%;
 
           p.ime-proizvoda {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
           }
 
           p.proizvodjac {
-            font-size: 0.9rem;
-            margin-top: -25px;
+            font-size: 0.7rem;
+            margin-top: -30px;
           }
         }
       }
@@ -1773,7 +1798,7 @@
         }
 
         a {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
 
@@ -1794,7 +1819,7 @@
           margin-bottom: 30px;
 
           .proizvod-naziv {
-            font-size: 1.2rem;
+            font-size: 1rem;
           }
         }
       }
@@ -1934,7 +1959,7 @@
           padding: 15px;
 
           p {
-            font-size: 1.2rem;
+            font-size: 1rem;
 
             &.desc {
               margin-bottom: 10px;
@@ -1948,7 +1973,7 @@
       }
 
       .kategorija-info {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
         margin: 60px 0;
       }
 
@@ -1959,11 +1984,11 @@
           width: 31%;
 
           p.ime-proizvoda {
-            font-size: 1.2rem;
+            font-size: 1rem;
           }
 
           p.proizvodjac {
-            margin-top: -20px;
+            margin-top: -30px;
           }
         }
       }
@@ -2112,13 +2137,13 @@
       .potkategorije {
         .side {
           p {
-            font-size: 1.3rem;
+            font-size: 1rem;
           }
         }
       }
 
       .kategorija-info {
-        font-size: 1.7rem;
+        font-size: 1rem;
         margin: 70px 0;
       }
 
@@ -2153,7 +2178,7 @@
 
     #slide {
       p.caption {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
       }
     }
 

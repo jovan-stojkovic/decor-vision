@@ -53,6 +53,9 @@ const Forma = ({ naslov, subject }) => {
         <>
           <h2 className="naslov-upita">{naslov}</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="soon">
+              <p>USKORO!</p>
+            </div>
             <p className="error">{errors.fullName?.message}</p>
             <input
               type="text"

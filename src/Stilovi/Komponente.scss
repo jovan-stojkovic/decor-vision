@@ -317,6 +317,7 @@ footer {
     cursor: pointer;
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
   }
 
   p.copyright {
@@ -347,6 +348,25 @@ footer.dark {
 
   form {
     margin-bottom: 100px;
+    position: relative;
+
+    .soon {
+      height: 102%;
+      width: 102%;
+      left: -1%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(3px);
+      z-index: 2;
+      @include flex-center;
+      box-shadow: $shadow-strong;
+      p {
+        font-size: 70px;
+        font-weight: 900;
+        color: $main-green;
+      }
+    }
 
     .inputi {
       width: 100%;
@@ -849,7 +869,6 @@ footer.dark {
   nav {
     .nav-container {
       width: 100vw;
-      height: 90px;
       img {
         height: 28px;
       }
@@ -943,30 +962,7 @@ footer.dark {
 
 //1201px - 1600px   5/6
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-  nav {
-    .nav-container {
-      img {
-        height: 29px;
-      }
 
-      .nav-links {
-        gap: 48px;
-
-        .nav-link {
-          font-size: 0.95rem;
-        }
-
-        #insta-link {
-          height: 1.35rem;
-          width: 1.35rem;
-        }
-      }
-
-      .x-button {
-        display: none;
-      }
-    }
-  }
   .sidebar {
     display: none;
   }
