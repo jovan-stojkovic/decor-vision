@@ -17,9 +17,11 @@ import Lapitec from "./Kategorije/Lapitec";
 import KameniFurniri from "./Kategorije/KameniFurniri";
 import Latho from "./Kategorije/Latho";
 import Tapete from "./Kategorije/Tapete";
+import Kvarc from "./Kategorije/Kvarc";
 import ProizvodLapitec from "./Stranice/ProizvodLapitec";
 import ProizvodMove from "./Stranice/ProizvodMove";
 import ProizvodMilled from "./Stranice/ProizvodMilled";
+import ProizvodKvarc from "./Stranice/ProizvodKvarc";
 
 import ThemeContext from "./Helpers/ThemeContext";
 import {
@@ -32,6 +34,7 @@ import {
   lathoMove,
   lathoMoveInfo,
   tapete,
+  kvarc,
 } from "./Helpers/Helper";
 
 const App = () => {
@@ -167,6 +170,24 @@ const App = () => {
               <Route
                 path="/proizvodi/Tapete"
                 element={<Tapete tapete={tapete} />}
+              />
+
+              <Route
+                path="/proizvodi/Kvarc"
+                element={<Kvarc kvarc={kvarc} noIMG={noIMG} />}
+              />
+
+              <Route
+                path="/proizvodi/kvarc/:ime"
+                element={
+                  <ProizvodKvarc
+                    noIMG={noIMG}
+                    isOpen={isOpen}
+                    openIMG={openIMG}
+                    selectedIMG={selectedIMG}
+                    closeIMG={closeIMG}
+                  />
+                }
               />
             </Routes>
           </div>

@@ -8,7 +8,7 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  @include flex-center;
+  @include flex();
   @include navbar;
   z-index: 6;
 
@@ -17,7 +17,7 @@ nav {
     height: 100px;
     margin: 0 auto;
     z-index: 5;
-    @include flex-space;
+    @include flex($justify: space-between);
     position: relative;
 
     img {
@@ -67,7 +67,7 @@ nav {
       }
 
       .proizvodi-div {
-        @include flex-center;
+        @include flex();
         position: relative;
 
         .hidden-nav-div {
@@ -152,7 +152,7 @@ nav {
       all: unset;
       height: 1.4rem;
       width: 1.4rem;
-      @include flex-center;
+      @include flex();
       cursor: pointer;
       position: absolute;
       right: 10px;
@@ -163,7 +163,7 @@ nav {
       all: unset;
       height: 1.4rem;
       width: 1.4rem;
-      @include flex-center;
+      @include flex();
       cursor: pointer;
       position: absolute;
       right: 10px;
@@ -294,7 +294,7 @@ footer {
   width: 100%;
   background-color: $light-blue;
   height: 350px;
-  @include flex-center;
+  @include flex();
   flex-direction: column;
   gap: 20px;
 
@@ -303,7 +303,7 @@ footer {
     height: 100px;
     margin-bottom: 20px;
     transition: 0.2s;
-    @include flex-center;
+    @include flex();
 
     img {
       height: 40px;
@@ -343,7 +343,7 @@ footer.dark {
 
 //////  KONTAKT FORMA  //////
 .forma {
-  @include flex-column;
+  @include flex($direction: column);
   width: 70%;
 
   form {
@@ -359,7 +359,7 @@ footer.dark {
       border-radius: 20px;
       backdrop-filter: blur(3px);
       z-index: 2;
-      @include flex-center;
+      @include flex();
       box-shadow: $shadow-strong;
       p {
         font-size: 70px;
@@ -448,7 +448,7 @@ footer.dark {
 
   .success {
     padding: 50px;
-    @include flex-center;
+    @include flex();
     flex-direction: column;
     gap: 50px;
     height: 100%;
@@ -538,7 +538,7 @@ footer.dark {
   background-color: transparent;
   z-index: 5;
   cursor: pointer;
-  @include flex-center;
+  @include flex();
   img {
     height: 50px;
   }
@@ -711,7 +711,7 @@ footer.dark {
   }
 
   .forma {
-    @include flex-column;
+    @include flex($direction: column);
     width: 100%;
 
     form {
@@ -962,7 +962,6 @@ footer.dark {
 
 //1201px - 1600px   5/6
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-
   .sidebar {
     display: none;
   }

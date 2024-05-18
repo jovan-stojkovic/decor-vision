@@ -20,15 +20,11 @@ $very-dark-blue: hsl(207, 26%, 17%);
   background-position: center;
   background-size: cover;
 }
-@mixin flex-center {
+@mixin flex($align: center, $justify: center, $direction: row) {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@mixin flex-space {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
 }
 @mixin text-background {
   padding: 5px 25px;
@@ -36,17 +32,11 @@ $very-dark-blue: hsl(207, 26%, 17%);
   border-radius: 5px;
   color: $almost-white;
 }
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 @mixin navbar {
   background-color: $navbar-background;
   backdrop-filter: blur(7px);
   box-shadow: $shadow-white;
 }
-
 //UNIVERZALNI STILOVI
 * {
   box-sizing: border-box;

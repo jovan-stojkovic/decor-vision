@@ -85,7 +85,7 @@ const Lapitec = ({ lapitec, noIMG }) => {
                     }
                   >
                     <div className="img-container">
-                      <img src={kvadrat || noIMG} alt={ime} />
+                      <img src={patern || noIMG} alt={ime} />
                     </div>
                   </Link>
                   <p className="ime-proizvoda">{ime}</p>

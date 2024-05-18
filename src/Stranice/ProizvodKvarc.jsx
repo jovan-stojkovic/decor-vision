@@ -3,33 +3,39 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Forma from "../Komponente/Forma";
 
-const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
+const ProizvodKvarc = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
   const [subject, setSubject] = useState("");
   const location = useLocation();
-  const { ime, firma, wide, opis, debljine, kvadrat, patern, proizvodjac } =
+  const { ime, slikaJedan, slikaDva, slikaTri, slikaCetiri } =
     location.state.proizvod;
 
   useEffect(() => {
-    setSubject(`${firma}, ${ime}`);
-  }, [firma, ime]);
+    setSubject(ime);
+  }, [ime]);
 
   const naslov = "POŠALJI UPIT ZA OVAJ PROIZVOD";
 
   return (
-    <div className="lapitec proizvod page">
+    <div className="kvarc proizvod page">
       <div className="proizvod-head">
-        <img src={patern} />
         <div className="proizvod-naslov">
           <h5>{ime}</h5>
-          <h6>{firma}</h6>
         </div>
       </div>
 
       <div className="container">
         <div className="text">
-          <p className="opis">{opis}</p>
+          <p className="opis">
+            Kvarc je sve zastuljeniji zbog svoje izdržljivosti, estetike i
+            praktičnosti. Kvarc se sastoji od prirodnog minerala kvarca koji se
+            kombinuje sa polimerima i pigmentima kako bi se stvorila čvrsta i
+            otporna površina.
+          </p>
           <p className="key">
-            Dostupne debljine: <span>{debljine}</span>
+            Dimenzije ploča: <span>320cm x 160cm i 305cm x 152cm</span>
+          </p>
+          <p className="key">
+            Debljine ploča: <span>1,5cm, 2cm i 3cm</span>
           </p>
         </div>
 
@@ -37,22 +43,22 @@ const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
           <div className="levo">
             <div
               className="grid-img-container one"
-              onClick={() => openIMG(patern || noIMG)}
+              onClick={() => openIMG(slikaJedan || noIMG)}
             >
-              <img src={patern || noIMG} alt={`patern ${ime}`} />
+              <img src={slikaJedan || noIMG} alt={`slikaJedan ${ime}`} />
             </div>
             <div className="levo-dole">
               <div
                 className="grid-img-container two"
-                onClick={() => openIMG(kvadrat || noIMG)}
+                onClick={() => openIMG(slikaDva || noIMG)}
               >
-                <img src={kvadrat || noIMG} alt={`kvadrat ${ime}`} />
+                <img src={slikaDva || noIMG} alt={`slikaDva ${ime}`} />
               </div>
               <div
                 className="grid-img-container two"
-                onClick={() => openIMG(wide || noIMG)}
+                onClick={() => openIMG(slikaTri || noIMG)}
               >
-                <img src={wide || noIMG} alt={`wide ${ime}`} />
+                <img src={slikaTri || noIMG} alt={`slikaTri ${ime}`} />
               </div>
             </div>
           </div>
@@ -71,4 +77,4 @@ const ProizvodLapitec = ({ noIMG, isOpen, openIMG, selectedIMG, closeIMG }) => {
   );
 };
 
-export default ProizvodLapitec;
+export default ProizvodKvarc;

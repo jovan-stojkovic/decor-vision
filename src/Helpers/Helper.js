@@ -682,3 +682,156 @@ export const tapete = [
     url: "https://www.decoprintwallcoverings.com/en/products/essentials",
   },
 ];
+
+export const kvarc = [
+  {
+    ime: "Cordelia",
+    slikaJedan: "/slike/proizvodi/Kvarc/2001 - Cordelia 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2001 - Cordelia 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/2001 - Cordelia 3.jpg",
+  },
+  {
+    ime: "Caramela",
+    slikaJedan: "/slike/proizvodi/Kvarc/2005 - Caramela 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2005 - Caramela 2.jpg",
+  },
+  {
+    ime: "Nidia",
+    slikaJedan: "/slike/proizvodi/Kvarc/2015 - Nidia 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2015 - Nidia 2.jpg",
+  },
+  {
+    ime: "Admira",
+    slikaJedan: "/slike/proizvodi/Kvarc/2101 - Admira 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2101 - Admira 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/2101 - Admira 3.jpg",
+  },
+  {
+    ime: "Visendra",
+    slikaJedan: "/slike/proizvodi/Kvarc/2102 - Visendra 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2102 - Visendra 2.jpg",
+  },
+  {
+    ime: "Sima",
+    slikaJedan: "/slike/proizvodi/Kvarc/2103 - Sima 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2103 - Sima 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/2103 - Sima 3.jpg",
+  },
+  {
+    ime: "Tornado",
+    slikaJedan: "/slike/proizvodi/Kvarc/2104 - Tornado 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2104 - Tornado 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/2104 - Tornado 3.jpg",
+  },
+  {
+    ime: "Aria",
+    slikaJedan: "/slike/proizvodi/Kvarc/2105 - Aria 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2105 - Aria 2.jpg",
+  },
+  {
+    ime: "Rugiada",
+    slikaJedan: "/slike/proizvodi/Kvarc/2209 - Rugiada 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2209 - Rugiada 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/2209 - Rugiada 3.jpg",
+  },
+  {
+    ime: "Sadira",
+    slikaJedan: "/slike/proizvodi/Kvarc/2210 - Sadira 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2210 - Sadira 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/2210 - Sadira 3.jpg",
+  },
+  {
+    ime: "Venera",
+    slikaJedan: "/slike/proizvodi/Kvarc/2406 - Venera 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/2406 - Venera 2.jpg",
+  },
+  {
+    ime: "Aymina",
+    slikaJedan: "/slike/proizvodi/Kvarc/3001 - Aymina 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/3001 - Aymina 2.jpg",
+  },
+  {
+    ime: "Milena",
+    slikaJedan: "/slike/proizvodi/Kvarc/3301 - Milena 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/3301 - Milena 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/3301 - Milena 3.jpg",
+    slikaCetiri: "/slike/proizvodi/Kvarc/3301 - Milena 4.jpg",
+  },
+  {
+    ime: "Felisia",
+    slikaJedan: "/slike/proizvodi/Kvarc/3302 - Felisia 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/3302 - Felisia 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/3302 - Felisia 3.jpg",
+  },
+  {
+    ime: "Santa",
+    slikaJedan: "/slike/proizvodi/Kvarc/3303 - Santa 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/3303 - Santa 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/3303 - Santa 3.jpg",
+    slikaCetiri: "/slike/proizvodi/Kvarc/3303 - Santa 4.jpg",
+  },
+  {
+    ime: "Daisy",
+    slikaJedan: "/slike/proizvodi/Kvarc/4001 - Daisy 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/4001 - Daisy 2.jpg",
+  },
+  {
+    ime: "Elatris",
+    slikaJedan: "/slike/proizvodi/Kvarc/4004 - Elatris 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/4004 - Elatris 2.jpg",
+  },
+  {
+    ime: "Olivia",
+    slikaJedan: "/slike/proizvodi/Kvarc/4405 - Olivia 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/4405 - Olivia 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/4405 - Olivia 3.jpg",
+  },
+  {
+    ime: "Lusetia White",
+    slikaJedan: "/slike/proizvodi/Kvarc/5602 - Lusetia White 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/5602 - Lusetia White 2.jpg",
+  },
+  {
+    ime: "Lusida Blacklia",
+    slikaJedan: "/slike/proizvodi/Kvarc/5701 - Lusida Black 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/5701 - Lusida Black 2.jpg",
+  },
+  {
+    ime: "Lusida Grey",
+    slikaJedan: "/slike/proizvodi/Kvarc/5702 - Lusida Grey 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/5702 - Lusida Grey 2.jpg",
+  },
+  {
+    ime: "Sierra White",
+    slikaJedan: "/slike/proizvodi/Kvarc/6102 - Sierra White 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/6102 - Sierra White 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/6102 - Sierra White 3.jpg",
+  },
+  {
+    ime: "Calacatta Aldeon",
+    slikaJedan: "/slike/proizvodi/Kvarc/7134 - Calacatta Aldeon 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/7134 - Calacatta Aldeon 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/7134 - Calacatta Aldeon 3.jpg",
+    slikaCetiri: "/slike/proizvodi/Kvarc/7134 - Calacatta Aldeon 4.jpg",
+  },
+  {
+    ime: "Bolera ",
+    slikaJedan: "/slike/proizvodi/Kvarc/7268 - Bolera 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/7268 - Bolera 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/7268 - Bolera 3.jpg",
+    slikaCetiri: "/slike/proizvodi/Kvarc/7268 - Bolera 4.jpg",
+  },
+  {
+    ime: "Calacatta Clara",
+    slikaJedan: "/slike/proizvodi/Kvarc/7352 - Calacatta Clara 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/7352 - Calacatta Clara 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/7352 - Calacatta Clara 3.jpg",
+  },
+  {
+    ime: "Piana",
+    slikaJedan: "/slike/proizvodi/Kvarc/7835 - Piana 1.jpg",
+    slikaDva: "/slike/proizvodi/Kvarc/7835 - Piana 2.jpg",
+    slikaTri: "/slike/proizvodi/Kvarc/7835 - Piana 3.jpg",
+    slikaCetiri: "/slike/proizvodi/Kvarc/7835 - Piana 4.jpg",
+  },
+];

@@ -68,7 +68,7 @@
     }
 
     .dole {
-      @include flex-column;
+      @include flex($direction: column);
       margin: 100px 0;
 
       .link-kontakt {
@@ -93,12 +93,12 @@
     }
 
     .potkategorije {
-      @include flex-space;
+      @include flex($justify: space-between);
 
       .side {
         width: 48%;
         height: 800px;
-        @include flex-space;
+        @include flex($justify: space-between);
         flex-direction: column;
         box-shadow: $shadow-light;
         padding: 20px;
@@ -197,14 +197,14 @@
     }
 
     .proizvod-grid {
-      @include flex-space;
+      @include flex($justify: space-between);
       width: 100%;
       gap: 30px;
       height: 800px;
       margin: 100px 0;
 
       .levo {
-        @include flex-column;
+        @include flex($direction: column);
         justify-content: space-between;
         gap: 30px;
         width: 50%;
@@ -223,7 +223,7 @@
         }
 
         .levo-dole {
-          @include flex-space;
+          @include flex($justify: space-between);
           gap: 30px;
           width: 100%;
           height: 250px;
@@ -273,7 +273,7 @@
         cursor: pointer;
         height: 30px;
         width: 30px;
-        @include flex-center;
+        @include flex();
         border-radius: 100px;
 
         img {
@@ -286,7 +286,7 @@
       .forma {
         width: 50%;
         height: 800px;
-        @include flex-column;
+        @include flex($direction: column);
         justify-content: space-between;
         form {
           margin-bottom: 0;
@@ -336,7 +336,7 @@
       width: 500px;
       height: 140px;
       text-align: center;
-      @include flex-center;
+      @include flex();
       flex-direction: column;
       background-color: $text-background;
       padding: 10px;
@@ -410,7 +410,7 @@
     height: 500px;
     background-size: cover;
     background-position: center;
-    @include flex-center;
+    @include flex();
 
     p.caption {
       font-size: 1.3rem;
@@ -472,7 +472,7 @@
     .insta-link-cont {
       margin: 50px auto;
       width: 200px;
-      @include flex-center;
+      @include flex();
       flex-direction: column;
 
       .insta-img-container {
@@ -556,7 +556,7 @@
   }
   .container {
     margin: 0 auto;
-    @include flex-center;
+    @include flex();
 
     .proizvodi-grid {
       display: grid;
@@ -688,7 +688,7 @@
   }
   .container {
     margin: 0 auto;
-    @include flex-center;
+    @include flex();
     flex-direction: column;
 
     .kontakt-info {
@@ -704,7 +704,7 @@
 
       .segment {
         flex-direction: column;
-        @include flex-space;
+        @include flex();
         gap: 40px;
 
         .kontakt-logo {
@@ -799,7 +799,7 @@
 .page.lapitec {
   .head {
     height: 300px;
-    background-image: url("/slike/proizvodi/Lapitec/Essenza/7 nero assoluto/Nero-Assoluto_Velluto.jpg");
+    background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/Grigio Cemento_Satin.jpg");
   }
 
   .img-container {
@@ -904,17 +904,70 @@
   }
 }
 
+//////  KVARC STRANICA  //////
+.page.kvarc {
+  .head {
+    height: 300px;
+    background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/Grigio Cemento_Satin.jpg");
+  }
+
+  .container {
+    .kvarc-info {
+      font-size: 1rem;
+      text-align: center;
+      margin: 50px;
+    }
+    .ikonice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .ikonica-cont {
+        @include flex($direction: column);
+        padding: 20px;
+
+        .ikonica-img-cont {
+          height: 50px;
+          width: 50px;
+          @include background;
+          margin-bottom: 20px;
+
+          &.one {
+            background-image: url("/slike/icons/paint-bucket.png");
+          }
+
+          &.two {
+            background-image: url("/slike/icons/scissors.png");
+          }
+          &.three {
+            background-image: url("/slike/icons/thread.png");
+          }
+          &.four {
+            background-image: url("/slike/icons/measuring-tape.svg");
+          }
+        }
+        .info-ikonice {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+        p.kvarc {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
 //////  MOVE PROIZVOD STRANICA  //////
 .proizvod.page.move {
   .proizvod-grid {
-    @include flex-space;
+    @include flex();
     width: 100%;
     gap: 30px;
     height: 800px;
     margin: 100px 0;
 
     .levo {
-      @include flex-column;
+      @include flex($direction: column);
       justify-content: space-between;
       gap: 30px;
       width: 50%;
@@ -923,7 +976,6 @@
       .grid-img-container {
         height: 550px;
         cursor: pointer;
-        
 
         img {
           width: 100%;
