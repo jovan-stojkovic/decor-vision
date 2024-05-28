@@ -61,6 +61,16 @@ const Sidebar = ({ handleClick }) => {
           >
             TAPETE
           </NavLink>
+          <NavLink
+            className="sidebar-kategorija sidebar-nav-link"
+            to="/proizvodi/Kvarc"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              handleClick();
+            }}
+          >
+            KVARC
+          </NavLink>
         </ul>
         <NavLink
           className="sidebar-nav-link"
