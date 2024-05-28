@@ -1,6 +1,6 @@
 const KontaktInfo = () => {
 
-  const broj = '011 000 00 00'
+  const broj = '069 1000501'
   const email = "office@decorvision.rs"
   const adresa = "Kralja Milana 22, 11 000 Beograd"
 
