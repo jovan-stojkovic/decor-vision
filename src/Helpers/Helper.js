@@ -37,6 +37,10 @@ export const proizvodi = [
     url: "/slike/proizvodi/Tapete/Decoprint/Shades of colour.jpg",
     text: "Tapete",
   },
+  {
+    url: "/slike/proizvodi/Kvarc/2001 - Cordelia 1.jpg",
+    text: "Kvarc",
+  },
 ];
 
 export const lapitec = [

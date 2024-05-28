@@ -570,7 +570,7 @@
 
     .proizvodi-grid {
       display: grid;
-      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 80px;
       width: 1200px;
       height: 1200px;
