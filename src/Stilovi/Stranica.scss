@@ -92,6 +92,14 @@
       }
     }
 
+    ul {
+      margin-left: 75px;
+
+      li::marker {
+        color: $main-green;
+      }
+    }
+
     .potkategorije {
       @include flex($justify: space-between);
 
@@ -821,6 +829,26 @@
       background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/grigio-cemento-zoom-1.jpg");
     }
   }
+
+  a {
+    all: unset;
+    color: $main-green;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .lapitec-links {
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-bottom: 20px;
+    }
+  }
+
+  p.bold {
+    font-weight: 500;
+  }
 }
 
 //////  LATHO STRANICA  //////
@@ -890,13 +918,6 @@
     color: $main-green;
     font-weight: 500;
     cursor: pointer;
-  }
-
-  ul {
-    margin-left: 75px;
-    li::marker {
-      color: $main-green;
-    }
   }
 }
 

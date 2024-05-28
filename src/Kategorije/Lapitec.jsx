@@ -14,10 +14,62 @@ const Lapitec = ({ lapitec, noIMG }) => {
 
       <div className="container">
         <p className="kategorija-info lapitec">
-          Lapitec kolekcije prate najnovije trendove dizajna i proizvode se
-          korišćenjem najsavremenijih tehnologija. Sa izuzetnim dizajnom i
-          dekorativnim potencijalom, ove kolekcije nude zadivljujuću estetiku,
-          stvarajući dinamičan moderan izgled i generišu toplinu i emocije.
+          Sa izuzetnim zadovoljstvom Vam predstavljamo{" "}
+          <Link target="_blank" to="https://www.lapitec.com/">
+            Lapitec
+          </Link>
+          , inovativni materijal proizveden u velikim pločama od strane našeg
+          italijanskog partnera, koji se može koristiti i u zatvorenom i na
+          otvorenom za različite namene.
+        </p>
+        <p className="kategorija-info lapitec">
+          Veliki broj različitih dezena i završnih obrada površine, vrhunski
+          italijanski dizajn i jedinstven kvalitet koji će vas osvojiti{" "}
+          <Link
+            target="_blank"
+            to="https://www.lapitec.com/ContentsFiles/Collections%20Brochure(0).pdf"
+          >
+            (Link)
+          </Link>.
+        </p>
+        <p>
+          <ul>
+            <li>
+              Jedini sintrovani kamen na svetu sertifikovan od Evropske
+              komisije;
+            </li>
+            <li>
+              100% prirodan i proizveden uz poštovanje najviših ekoloških
+              standarda;
+            </li>
+            <li>Napravljen od najčistijih minerala na Zemlji;</li>
+            <li>Higijenski i antibakterijski;</li>
+            <li>Lako se čisti – neproziran i otporan na mrlje;</li>
+            <li>Otporan na grebanje;</li>
+            <li>Otporan na toplotu; </li>
+            <li>UV stabilan – ne menja boju pod uticajem sunčeve svetlosti;</li>
+            <li>Otporan na hemikalije; </li>
+            <li>Otporan na niske temperature;</li>
+            <li>Silica free;</li>
+            <li>Garancija od čak 25 godina!</li>
+          </ul>
+        </p>
+
+        <div className="lapitec-links">
+          <Link
+            target="_blank"
+            to="https://www.lapitec.com/en/technical-assistance"
+          >
+            Tehnička podrška
+          </Link>
+          <Link target="_blank" to="https://www.lapitec.com/en/catalogues">
+            Katalozi
+          </Link>
+        </div>
+
+        <p className="kategorija-info bold">
+          Dođite do nas da uživo pogledate ovaj izuzetan materijal i proverite
+          zašto nema konkurenciju!
         </p>
 
         <div className="potkategorije">
