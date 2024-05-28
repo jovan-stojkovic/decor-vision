@@ -92,14 +92,6 @@
       }
     }
 
-    ul {
-      margin-left: 75px;
-
-      li::marker {
-        color: $main-green;
-      }
-    }
-
     .potkategorije {
       @include flex($justify: space-between);
 
@@ -830,6 +822,14 @@
     }
   }
 
+  ul {
+    margin-left: 75px;
+
+    li::marker {
+      color: $main-green;
+    }
+  }
+
   a {
     all: unset;
     color: $main-green;
@@ -910,6 +910,14 @@
     .kategorija-info {
       margin: 30px 0;
       font-size: 1rem;
+    }
+
+    ul {
+      margin-left: 75px;
+
+      li::marker {
+        color: $main-green;
+      }
     }
   }
 

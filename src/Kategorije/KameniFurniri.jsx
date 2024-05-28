@@ -106,14 +106,17 @@ const KameniFurniri = () => {
         </p>
         <p className="kategorija-info">
           I najlepše za kraj – kod nas ovaj proizvod možete nabaviti po potpuno
-          istim cenama kao na sajtu proizvođača –{" "}
+          istim cenama kao na sajtu{" "}
           <Link
             target="_blank"
             to="https://www.slate-lite.com/eng/c/products.html"
           >
-            CENE POGLEDAJTE OVDE
+            proizvođača
           </Link>
           !
+        </p>
+        <p className="kategorija-info">
+          *Plaćanje se vrši u RSD po prodajnom kursu OTP banke.
         </p>
       </div>
     </div>
