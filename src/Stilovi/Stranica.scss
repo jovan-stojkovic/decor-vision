@@ -143,6 +143,15 @@
       margin: 100px 0;
     }
 
+    .kategorija-naslov {
+      text-align: justify;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      color: $dark;
+      margin: 20px 0;
+    }
+
     .grid-proizvoda {
       display: flex;
       flex-wrap: wrap;
@@ -320,6 +329,7 @@
     height: 300px;
     position: relative;
     margin: 0 auto;
+    background-color: rgb(193, 193, 193);
 
     img {
       height: 100%;
@@ -863,6 +873,12 @@
   }
 
   .container {
+    h2.kategorija-info {
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 1.1rem;
+    }
+
     .kategorija-info {
       margin: 30px 0;
       font-size: 1rem;
@@ -1069,7 +1085,7 @@
       }
 
       .kategorija-info {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         line-height: 1.8rem;
         margin: 50px 0;
       }
@@ -1381,7 +1397,7 @@
           height: 600px;
 
           p {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
 
           &.right {
@@ -1396,7 +1412,7 @@
       }
 
       .kategorija-info {
-        font-size: 1rem;
+        font-size: 0.8rem;
         line-height: 2rem;
         margin: 50px 0;
       }
@@ -1713,7 +1729,7 @@
           height: 700px;
 
           p {
-            font-size: 1.2rem;
+            font-size: 0.9rem;
           }
           &.right {
             h2 {
@@ -1727,7 +1743,7 @@
       }
 
       .kategorija-info {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
         line-height: 2.5rem;
         margin: 50px 0;
       }
@@ -2011,7 +2027,7 @@
           padding: 15px;
 
           p {
-            font-size: 1rem;
+            font-size: 0.9rem;
 
             &.desc {
               margin-bottom: 10px;

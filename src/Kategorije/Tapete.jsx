@@ -13,7 +13,7 @@ const Tapete = ({ tapete }) => {
       <HeadProizvod headline={headline} />
 
       <div className="container">
-        <p className="kategorija-info">Decoprint</p>
+        <p className="kategorija-naslov">Decoprint</p>
 
         <p className="kategorija-info">
           Predstavljamo Vam inovativne tapete premium kvaliteta i jedinstvenog

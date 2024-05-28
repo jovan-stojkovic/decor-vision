@@ -20,9 +20,9 @@ const KameniFurniri = () => {
           partnera iz Nemačke, kompanije R&D GmbH. Vrhunski dizajn i nemački
           kvalitet daće vašem prostoru novu dimenziju u kojoj će svi uživati!
         </p>
-        <p className="kategorija-info">
+        <h2 className="kategorija-info">
           Brzo i lako do savršenog kamenog iskustva
-        </p>
+        </h2>
         <p className="kategorija-info">
           Sa Slate-Lite-om, birate kvalitetan proizvod pouzdanog proizvođača
           koji je temeljno testiran u svim svojim komponentama - kako u internoj
@@ -45,7 +45,7 @@ const KameniFurniri = () => {
           - bez obzira da li ste profesionalac ili ambiciozan amater.
         </p>
 
-        <p className="kategorija-info">Pravi proizvod za svaki projekat</p>
+        <h2 className="kategorija-info">Pravi proizvod za svaki projekat</h2>
 
         <p className="kategorija-info">
           Otkrijte ukupno preko 70 dekora sa pet različitih vrsta kamena: Ne
