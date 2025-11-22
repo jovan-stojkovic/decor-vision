@@ -23,13 +23,13 @@ const Sidebar = ({ handleClick }) => {
         <ul className="kategorije">
           <NavLink
             className="sidebar-kategorija sidebar-nav-link"
-            to="/proizvodi/Lapitec"
+            to="/proizvodi/Coante"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
               handleClick();
             }}
           >
-            LAPITEC
+            COANTE
           </NavLink>
           <NavLink
             className="sidebar-kategorija sidebar-nav-link"

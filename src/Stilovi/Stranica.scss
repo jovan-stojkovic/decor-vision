@@ -270,6 +270,7 @@
         max-height: 80%;
         border-radius: 5px;
         box-shadow: $shadow-strong;
+        cursor: pointer;
       }
 
       .large-image button {
@@ -354,17 +355,113 @@
     }
   }
 
-  .text {
-    margin-top: 100px;
-    p.opis {
-      margin: 50px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      width: 100%;
+      margin-top: 100px;
+      p.opis {
+        margin: 50px 0;
+      }
+
+      .key {
+        font-size: 1em;
+
+        span {
+          font-weight: 600;
+        }
+      }
     }
 
-    .key {
-      font-size: 1em;
+    .big-pic {
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      border-radius: 5px;
+      img {
+        height: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: $shadow-strong;
+      }
+    }
 
-      span {
-        font-weight: 600;
+    .proizvod-grid {
+      height: auto;
+      .galerija {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1%;
+
+        .grid-img-container.dynamic {
+          height: 15vh;
+          width: 19%;
+          cursor: pointer;
+          margin-bottom: 12px;
+          border-radius: 5px;
+          box-shadow: $shadow-light;
+          transition: 0.2s;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+
+          &:hover {
+            box-shadow: $shadow-strong;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+    .kontakt-info {
+      width: 100%;
+      background-color: $light-blue;
+      aspect-ratio: 4;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: $shadow-light;
+
+      .segment {
+        @include flex();
+        gap: 40px;
+
+        .kontakt-logo {
+          height: 50px;
+          width: 50px;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          &.one {
+            background-image: url("https://www.iconbolt.com/iconsets/carbon-design-system/phone.svg");
+          }
+
+          &.two {
+            background-image: url("https://www.iconbolt.com/iconsets/eleken-essential/mail.svg");
+          }
+
+          &.three {
+            background-image: url("https://www.iconbolt.com/iconsets/akar-icons/location.svg");
+          }
+        }
+        p {
+          font-weight: 700;
+          font-size: 0.9rem;
+          margin-bottom: 0;
+          text-align: center;
+        }
       }
     }
   }
@@ -805,8 +902,8 @@
   }
 }
 
-//////  LAPITEC STRANICA  //////
-.page.lapitec {
+//////  COANTE STRANICA  //////
+.page.coante {
   .head {
     height: 300px;
     background-image: url("/slike/proizvodi/Lapitec/Essenza/5 grigio cemento/Grigio Cemento_Satin.jpg");
@@ -824,6 +921,7 @@
 
   ul {
     margin-left: 75px;
+    font-family: "Montserrat", sans-serif;
 
     li::marker {
       color: $main-green;
@@ -838,7 +936,7 @@
     font-family: "Montserrat", sans-serif;
   }
 
-  .lapitec-links {
+  .coante-links {
     display: flex;
     flex-direction: column;
     a {
@@ -1176,17 +1274,42 @@
       }
     }
 
-    .text {
-      margin-top: 50px;
-      p.opis {
-        margin: 20px 0;
+    .container {
+      .text {
+        margin-top: 50px;
+        p.opis {
+          margin: 20px 0;
+        }
+
+        .key {
+          font-size: 0.9rem;
+
+          span {
+            font-weight: 500;
+          }
+        }
       }
 
-      .key {
-        font-size: 0.9rem;
+      .kontakt-info {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 40px 0;
 
-        span {
-          font-weight: 500;
+        .segment {
+          gap: 15px;
+
+          .kontakt-logo {
+            height: 20px;
+            width: 20px;
+          }
+          p {
+            font-size: 0.7rem;
+          }
         }
       }
     }
@@ -1314,7 +1437,7 @@
   }
 
   //////  LAPITEC STRANICA  //////
-  .page.lapitec {
+  .page.coante {
     .head {
       height: 150px;
     }
@@ -1520,15 +1643,39 @@
         padding: 8px;
       }
     }
+    .container {
+      .text {
+        margin-top: 50px;
+        p.opis {
+          margin: 25px 0;
+        }
 
-    .text {
-      margin-top: 50px;
-      p.opis {
-        margin: 25px 0;
+        .key {
+          font-size: 1rem;
+        }
       }
 
-      .key {
-        font-size: 1rem;
+      .kontakt-info {
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 40px 0;
+
+        .segment {
+          gap: 20px;
+
+          .kontakt-logo {
+            height: 45px;
+            width: 45px;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }
@@ -1648,7 +1795,7 @@
   }
 
   //////  LAPITEC STRANICA  //////
-  .page.lapitec {
+  .page.coante {
     .head {
       height: 200px;
     }
@@ -1847,14 +1994,38 @@
       }
     }
 
-    .text {
-      margin-top: 50px;
-      p.opis {
-        margin: 25px 0;
-      }
+    .container {
+      .text {
+        margin-top: 50px;
+        p.opis {
+          margin: 25px 0;
+        }
 
-      .key {
-        font-size: 1.3rem;
+        .key {
+          font-size: 1.3rem;
+        }
+      }
+      .kontakt-info {
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 40px 0;
+
+        .segment {
+          gap: 20px;
+
+          .kontakt-logo {
+            height: 45px;
+            width: 45px;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }
@@ -1965,7 +2136,7 @@
   }
 
   //////  LAPITEC STRANICA  //////
-  .page.lapitec {
+  .page.coante {
     .head {
       height: 250px;
     }
@@ -2118,11 +2289,34 @@
         height: 120px;
       }
     }
+    .container {
+      .text {
+        margin-top: 60px;
+        p.opis {
+          margin: 30px 0;
+        }
+      }
+      .kontakt-info {
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 40px 0;
 
-    .text {
-      margin-top: 60px;
-      p.opis {
-        margin: 30px 0;
+        .segment {
+          gap: 20px;
+
+          .kontakt-logo {
+            height: 45px;
+            width: 45px;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }
@@ -2255,8 +2449,13 @@
   }
 
   .page.proizvod {
-    .text {
-      margin-top: 70px;
+    .container {
+      .text {
+        margin-top: 70px;
+      }
+      .kontakt-info {
+        margin: 30px 0;
+      }
     }
   }
 

@@ -3,7 +3,6 @@ import "./Stilovi/App.scss";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
 import Pocetna from "./Stranice/Pocetna";
 import Proizvodi from "./Stranice/Proizvodi";
 import ONama from "./Stranice/ONama";
@@ -14,12 +13,12 @@ import UsloviKoriscenja from "./Stranice/UsloviKoriscenja";
 import Navbar from "./Komponente/Navbar";
 import Footer from "./Komponente/Footer";
 import BackToTopButton from "./Komponente/BackToTopButton";
-import Lapitec from "./Kategorije/Lapitec";
+import Coante from "./Kategorije/Coante";
 import KameniFurniri from "./Kategorije/KameniFurniri";
 import Latho from "./Kategorije/Latho";
 import Tapete from "./Kategorije/Tapete";
 import Kvarc from "./Kategorije/Kvarc";
-import ProizvodLapitec from "./Stranice/ProizvodLapitec";
+import ProizvodCoante from "./Stranice/ProizvodCoante";
 import ProizvodMove from "./Stranice/ProizvodMove";
 import ProizvodMilled from "./Stranice/ProizvodMilled";
 import ProizvodKvarc from "./Stranice/ProizvodKvarc";
@@ -36,10 +35,14 @@ import {
   lathoMoveInfo,
   tapete,
   kvarc,
+  coante
 } from "./Helpers/Helper";
 
 const App = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    return saved ? saved : "light";
+  });
   const [showSidebar, setShowSidebar] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIMG, setSelectedIMG] = useState(null);
@@ -74,6 +77,10 @@ const App = () => {
     };
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
     <Router>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -106,14 +113,14 @@ const App = () => {
               <Route path="/uslovi-koriscenja" element={<UsloviKoriscenja />} />
 
               <Route
-                path="/proizvodi/Lapitec"
-                element={<Lapitec lapitec={lapitec} noIMG={noIMG} />}
+                path="/proizvodi/Coante"
+                element={<Coante coante={ coante } noIMG={noIMG} />}
               />
 
               <Route
-                path="/proizvodi/:proizvodjac/:firma/:ime"
+                path="/proizvodi/:proizvodjac/:ime"
                 element={
-                  <ProizvodLapitec
+                  <ProizvodCoante
                     noIMG={noIMG}
                     isOpen={isOpen}
                     openIMG={openIMG}
