@@ -4,7 +4,7 @@ export const noIMG =
 export const slides = [
   {
     url: "/slike/sliders/1.jpg",
-    text: "Lapitec kamene ploče. Garancija 25 godina.",
+    text: "Coante kamene ploče. Garancija 25 godina.",
   },
   {
     url: "/slike/sliders//2.jpg",
@@ -22,8 +22,8 @@ export const slides = [
 
 export const proizvodi = [
   {
-    url: "/slike/backgrounds/Lapitec-background.jpg",
-    text: "Lapitec",
+    url: "/slike/proizvodi/Coante/Alba Via 3.jpg",
+    text: "Coante",
   },
   {
     url: "/slike/proizvodi/Latho/Milled/Roma/fresati-roma-brown-head-bnr-1024x640.jpg",
